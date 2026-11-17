@@ -1,0 +1,1438 @@
+{
+ "generated": "2026-11-16 06:48 UTC",
+ "source": "TFF (tff.org)",
+ "fetched": "2026-11-14 13:03 UTC",
+ "played_weeks": 11,
+ "total_weeks": 34,
+ "sims": 10000,
+ "sigma": 0.2,
+ "relegated": 3,
+ "top": 4,
+ "table": [
+  {
+   "rank": 1,
+   "team": "Galatasaray",
+   "O": 11,
+   "G": 9,
+   "B": 1,
+   "M": 1,
+   "A": 27,
+   "Y": 15,
+   "AV": 12,
+   "P": 28,
+   "form": [
+    "G",
+    "G",
+    "G",
+    "G",
+    "G"
+   ],
+   "exp_points": 77.9,
+   "p_title": 0.6272,
+   "p_top": 0.9953,
+   "p_releg": 0.0,
+   "likely_rank": 1,
+   "pos": [
+    0.6272,
+    0.2475,
+    0.0914,
+    0.0292,
+    0.0038,
+    0.0007,
+    0.0002,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rank": 2,
+   "team": "Trabzonspor",
+   "O": 11,
+   "G": 8,
+   "B": 1,
+   "M": 2,
+   "A": 26,
+   "Y": 8,
+   "AV": 18,
+   "P": 25,
+   "form": [
+    "G",
+    "G",
+    "G",
+    "G",
+    "G"
+   ],
+   "exp_points": 73.2,
+   "p_title": 0.2565,
+   "p_top": 0.9742,
+   "p_releg": 0.0,
+   "likely_rank": 2,
+   "pos": [
+    0.2565,
+    0.3868,
+    0.2403,
+    0.0906,
+    0.0206,
+    0.0035,
+    0.0012,
+    0.0003,
+    0.0002,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rank": 3,
+   "team": "Amedspor",
+   "O": 11,
+   "G": 7,
+   "B": 2,
+   "M": 2,
+   "A": 28,
+   "Y": 15,
+   "AV": 13,
+   "P": 23,
+   "form": [
+    "B",
+    "G",
+    "G",
+    "G",
+    "M"
+   ],
+   "exp_points": 48.3,
+   "p_title": 0.0,
+   "p_top": 0.0148,
+   "p_releg": 0.0017,
+   "likely_rank": 8,
+   "pos": [
+    0.0,
+    0.0002,
+    0.0026,
+    0.012,
+    0.059,
+    0.1104,
+    0.1601,
+    0.185,
+    0.173,
+    0.1282,
+    0.0766,
+    0.051,
+    0.023,
+    0.0113,
+    0.0059,
+    0.0015,
+    0.0002,
+    0.0
+   ]
+  },
+  {
+   "rank": 4,
+   "team": "Besiktas",
+   "O": 11,
+   "G": 7,
+   "B": 1,
+   "M": 3,
+   "A": 23,
+   "Y": 12,
+   "AV": 11,
+   "P": 22,
+   "form": [
+    "G",
+    "M",
+    "G",
+    "B",
+    "G"
+   ],
+   "exp_points": 64.9,
+   "p_title": 0.0255,
+   "p_top": 0.7453,
+   "p_releg": 0.0,
+   "likely_rank": 4,
+   "pos": [
+    0.0255,
+    0.0951,
+    0.2309,
+    0.3938,
+    0.1588,
+    0.0615,
+    0.0233,
+    0.0067,
+    0.0026,
+    0.0018,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rank": 5,
+   "team": "Kasimpasa",
+   "O": 11,
+   "G": 5,
+   "B": 5,
+   "M": 1,
+   "A": 17,
+   "Y": 11,
+   "AV": 6,
+   "P": 20,
+   "form": [
+    "M",
+    "G",
+    "G",
+    "B",
+    "G"
+   ],
+   "exp_points": 53.3,
+   "p_title": 0.0004,
+   "p_top": 0.0737,
+   "p_releg": 0.0001,
+   "likely_rank": 6,
+   "pos": [
+    0.0004,
+    0.0018,
+    0.0146,
+    0.0569,
+    0.1633,
+    0.2484,
+    0.1871,
+    0.1464,
+    0.0886,
+    0.0467,
+    0.0255,
+    0.0122,
+    0.0054,
+    0.0019,
+    0.0007,
+    0.0001,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rank": 6,
+   "team": "Fenerbahce",
+   "O": 11,
+   "G": 6,
+   "B": 1,
+   "M": 4,
+   "A": 29,
+   "Y": 10,
+   "AV": 19,
+   "P": 19,
+   "form": [
+    "G",
+    "G",
+    "M",
+    "M",
+    "G"
+   ],
+   "exp_points": 69.3,
+   "p_title": 0.0886,
+   "p_top": 0.9069,
+   "p_releg": 0.0,
+   "likely_rank": 3,
+   "pos": [
+    0.0886,
+    0.2523,
+    0.3572,
+    0.2088,
+    0.0685,
+    0.0192,
+    0.0042,
+    0.0008,
+    0.0004,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rank": 7,
+   "team": "Kocaelispor",
+   "O": 11,
+   "G": 6,
+   "B": 1,
+   "M": 4,
+   "A": 13,
+   "Y": 9,
+   "AV": 4,
+   "P": 19,
+   "form": [
+    "M",
+    "M",
+    "G",
+    "B",
+    "G"
+   ],
+   "exp_points": 49.0,
+   "p_title": 0.0,
+   "p_top": 0.0182,
+   "p_releg": 0.0018,
+   "likely_rank": 8,
+   "pos": [
+    0.0,
+    0.0003,
+    0.0029,
+    0.015,
+    0.0671,
+    0.124,
+    0.179,
+    0.1987,
+    0.1706,
+    0.1044,
+    0.0662,
+    0.0357,
+    0.0203,
+    0.01,
+    0.004,
+    0.0015,
+    0.0003,
+    0.0
+   ]
+  },
+  {
+   "rank": 8,
+   "team": "Buyuksehyr",
+   "O": 11,
+   "G": 5,
+   "B": 2,
+   "M": 4,
+   "A": 19,
+   "Y": 17,
+   "AV": 2,
+   "P": 17,
+   "form": [
+    "B",
+    "G",
+    "M",
+    "G",
+    "G"
+   ],
+   "exp_points": 58.0,
+   "p_title": 0.0018,
+   "p_top": 0.2342,
+   "p_releg": 0.0,
+   "likely_rank": 5,
+   "pos": [
+    0.0018,
+    0.0152,
+    0.0543,
+    0.1629,
+    0.3473,
+    0.2021,
+    0.1079,
+    0.0561,
+    0.0274,
+    0.0139,
+    0.0071,
+    0.0026,
+    0.0011,
+    0.0002,
+    0.0001,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "rank": 9,
+   "team": "Corum",
+   "O": 11,
+   "G": 5,
+   "B": 1,
+   "M": 5,
+   "A": 21,
+   "Y": 21,
+   "AV": 0,
+   "P": 16,
+   "form": [
+    "G",
+    "G",
+    "M",
+    "G",
+    "M"
+   ],
+   "exp_points": 36.6,
+   "p_title": 0.0,
+   "p_top": 0.0001,
+   "p_releg": 0.1636,
+   "likely_rank": 14,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0001,
+    0.0012,
+    0.0032,
+    0.0099,
+    0.021,
+    0.0456,
+    0.0746,
+    0.1039,
+    0.1303,
+    0.151,
+    0.1586,
+    0.137,
+    0.0983,
+    0.056,
+    0.0093
+   ]
+  },
+  {
+   "rank": 10,
+   "team": "Goztep",
+   "O": 11,
+   "G": 4,
+   "B": 3,
+   "M": 4,
+   "A": 22,
+   "Y": 19,
+   "AV": 3,
+   "P": 15,
+   "form": [
+    "G",
+    "G",
+    "G",
+    "G",
+    "M"
+   ],
+   "exp_points": 50.4,
+   "p_title": 0.0,
+   "p_top": 0.035,
+   "p_releg": 0.0012,
+   "likely_rank": 7,
+   "pos": [
+    0.0,
+    0.0008,
+    0.0057,
+    0.0285,
+    0.0964,
+    0.1756,
+    0.2033,
+    0.1706,
+    0.1331,
+    0.0826,
+    0.0497,
+    0.0283,
+    0.0139,
+    0.0071,
+    0.0032,
+    0.0009,
+    0.0003,
+    0.0
+   ]
+  },
+  {
+   "rank": 11,
+   "team": "Rizespor",
+   "O": 11,
+   "G": 4,
+   "B": 2,
+   "M": 5,
+   "A": 13,
+   "Y": 16,
+   "AV": -3,
+   "P": 14,
+   "form": [
+    "M",
+    "M",
+    "M",
+    "B",
+    "G"
+   ],
+   "exp_points": 42.3,
+   "p_title": 0.0,
+   "p_top": 0.0016,
+   "p_releg": 0.0309,
+   "likely_rank": 10,
+   "pos": [
+    0.0,
+    0.0,
+    0.0001,
+    0.0015,
+    0.0081,
+    0.0272,
+    0.0582,
+    0.0911,
+    0.1342,
+    0.1623,
+    0.152,
+    0.1308,
+    0.0926,
+    0.0659,
+    0.0451,
+    0.0202,
+    0.0098,
+    0.0009
+   ]
+  },
+  {
+   "rank": 12,
+   "team": "Erzurumspor",
+   "O": 11,
+   "G": 4,
+   "B": 2,
+   "M": 5,
+   "A": 10,
+   "Y": 17,
+   "AV": -7,
+   "P": 14,
+   "form": [
+    "B",
+    "G",
+    "G",
+    "M",
+    "M"
+   ],
+   "exp_points": 29.3,
+   "p_title": 0.0,
+   "p_top": 0.0,
+   "p_releg": 0.6564,
+   "likely_rank": 17,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0004,
+    0.001,
+    0.0034,
+    0.0068,
+    0.0161,
+    0.0298,
+    0.0526,
+    0.0921,
+    0.1414,
+    0.2306,
+    0.3139,
+    0.1119
+   ]
+  },
+  {
+   "rank": 13,
+   "team": "Alanyaspor",
+   "O": 11,
+   "G": 3,
+   "B": 3,
+   "M": 5,
+   "A": 9,
+   "Y": 18,
+   "AV": -9,
+   "P": 12,
+   "form": [
+    "B",
+    "M",
+    "M",
+    "M",
+    "M"
+   ],
+   "exp_points": 39.2,
+   "p_title": 0.0,
+   "p_top": 0.0002,
+   "p_releg": 0.0954,
+   "likely_rank": 12,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0002,
+    0.0029,
+    0.0122,
+    0.0281,
+    0.0484,
+    0.0795,
+    0.1188,
+    0.1407,
+    0.1408,
+    0.1359,
+    0.1099,
+    0.0872,
+    0.0589,
+    0.032,
+    0.0045
+   ]
+  },
+  {
+   "rank": 14,
+   "team": "Genclerbirligi",
+   "O": 11,
+   "G": 3,
+   "B": 2,
+   "M": 6,
+   "A": 12,
+   "Y": 21,
+   "AV": -9,
+   "P": 11,
+   "form": [
+    "B",
+    "M",
+    "M",
+    "G",
+    "M"
+   ],
+   "exp_points": 38.2,
+   "p_title": 0.0,
+   "p_top": 0.0002,
+   "p_releg": 0.1261,
+   "likely_rank": 12,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0002,
+    0.0021,
+    0.0063,
+    0.0198,
+    0.0354,
+    0.0649,
+    0.1085,
+    0.1309,
+    0.141,
+    0.132,
+    0.1296,
+    0.1032,
+    0.0726,
+    0.0426,
+    0.0109
+   ]
+  },
+  {
+   "rank": 15,
+   "team": "Konyaspor",
+   "O": 11,
+   "G": 2,
+   "B": 2,
+   "M": 7,
+   "A": 6,
+   "Y": 14,
+   "AV": -8,
+   "P": 8,
+   "form": [
+    "B",
+    "M",
+    "G",
+    "M",
+    "M"
+   ],
+   "exp_points": 36.5,
+   "p_title": 0.0,
+   "p_top": 0.0001,
+   "p_releg": 0.184,
+   "likely_rank": 13,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0001,
+    0.0006,
+    0.004,
+    0.0112,
+    0.0233,
+    0.0445,
+    0.0771,
+    0.1151,
+    0.128,
+    0.1471,
+    0.1365,
+    0.1285,
+    0.0967,
+    0.0708,
+    0.0165
+   ]
+  },
+  {
+   "rank": 16,
+   "team": "Gaziantep",
+   "O": 11,
+   "G": 2,
+   "B": 2,
+   "M": 7,
+   "A": 9,
+   "Y": 19,
+   "AV": -10,
+   "P": 8,
+   "form": [
+    "M",
+    "M",
+    "M",
+    "M",
+    "M"
+   ],
+   "exp_points": 32.3,
+   "p_title": 0.0,
+   "p_top": 0.0002,
+   "p_releg": 0.4458,
+   "likely_rank": 16,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0002,
+    0.0002,
+    0.0006,
+    0.0024,
+    0.0065,
+    0.0141,
+    0.0307,
+    0.0445,
+    0.0747,
+    0.1025,
+    0.1242,
+    0.1536,
+    0.1944,
+    0.1919,
+    0.0595
+   ]
+  },
+  {
+   "rank": 17,
+   "team": "Samsunspor",
+   "O": 11,
+   "G": 2,
+   "B": 1,
+   "M": 8,
+   "A": 11,
+   "Y": 26,
+   "AV": -15,
+   "P": 7,
+   "form": [
+    "M",
+    "M",
+    "M",
+    "M",
+    "G"
+   ],
+   "exp_points": 33.6,
+   "p_title": 0.0,
+   "p_top": 0.0,
+   "p_releg": 0.3436,
+   "likely_rank": 16,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0001,
+    0.0011,
+    0.0037,
+    0.0087,
+    0.0179,
+    0.0433,
+    0.0703,
+    0.0907,
+    0.1169,
+    0.1389,
+    0.1648,
+    0.1655,
+    0.1312,
+    0.0469
+   ]
+  },
+  {
+   "rank": 18,
+   "team": "Eyupspor",
+   "O": 11,
+   "G": 1,
+   "B": 0,
+   "M": 10,
+   "A": 3,
+   "Y": 30,
+   "AV": -27,
+   "P": 3,
+   "form": [
+    "M",
+    "M",
+    "M",
+    "M",
+    "M"
+   ],
+   "exp_points": 21.5,
+   "p_title": 0.0,
+   "p_top": 0.0,
+   "p_releg": 0.9494,
+   "likely_rank": 18,
+   "pos": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0003,
+    0.0014,
+    0.0041,
+    0.0057,
+    0.0138,
+    0.0253,
+    0.0588,
+    0.151,
+    0.7396
+   ]
+  }
+ ],
+ "scorers": [
+  {
+   "player": "Gift Emmanuel Orban",
+   "team": "Amedspor",
+   "goals": 10,
+   "share": 0.357
+  },
+  {
+   "player": "Dusan Vlahovic",
+   "team": "Besiktas",
+   "goals": 9,
+   "share": 0.391
+  },
+  {
+   "player": "Mohamed Salah Hamed Mahrous Ghaly",
+   "team": "Trabzonspor",
+   "goals": 9,
+   "share": 0.346
+  },
+  {
+   "player": "Victor James Osimhen",
+   "team": "Galatasaray",
+   "goals": 9,
+   "share": 0.333
+  },
+  {
+   "player": "Eldor Shomurodov",
+   "team": "Buyuksehyr",
+   "goals": 8,
+   "share": 0.421
+  },
+  {
+   "player": "Adrian Dawid Benedyczak",
+   "team": "Kasimpasa",
+   "goals": 7,
+   "share": 0.412
+  },
+  {
+   "player": "Juan Santos Da Silva",
+   "team": "Goztep",
+   "goals": 7,
+   "share": 0.318
+  },
+  {
+   "player": "Vedat Murıç",
+   "team": "Fenerbahce",
+   "goals": 7,
+   "share": 0.241
+  },
+  {
+   "player": "Diaa Sabi'a",
+   "team": "Amedspor",
+   "goals": 6,
+   "share": 0.214
+  },
+  {
+   "player": "Jesus Andres Ramirez Diaz",
+   "team": "Corum",
+   "goals": 6,
+   "share": 0.286
+  },
+  {
+   "player": "Mason Will John Greenwood",
+   "team": "Fenerbahce",
+   "goals": 6,
+   "share": 0.207
+  },
+  {
+   "player": "Berkan İsmail Kutlu",
+   "team": "Kocaelispor",
+   "goals": 5,
+   "share": 0.385
+  },
+  {
+   "player": "İrfan Can Kahveci",
+   "team": "Fenerbahce",
+   "goals": 5,
+   "share": 0.172
+  },
+  {
+   "player": "Alexandros Kyziridis",
+   "team": "Corum",
+   "goals": 4,
+   "share": 0.19
+  },
+  {
+   "player": "Ali Sowe",
+   "team": "Rizespor",
+   "goals": 4,
+   "share": 0.308
+  },
+  {
+   "player": "Andre Henrique Da Silva Martins",
+   "team": "Goztep",
+   "goals": 4,
+   "share": 0.182
+  },
+  {
+   "player": "Cengiz Ünder",
+   "team": "Corum",
+   "goals": 4,
+   "share": 0.19
+  },
+  {
+   "player": "Franculino Gluda Dju",
+   "team": "Trabzonspor",
+   "goals": 4,
+   "share": 0.154
+  },
+  {
+   "player": "Samuel Leo Beat Ballet",
+   "team": "Amedspor",
+   "goals": 4,
+   "share": 0.143
+  },
+  {
+   "player": "Eren Tozlu",
+   "team": "Erzurumspor",
+   "goals": 3,
+   "share": 0.3
+  }
+ ],
+ "lists": {
+  "matches": 99,
+  "yellow": [
+   {
+    "player": "Ousmane Diabate",
+    "team": "Genclerbirligi",
+    "n": 5
+   },
+   {
+    "player": "Chibuike Godfrey Nwaiwu",
+    "team": "Trabzonspor",
+    "n": 4
+   },
+   {
+    "player": "Deniz Türüç",
+    "team": "Konyaspor",
+    "n": 4
+   },
+   {
+    "player": "Elson Mendes Da Silva",
+    "team": "Kasimpasa",
+    "n": 4
+   },
+   {
+    "player": "Gökhan Sazdağı",
+    "team": "Corum",
+    "n": 4
+   },
+   {
+    "player": "Leo Myenty Janna Abena",
+    "team": "Gaziantep",
+    "n": 4
+   },
+   {
+    "player": "Lumbardh Dellova",
+    "team": "Amedspor",
+    "n": 4
+   },
+   {
+    "player": "Modibo Sagnan",
+    "team": "Rizespor",
+    "n": 4
+   },
+   {
+    "player": "Orkun Kökçü",
+    "team": "Besiktas",
+    "n": 4
+   },
+   {
+    "player": "Adil Demirbağ",
+    "team": "Konyaspor",
+    "n": 3
+   },
+   {
+    "player": "Alban-Marc Lafont",
+    "team": "Amedspor",
+    "n": 3
+   },
+   {
+    "player": "Alex Ojahn Matos",
+    "team": "Goztep",
+    "n": 3
+   },
+   {
+    "player": "Alexis Antunes Gomez",
+    "team": "Goztep",
+    "n": 3
+   },
+   {
+    "player": "Ali Yavuz Kol",
+    "team": "Kasimpasa",
+    "n": 3
+   },
+   {
+    "player": "Attila Mocsi",
+    "team": "Rizespor",
+    "n": 3
+   }
+  ],
+  "red": [
+   {
+    "player": "Abdülkerim Bardakcı",
+    "team": "Galatasaray",
+    "n": 1
+   },
+   {
+    "player": "Afonso Gamelas De Pinho Sousa",
+    "team": "Samsunspor",
+    "n": 1
+   },
+   {
+    "player": "Ahmed Abdullahi",
+    "team": "Eyupspor",
+    "n": 1
+   },
+   {
+    "player": "Alexandros Kyziridis",
+    "team": "Corum",
+    "n": 1
+   },
+   {
+    "player": "Amadou Cisse",
+    "team": "Amedspor",
+    "n": 1
+   },
+   {
+    "player": "Archibald Norman Brown",
+    "team": "Fenerbahce",
+    "n": 1
+   },
+   {
+    "player": "David Jose Soares Oliveira Furtado Da Costa",
+    "team": "Eyupspor",
+    "n": 1
+   },
+   {
+    "player": "Enis Bardhi",
+    "team": "Konyaspor",
+    "n": 1
+   },
+   {
+    "player": "Juninho Gracielo Bacuna",
+    "team": "Gaziantep",
+    "n": 1
+   },
+   {
+    "player": "Lesley Chimuanya Ugochukwu",
+    "team": "Galatasaray",
+    "n": 1
+   },
+   {
+    "player": "Lucas Sebastian Torreira Di Pascua",
+    "team": "Galatasaray",
+    "n": 1
+   },
+   {
+    "player": "Mbaye Diagne",
+    "team": "Amedspor",
+    "n": 1
+   },
+   {
+    "player": "Melih Kabasakal",
+    "team": "Trabzonspor",
+    "n": 1
+   },
+   {
+    "player": "Metehan Baltaci",
+    "team": "Genclerbirligi",
+    "n": 1
+   },
+   {
+    "player": "Mihai-Valentin Mihaila",
+    "team": "Rizespor",
+    "n": 1
+   }
+  ],
+  "clean_sheets": [
+   {
+    "player": "Andre Onana Onana",
+    "team": "Trabzonspor",
+    "n": 6,
+    "matches": 11
+   },
+   {
+    "player": "Ederson Santana De Moraes",
+    "team": "Fenerbahce",
+    "n": 6,
+    "matches": 10
+   },
+   {
+    "player": "Serhat Öztaşdelen",
+    "team": "Kocaelispor",
+    "n": 5,
+    "matches": 11
+   },
+   {
+    "player": "Alexander Nübel",
+    "team": "Besiktas",
+    "n": 4,
+    "matches": 11
+   },
+   {
+    "player": "Andreas Gianniotis",
+    "team": "Kasimpasa",
+    "n": 4,
+    "matches": 11
+   },
+   {
+    "player": "Bahadır Han Güngördü",
+    "team": "Konyaspor",
+    "n": 4,
+    "matches": 9
+   },
+   {
+    "player": "Mahmut Ertuğrul Taşkıran",
+    "team": "Erzurumspor",
+    "n": 4,
+    "matches": 9
+   },
+   {
+    "player": "Uğurcan Çakır",
+    "team": "Galatasaray",
+    "n": 4,
+    "matches": 10
+   },
+   {
+    "player": "Alban-Marc Lafont",
+    "team": "Amedspor",
+    "n": 3,
+    "matches": 11
+   },
+   {
+    "player": "Muhammed Şengezer",
+    "team": "Buyuksehyr",
+    "n": 3,
+    "matches": 8
+   },
+   {
+    "player": "Paulo Victor Mileo Vidotti",
+    "team": "Alanyaspor",
+    "n": 3,
+    "matches": 11
+   },
+   {
+    "player": "Arda Özçimen",
+    "team": "Goztep",
+    "n": 2,
+    "matches": 7
+   },
+   {
+    "player": "Kacper Tobiasz",
+    "team": "Gaziantep",
+    "n": 2,
+    "matches": 9
+   },
+   {
+    "player": "Marcos Felipe De Freitas Monteiro",
+    "team": "Corum",
+    "n": 2,
+    "matches": 11
+   },
+   {
+    "player": "Yahia Fofana",
+    "team": "Rizespor",
+    "n": 2,
+    "matches": 9
+   }
+  ],
+  "referees": [
+   {
+    "referee": "Ali Şansalan",
+    "matches": 4,
+    "yellow": 7.5,
+    "red": 0.25
+   },
+   {
+    "referee": "Davut Dakul Çelik",
+    "matches": 4,
+    "yellow": 5.5,
+    "red": 0.0
+   },
+   {
+    "referee": "Atilla Karaoğlan",
+    "matches": 7,
+    "yellow": 5.0,
+    "red": 0.57
+   },
+   {
+    "referee": "Kadir Sağlam",
+    "matches": 5,
+    "yellow": 4.6,
+    "red": 0.6
+   },
+   {
+    "referee": "Yasin Kol",
+    "matches": 4,
+    "yellow": 4.5,
+    "red": 0.0
+   },
+   {
+    "referee": "Alpaslan Şen",
+    "matches": 2,
+    "yellow": 4.5,
+    "red": 0.5
+   },
+   {
+    "referee": "Oğuzhan Çakır",
+    "matches": 7,
+    "yellow": 4.43,
+    "red": 0.29
+   },
+   {
+    "referee": "Ümit Öztürk",
+    "matches": 6,
+    "yellow": 4.33,
+    "red": 0.17
+   },
+   {
+    "referee": "Mehmet Türkmen",
+    "matches": 4,
+    "yellow": 4.25,
+    "red": 0.0
+   },
+   {
+    "referee": "Halil Umut Meler",
+    "matches": 7,
+    "yellow": 4.0,
+    "red": 0.14
+   },
+   {
+    "referee": "Cihan Aydın",
+    "matches": 5,
+    "yellow": 4.0,
+    "red": 0.0
+   },
+   {
+    "referee": "Gürcan Hasova",
+    "matches": 5,
+    "yellow": 3.8,
+    "red": 0.2
+   },
+   {
+    "referee": "Alper Akarsu",
+    "matches": 3,
+    "yellow": 3.67,
+    "red": 0.0
+   },
+   {
+    "referee": "Fatih Tokail",
+    "matches": 3,
+    "yellow": 3.33,
+    "red": 0.0
+   },
+   {
+    "referee": "Batuhan Kolak",
+    "matches": 6,
+    "yellow": 3.17,
+    "red": 0.33
+   },
+   {
+    "referee": "Çağdaş Altay",
+    "matches": 5,
+    "yellow": 3.0,
+    "red": 0.0
+   },
+   {
+    "referee": "Melek Dakan",
+    "matches": 2,
+    "yellow": 3.0,
+    "red": 0.0
+   },
+   {
+    "referee": "Direnç Tonusluoğlu",
+    "matches": 1,
+    "yellow": 3.0,
+    "red": 0.0
+   },
+   {
+    "referee": "Abdullah Buğra Taşkınsoy",
+    "matches": 5,
+    "yellow": 2.6,
+    "red": 0.0
+   },
+   {
+    "referee": "Reşat Onur Coşkunses",
+    "matches": 5,
+    "yellow": 2.4,
+    "red": 0.2
+   },
+   {
+    "referee": "Ozan Ergün",
+    "matches": 4,
+    "yellow": 2.25,
+    "red": 0.0
+   },
+   {
+    "referee": "Oğuzhan Aksu",
+    "matches": 2,
+    "yellow": 2.0,
+    "red": 0.5
+   },
+   {
+    "referee": "Ömer Faruk Turtay",
+    "matches": 1,
+    "yellow": 2.0,
+    "red": 0.0
+   },
+   {
+    "referee": "Erdem Mertoğlu",
+    "matches": 1,
+    "yellow": 1.0,
+    "red": 0.0
+   },
+   {
+    "referee": "Adnan Deniz Kayatepe",
+    "matches": 1,
+    "yellow": 0.0,
+    "red": 0.0
+   }
+  ],
+  "team_cards": [
+   {
+    "team": "Amedspor",
+    "matches": 11,
+    "yellow": 2.82,
+    "red": 3
+   },
+   {
+    "team": "Kasimpasa",
+    "matches": 11,
+    "yellow": 2.45,
+    "red": 0
+   },
+   {
+    "team": "Goztep",
+    "matches": 11,
+    "yellow": 2.45,
+    "red": 1
+   },
+   {
+    "team": "Besiktas",
+    "matches": 11,
+    "yellow": 2.36,
+    "red": 0
+   },
+   {
+    "team": "Konyaspor",
+    "matches": 11,
+    "yellow": 2.18,
+    "red": 1
+   },
+   {
+    "team": "Gaziantep",
+    "matches": 11,
+    "yellow": 2.09,
+    "red": 1
+   },
+   {
+    "team": "Buyuksehyr",
+    "matches": 11,
+    "yellow": 2.09,
+    "red": 1
+   },
+   {
+    "team": "Kocaelispor",
+    "matches": 11,
+    "yellow": 2.09,
+    "red": 0
+   },
+   {
+    "team": "Corum",
+    "matches": 11,
+    "yellow": 1.91,
+    "red": 1
+   },
+   {
+    "team": "Trabzonspor",
+    "matches": 11,
+    "yellow": 1.82,
+    "red": 1
+   },
+   {
+    "team": "Genclerbirligi",
+    "matches": 11,
+    "yellow": 1.82,
+    "red": 1
+   },
+   {
+    "team": "Rizespor",
+    "matches": 11,
+    "yellow": 1.82,
+    "red": 1
+   },
+   {
+    "team": "Fenerbahce",
+    "matches": 11,
+    "yellow": 1.73,
+    "red": 1
+   },
+   {
+    "team": "Alanyaspor",
+    "matches": 11,
+    "yellow": 1.55,
+    "red": 0
+   },
+   {
+    "team": "Galatasaray",
+    "matches": 11,
+    "yellow": 1.55,
+    "red": 3
+   },
+   {
+    "team": "Samsunspor",
+    "matches": 11,
+    "yellow": 1.55,
+    "red": 1
+   },
+   {
+    "team": "Erzurumspor",
+    "matches": 11,
+    "yellow": 1.36,
+    "red": 0
+   },
+   {
+    "team": "Eyupspor",
+    "matches": 11,
+    "yellow": 1.18,
+    "red": 2
+   }
+  ]
+ }
+}

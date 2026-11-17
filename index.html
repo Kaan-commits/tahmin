@@ -1,0 +1,663 @@
+<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Süper Lig Tahmin Masası</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Düzen: üstte haftanın tahmin özeti (tek bakışta), altında güne göre maç kartları (her kartta açık tahmin cümlesi),
+   en altta sanal kasa: maç maç tahmin kaydı + kuponlar + kuralın geçmiş testi (açılır) */
+:root{
+  --bg:#f2f5f3; --surface:#ffffff; --ink:#15211b; --muted:#5d6b64; --line:#d9e1dc;
+  --model:#0f6b5c; --model-soft:#e1f0ec; --market:#a8641a; --market-soft:#f1dfc8;
+  --draw:#8a9690; --hit:#1f7a3f; --miss:#b4442f;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-num:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1613; --surface:#16201b; --ink:#e6eee9; --muted:#97a69e; --line:#26332c;
+  --model:#4fc1a9; --model-soft:#1a302a; --market:#e0a25a; --market-soft:#3b2c19;
+  --draw:#6f7d76; --hit:#5cc483; --miss:#e07a64; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1613; --surface:#16201b; --ink:#e6eee9; --muted:#97a69e; --line:#26332c;
+  --model:#4fc1a9; --model-soft:#1a302a; --market:#e0a25a; --market-soft:#3b2c19;
+  --draw:#6f7d76; --hit:#5cc483; --miss:#e07a64; color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:880px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:28px}
+header{display:grid;gap:10px}
+.eyebrow{font-family:var(--f-num);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(34px,6vw,52px);line-height:1;margin:0;letter-spacing:.01em;text-wrap:balance}
+h2.sec{font-family:var(--f-display);font-size:28px;font-weight:700;margin:0;letter-spacing:.01em}
+.lede{margin:0;color:var(--muted);max-width:64ch}
+.demo{font-family:var(--f-num);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--market-soft);color:var(--market)}
+.report{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.report div{background:var(--surface);padding:14px 16px;display:grid;gap:2px;align-content:start}
+.report b{font-family:var(--f-num);font-weight:500;font-size:20px;font-variant-numeric:tabular-nums}
+.report small{color:var(--muted);font-size:12.5px;line-height:1.35}
+
+/* Haftanın özeti */
+.week{display:grid;gap:12px}
+.sum{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.sum a{display:grid;grid-template-columns:92px minmax(0,1fr) minmax(0,1.1fr) 52px 112px;gap:12px;align-items:center;padding:11px 16px;color:inherit;text-decoration:none;border-top:1px solid var(--line)}
+.sum a:first-child{border-top:0}
+.sum a:hover{background:color-mix(in srgb,var(--model-soft) 50%,var(--surface))}
+.sum a:focus-visible{outline:2px solid var(--model);outline-offset:-2px}
+.sum .when{font-family:var(--f-num);font-size:12px;color:var(--muted);line-height:1.3}
+.sum .mt{min-width:0}
+.sum .pk{font-weight:600;min-width:0}
+.sum .pp{font-family:var(--f-num);font-size:15px;text-align:right;font-variant-numeric:tabular-nums}
+.conf{justify-self:start;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.conf.c0{color:var(--hit)} .conf.c1{color:var(--model)} .conf.c2{color:var(--market)} .conf.c3{color:var(--muted)}
+.bands{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--muted)}
+.bands b{color:var(--ink);font-family:var(--f-num);font-weight:500}
+
+/* Maç kartları */
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--surface)}
+.seg button{font:500 13px var(--f-body);color:var(--muted);background:transparent;border:0;padding:7px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg button:focus-visible{outline:2px solid var(--model);outline-offset:-2px}
+.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:22px;height:8px;border-radius:2px;display:inline-block}
+#list{display:grid;gap:24px}
+.day{display:grid;gap:8px}
+.day h3{font-family:var(--f-display);font-size:20px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;margin:0;color:var(--muted)}
+.match{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:12px;scroll-margin-top:16px}
+.match:target{border-color:var(--model);box-shadow:0 0 0 1px var(--model)}
+.top{display:grid;grid-template-columns:52px 1fr auto;gap:12px;align-items:center}
+.time{font-family:var(--f-num);font-size:13px;color:var(--muted)}
+.teams{font-family:var(--f-display);font-weight:700;font-size:22px;line-height:1.1;min-width:0;text-wrap:balance}
+.teams .vs{color:var(--muted);font-weight:600;padding:0 6px}
+.res{font-family:var(--f-num);font-size:13px;padding:3px 8px;border-radius:4px;border:1px solid var(--line);white-space:nowrap;color:var(--muted)}
+.res.hit{color:var(--hit);border-color:currentColor}
+.res.miss{color:var(--miss);border-color:currentColor}
+.pick{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;padding:10px 12px;border-radius:6px;background:var(--model-soft)}
+.pick .k{font-family:var(--f-num);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--model)}
+.pick b{font-family:var(--f-display);font-size:23px;font-weight:700;line-height:1.1}
+.pick .pp{font-family:var(--f-num);font-size:18px;font-variant-numeric:tabular-nums}
+.bars{display:grid;grid-template-columns:52px 1fr;gap:6px 12px;align-items:center}
+.lab{font-family:var(--f-num);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.keys{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;font-size:12px;color:var(--muted);grid-column:2}
+.keys span:nth-child(2){text-align:center} .keys span:last-child{text-align:right}
+.bar{display:flex;height:24px;border-radius:4px;overflow:hidden;font-family:var(--f-num);font-size:12px;font-variant-numeric:tabular-nums}
+.bar span{display:flex;align-items:center;justify-content:center;min-width:0;overflow:hidden;white-space:nowrap}
+.bar.m .h{background:var(--model);color:var(--surface)} .bar.m .d{background:color-mix(in srgb,var(--model) 22%,var(--surface));color:var(--ink)} .bar.m .a{background:color-mix(in srgb,var(--model) 55%,var(--surface));color:var(--surface)}
+.bar.k .h{background:var(--market);color:var(--surface)} .bar.k .d{background:var(--market-soft);color:var(--ink)} .bar.k .a{background:color-mix(in srgb,var(--market) 55%,var(--surface));color:var(--surface)}
+.bar span.won{box-shadow:inset 0 0 0 2px var(--ink)}
+.facts{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted)}
+.facts b{color:var(--ink);font-family:var(--f-num);font-weight:500;font-variant-numeric:tabular-nums}
+.gol{display:grid;gap:8px}
+.gol .chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.gol .chip{border:1px solid var(--line);border-radius:6px;padding:6px 8px;display:grid;gap:0;font-size:12px;color:var(--muted);line-height:1.3}
+.gol .chip b{font-family:var(--f-num);font-weight:500;font-size:15px;color:var(--ink);font-variant-numeric:tabular-nums}
+.gol .chips.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.gol .chip.on{border-color:var(--model);background:var(--model-soft)}
+.gol .chip.on b{color:var(--model)}
+.gol p{margin:0;font-size:13px;color:var(--muted)}
+.gol p b{color:var(--ink)}
+.sum .pk small{display:block;font-weight:500;font-size:12.5px;color:var(--model)}
+.other{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.other article{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px 16px;display:grid;gap:8px;align-content:start}
+.other h3{font-family:var(--f-display);font-size:20px;font-weight:700;margin:0;display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.other p{margin:0;font-size:13.5px;color:var(--muted)}
+.other p b{color:var(--ink)}
+.other ul{margin:0;padding-left:18px;font-size:13.5px;color:var(--muted);display:grid;gap:3px}
+.other li b{color:var(--ink);font-family:var(--f-num);font-weight:500}
+.tag{font-family:var(--f-body);font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.tag.ok{color:var(--hit)} .tag.weak{color:var(--market)} .tag.no{color:var(--muted)}
+.prow .gop{display:block;font-size:12px;color:var(--model)}
+.toc{display:flex;flex-wrap:wrap;gap:6px}
+.toc a{font-size:13px;font-weight:500;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px}
+.toc a:hover{border-color:var(--model);color:var(--model)}
+.toc a:focus-visible{outline:2px solid var(--model);outline-offset:2px}
+section[id]{scroll-margin-top:12px}
+.stbl{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden;font-size:13.5px}
+.srow{display:grid;grid-template-columns:28px minmax(0,1.6fr) repeat(4,30px) 38px 34px 92px 54px 62px 50px 58px;gap:6px;align-items:center;padding:8px 14px;border-top:1px solid var(--line)}
+.srow:first-child{border-top:0}
+.srow.head{font-family:var(--f-num);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding-block:8px;align-items:end}
+.srow .n{font-family:var(--f-num);text-align:right;font-variant-numeric:tabular-nums}
+.srow .tm{font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.srow .pts{font-weight:600}
+.srow .proj{color:var(--model)}
+.srow.zone-top{box-shadow:inset 3px 0 0 var(--hit)}
+.srow.zone-rel{box-shadow:inset 3px 0 0 var(--miss)}
+.srow .grp{grid-column:10/-1;text-align:center;border-bottom:1px solid var(--line);padding-bottom:3px}
+.fm{display:flex;gap:3px;padding-left:10px;padding-bottom:4px}
+.fm i:last-child{box-shadow:0 4px 0 -1px var(--ink)}
+.plists{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:10px}
+.plist{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.plist h3{font-family:var(--f-display);font-size:19px;font-weight:700;margin:0;padding:10px 14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.plist h3 small{font-family:var(--f-num);font-weight:500;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.plist ol{list-style:none;margin:0;padding:0}
+.plist li{display:grid;grid-template-columns:22px minmax(0,1fr) auto;gap:0 8px;align-items:center;padding:7px 14px;border-top:1px solid var(--line);font-size:13.5px}
+.plist li:first-child{border-top:0}
+.plist .r{font-family:var(--f-num);color:var(--muted);font-size:12px}
+.plist .pl{font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.plist .pl small{display:block;font-weight:400;color:var(--muted);font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.plist .g{font-family:var(--f-num);font-size:16px}
+.plist p{margin:0;padding:12px 14px;font-size:13px;color:var(--muted)}
+.fm i{width:14px;height:14px;border-radius:3px;font:600 9px/14px var(--f-num);font-style:normal;text-align:center;color:var(--surface)}
+.fm .G{background:var(--hit)} .fm .B{background:var(--draw)} .fm .M{background:var(--miss)}
+.scor{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.scor div{background:var(--surface);display:grid;grid-template-columns:24px minmax(0,1fr) auto;gap:2px 10px;align-items:center;padding:9px 14px;font-size:13.5px}
+.scor .r{font-family:var(--f-num);color:var(--muted);font-size:12px}
+.scor .pl{font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.scor .g{font-family:var(--f-num);font-size:17px;grid-row:1/3;grid-column:3}
+.scor small{grid-column:2;color:var(--muted);font-size:12px}
+details.live{border-top:1px dashed var(--line);padding-top:8px;font-size:13px}
+details.live summary{cursor:pointer;font-weight:600;color:var(--model)}
+details.live summary:focus-visible{outline:2px solid var(--model);outline-offset:2px}
+.lv{display:grid;gap:10px;margin-top:10px}
+.lv .ins{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:end}
+.lv label{display:grid;gap:2px;font-size:11.5px;color:var(--muted)}
+.lv input{width:64px;font:500 15px var(--f-num);padding:5px 6px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink)}
+.lv input:focus-visible{outline:2px solid var(--model);outline-offset:1px}
+.lv .out{font-size:13px;color:var(--ink);white-space:normal;font-family:var(--f-body)}
+.lv iframe{width:100%;height:286px;border:0;border-radius:6px;background:var(--bg)}
+.lv small{color:var(--muted)}
+.betline{font-size:13px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.betline b{color:var(--ink)}
+.betline.yes b{color:var(--hit)}
+.abs{font-size:12.5px;color:var(--muted);display:grid;gap:2px;border-top:1px dashed var(--line);padding-top:8px}
+.abs b{color:var(--ink);font-weight:600}
+
+/* Sanal kasa */
+.kasa{display:grid;gap:14px}
+.kasa .sub{margin:0;color:var(--muted);max-width:68ch}
+.kasa h3{font-family:var(--f-display);font-size:20px;font-weight:600;letter-spacing:.03em;text-transform:uppercase;margin:6px 0 0;color:var(--muted)}
+.paper{font-family:var(--f-num);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted);justify-self:start}
+.kstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.kstats div{background:var(--surface);padding:12px 16px;display:grid;gap:2px}
+.kstats b{font-family:var(--f-num);font-weight:500;font-size:20px;font-variant-numeric:tabular-nums}
+.kstats small{color:var(--muted);font-size:12.5px}
+.ptable{background:var(--surface);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.prow{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1.2fr) 52px 52px minmax(0,1.1fr) 82px;gap:10px;align-items:center;padding:10px 16px;border-top:1px solid var(--line);font-size:13.5px}
+.prow:first-child{border-top:0}
+.prow.head{font-family:var(--f-num);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-block:8px}
+.prow .n{font-family:var(--f-num);font-variant-numeric:tabular-nums;text-align:right}
+.prow .why{display:block;font-size:12px;color:var(--muted)}
+.prow .ml{display:none}
+.out{font-family:var(--f-num);font-size:12.5px;white-space:nowrap;color:var(--muted)}
+.out.hit{color:var(--hit)} .out.miss{color:var(--miss)}
+.coupons{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
+.coupon{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 14px;display:grid;gap:8px;align-content:start}
+.coupon header{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.coupon .kind{font-family:var(--f-display);font-size:18px;font-weight:600}
+.st{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;border:1px solid currentColor;color:var(--muted);white-space:nowrap}
+.st.win{color:var(--hit)} .st.loss{color:var(--miss)}
+.leg{display:grid;grid-template-columns:1fr auto;gap:2px 8px;font-size:13px}
+.leg span:first-child{min-width:0}
+.leg .sel{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+.leg small{grid-column:1/-1;color:var(--muted);font-size:12px}
+.cfoot{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:12.5px;color:var(--muted);border-top:1px dashed var(--line);padding-top:8px}
+.cfoot b{color:var(--ink);font-family:var(--f-num);font-weight:500;font-variant-numeric:tabular-nums}
+details.bt{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px 16px}
+details.bt summary{cursor:pointer;font-weight:600}
+details.bt summary:focus-visible{outline:2px solid var(--model);outline-offset:2px}
+details.bt[open]{display:grid;gap:10px}
+.bt .nums{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;color:var(--muted);margin-top:10px}
+.bt .nums b{display:block;color:var(--ink);font-family:var(--f-num);font-weight:500;font-size:18px;font-variant-numeric:tabular-nums}
+.neg{color:var(--miss)!important}
+.chart{width:100%;height:auto;display:block}
+.chart text{fill:var(--muted);font-family:var(--f-num);font-size:11px}
+.note{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;display:grid;gap:6px;max-width:72ch}
+.note p{margin:0}
+
+@media (max-width:760px){
+  .srow{grid-template-columns:20px minmax(0,1fr) 28px 24px 30px 38px 38px;padding-inline:10px;gap:5px;font-size:13px}
+  .srow.head{font-size:9.5px;letter-spacing:.02em}
+  .srow .wide{display:none}
+  .srow .grp{grid-column:5/-1}
+}
+@media (max-width:640px){
+  .sum a{grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:10px 14px}
+  .sum .when{grid-column:1/-1}
+  .sum .mt{grid-column:1/-1;color:var(--muted);font-size:13px}
+  .sum .pk{grid-column:1}
+  .sum .pp{grid-column:2;grid-row:3}
+  .sum .conf{grid-column:1/-1}
+  .prow.head{display:none}
+  .prow{grid-template-columns:minmax(0,1fr) auto;gap:4px 12px}
+  .prow > :first-child{grid-column:1/-1;font-weight:600}
+  .prow > :nth-child(3){text-align:right}
+  .prow > :nth-child(4){order:5;text-align:left}
+  .prow > :nth-child(6){order:6;justify-self:end}
+  .prow > :nth-child(5){order:7;grid-column:1/-1}
+  .prow .why{display:inline;margin-left:6px}
+  .prow .ml{display:inline;font-family:var(--f-num);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-right:6px}
+}
+@media (max-width:520px){.gol .chips{grid-template-columns:repeat(2,minmax(0,1fr))}.top{grid-template-columns:1fr auto}.time{grid-column:1/-1}.teams{font-size:20px}.bars{grid-template-columns:44px 1fr}}
+@media (prefers-reduced-motion:no-preference){.bar span{transition:flex-basis .4s ease}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><span id="league">Trendyol Süper Lig</span><span id="stamp"></span><span id="demo" class="demo" hidden>Örnek hafta · gerçek sonuçlarla</span></div>
+    <h1>Süper Lig Tahmin Masası</h1>
+    <p class="lede">Her maç için modelin en olası gördüğü sonuç ve olasılığı. Olasılıklar iki kaynağın harmanlanmasıyla hesaplanır: 38 ligde 238 bin maçtan öğrenen modelin tahmini ve iddaa oranları. Bu sezonun şut verisi henüz olmadığı için model yalnızca skorlara dayanır.</p>
+  </header>
+
+  <nav class="toc" aria-label="Sayfa bölümleri">
+    <a href="#week-h">Bu haftanın tahminleri</a><a href="#detail-h">Maç maç</a><a href="#l2-h">1. Lig</a><a href="#table-h">Puan durumu</a>
+    <a href="#scorers-h">Gol krallığı ve kartlar</a><a href="#other-h">Gol, korner, kart</a><a href="#kasa-h">Sanal kasa</a>
+  </nav>
+
+  <section class="report" aria-label="Geçmiş test karnesi">
+    <div><small>En olası sonuç tuttu</small><b id="r-hit">%53</b><small id="r-hit-n">2.158 Süper Lig maçı, 2020–2026 geçmiş test</small></div>
+    <div><small>"Güçlü favori" dediklerinde</small><b id="r-strong">%77</b><small>Olasılık %65 ve üstü olan maçlar</small></div>
+    <div><small>Hata puanı, 1X2 (düşük daha iyi)</small><b>0,975</b><small>Oranların kendisi: 0,979</small></div>
+    <div><small>Sanal kupon kuralı</small><b>Seçici</b><small>Oran değer taşımıyorsa oynamaz; çoğu hafta bahis yok</small></div>
+  </section>
+
+  <section class="week" aria-labelledby="week-h">
+    <h2 class="sec" id="week-h">Bu haftanın tahminleri</h2>
+    <nav class="sum" id="summary" aria-label="Maç tahminleri özeti"></nav>
+    <div class="bands" id="bands"></div>
+  </section>
+
+  <section class="week" aria-labelledby="detail-h">
+    <h2 class="sec" id="detail-h">Maç maç ayrıntı</h2>
+    <div class="controls">
+      <div class="seg" role="group" aria-label="Sıralama">
+        <button type="button" id="sort-date" aria-pressed="true">Tarihe göre</button>
+        <button type="button" id="sort-conf" aria-pressed="false">En emin olduğu önce</button>
+      </div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--model)"></i>Model</span>
+        <span><i class="sw" style="background:var(--market)"></i>iddaa (kâr payı ayıklanmış)</span>
+      </div>
+    </div>
+    <main id="list"></main>
+  </section>
+
+  <section class="week" aria-labelledby="l2-h" id="l2-sec" hidden>
+    <h2 class="sec" id="l2-h">1. Lig tahminleri</h2>
+    <p class="lede" id="l2-lede"></p>
+    <div class="sum" id="l2-list"></div>
+  </section>
+
+  <section class="week" aria-labelledby="table-h">
+    <h2 class="sec" id="table-h">Puan durumu ve sezon sonu tahmini</h2>
+    <p class="lede" id="table-lede"></p>
+    <div class="stbl" id="standings"></div>
+    <p class="lede" id="table-note" style="font-size:13px"></p>
+  </section>
+
+  <section class="week" aria-labelledby="scorers-h">
+    <h2 class="sec" id="scorers-h">Oyuncu listeleri</h2>
+    <div class="plists" id="scorers"></div>
+    <p class="lede" id="scorers-note" style="font-size:13px"></p>
+  </section>
+
+  <section class="week" aria-labelledby="other-h">
+    <h2 class="sec" id="other-h">Gol, kart, korner ve oyuncu bahisleri</h2>
+    <p class="lede">Model maç sonucunun yanında gol sayısı ve (hakem açıklanınca) kart sayısı için de fikir söyler. Korner, faul ve oyuncu bahislerinde söyleyecek sağlam bir şeyi yok; nedenleri aşağıda.</p>
+    <div class="other" id="other"></div>
+  </section>
+
+  <section class="kasa" aria-labelledby="kasa-h">
+    <h2 class="sec" id="kasa-h">Sanal kasa</h2>
+    <span class="paper">Gerçek para yok · kayıt üzerinde</span>
+    <p class="sub" id="kasa-rule"></p>
+    <div class="kstats" id="kstats"></div>
+    <div id="rounds"></div>
+    <h3 id="coupons-h">Kuponlar</h3>
+    <div class="coupons" id="coupons"></div>
+    <details class="bt">
+      <summary>Bahis kuralının geçmiş testi</summary>
+      <div class="nums" id="bt-nums"></div>
+      <svg class="chart" id="bt-chart" viewBox="0 0 640 200" role="img" aria-label="Geçmiş testte birikimli kâr/zarar"></svg>
+      <small class="sub" id="bt-note"></small>
+    </details>
+  </section>
+
+  <footer class="note">
+    <p id="oddsnote">Oranlardaki kâr payı çıkarılıp olasılığa çevrildi. Sakat ve cezalı oyuncular bilgi amaçlı gösterilir, model bunları hesaba katmaz.</p>
+    <p>Harmanlanmış olasılıklar geçmiş testte oranlardan biraz daha isabetli çıktı, ama fark iddaa'nın kâr payını aşacak kadar büyük değil. Bu sayfa bir veri projesidir, bahis tavsiyesi değildir. 18 yaşından küçükler bahis oynayamaz.</p>
+    <p><a href="https://kaankara.com.tr/">kaankara.com.tr</a></p>
+  </footer>
+</div>
+
+<script>
+const EMBED = {"generated":"2026-11-16 06:48 UTC","league":"T1","data_until":"2026-11-08","demo":false,"odds_source":"iddaa (Sofascore üzerinden, 13 Kasım 2026)","notes":[],"league_base":{"o15":0.7716,"o25":0.5341,"o35":0.3066,"btts":0.5432,"goals":2.81,"corners":9.5,"cards":4.7,"matches":1099,"seasons":"2023/24–2026/27"},"opinion_gap":0.08,"matches":[{"date":"2026-11-21","time":"13:30","home":"Genclerbirligi","away":"Gaziantep","model":{"home":0.4211,"draw":0.2697,"away":0.3092,"over25":0.5123,"xg_home":1.55,"xg_away":1.12,"top_scores":[["1-1",0.1201],["1-0",0.1075],["2-1",0.0933]],"goals":{"o15":0.7459,"o25":0.4991,"o35":0.2794,"btts":0.5304},"raw":{"home":0.4454,"draw":0.2805,"away":0.2741,"over25":0.5123},"blended":true},"odds":{"home":2.15,"draw":3.4,"away":2.85,"implied":[0.419,0.2649,0.3161],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[],"live":{"lh":1.352,"la":1.118},"home_tr":"Genclerbirligi","away_tr":"Gaziantep","cards":{"mu":4.34,"referee":null,"lines":{"3.5":0.6206,"4.5":0.4353,"5.5":0.2752}}},{"date":"2026-11-21","time":"16:00","home":"Amedspor","away":"Rizespor","model":{"home":0.561,"draw":0.2363,"away":0.2027,"over25":0.5628,"xg_home":1.45,"xg_away":1.38,"top_scores":[["1-1",0.1182],["1-0",0.0855],["2-1",0.0854]],"goals":{"o15":0.7736,"o25":0.5371,"o35":0.3142,"btts":0.5725},"raw":{"home":0.3608,"draw":0.2665,"away":0.3727,"over25":0.5628},"blended":true},"odds":{"home":1.69,"draw":3.75,"away":4.2,"implied":[0.5397,0.2432,0.2171],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[],"live":{"lh":1.735,"la":0.94},"home_tr":"Amedspor","away_tr":"Rizespor","absences":["Amedspor: Lumbardh Dellova (şüpheli), Dilhan Demir (sakat)","Rizespor: Husniddin Aliqulov (sakat)"],"cards":{"mu":4.37,"referee":null,"lines":{"3.5":0.6242,"4.5":0.4391,"5.5":0.2786}}},{"date":"2026-11-21","time":"16:00","home":"Galatasaray","away":"Samsunspor","model":{"home":0.8111,"draw":0.1242,"away":0.0648,"over25":0.7415,"xg_home":2.75,"xg_away":0.91,"top_scores":[["2-0",0.0976],["3-0",0.0894],["2-1",0.0886]],"goals":{"o15":0.8794,"o25":0.7067,"o35":0.4962,"btts":0.5581},"raw":{"home":0.8101,"draw":0.1163,"away":0.0736,"over25":0.7415},"blended":true},"odds":{"home":1.15,"draw":6.5,"away":11.0,"implied":[0.7804,0.1381,0.0816],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[{"key":"o25","market":"2,5","side":"Üst","p":0.7067,"base":0.5341,"gap":0.1726},{"key":"o15","market":"1,5","side":"Üst","p":0.8794,"base":0.7716,"gap":0.1078}],"live":{"lh":2.803,"la":0.686},"home_tr":"Galatasaray","away_tr":"Samsunspor","absences":["Galatasaray: Rafael Leão (sakat), Victor Osimhen (sakat)","Samsunspor: Celil Yüksel (sakat), Antoine Sekongo (şüpheli)"],"cards":{"mu":4.35,"referee":null,"lines":{"3.5":0.621,"4.5":0.4356,"5.5":0.2755}}},{"date":"2026-11-21","time":"19:00","home":"Kocaelispor","away":"Fenerbahce","model":{"home":0.147,"draw":0.2191,"away":0.6339,"over25":0.6094,"xg_home":0.96,"xg_away":2.11,"top_scores":[["0-2",0.1036],["1-2",0.0992],["0-1",0.098]],"goals":{"o15":0.8111,"o25":0.5924,"o35":0.3685,"btts":0.5416},"raw":{"home":0.1429,"draw":0.1964,"away":0.6607,"over25":0.6094},"blended":true},"odds":{"home":5.5,"draw":4.0,"away":1.51,"implied":[0.1662,0.2285,0.6053],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[],"live":{"lh":0.758,"la":1.852},"home_tr":"Kocaelispor","away_tr":"Fenerbahce","absences":["Kocaelispor: Bruno Petković (sakat)","Fenerbahçe: Marco Asensio, Nathan Aké (sakat), Archie Brown (cezalı), Romelu Lukaku (şüpheli)"],"cards":{"mu":4.42,"referee":null,"lines":{"3.5":0.6342,"4.5":0.45,"5.5":0.2883}}},{"date":"2026-11-22","time":"13:30","home":"Erzurumspor","away":"Goztep","model":{"home":0.3355,"draw":0.277,"away":0.3875,"over25":0.5775,"xg_home":1.01,"xg_away":2.01,"top_scores":[["1-2",0.0996],["1-1",0.0989],["0-2",0.0987]],"goals":{"o15":0.8042,"o25":0.5819,"o35":0.3579,"btts":0.5505},"raw":{"home":0.1696,"draw":0.2018,"away":0.6287,"over25":0.5775},"blended":true},"odds":{"home":2.7,"draw":3.25,"away":2.4,"implied":[0.3383,0.2811,0.3806],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[],"live":{"lh":1.14,"la":1.247},"home_tr":"Erzurumspor","away_tr":"Goztep","cards":{"mu":4.22,"referee":null,"lines":{"3.5":0.5985,"4.5":0.4117,"5.5":0.2548}}},{"date":"2026-11-22","time":"16:00","home":"Kasimpasa","away":"Alanyaspor","model":{"home":0.4867,"draw":0.2645,"away":0.2488,"over25":0.5336,"xg_home":1.73,"xg_away":0.97,"top_scores":[["1-0",0.1156],["1-1",0.1127],["2-0",0.1001]],"goals":{"o15":0.7526,"o25":0.5081,"o35":0.2875,"btts":0.5126},"raw":{"home":0.5025,"draw":0.2683,"away":0.2292,"over25":0.5336},"blended":true},"odds":{"home":1.91,"draw":3.5,"away":3.5,"implied":[0.4781,0.2609,0.2609],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[],"live":{"lh":1.461,"la":0.963},"home_tr":"Kasimpasa","away_tr":"Alanyaspor","absences":["Alanyaspor: Kamil Ahmet Çörekçi (sakat)"],"cards":{"mu":4.4,"referee":null,"lines":{"3.5":0.6306,"4.5":0.4461,"5.5":0.2848}}},{"date":"2026-11-22","time":"16:00","home":"Konyaspor","away":"Besiktas","model":{"home":0.1524,"draw":0.2321,"away":0.6155,"over25":0.5492,"xg_home":1.04,"xg_away":1.82,"top_scores":[["1-1",0.1085],["0-1",0.1047],["1-2",0.0986]],"goals":{"o15":0.7781,"o25":0.5435,"o35":0.3202,"btts":0.5406},"raw":{"home":0.1938,"draw":0.2327,"away":0.5735,"over25":0.5492},"blended":true},"odds":{"home":5.25,"draw":3.8,"away":1.53,"implied":[0.172,0.2377,0.5903],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[],"live":{"lh":0.724,"la":1.732},"home_tr":"Konyaspor","away_tr":"Besiktas","absences":["Beşiktaş: Fabio Miretti, Adil Demirbağ, Ümit Akdağ (sakat)"],"cards":{"mu":4.43,"referee":null,"lines":{"3.5":0.6342,"4.5":0.45,"5.5":0.2883}}},{"date":"2026-11-22","time":"19:00","home":"Trabzonspor","away":"Eyupspor","model":{"home":0.8381,"draw":0.1158,"away":0.0461,"over25":0.7167,"xg_home":2.85,"xg_away":0.7,"top_scores":[["2-0",0.1168],["3-0",0.1108],["1-0",0.0821]],"goals":{"o15":0.8687,"o25":0.6874,"o35":0.4731,"btts":0.4742},"raw":{"home":0.8592,"draw":0.095,"away":0.0458,"over25":0.7167},"blended":true},"odds":{"home":1.12,"draw":7.0,"away":15.0,"implied":[0.8099,0.1296,0.0605],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[{"key":"o25","market":"2,5","side":"Üst","p":0.6874,"base":0.5341,"gap":0.1533},{"key":"o15","market":"1,5","side":"Üst","p":0.8687,"base":0.7716,"gap":0.0971}],"live":{"lh":2.72,"la":0.501},"home_tr":"Trabzonspor","away_tr":"Eyupspor","absences":["Eyüpspor: Malinovskyi, Okay Yokuşlu ve 4 oyuncu sakat, 3 oyuncu şüpheli"],"cards":{"mu":4.32,"referee":null,"lines":{"3.5":0.6165,"4.5":0.4308,"5.5":0.2713}}},{"date":"2026-11-23","time":"20:00","home":"Buyuksehyr","away":"Corum","model":{"home":0.4959,"draw":0.2561,"away":0.248,"over25":0.6704,"xg_home":2.46,"xg_away":1.0,"top_scores":[["2-1",0.095],["2-0",0.0948],["3-1",0.078]],"goals":{"o15":0.8605,"o25":0.6728,"o35":0.4561,"btts":0.5791},"raw":{"home":0.735,"draw":0.17,"away":0.095,"over25":0.6704},"blended":true},"odds":{"home":1.86,"draw":3.7,"away":3.5,"implied":[0.4916,0.2471,0.2613],"over25":null,"under25":null,"implied_over25":null},"goal_opinions":[{"key":"o25","market":"2,5","side":"Üst","p":0.6728,"base":0.5341,"gap":0.1387},{"key":"o15","market":"1,5","side":"Üst","p":0.8605,"base":0.7716,"gap":0.0889}],"live":{"lh":1.537,"la":1.007},"home_tr":"Buyuksehyr","away_tr":"Corum","absences":["Çorum: Yusuf Sarı, Berat Özdemir (sakat)"],"cards":{"mu":4.22,"referee":null,"lines":{"3.5":0.5989,"4.5":0.4121,"5.5":0.2551}}}],"league2":{"name":"Trendyol 1. Lig","week":15,"matches":[{"date":"2026-11-21","time":null,"home":"T2:9387","away":"Umraniyespor","model":{"home":0.4668,"draw":0.2841,"away":0.2491,"over25":0.4754,"xg_home":1.45,"xg_away":1.04,"top_scores":[["1-1",0.1248],["1-0",0.1196],["2-1",0.0908]],"goals":{"o15":0.7124,"o25":0.4558,"o35":0.2421,"btts":0.4966}},"home_tr":"Alagöz Holding Iğdır Futbol Kulübü","away_tr":"Eminevim Ümraniyespor"},{"date":"2026-11-21","time":null,"home":"Istanbulspor","away":"T2:6","model":{"home":0.2499,"draw":0.224,"away":0.5262,"over25":0.5611,"xg_home":1.11,"xg_away":1.77,"top_scores":[["1-1",0.1101],["0-1",0.0989],["1-2",0.0976]],"goals":{"o15":0.7832,"o25":0.5508,"o35":0.3273,"btts":0.5575}},"home_tr":"İstanbulspor","away_tr":"Keçtaş Ankara Keçiörengücü"},{"date":"2026-11-21","time":null,"home":"Kayserispor","away":"T2:3602","model":{"home":0.631,"draw":0.2107,"away":0.1582,"over25":0.5789,"xg_home":2.11,"xg_away":0.84,"top_scores":[["2-0",0.1159],["1-0",0.1099],["2-1",0.098]],"goals":{"o15":0.7941,"o25":0.5667,"o35":0.3428,"btts":0.5013}},"home_tr":"Metro Holding Kayserispor","away_tr":"Sms Grup Sariyer"},{"date":"2026-11-21","time":null,"home":"Karagumruk","away":"T2:3593","model":{"home":0.6388,"draw":0.2005,"away":0.1607,"over25":0.5712,"xg_home":1.95,"xg_away":0.87,"top_scores":[["1-0",0.116],["2-0",0.1131],["1-1",0.1012]],"goals":{"o15":0.7725,"o25":0.5356,"o35":0.3128,"btts":0.4991}},"home_tr":"Mısırlıcomtr Fatih Karagümrük","away_tr":"Boluspor"},{"date":"2026-11-21","time":null,"home":"T2:8758","away":"T2:130","model":{"home":0.4324,"draw":0.2628,"away":0.3049,"over25":0.4859,"xg_home":1.36,"xg_away":1.17,"top_scores":[["1-1",0.1266],["1-0",0.1078],["0-1",0.093]],"goals":{"o15":0.7199,"o25":0.4652,"o35":0.25,"btts":0.5138}},"home_tr":"Mardin 1969 Spor","away_tr":"Bandirma Spor"},{"date":"2026-11-21","time":null,"home":"T2:34","away":"T2:82","model":{"home":0.5628,"draw":0.2174,"away":0.2198,"over25":0.5866,"xg_home":1.8,"xg_away":1.18,"top_scores":[["1-1",0.1081],["2-1",0.0971],["1-0",0.0918]],"goals":{"o15":0.7969,"o25":0.571,"o35":0.3469,"btts":0.5772}},"home_tr":"Batman Petrol Spor","away_tr":"Muğlaspor Kulübü"},{"date":"2026-11-21","time":null,"home":"T2:2861","away":"Pendikspor","model":{"home":0.4271,"draw":0.2554,"away":0.3174,"over25":0.5312,"xg_home":1.43,"xg_away":1.24,"top_scores":[["1-1",0.1226],["1-0",0.0987],["2-1",0.0879]],"goals":{"o15":0.7471,"o25":0.5007,"o35":0.2808,"btts":0.5419}},"home_tr":"Manisa Futbol Kulübü","away_tr":"Orfa Yapı Pendikspor"},{"date":"2026-11-21","time":null,"home":"T2:964","away":"Antalyaspor","model":{"home":0.4683,"draw":0.2599,"away":0.2718,"over25":0.5314,"xg_home":1.61,"xg_away":1.11,"top_scores":[["1-1",0.1178],["1-0",0.1064],["2-1",0.0948]],"goals":{"o15":0.7542,"o25":0.5102,"o35":0.2893,"btts":0.5355}},"home_tr":"Turka Esenler Erokspor","away_tr":"Antalyaspor"},{"date":"2026-11-21","time":null,"home":"Bursaspor","away":"Sivasspor","model":{"home":0.583,"draw":0.2245,"away":0.1925,"over25":0.5323,"xg_home":1.79,"xg_away":0.93,"top_scores":[["1-0",0.1179],["1-1",0.1098],["2-0",0.1054]],"goals":{"o15":0.7548,"o25":0.5111,"o35":0.2902,"btts":0.5045}},"home_tr":"Bursaspor","away_tr":"Ekenler Beton Sivasspor"},{"date":"2026-11-21","time":null,"home":"Bodrumspor","away":"T2:2020","model":{"home":0.6264,"draw":0.2101,"away":0.1634,"over25":0.552,"xg_home":1.9,"xg_away":0.9,"top_scores":[["1-0",0.1155],["2-0",0.1099],["1-1",0.1038]],"goals":{"o15":0.7692,"o25":0.531,"o35":0.3085,"btts":0.5045}},"home_tr":"Bodrum Fk","away_tr":"Artı Değer Van Spor Futbol Kulübü"}]},"cards_backtest":{"matches":2852,"seasons":"2018/19–2026/27","line":4.5,"base_over":0.4677,"mae_model":1.796,"mae_avg":1.848,"up_n":368,"up_hit":0.5543,"dn_n":418,"dn_hit":0.6483},"cards_league_avg":4.24};
+const KASA = {"rule":"Her maç için modelin en olası gördüğü sonuç kaydedilir. Bahis ise yalnızca oran 2,50 veya altındayken ve modelin olasılığı orana göre en az %2 fazla getiri vaat ediyorsa oynanır: 100 TL tekli, kombine yok. iddaa yaklaşık %11 kâr payı aldığı için çoğu hafta bu şart sağlanmaz ve bahis oynanmaz.","coupons":[],"predictions":[{"round":"12. hafta","date":"2026-11-21","time":"13:30","home":"Genclerbirligi","away":"Gaziantep","label":"Genclerbirligi – Gaziantep","pick":"1","p":0.4211,"odds":2.15,"ev":-0.0946,"best":{"market":"MS","selection":"X","odds":3.4,"ev":-0.083},"bets":[],"over25":0.5123,"goal_opinions":[],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-21","time":"16:00","home":"Amedspor","away":"Rizespor","label":"Amedspor – Rizespor","pick":"1","p":0.561,"odds":1.69,"ev":-0.0519,"best":{"market":"MS","selection":"1","odds":1.69,"ev":-0.0519},"bets":[],"over25":0.5628,"goal_opinions":[],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-21","time":"16:00","home":"Galatasaray","away":"Samsunspor","label":"Galatasaray – Samsunspor","pick":"1","p":0.8111,"odds":1.15,"ev":-0.0672,"best":{"market":"MS","selection":"1","odds":1.15,"ev":-0.0672},"bets":[],"over25":0.7415,"goal_opinions":[{"key":"o25","market":"2,5","side":"Üst","p":0.7067,"base":0.5341,"gap":0.1726,"hit":null},{"key":"o15","market":"1,5","side":"Üst","p":0.8794,"base":0.7716,"gap":0.1078,"hit":null}],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-21","time":"19:00","home":"Kocaelispor","away":"Fenerbahce","label":"Kocaelispor – Fenerbahce","pick":"2","p":0.6339,"odds":1.51,"ev":-0.0428,"best":{"market":"MS","selection":"2","odds":1.51,"ev":-0.0428},"bets":[],"over25":0.6094,"goal_opinions":[],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-22","time":"13:30","home":"Erzurumspor","away":"Goztep","label":"Erzurumspor – Goztep","pick":"2","p":0.3875,"odds":2.4,"ev":-0.07,"best":{"market":"MS","selection":"2","odds":2.4,"ev":-0.07},"bets":[],"over25":0.5775,"goal_opinions":[],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-22","time":"16:00","home":"Kasimpasa","away":"Alanyaspor","label":"Kasimpasa – Alanyaspor","pick":"1","p":0.4867,"odds":1.91,"ev":-0.0704,"best":{"market":"MS","selection":"1","odds":1.91,"ev":-0.0704},"bets":[],"over25":0.5336,"goal_opinions":[],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-22","time":"16:00","home":"Konyaspor","away":"Besiktas","label":"Konyaspor – Besiktas","pick":"2","p":0.6155,"odds":1.53,"ev":-0.0583,"best":{"market":"MS","selection":"2","odds":1.53,"ev":-0.0583},"bets":[],"over25":0.5492,"goal_opinions":[],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-22","time":"19:00","home":"Trabzonspor","away":"Eyupspor","label":"Trabzonspor – Eyupspor","pick":"1","p":0.8381,"odds":1.12,"ev":-0.0613,"best":{"market":"MS","selection":"1","odds":1.12,"ev":-0.0613},"bets":[],"over25":0.7167,"goal_opinions":[{"key":"o25","market":"2,5","side":"Üst","p":0.6874,"base":0.5341,"gap":0.1533,"hit":null},{"key":"o15","market":"1,5","side":"Üst","p":0.8687,"base":0.7716,"gap":0.0971,"hit":null}],"result":null,"hit":null},{"round":"12. hafta","date":"2026-11-23","time":"20:00","home":"Buyuksehyr","away":"Corum","label":"Buyuksehyr – Corum","pick":"1","p":0.4959,"odds":1.86,"ev":-0.0776,"best":{"market":"MS","selection":"X","odds":3.7,"ev":-0.0524},"bets":[],"over25":0.6704,"goal_opinions":[{"key":"o25","market":"2,5","side":"Üst","p":0.6728,"base":0.5341,"gap":0.1387,"hit":null},{"key":"o15","market":"1,5","side":"Üst","p":0.8605,"base":0.7716,"gap":0.0889,"hit":null}],"result":null,"hit":null}],"backtest":{"period":"2020/21–2025/26 arasında 6 Süper Lig sezonunda","summary":{"coupons":4,"won":2,"staked":400.0,"profit":35.0,"roi":0.0875,"hit":0.5,"by_season":{"2022":{"coupons":1,"won":0,"staked":100.0,"profit":-100.0,"roi":-1.0,"hit":0.0},"2023":{"coupons":3,"won":2,"staked":300.0,"profit":135.0,"roi":0.45,"hit":0.6667}}},"series":[["2023-05-30",-100.0],["2023-09-22",-13.0],["2024-05-18",135.0],["2024-05-26",35.0]],"bands":[{"label":"Güçlü favori","lo":0.65,"n":313,"hit":0.7668},{"label":"Favori","lo":0.5,"n":620,"hit":0.6161},{"label":"Hafif favori","lo":0.4,"n":832,"hit":0.4435},{"label":"Belirsiz","lo":0.0,"n":393,"hit":0.4148}],"matches":2158,"hit_all":0.5348,"note":"Gerçek Bet365 oranlarıyla (ortalama kâr payı ~%6,5). Aynı maçlarda iddaa'nın ~%11 kâr payıyla kurala uyan bahis sayısı 1 olurdu. Bu kadar az bahisle kâr/zarar rakamı bir şey kanıtlamaz; 38 ligin tamamında aynı kural 6 sezonda 140 bahiste yaklaşık %+2 getirdi, o da sezondan sezona değişti. Kuralın asıl işi, piyasadan daha iyi bilmediğimiz maçlarda oynamamak."},"markets":{"goals":{"matches":2187,"gap":0.08,"min_p":0.55,"markets":{"o15":{"up_n":36,"up_hit":0.9167,"up_base":0.7796,"dn_n":0,"dn_hit":null,"dn_base":null},"o25":{"up_n":166,"up_hit":0.7711,"up_base":0.5406,"dn_n":69,"dn_hit":0.5072,"dn_base":0.4593},"o35":{"up_n":0,"up_hit":null,"up_base":null,"dn_n":60,"dn_hit":0.7667,"dn_base":0.682}}},"corners_cards":{"matches":1312,"corners_mae":2.66,"corners_mae_avg":2.67,"cards_mae":2.04,"cards_mae_avg":2.05}},"clv":[]};
+const SEASON = {"generated":"2026-11-16 06:48 UTC","source":"TFF (tff.org)","fetched":"2026-11-14 13:03 UTC","played_weeks":11,"total_weeks":34,"sims":10000,"sigma":0.2,"relegated":3,"top":4,"table":[{"rank":1,"team":"Galatasaray","O":11,"G":9,"B":1,"M":1,"A":27,"Y":15,"AV":12,"P":28,"form":["G","G","G","G","G"],"exp_points":77.9,"p_title":0.6272,"p_top":0.9953,"p_releg":0.0,"likely_rank":1,"pos":[0.6272,0.2475,0.0914,0.0292,0.0038,0.0007,0.0002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]},{"rank":2,"team":"Trabzonspor","O":11,"G":8,"B":1,"M":2,"A":26,"Y":8,"AV":18,"P":25,"form":["G","G","G","G","G"],"exp_points":73.2,"p_title":0.2565,"p_top":0.9742,"p_releg":0.0,"likely_rank":2,"pos":[0.2565,0.3868,0.2403,0.0906,0.0206,0.0035,0.0012,0.0003,0.0002,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]},{"rank":3,"team":"Amedspor","O":11,"G":7,"B":2,"M":2,"A":28,"Y":15,"AV":13,"P":23,"form":["B","G","G","G","M"],"exp_points":48.3,"p_title":0.0,"p_top":0.0148,"p_releg":0.0017,"likely_rank":8,"pos":[0.0,0.0002,0.0026,0.012,0.059,0.1104,0.1601,0.185,0.173,0.1282,0.0766,0.051,0.023,0.0113,0.0059,0.0015,0.0002,0.0]},{"rank":4,"team":"Besiktas","O":11,"G":7,"B":1,"M":3,"A":23,"Y":12,"AV":11,"P":22,"form":["G","M","G","B","G"],"exp_points":64.9,"p_title":0.0255,"p_top":0.7453,"p_releg":0.0,"likely_rank":4,"pos":[0.0255,0.0951,0.2309,0.3938,0.1588,0.0615,0.0233,0.0067,0.0026,0.0018,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]},{"rank":5,"team":"Kasimpasa","O":11,"G":5,"B":5,"M":1,"A":17,"Y":11,"AV":6,"P":20,"form":["M","G","G","B","G"],"exp_points":53.3,"p_title":0.0004,"p_top":0.0737,"p_releg":0.0001,"likely_rank":6,"pos":[0.0004,0.0018,0.0146,0.0569,0.1633,0.2484,0.1871,0.1464,0.0886,0.0467,0.0255,0.0122,0.0054,0.0019,0.0007,0.0001,0.0,0.0]},{"rank":6,"team":"Fenerbahce","O":11,"G":6,"B":1,"M":4,"A":29,"Y":10,"AV":19,"P":19,"form":["G","G","M","M","G"],"exp_points":69.3,"p_title":0.0886,"p_top":0.9069,"p_releg":0.0,"likely_rank":3,"pos":[0.0886,0.2523,0.3572,0.2088,0.0685,0.0192,0.0042,0.0008,0.0004,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]},{"rank":7,"team":"Kocaelispor","O":11,"G":6,"B":1,"M":4,"A":13,"Y":9,"AV":4,"P":19,"form":["M","M","G","B","G"],"exp_points":49.0,"p_title":0.0,"p_top":0.0182,"p_releg":0.0018,"likely_rank":8,"pos":[0.0,0.0003,0.0029,0.015,0.0671,0.124,0.179,0.1987,0.1706,0.1044,0.0662,0.0357,0.0203,0.01,0.004,0.0015,0.0003,0.0]},{"rank":8,"team":"Buyuksehyr","O":11,"G":5,"B":2,"M":4,"A":19,"Y":17,"AV":2,"P":17,"form":["B","G","M","G","G"],"exp_points":58.0,"p_title":0.0018,"p_top":0.2342,"p_releg":0.0,"likely_rank":5,"pos":[0.0018,0.0152,0.0543,0.1629,0.3473,0.2021,0.1079,0.0561,0.0274,0.0139,0.0071,0.0026,0.0011,0.0002,0.0001,0.0,0.0,0.0]},{"rank":9,"team":"Corum","O":11,"G":5,"B":1,"M":5,"A":21,"Y":21,"AV":0,"P":16,"form":["G","G","M","G","M"],"exp_points":36.6,"p_title":0.0,"p_top":0.0001,"p_releg":0.1636,"likely_rank":14,"pos":[0.0,0.0,0.0,0.0001,0.0012,0.0032,0.0099,0.021,0.0456,0.0746,0.1039,0.1303,0.151,0.1586,0.137,0.0983,0.056,0.0093]},{"rank":10,"team":"Goztep","O":11,"G":4,"B":3,"M":4,"A":22,"Y":19,"AV":3,"P":15,"form":["G","G","G","G","M"],"exp_points":50.4,"p_title":0.0,"p_top":0.035,"p_releg":0.0012,"likely_rank":7,"pos":[0.0,0.0008,0.0057,0.0285,0.0964,0.1756,0.2033,0.1706,0.1331,0.0826,0.0497,0.0283,0.0139,0.0071,0.0032,0.0009,0.0003,0.0]},{"rank":11,"team":"Rizespor","O":11,"G":4,"B":2,"M":5,"A":13,"Y":16,"AV":-3,"P":14,"form":["M","M","M","B","G"],"exp_points":42.3,"p_title":0.0,"p_top":0.0016,"p_releg":0.0309,"likely_rank":10,"pos":[0.0,0.0,0.0001,0.0015,0.0081,0.0272,0.0582,0.0911,0.1342,0.1623,0.152,0.1308,0.0926,0.0659,0.0451,0.0202,0.0098,0.0009]},{"rank":12,"team":"Erzurumspor","O":11,"G":4,"B":2,"M":5,"A":10,"Y":17,"AV":-7,"P":14,"form":["B","G","G","M","M"],"exp_points":29.3,"p_title":0.0,"p_top":0.0,"p_releg":0.6564,"likely_rank":17,"pos":[0.0,0.0,0.0,0.0,0.0,0.0,0.0004,0.001,0.0034,0.0068,0.0161,0.0298,0.0526,0.0921,0.1414,0.2306,0.3139,0.1119]},{"rank":13,"team":"Alanyaspor","O":11,"G":3,"B":3,"M":5,"A":9,"Y":18,"AV":-9,"P":12,"form":["B","M","M","M","M"],"exp_points":39.2,"p_title":0.0,"p_top":0.0002,"p_releg":0.0954,"likely_rank":12,"pos":[0.0,0.0,0.0,0.0002,0.0029,0.0122,0.0281,0.0484,0.0795,0.1188,0.1407,0.1408,0.1359,0.1099,0.0872,0.0589,0.032,0.0045]},{"rank":14,"team":"Genclerbirligi","O":11,"G":3,"B":2,"M":6,"A":12,"Y":21,"AV":-9,"P":11,"form":["B","M","M","G","M"],"exp_points":38.2,"p_title":0.0,"p_top":0.0002,"p_releg":0.1261,"likely_rank":12,"pos":[0.0,0.0,0.0,0.0002,0.0021,0.0063,0.0198,0.0354,0.0649,0.1085,0.1309,0.141,0.132,0.1296,0.1032,0.0726,0.0426,0.0109]},{"rank":15,"team":"Konyaspor","O":11,"G":2,"B":2,"M":7,"A":6,"Y":14,"AV":-8,"P":8,"form":["B","M","G","M","M"],"exp_points":36.5,"p_title":0.0,"p_top":0.0001,"p_releg":0.184,"likely_rank":13,"pos":[0.0,0.0,0.0,0.0001,0.0006,0.004,0.0112,0.0233,0.0445,0.0771,0.1151,0.128,0.1471,0.1365,0.1285,0.0967,0.0708,0.0165]},{"rank":16,"team":"Gaziantep","O":11,"G":2,"B":2,"M":7,"A":9,"Y":19,"AV":-10,"P":8,"form":["M","M","M","M","M"],"exp_points":32.3,"p_title":0.0,"p_top":0.0002,"p_releg":0.4458,"likely_rank":16,"pos":[0.0,0.0,0.0,0.0002,0.0002,0.0006,0.0024,0.0065,0.0141,0.0307,0.0445,0.0747,0.1025,0.1242,0.1536,0.1944,0.1919,0.0595]},{"rank":17,"team":"Samsunspor","O":11,"G":2,"B":1,"M":8,"A":11,"Y":26,"AV":-15,"P":7,"form":["M","M","M","M","G"],"exp_points":33.6,"p_title":0.0,"p_top":0.0,"p_releg":0.3436,"likely_rank":16,"pos":[0.0,0.0,0.0,0.0,0.0001,0.0011,0.0037,0.0087,0.0179,0.0433,0.0703,0.0907,0.1169,0.1389,0.1648,0.1655,0.1312,0.0469]},{"rank":18,"team":"Eyupspor","O":11,"G":1,"B":0,"M":10,"A":3,"Y":30,"AV":-27,"P":3,"form":["M","M","M","M","M"],"exp_points":21.5,"p_title":0.0,"p_top":0.0,"p_releg":0.9494,"likely_rank":18,"pos":[0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0003,0.0014,0.0041,0.0057,0.0138,0.0253,0.0588,0.151,0.7396]}],"scorers":[{"player":"Gift Emmanuel Orban","team":"Amedspor","goals":10,"share":0.357},{"player":"Dusan Vlahovic","team":"Besiktas","goals":9,"share":0.391},{"player":"Mohamed Salah Hamed Mahrous Ghaly","team":"Trabzonspor","goals":9,"share":0.346},{"player":"Victor James Osimhen","team":"Galatasaray","goals":9,"share":0.333},{"player":"Eldor Shomurodov","team":"Buyuksehyr","goals":8,"share":0.421},{"player":"Adrian Dawid Benedyczak","team":"Kasimpasa","goals":7,"share":0.412},{"player":"Juan Santos Da Silva","team":"Goztep","goals":7,"share":0.318},{"player":"Vedat Murıç","team":"Fenerbahce","goals":7,"share":0.241},{"player":"Diaa Sabi'a","team":"Amedspor","goals":6,"share":0.214},{"player":"Jesus Andres Ramirez Diaz","team":"Corum","goals":6,"share":0.286},{"player":"Mason Will John Greenwood","team":"Fenerbahce","goals":6,"share":0.207},{"player":"Berkan İsmail Kutlu","team":"Kocaelispor","goals":5,"share":0.385},{"player":"İrfan Can Kahveci","team":"Fenerbahce","goals":5,"share":0.172},{"player":"Alexandros Kyziridis","team":"Corum","goals":4,"share":0.19},{"player":"Ali Sowe","team":"Rizespor","goals":4,"share":0.308},{"player":"Andre Henrique Da Silva Martins","team":"Goztep","goals":4,"share":0.182},{"player":"Cengiz Ünder","team":"Corum","goals":4,"share":0.19},{"player":"Franculino Gluda Dju","team":"Trabzonspor","goals":4,"share":0.154},{"player":"Samuel Leo Beat Ballet","team":"Amedspor","goals":4,"share":0.143},{"player":"Eren Tozlu","team":"Erzurumspor","goals":3,"share":0.3}],"lists":{"matches":99,"yellow":[{"player":"Ousmane Diabate","team":"Genclerbirligi","n":5},{"player":"Chibuike Godfrey Nwaiwu","team":"Trabzonspor","n":4},{"player":"Deniz Türüç","team":"Konyaspor","n":4},{"player":"Elson Mendes Da Silva","team":"Kasimpasa","n":4},{"player":"Gökhan Sazdağı","team":"Corum","n":4},{"player":"Leo Myenty Janna Abena","team":"Gaziantep","n":4},{"player":"Lumbardh Dellova","team":"Amedspor","n":4},{"player":"Modibo Sagnan","team":"Rizespor","n":4},{"player":"Orkun Kökçü","team":"Besiktas","n":4},{"player":"Adil Demirbağ","team":"Konyaspor","n":3},{"player":"Alban-Marc Lafont","team":"Amedspor","n":3},{"player":"Alex Ojahn Matos","team":"Goztep","n":3},{"player":"Alexis Antunes Gomez","team":"Goztep","n":3},{"player":"Ali Yavuz Kol","team":"Kasimpasa","n":3},{"player":"Attila Mocsi","team":"Rizespor","n":3}],"red":[{"player":"Abdülkerim Bardakcı","team":"Galatasaray","n":1},{"player":"Afonso Gamelas De Pinho Sousa","team":"Samsunspor","n":1},{"player":"Ahmed Abdullahi","team":"Eyupspor","n":1},{"player":"Alexandros Kyziridis","team":"Corum","n":1},{"player":"Amadou Cisse","team":"Amedspor","n":1},{"player":"Archibald Norman Brown","team":"Fenerbahce","n":1},{"player":"David Jose Soares Oliveira Furtado Da Costa","team":"Eyupspor","n":1},{"player":"Enis Bardhi","team":"Konyaspor","n":1},{"player":"Juninho Gracielo Bacuna","team":"Gaziantep","n":1},{"player":"Lesley Chimuanya Ugochukwu","team":"Galatasaray","n":1},{"player":"Lucas Sebastian Torreira Di Pascua","team":"Galatasaray","n":1},{"player":"Mbaye Diagne","team":"Amedspor","n":1},{"player":"Melih Kabasakal","team":"Trabzonspor","n":1},{"player":"Metehan Baltaci","team":"Genclerbirligi","n":1},{"player":"Mihai-Valentin Mihaila","team":"Rizespor","n":1}],"clean_sheets":[{"player":"Andre Onana Onana","team":"Trabzonspor","n":6,"matches":11},{"player":"Ederson Santana De Moraes","team":"Fenerbahce","n":6,"matches":10},{"player":"Serhat Öztaşdelen","team":"Kocaelispor","n":5,"matches":11},{"player":"Alexander Nübel","team":"Besiktas","n":4,"matches":11},{"player":"Andreas Gianniotis","team":"Kasimpasa","n":4,"matches":11},{"player":"Bahadır Han Güngördü","team":"Konyaspor","n":4,"matches":9},{"player":"Mahmut Ertuğrul Taşkıran","team":"Erzurumspor","n":4,"matches":9},{"player":"Uğurcan Çakır","team":"Galatasaray","n":4,"matches":10},{"player":"Alban-Marc Lafont","team":"Amedspor","n":3,"matches":11},{"player":"Muhammed Şengezer","team":"Buyuksehyr","n":3,"matches":8},{"player":"Paulo Victor Mileo Vidotti","team":"Alanyaspor","n":3,"matches":11},{"player":"Arda Özçimen","team":"Goztep","n":2,"matches":7},{"player":"Kacper Tobiasz","team":"Gaziantep","n":2,"matches":9},{"player":"Marcos Felipe De Freitas Monteiro","team":"Corum","n":2,"matches":11},{"player":"Yahia Fofana","team":"Rizespor","n":2,"matches":9}],"referees":[{"referee":"Ali Şansalan","matches":4,"yellow":7.5,"red":0.25},{"referee":"Davut Dakul Çelik","matches":4,"yellow":5.5,"red":0.0},{"referee":"Atilla Karaoğlan","matches":7,"yellow":5.0,"red":0.57},{"referee":"Kadir Sağlam","matches":5,"yellow":4.6,"red":0.6},{"referee":"Yasin Kol","matches":4,"yellow":4.5,"red":0.0},{"referee":"Alpaslan Şen","matches":2,"yellow":4.5,"red":0.5},{"referee":"Oğuzhan Çakır","matches":7,"yellow":4.43,"red":0.29},{"referee":"Ümit Öztürk","matches":6,"yellow":4.33,"red":0.17},{"referee":"Mehmet Türkmen","matches":4,"yellow":4.25,"red":0.0},{"referee":"Halil Umut Meler","matches":7,"yellow":4.0,"red":0.14},{"referee":"Cihan Aydın","matches":5,"yellow":4.0,"red":0.0},{"referee":"Gürcan Hasova","matches":5,"yellow":3.8,"red":0.2},{"referee":"Alper Akarsu","matches":3,"yellow":3.67,"red":0.0},{"referee":"Fatih Tokail","matches":3,"yellow":3.33,"red":0.0},{"referee":"Batuhan Kolak","matches":6,"yellow":3.17,"red":0.33},{"referee":"Çağdaş Altay","matches":5,"yellow":3.0,"red":0.0},{"referee":"Melek Dakan","matches":2,"yellow":3.0,"red":0.0},{"referee":"Direnç Tonusluoğlu","matches":1,"yellow":3.0,"red":0.0},{"referee":"Abdullah Buğra Taşkınsoy","matches":5,"yellow":2.6,"red":0.0},{"referee":"Reşat Onur Coşkunses","matches":5,"yellow":2.4,"red":0.2},{"referee":"Ozan Ergün","matches":4,"yellow":2.25,"red":0.0},{"referee":"Oğuzhan Aksu","matches":2,"yellow":2.0,"red":0.5},{"referee":"Ömer Faruk Turtay","matches":1,"yellow":2.0,"red":0.0},{"referee":"Erdem Mertoğlu","matches":1,"yellow":1.0,"red":0.0},{"referee":"Adnan Deniz Kayatepe","matches":1,"yellow":0.0,"red":0.0}],"team_cards":[{"team":"Amedspor","matches":11,"yellow":2.82,"red":3},{"team":"Kasimpasa","matches":11,"yellow":2.45,"red":0},{"team":"Goztep","matches":11,"yellow":2.45,"red":1},{"team":"Besiktas","matches":11,"yellow":2.36,"red":0},{"team":"Konyaspor","matches":11,"yellow":2.18,"red":1},{"team":"Gaziantep","matches":11,"yellow":2.09,"red":1},{"team":"Buyuksehyr","matches":11,"yellow":2.09,"red":1},{"team":"Kocaelispor","matches":11,"yellow":2.09,"red":0},{"team":"Corum","matches":11,"yellow":1.91,"red":1},{"team":"Trabzonspor","matches":11,"yellow":1.82,"red":1},{"team":"Genclerbirligi","matches":11,"yellow":1.82,"red":1},{"team":"Rizespor","matches":11,"yellow":1.82,"red":1},{"team":"Fenerbahce","matches":11,"yellow":1.73,"red":1},{"team":"Alanyaspor","matches":11,"yellow":1.55,"red":0},{"team":"Galatasaray","matches":11,"yellow":1.55,"red":3},{"team":"Samsunspor","matches":11,"yellow":1.55,"red":1},{"team":"Erzurumspor","matches":11,"yellow":1.36,"red":0},{"team":"Eyupspor","matches":11,"yellow":1.18,"red":2}]}};
+const NAMES = {Alanyaspor:"Alanyaspor",Amedspor:"Amedspor",Antalyaspor:"Antalyaspor",Besiktas:"Beşiktaş",Buyuksehyr:"Başakşehir",Corum:"Çorum FK",Erzurumspor:"Erzurumspor",Eyupspor:"Eyüpspor",Fenerbahce:"Fenerbahçe",Galatasaray:"Galatasaray",Gaziantep:"Gaziantep FK",Genclerbirligi:"Gençlerbirliği",Goztep:"Göztepe",Karagumruk:"Karagümrük",Kasimpasa:"Kasımpaşa",Kayserispor:"Kayserispor",Kocaelispor:"Kocaelispor",Konyaspor:"Konyaspor",Rizespor:"Çaykur Rizespor",Samsunspor:"Samsunspor",Trabzonspor:"Trabzonspor"};
+const BANDS = [[0.65,"Güçlü favori","c0"],[0.50,"Favori","c1"],[0.40,"Hafif favori","c2"],[0,"Belirsiz maç","c3"]];
+const nm = t => NAMES[t] || t;
+const pct = p => Math.round(p * 100);
+const num = (v,d=2) => v.toFixed(d).replace(".",",");
+const signPct = v => `<span style="white-space:nowrap">${v<0?"−":"+"}%${Math.abs(Math.round(v*100))}</span>`;
+const tl = v => (v<0?"−":"") + Math.abs(v).toLocaleString("tr-TR",{maximumFractionDigits:0}) + " TL";
+const fmtDay = s => new Date(s + "T12:00:00").toLocaleDateString("tr-TR",{weekday:"long",day:"numeric",month:"long"});
+const shortDay = s => new Date(s + "T12:00:00").toLocaleDateString("tr-TR",{weekday:"short",day:"numeric",month:"short"});
+const mid = m => `m-${m.date}-${m.home}-${m.away}`.replace(/[^A-Za-z0-9-]/g,"");
+let sortBy = "date", kasaData = null;
+
+function probs(m){ return [m.model.home, m.model.draw, m.model.away]; }
+function pickOf(m){
+  const p = probs(m), i = p.indexOf(Math.max(...p));
+  const text = i===0 ? `${nm(m.home)} kazanır` : i===1 ? "Beraberlik" : `${nm(m.away)} kazanır`;
+  const band = BANDS.find(b => p[i] >= b[0]);
+  return {i, p:p[i], text, sel:"1X2"[i], band:band[1], cls:band[2]};
+}
+function outcome(r){ if(!r) return -1; const [h,a]=r.split("-").map(Number); return h>a?0:h===a?1:2; }
+function kasaRow(m){
+  if(!kasaData || !kasaData.predictions) return null;
+  return kasaData.predictions.find(r => r.home===m.home && r.away===m.away && r.date===m.date) || null;
+}
+// Bahis kararı: kasada kayıt varsa oradan, yoksa oranlardan hesapla (aynı kural)
+function betInfo(m){
+  const k = kasaRow(m);
+  if(k){ return {bets:k.bets, best:k.best}; }
+  if(!m.odds) return null;
+  const p = probs(m), o = [m.odds.home,m.odds.draw,m.odds.away];
+  let best = null;
+  p.forEach((x,i)=>{ const ev = x*o[i]-1; if(!best || ev>best.ev) best = {market:"MS", selection:"1X2"[i], odds:o[i], ev}; });
+  return {bets:[], best};
+}
+const selText = (m, s) => s==="1" ? `${nm(m.home)} kazanır` : s==="X" ? "Beraberlik" : s==="2" ? `${nm(m.away)} kazanır` : s;
+
+const GM = [["o15","1,5"],["o25","2,5"],["o35","3,5"]];
+let leagueBase = null;
+function headlineGoal(m){ return (m.goal_opinions && m.goal_opinions.length) ? m.goal_opinions[0] : null; }
+function goalBlock(m){
+  const g = m.model.goals, base = leagueBase;
+  if(!g) return "";
+  const head = headlineGoal(m);
+  const chip = (key, label, p, b) => {
+    const on = head && head.key===key;
+    const side = on ? head.side : (p>=0.5?"Üst":"Alt");
+    const pv = side==="Üst" ? p : 1-p, bv = b==null ? null : (side==="Üst" ? b : 1-b);
+    return `<div class="chip${on?" on":""}"><span>${label} ${side}</span><b>%${pct(pv)}</b>${bv!=null?`<span>lig %${pct(bv)}</span>`:""}</div>`;
+  };
+  const chips = GM.map(([k,l])=>chip(k, `${l}`, g[k], base&&base[k])).join("") +
+    `<div class="chip"><span>KG ${g.btts>=0.5?"Var":"Yok"}</span><b>%${pct(g.btts>=0.5?g.btts:1-g.btts)}</b>${base?`<span>lig %${pct(g.btts>=0.5?base.btts:1-base.btts)}</span>`:""}</div>`;
+  const gb = kasaData && kasaData.markets && kasaData.markets.goals && head ? kasaData.markets.goals.markets[head.key] : null;
+  const track = gb ? (head.side==="Üst" ? (gb.up_n ? ` Geçmişte bu tür fikirler %${pct(gb.up_hit)} oranında tuttu (${gb.up_n} maç).` : "") : (gb.dn_n ? ` Geçmişte bu tür fikirler %${pct(gb.dn_hit)} oranında tuttu (${gb.dn_n} maç).` : "")) : "";
+  const text = head
+    ? `Fikir: <b>${head.market} ${head.side}</b> (%${pct(head.p)}). Model bu maçta lig ortalamasından ${head.side==="Üst"?"fazla":"az"} gol bekliyor.${track}`
+    : `Gol sayısında belirgin fikir yok; beklenti lig ortalamasına yakın.`;
+  return `<div class="gol"><span class="lab">Gol · beklenen ${num(m.model.xg_home+m.model.xg_away,1)}</span><div class="chips">${chips}</div><p>${text}</p></div>`;
+}
+
+function cardBlock(m){
+  const c = m.cards; if(!c) return "";
+  const bt = window.__data && window.__data.cards_backtest;
+  const chips = ["3.5","4.5","5.5"].map(L=>{
+    const p = c.lines[L], side = p>=0.5?"Üst":"Alt", on = c.opinion && L==="4.5";
+    return `<div class="chip${on?" on":""}"><span>${L.replace(".",",")} ${side}</span><b>%${pct(side==="Üst"?p:1-p)}</b></div>`;
+  }).join("");
+  let text;
+  if(!c.referee){
+    text = `Hakem henüz açıklanmadı. Şimdilik yalnızca iki takımın kart geçmişine göre; hakem belli olunca beklenti güncellenir ve fikir söylenir.`;
+  } else {
+    const ref = `Hakem: <b>${c.referee}</b>${c.ref_matches?` (${c.ref_matches} maç, maç başı ${num(c.ref_avg,1)} kart)`:" (kayıtlı maçı yok)"}.`;
+    const tr = c.opinion && bt ? ` Geçmişte bu tür fikirler %${pct(c.opinion.side==="Üst"?bt.up_hit:bt.dn_hit)} oranında tuttu (${c.opinion.side==="Üst"?bt.up_n:bt.dn_n} maç).` : "";
+    text = ref + (c.opinion ? ` Fikir: <b>4,5 ${c.opinion.side}</b> (%${pct(c.opinion.p)}).${tr}` : ` Kart sayısında belirgin fikir yok.`);
+  }
+  return `<div class="gol"><span class="lab">Kart · beklenen ${num(c.mu,1)}</span><div class="chips c3">${chips}</div><p>${text}</p></div>`;
+}
+
+// Canlı tahmin: inplay.py ile aynı formül (kalan süre payı, gerideki takım, kırmızı kart)
+function poisPmf(l, n){ const a=[Math.exp(-l)]; for(let k=1;k<n;k++) a.push(a[k-1]*l/k); return a; }
+function inplay(lh, la, min, hs, as, rh, ra){
+  const f = 1 - Math.pow(Math.min(Math.max(min,0),90)/90, 1.2);
+  let mh = lh*f*Math.pow(0.67,rh)*Math.pow(1.25,ra), ma = la*f*Math.pow(0.67,ra)*Math.pow(1.25,rh);
+  if(hs<as) mh*=1.2; else if(as<hs) ma*=1.2;
+  const ph=poisPmf(mh,13), pa=poisPmf(ma,13); let H=0,D=0,A=0;
+  for(let i=0;i<13;i++) for(let j=0;j<13;j++){ const d=(i+hs)-(j+as), p=ph[i]*pa[j]; if(d>0)H+=p; else if(d===0)D+=p; else A+=p; }
+  const t=H+D+A; return [H/t,D/t,A/t];
+}
+function liveBlock(m){
+  if(!m.live) return "";
+  const w = m.sofa_id ? `<iframe loading="lazy" title="Sofascore maç akışı" src="https://widgets.sofascore.com/embed/attackMomentum?id=${m.sofa_id}&widgetTheme=dark"></iframe><small>Canlı maç akışı: Sofascore</small>` : "";
+  return `<details class="live"><summary>Canlı tahmin hesapla</summary>
+    <div class="lv" data-lh="${m.live.lh}" data-la="${m.live.la}" data-h="${nm(m.home)}" data-a="${nm(m.away)}">
+      <div class="ins">
+        <label>Dakika<input type="number" min="0" max="90" value="0" data-k="min" inputmode="numeric"></label>
+        <label>${nm(m.home)} gol<input type="number" min="0" max="15" value="0" data-k="hs" inputmode="numeric"></label>
+        <label>${nm(m.away)} gol<input type="number" min="0" max="15" value="0" data-k="as" inputmode="numeric"></label>
+        <label>${nm(m.home)} kırmızı<input type="number" min="0" max="4" value="0" data-k="rh" inputmode="numeric"></label>
+        <label>${nm(m.away)} kırmızı<input type="number" min="0" max="4" value="0" data-k="ra" inputmode="numeric"></label>
+      </div>
+      <div class="lvbar"></div><div class="out"></div>${w}
+    </div></details>`;
+}
+function updateLive(box){
+  const v = k => Math.max(0, +box.querySelector(`[data-k="${k}"]`).value || 0);
+  const p = inplay(+box.dataset.lh, +box.dataset.la, v("min"), v("hs"), v("as"), v("rh"), v("ra"));
+  const i = p.indexOf(Math.max(...p));
+  const text = i===0 ? `${box.dataset.h} kazanır` : i===1 ? "Beraberlik" : `${box.dataset.a} kazanır`;
+  box.querySelector(".lvbar").innerHTML = bar("m", p, -1);
+  box.querySelector(".out").innerHTML = `${v("min")}. dakika, skor ${v("hs")}–${v("as")}: en olası sonuç <b>${text}</b> (%${pct(p[i])}). 1: %${pct(p[0])} · X: %${pct(p[1])} · 2: %${pct(p[2])}`;
+}
+document.addEventListener("input", e => { const b = e.target.closest && e.target.closest(".lv"); if(b) updateLive(b); });
+document.addEventListener("toggle", e => { if(e.target.matches && e.target.matches("details.live") && e.target.open) updateLive(e.target.querySelector(".lv")); }, true);
+
+function bar(cls, ps, won){
+  const keys=["h","d","a"];
+  return `<div class="bar ${cls}">${ps.map((p,i)=>`<span class="${keys[i]}${i===won?" won":""}" style="flex-basis:${(p*100).toFixed(1)}%">${pct(p)>=9?"%"+pct(p):""}</span>`).join("")}</div>`;
+}
+
+function card(m){
+  const pk = pickOf(m), won = outcome(m.result);
+  const res = m.result ? `<span class="res ${won===pk.i?"hit":"miss"}">Sonuç ${m.result} ${won===pk.i?"✓":"✗"}</span>` : `<span class="res">Oynanacak</span>`;
+  const b = betInfo(m);
+  let betline = "";
+  if(b){
+    betline = b.bets.length
+      ? `<div class="betline yes">Sanal kasa: <b>${b.bets.map(x=>`${selText(m,x.selection)} · oran ${num(x.odds)} · ${tl(x.stake)}`).join(", ")}</b></div>`
+      : `<div class="betline">Sanal kasa: <b>Bahis yok.</b> En iyi seçenek (${selText(m,b.best.selection)}, oran ${num(b.best.odds)}) için beklenen getiri ${signPct(b.best.ev)}; oran değer taşımıyor.</div>`;
+  }
+  return `<article class="match" id="${mid(m)}">
+    <div class="top"><span class="time">${m.time||""}</span>
+      <div class="teams">${nm(m.home)}<span class="vs">–</span>${nm(m.away)}</div>${res}</div>
+    <div class="pick"><span class="k">Tahmin</span><b>${pk.text}</b><span class="pp">%${pct(pk.p)}</span><span class="conf ${pk.cls}">${pk.band}</span></div>
+    <div class="bars">
+      <span></span><div class="keys"><span>1 · ${nm(m.home)}</span><span>X</span><span>2 · ${nm(m.away)}</span></div>
+      <span class="lab">Model</span>${bar("m",probs(m),won)}
+      ${m.odds?`<span class="lab">iddaa</span>${bar("k",m.odds.implied,won)}`:""}</div>
+    <div class="facts">
+      <span>Olası skor <b>${m.model.top_scores.map(s=>s[0]).join(", ")}</b></span>
+      <span>Beklenen gol <b>${num(m.model.xg_home,1)} – ${num(m.model.xg_away,1)}</b></span>
+      ${m.odds?`<span>iddaa oranı <b>${[m.odds.home,m.odds.draw,m.odds.away].map(o=>num(o)).join(" · ")}</b></span>`:""}
+    </div>${goalBlock(m)}${cardBlock(m)}${betline}${liveBlock(m)}${m.absences?`<div class="abs"><b>Eksikler</b>${m.absences.map(a=>`<span>${a}</span>`).join("")}</div>`:""}</article>`;
+}
+
+function summaryRow(m){
+  const pk = pickOf(m), won = outcome(m.result);
+  const tail = m.result ? `<span class="out ${won===pk.i?"hit":"miss"}">${m.result} ${won===pk.i?"✓":"✗"}</span>` : `<span class="conf ${pk.cls}">${pk.band}</span>`;
+  return `<a href="#${mid(m)}"><span class="when">${shortDay(m.date)}${m.time?" · "+m.time:""}</span>
+    <span class="mt">${nm(m.home)} – ${nm(m.away)}</span><span class="pk">${pk.text}${headlineGoal(m)?`<small>Gol: ${headlineGoal(m).market} ${headlineGoal(m).side} %${pct(headlineGoal(m).p)}</small>`:""}</span>
+    <span class="pp">%${pct(pk.p)}</span>${tail}</a>`;
+}
+
+function render(data){
+  if(!data) return;
+  leagueBase = data.league_base || null;
+  const L2 = data.league2, sec = document.getElementById("l2-sec");
+  sec.hidden = !(L2 && L2.matches && L2.matches.length);
+  if(!sec.hidden){
+    document.getElementById("l2-lede").textContent = `${L2.name}, ${L2.week}. hafta. Yalnızca modelin tahmini: bu lig için iddaa oranları henüz arşivlenmediğinden harmanlama yok. Geçmiş testte (2.055 maç) en olası sonuç %50 tuttu; her maça lig ortalamasını söylemek %45'te kalıyor.`;
+    document.getElementById("l2-list").innerHTML = L2.matches.map(m=>{
+      const pk = pickOf({...m, home:m.home_tr||m.home, away:m.away_tr||m.away});
+      return `<a><span class="when">${L2.week}. hafta</span><span class="mt">${m.home_tr||m.home} – ${m.away_tr||m.away}</span>
+        <span class="pk">${pk.text}</span><span class="pp">%${pct(pk.p)}</span><span class="conf ${pk.cls}">${pk.band}</span></a>`;
+    }).join("");
+  }
+  renderOther(data);
+  document.getElementById("demo").hidden=!data.demo;
+  if(data.odds_source){document.getElementById("oddsnote").textContent=`Oran kaynağı: ${data.odds_source}. Kâr payı çıkarılıp olasılığa çevrildi. Sakat ve cezalı oyuncular bilgi amaçlı gösterilir, model bunları hesaba katmaz.`;}
+  document.getElementById("stamp").textContent=`Veri ${new Date(data.data_until+"T12:00:00").toLocaleDateString("tr-TR",{day:"numeric",month:"long",year:"numeric"})} tarihine kadar`;
+  const byDate=[...data.matches].sort((a,b)=>(a.date+(a.time||"")).localeCompare(b.date+(b.time||"")));
+  document.getElementById("summary").innerHTML = byDate.map(summaryRow).join("");
+  const list=document.getElementById("list");
+  if(sortBy==="conf"){
+    const ms=[...byDate].sort((a,b)=>pickOf(b).p-pickOf(a).p);
+    list.innerHTML=`<div class="day">${ms.map(card).join("")}</div>`;
+  } else {
+    const days={}; byDate.forEach(m=>(days[m.date]=days[m.date]||[]).push(m));
+    list.innerHTML=Object.keys(days).map(d=>`<section class="day"><h3>${fmtDay(d)}</h3>${days[d].map(card).join("")}</section>`).join("");
+  }
+}
+
+function renderOther(data){
+  const b = data.league_base, mk = kasaData && kasaData.markets;
+  if(!b) return;
+  const gl = mk && mk.goals ? mk.goals.markets : null;
+  const li = (lab, n, hit, base) => n ? `<li>${lab}: <b>${n}</b> maçta <b>%${pct(hit)}</b> tuttu (lig ortalaması %${pct(base)})</li>` : "";
+  const goals = gl ? li("2,5 Üst", gl.o25.up_n, gl.o25.up_hit, gl.o25.up_base) + li("1,5 Üst", gl.o15.up_n, gl.o15.up_hit, gl.o15.up_base) +
+    li("3,5 Alt", gl.o35.dn_n, gl.o35.dn_hit, gl.o35.dn_base) + li("2,5 Alt", gl.o25.dn_n, gl.o25.dn_hit, gl.o25.dn_base) : "";
+  const cc = mk && mk.corners_cards;
+  document.getElementById("other").innerHTML = `
+  <article><h3>Gol <span class="tag ok">Fikir var</span></h3>
+    <p>Model lig ortalamasından en az 8 puan ayrıştığında ve olasılık %55'i geçtiğinde fikir söyler. Süper Lig'de (${b.seasons}) maç başı ortalama <b>${num(b.goals,1)}</b> gol, 2,5 üst <b>%${pct(b.o25)}</b>.</p>
+    ${goals?`<ul>${goals}</ul>`:""}
+    <p>"Üst" fikirleri güçlü, "2,5 Alt" fikirleri zayıf. Karşılıklı golde (KG) model Süper Lig'de lig ortalamasından bile kötü olduğu için fikir söylemez. Not: iddaa da bu bilgiyi fiyatlıyor; geçmişte 2,5 golde oranlar modelden isabetliydi. Fikir, değerli bahis demek değil.</p></article>
+  ${(()=>{const k=data.cards_backtest; if(!k) return "";
+    return `<article><h3>Kart <span class="tag weak">Hakem belli olunca</span></h3>
+    <p>Kart modeli TFF maç raporlarındaki hakem ve takım kart geçmişini kullanır. Süper Lig ortalaması maç başı <b>${num(data.cards_league_avg||b.cards,1)}</b> kart (sarı ve kırmızı).</p>
+    <ul><li>Geçmiş testte (${k.matches.toLocaleString("tr-TR")} maç, ${k.seasons}) ortalama hata <b>${num(k.mae_model)}</b> kart; her maça lig ortalamasını söylemenin hatası <b>${num(k.mae_avg)}</b></li>
+    <li>4,5 Üst fikri: <b>${k.up_n}</b> maçta <b>%${pct(k.up_hit)}</b> tuttu (lig ortalaması %${pct(k.base_over)})</li>
+    <li>4,5 Alt fikri: <b>${k.dn_n}</b> maçta <b>%${pct(k.dn_hit)}</b> tuttu (lig ortalaması %${pct(1-k.base_over)})</li></ul>
+    <p>Kazanç gerçek ama küçük: kart sayısı büyük ölçüde maçın gidişine bağlı. Hakemler maçtan birkaç gün önce açıklanır; o zamana kadar fikir söylenmez.</p></article>`;})()}
+  <article><h3>Korner ve faul <span class="tag no">Fikir yok</span></h3>
+    <p>Süper Lig'de maç başı ortalama <b>${num(b.corners,1)} korner</b>.</p>
+    ${cc?`<p>Geçmiş testte (${cc.matches.toLocaleString("tr-TR")} maç) korner modelinin ortalama hatası <b>${num(cc.corners_mae)}</b>, her maça lig ortalamasını söylemenin hatası <b>${num(cc.corners_mae_avg)}</b>. Yani model ortalamadan farklı bir şey bilmiyor.</p>`:""}
+    <p>TFF maç raporlarında korner ve faul sayısı yok; bu sezon için Türkiye'den düzenli bir kaynak bulunursa yeniden denenecek.</p></article>
+  <article><h3>Oyuncu bahisleri <span class="tag no">Veri yok</span></h3>
+    <p>"Gol atar", "şut sayısı", "kart görür" gibi pazarlar için oyuncu düzeyinde veri gerekiyor: dakika, gol, şut, kart ve maçın muhtemel 11'i. Elimizde şu an yalnızca takım skorları var.</p>
+    <p>Eklenirse ilk adım: takımın beklenen golünü oyuncuların gol/şut payına bölmek. Kart için hakem verisi burada da gerekli.</p></article>`;
+}
+
+const pctS = p => p<=0 ? "–" : p<0.005 ? "<%1" : p>0.995 && p<1 ? ">%99" : `%${pct(p)}`;
+function renderSeason(S){
+  if(!S) return;
+  const T = S.table, n = T.length;
+  document.getElementById("table-lede").textContent =
+    `${S.played_weeks}. hafta sonrası resmi puan durumu (TFF). Sağdaki sütunlar, kalan ${S.total_weeks-S.played_weeks} haftanın modelle ${S.sims.toLocaleString("tr-TR")} kez oynatılmasından çıkan sezon sonu tahmini.`;
+  const head = `<div class="srow head"><span class="n">#</span><span>Takım</span><span class="n wide">O</span><span class="n wide">G</span><span class="n wide">B</span><span class="n wide">M</span><span class="n">AV</span><span class="n">P</span><span class="wide" style="padding-left:10px" title="Soldan sağa eskiden yeniye; altı çizili kutu son maç">Form · son maç ▸</span>
+    <span class="n proj" title="Sezon sonu beklenen puan">Bek.</span><span class="n proj" title="Şampiyonluk olasılığı">Şamp.</span><span class="n proj wide">İlk ${S.top}</span><span class="n proj">Düşme</span></div>`;
+  document.getElementById("standings").innerHTML = head + T.map(t=>{
+    const z = t.rank<=1 ? "zone-top" : t.rank>n-S.relegated ? "zone-rel" : "";
+    return `<div class="srow ${z}"><span class="n">${t.rank}</span><span class="tm">${nm(t.team)}</span>
+      <span class="n wide">${t.O}</span><span class="n wide">${t.G}</span><span class="n wide">${t.B}</span><span class="n wide">${t.M}</span>
+      <span class="n">${t.AV>0?"+":""}${t.AV}</span><span class="n pts">${t.P}</span>
+      <span class="fm wide">${t.form.map(f=>`<i class="${f}" title="${{G:"Galibiyet",B:"Beraberlik",M:"Mağlubiyet"}[f]}">${f}</i>`).join("")}</span>
+      <span class="n proj">${Math.round(t.exp_points)}</span><span class="n proj">${pctS(t.p_title)}</span><span class="n proj wide">${pctS(t.p_top)}</span><span class="n proj">${pctS(t.p_releg)}</span></div>`;
+  }).join("");
+  document.getElementById("table-note").textContent =
+    `Eşit puanda TFF kuralına göre önce kendi aralarındaki maçlara bakılır; simülasyon da böyle sıralar. Son ${S.relegated} sıra küme düşme hattı olarak alındı. Model ligden yeni çıkan takımların gücünü yavaş öğrenir; iyi başlayan yeni takımları (ör. Amedspor) olduğundan düşük görebilir. Kaynak: TFF, ${S.fetched}.`;
+  const ranked = (rows, val) => { let rank=0, prev=null; return rows.map((p,i)=>{ if(val(p)!==prev){rank=i+1;prev=val(p);} return {...p, rank}; }); };
+  const card = (title, unit, rows, val, sub) => `<div class="plist"><h3>${title}<small>${unit}</small></h3><ol>${
+    ranked(rows,val).map(p=>`<li><span class="r">${p.rank}.</span><span class="pl">${p.player}<small>${nm(p.team)}${sub?sub(p):""}</small></span><b class="g">${val(p)}</b></li>`).join("")}</ol></div>`;
+  const L = S.lists;
+  document.getElementById("scorers").innerHTML =
+    card("Gol krallığı", "gol", S.scorers.slice(0,10), p=>p.goals, p=>p.share!=null?` · takım payı %${pct(p.share)}`:"") +
+    (L ? card("Gol yemeyen kaleciler", "maç", L.clean_sheets.slice(0,10), p=>p.n, p=>` · ${p.matches} maçta`) +
+         card("Sarı kart", "kart", L.yellow.slice(0,10), p=>p.n) +
+         card("Kırmızı kart", "kart", L.red.slice(0,10), p=>p.n) : "") +
+    `<div class="plist"><h3>Asist krallığı<small>veri yok</small></h3><p>TFF maç raporlarında asist kaydı tutulmuyor; yalnızca golü atan yazılıyor. Türkiye'den güvenilir bir asist kaynağı bulunursa eklenecek.</p></div>`;
+  document.getElementById("scorers-note").textContent = `Kaynak: TFF maç raporları, ${S.fetched}. Gol yemeyen kaleci: maça ilk 11'de başlayıp oyundan çıkmadan gol yemediği maçlar. İkinci sarıdan gelen kırmızı, hem sarı hem kırmızı olarak sayılır. Kırmızı kartta eşitlik çoksa liste ada göre sıralıdır.`;
+}
+
+function setSort(s){ sortBy=s;
+  document.getElementById("sort-date").setAttribute("aria-pressed",s==="date");
+  document.getElementById("sort-conf").setAttribute("aria-pressed",s==="conf");
+  render(window.__data); }
+document.getElementById("sort-date").addEventListener("click",()=>setSort("date"));
+document.getElementById("sort-conf").addEventListener("click",()=>setSort("conf"));
+
+const MKT = {"MS":"Maç sonucu","2,5 Alt/Üst":"2,5 gol"};
+function predRow(r){
+  const m = {home:r.home, away:r.away};
+  const bet = r.bets.length
+    ? `<span><b>${r.bets.map(x=>`${MKT[x.market]||x.market} ${x.selection} · ${tl(x.stake)}`).join(", ")}</b></span>`
+    : `<span>Oynanmadı<span class="why">${r.best?`en iyi seçenek ${r.best.selection}, getiri ${signPct(r.best.ev)}`:"oran yok"}</span></span>`;
+  const out = r.result==null ? `<span class="out">Bekliyor</span>` : `<span class="out ${r.hit?"hit":"miss"}">${r.result} ${r.hit?"✓":"✗"}</span>`;
+  return `<div class="prow"><span>${nm(r.home)} – ${nm(r.away)}</span>
+    <span><span class="ml">Tahmin</span>${selText(m,r.pick)}${(r.goal_opinions||[]).slice(0,1).map(g=>`<span class="gop">Gol: ${g.market} ${g.side}${g.hit===true?" ✓":g.hit===false?" ✗":""}</span>`).join("")}</span>
+    <span class="n"><span class="ml">Olasılık</span>%${pct(r.p)}</span>
+    <span class="n"><span class="ml">Oran</span>${r.odds?num(r.odds):"–"}</span>
+    <span><span class="ml">Bahis</span>${bet}</span>${out}</div>`;
+}
+
+function renderKasa(k){
+  if(!k) return;
+  kasaData = k;
+  document.getElementById("kasa-rule").textContent = k.rule;
+  const preds = k.predictions || [], done = preds.filter(r=>r.result!=null);
+  const settled = k.coupons.filter(c=>c.status!=="Bekliyor"), profit = settled.reduce((a,c)=>a+c.profit,0);
+  document.getElementById("kstats").innerHTML =
+    `<div><small>Tahmin isabeti</small><b>${done.length?`${done.filter(r=>r.hit).length} / ${done.length}`:"–"}</b><small>${done.length?"en olası sonuç tuttu":"henüz sonuçlanan maç yok"}</small></div>
+     ${(()=>{const go=preds.map(r=>(r.goal_opinions||[])[0]).filter(g=>g&&g.hit!=null);return `<div><small>Gol fikri isabeti</small><b>${go.length?`${go.filter(g=>g.hit).length} / ${go.length}`:"–"}</b><small>${go.length?"maçın en net gol fikri tuttu":"henüz sonuçlanan fikir yok"}</small></div>`})()}
+     <div><small>Oynanan kupon</small><b>${k.coupons.length}</b><small>${k.coupons.length-settled.length} tanesi bekliyor</small></div>
+     <div><small>Net sonuç</small><b class="${profit<0?"neg":""}">${settled.length?(profit>=0?"+":"")+tl(profit):"0 TL"}</b><small>sonuçlanan kuponlardan</small></div>`;
+  const rounds = [...new Set(preds.map(r=>r.round))].reverse();
+  document.getElementById("rounds").innerHTML = rounds.map(rn=>{
+    const rs = preds.filter(r=>r.round===rn).sort((a,b)=>(a.date+(a.time||"")).localeCompare(b.date+(b.time||"")));
+    return `<h3>${rn}</h3><div class="ptable"><div class="prow head"><span>Maç</span><span>Tahmin</span><span class="n">Olasılık</span><span class="n">Oran</span><span>Bahis</span><span>Sonuç</span></div>${rs.map(predRow).join("")}</div>`;
+  }).join("") || `<p class="sub">Henüz kayıtlı tahmin yok.</p>`;
+  const cs = k.coupons.map(c=>{
+    const cls = c.status==="Kazandı"?"win":c.status==="Kaybetti"?"loss":"";
+    const legs = c.picks.map(p=>{
+      const [h,a]=p.label.split(" – ");
+      const w = p.won===true?" ✓":p.won===false?" ✗":"";
+      return `<div class="leg"><span>${nm(h)} – ${nm(a)}</span><span class="sel">${MKT[p.market]||p.market} ${p.selection} · ${num(p.odds)}${w}</span><small>Model %${pct(p.p)} · oranın ima ettiği %${pct(1/p.odds)}</small></div>`;
+    }).join("");
+    const pay = c.status==="Bekliyor" ? `Olası kazanç <b>${tl(c.stake*c.odds)}</b>` : `Sonuç <b class="${c.profit<0?"neg":""}">${c.profit>=0?"+":""}${tl(c.profit)}</b>`;
+    return `<article class="coupon"><header><span class="kind">${c.kind}</span><span class="st ${cls}">${c.status}</span></header>${legs}
+      <div class="cfoot"><span>Yatırılan <b>${tl(c.stake)}</b></span><span>Toplam oran <b>${num(c.odds)}</b></span><span>${pay}</span></div></article>`;
+  }).join("");
+  document.getElementById("coupons").innerHTML = cs || `<p class="sub">Bu hafta kurala uyan bahis yok. Model hiçbir maçta iddaa oranını, kâr payını karşılayacak kadar cömert bulmadı.</p>`;
+
+  const b = k.backtest; if(!b) return;
+  if(b.bands){
+    document.getElementById("bands").innerHTML = `<span>Etiketler geçmişte ne kadar tuttu:</span>` +
+      b.bands.map(x=>`<span>${x.label} <b>%${pct(x.hit)}</b></span>`).join("");
+    const strong = b.bands.find(x=>x.label==="Güçlü favori");
+    if(strong) document.getElementById("r-strong").textContent = `%${pct(strong.hit)}`;
+  }
+  if(b.hit_all!=null){
+    document.getElementById("r-hit").textContent = `%${pct(b.hit_all)}`;
+    document.getElementById("r-hit-n").textContent = `${b.matches.toLocaleString("tr-TR")} Süper Lig maçı, 2020–2026 geçmiş test`;
+  }
+  const s = b.summary;
+  document.getElementById("bt-nums").innerHTML =
+    `<span>Bu kural ${b.period} uygulansaydı<b>${s.coupons} kupon</b></span><span>Yatırılan<b>${tl(s.staked)}</b></span>
+     <span>Kazanılan kupon<b>${s.hit!=null?"%"+pct(s.hit):"–"}</b></span><span>Net sonuç<b class="${s.profit<0?"neg":""}">${tl(s.profit)}${s.roi!=null?` (${signPct(s.roi)})`:""}</b></span>`;
+  document.getElementById("bt-note").textContent = b.note;
+  const pts=b.series||[], chart=document.getElementById("bt-chart");
+  if(pts.length<2){ chart.style.display="none"; return; }
+  const W=640, H=200, L=78, R=10, T=12, B=26;
+  const ys=pts.map(p=>p[1]), lo=Math.min(0,...ys), hi=Math.max(0,...ys);
+  const x=i=>L+(W-L-R)*i/(pts.length-1), y=v=>T+(H-T-B)*(hi-v)/((hi-lo)||1);
+  const path=pts.map((p,i)=>`${i?"L":"M"}${x(i).toFixed(1)},${y(p[1]).toFixed(1)}`).join("");
+  const season=d=>{const yy=+d.slice(0,4),mm=+d.slice(5,7);const ss=mm>=7?yy:yy-1;return `${String(ss).slice(2)}/${String(ss+1).slice(2)}`};
+  const seasons=[...new Set(pts.map(p=>season(p[0])))];
+  const ticks=seasons.map(sn=>{const i=pts.findIndex(p=>season(p[0])===sn); return `<text x="${x(i)}" y="${H-6}" text-anchor="start">${sn}</text>`}).join("");
+  const last=pts[pts.length-1][1];
+  chart.innerHTML=
+    `<line x1="${L}" x2="${W-R}" y1="${y(0)}" y2="${y(0)}" stroke="var(--line)" stroke-width="1"/>
+     <text x="${L-6}" y="${y(0)+4}" text-anchor="end">0</text>
+     ${lo<0?`<text x="${L-6}" y="${y(lo)+4}" text-anchor="end">${tl(lo)}</text>`:""}
+     ${hi>(hi-lo)*0.12?`<text x="${L-6}" y="${y(hi)+4}" text-anchor="end">${tl(hi)}</text>`:""}
+     <path d="${path}" fill="none" stroke="${last<0?"var(--miss)":"var(--hit)"}" stroke-width="1.8" stroke-linejoin="round"/>
+     <circle cx="${x(pts.length-1)}" cy="${y(last)}" r="3.5" fill="${last<0?"var(--miss)":"var(--hit)"}"/>${ticks}`;
+}
+
+// Sitede: predictions.json ve kasa.json aynı klasörde durur ve her hafta yenilenir. Okunamazsa gömülü veri gösterilir.
+(async()=>{
+  window.__data = EMBED;
+  renderKasa(KASA);
+  render(EMBED);
+  renderSeason(SEASON);
+  try{ const r=await fetch("season.json",{cache:"no-store"}); if(r.ok){ renderSeason(await r.json()); } }catch(e){}
+  try{ const r=await fetch("kasa.json",{cache:"no-store"}); if(r.ok){ renderKasa(await r.json()); render(window.__data); } }catch(e){}
+  try{ const r=await fetch("predictions.json",{cache:"no-store"}); if(r.ok){ window.__data=await r.json(); render(window.__data);} }catch(e){}
+})();
+</script>

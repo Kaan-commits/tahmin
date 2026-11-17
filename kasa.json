@@ -1,0 +1,387 @@
+{
+ "rule": "Her maç için modelin en olası gördüğü sonuç kaydedilir. Bahis ise yalnızca oran 2,50 veya altındayken ve modelin olasılığı orana göre en az %2 fazla getiri vaat ediyorsa oynanır: 100 TL tekli, kombine yok. iddaa yaklaşık %11 kâr payı aldığı için çoğu hafta bu şart sağlanmaz ve bahis oynanmaz.",
+ "coupons": [],
+ "predictions": [
+  {
+   "round": "12. hafta",
+   "date": "2026-11-21",
+   "time": "13:30",
+   "home": "Genclerbirligi",
+   "away": "Gaziantep",
+   "label": "Genclerbirligi – Gaziantep",
+   "pick": "1",
+   "p": 0.4211,
+   "odds": 2.15,
+   "ev": -0.0946,
+   "best": {
+    "market": "MS",
+    "selection": "X",
+    "odds": 3.4,
+    "ev": -0.083
+   },
+   "bets": [],
+   "over25": 0.5123,
+   "goal_opinions": [],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-21",
+   "time": "16:00",
+   "home": "Amedspor",
+   "away": "Rizespor",
+   "label": "Amedspor – Rizespor",
+   "pick": "1",
+   "p": 0.561,
+   "odds": 1.69,
+   "ev": -0.0519,
+   "best": {
+    "market": "MS",
+    "selection": "1",
+    "odds": 1.69,
+    "ev": -0.0519
+   },
+   "bets": [],
+   "over25": 0.5628,
+   "goal_opinions": [],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-21",
+   "time": "16:00",
+   "home": "Galatasaray",
+   "away": "Samsunspor",
+   "label": "Galatasaray – Samsunspor",
+   "pick": "1",
+   "p": 0.8111,
+   "odds": 1.15,
+   "ev": -0.0672,
+   "best": {
+    "market": "MS",
+    "selection": "1",
+    "odds": 1.15,
+    "ev": -0.0672
+   },
+   "bets": [],
+   "over25": 0.7415,
+   "goal_opinions": [
+    {
+     "key": "o25",
+     "market": "2,5",
+     "side": "Üst",
+     "p": 0.7067,
+     "base": 0.5341,
+     "gap": 0.1726,
+     "hit": null
+    },
+    {
+     "key": "o15",
+     "market": "1,5",
+     "side": "Üst",
+     "p": 0.8794,
+     "base": 0.7716,
+     "gap": 0.1078,
+     "hit": null
+    }
+   ],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-21",
+   "time": "19:00",
+   "home": "Kocaelispor",
+   "away": "Fenerbahce",
+   "label": "Kocaelispor – Fenerbahce",
+   "pick": "2",
+   "p": 0.6339,
+   "odds": 1.51,
+   "ev": -0.0428,
+   "best": {
+    "market": "MS",
+    "selection": "2",
+    "odds": 1.51,
+    "ev": -0.0428
+   },
+   "bets": [],
+   "over25": 0.6094,
+   "goal_opinions": [],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-22",
+   "time": "13:30",
+   "home": "Erzurumspor",
+   "away": "Goztep",
+   "label": "Erzurumspor – Goztep",
+   "pick": "2",
+   "p": 0.3875,
+   "odds": 2.4,
+   "ev": -0.07,
+   "best": {
+    "market": "MS",
+    "selection": "2",
+    "odds": 2.4,
+    "ev": -0.07
+   },
+   "bets": [],
+   "over25": 0.5775,
+   "goal_opinions": [],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-22",
+   "time": "16:00",
+   "home": "Kasimpasa",
+   "away": "Alanyaspor",
+   "label": "Kasimpasa – Alanyaspor",
+   "pick": "1",
+   "p": 0.4867,
+   "odds": 1.91,
+   "ev": -0.0704,
+   "best": {
+    "market": "MS",
+    "selection": "1",
+    "odds": 1.91,
+    "ev": -0.0704
+   },
+   "bets": [],
+   "over25": 0.5336,
+   "goal_opinions": [],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-22",
+   "time": "16:00",
+   "home": "Konyaspor",
+   "away": "Besiktas",
+   "label": "Konyaspor – Besiktas",
+   "pick": "2",
+   "p": 0.6155,
+   "odds": 1.53,
+   "ev": -0.0583,
+   "best": {
+    "market": "MS",
+    "selection": "2",
+    "odds": 1.53,
+    "ev": -0.0583
+   },
+   "bets": [],
+   "over25": 0.5492,
+   "goal_opinions": [],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-22",
+   "time": "19:00",
+   "home": "Trabzonspor",
+   "away": "Eyupspor",
+   "label": "Trabzonspor – Eyupspor",
+   "pick": "1",
+   "p": 0.8381,
+   "odds": 1.12,
+   "ev": -0.0613,
+   "best": {
+    "market": "MS",
+    "selection": "1",
+    "odds": 1.12,
+    "ev": -0.0613
+   },
+   "bets": [],
+   "over25": 0.7167,
+   "goal_opinions": [
+    {
+     "key": "o25",
+     "market": "2,5",
+     "side": "Üst",
+     "p": 0.6874,
+     "base": 0.5341,
+     "gap": 0.1533,
+     "hit": null
+    },
+    {
+     "key": "o15",
+     "market": "1,5",
+     "side": "Üst",
+     "p": 0.8687,
+     "base": 0.7716,
+     "gap": 0.0971,
+     "hit": null
+    }
+   ],
+   "result": null,
+   "hit": null
+  },
+  {
+   "round": "12. hafta",
+   "date": "2026-11-23",
+   "time": "20:00",
+   "home": "Buyuksehyr",
+   "away": "Corum",
+   "label": "Buyuksehyr – Corum",
+   "pick": "1",
+   "p": 0.4959,
+   "odds": 1.86,
+   "ev": -0.0776,
+   "best": {
+    "market": "MS",
+    "selection": "X",
+    "odds": 3.7,
+    "ev": -0.0524
+   },
+   "bets": [],
+   "over25": 0.6704,
+   "goal_opinions": [
+    {
+     "key": "o25",
+     "market": "2,5",
+     "side": "Üst",
+     "p": 0.6728,
+     "base": 0.5341,
+     "gap": 0.1387,
+     "hit": null
+    },
+    {
+     "key": "o15",
+     "market": "1,5",
+     "side": "Üst",
+     "p": 0.8605,
+     "base": 0.7716,
+     "gap": 0.0889,
+     "hit": null
+    }
+   ],
+   "result": null,
+   "hit": null
+  }
+ ],
+ "backtest": {
+  "period": "2020/21–2025/26 arasında 6 Süper Lig sezonunda",
+  "summary": {
+   "coupons": 4,
+   "won": 2,
+   "staked": 400.0,
+   "profit": 35.0,
+   "roi": 0.0875,
+   "hit": 0.5,
+   "by_season": {
+    "2022": {
+     "coupons": 1,
+     "won": 0,
+     "staked": 100.0,
+     "profit": -100.0,
+     "roi": -1.0,
+     "hit": 0.0
+    },
+    "2023": {
+     "coupons": 3,
+     "won": 2,
+     "staked": 300.0,
+     "profit": 135.0,
+     "roi": 0.45,
+     "hit": 0.6667
+    }
+   }
+  },
+  "series": [
+   [
+    "2023-05-30",
+    -100.0
+   ],
+   [
+    "2023-09-22",
+    -13.0
+   ],
+   [
+    "2024-05-18",
+    135.0
+   ],
+   [
+    "2024-05-26",
+    35.0
+   ]
+  ],
+  "bands": [
+   {
+    "label": "Güçlü favori",
+    "lo": 0.65,
+    "n": 313,
+    "hit": 0.7668
+   },
+   {
+    "label": "Favori",
+    "lo": 0.5,
+    "n": 620,
+    "hit": 0.6161
+   },
+   {
+    "label": "Hafif favori",
+    "lo": 0.4,
+    "n": 832,
+    "hit": 0.4435
+   },
+   {
+    "label": "Belirsiz",
+    "lo": 0.0,
+    "n": 393,
+    "hit": 0.4148
+   }
+  ],
+  "matches": 2158,
+  "hit_all": 0.5348,
+  "note": "Gerçek Bet365 oranlarıyla (ortalama kâr payı ~%6,5). Aynı maçlarda iddaa'nın ~%11 kâr payıyla kurala uyan bahis sayısı 1 olurdu. Bu kadar az bahisle kâr/zarar rakamı bir şey kanıtlamaz; 38 ligin tamamında aynı kural 6 sezonda 140 bahiste yaklaşık %+2 getirdi, o da sezondan sezona değişti. Kuralın asıl işi, piyasadan daha iyi bilmediğimiz maçlarda oynamamak."
+ },
+ "markets": {
+  "goals": {
+   "matches": 2187,
+   "gap": 0.08,
+   "min_p": 0.55,
+   "markets": {
+    "o15": {
+     "up_n": 36,
+     "up_hit": 0.9167,
+     "up_base": 0.7796,
+     "dn_n": 0,
+     "dn_hit": null,
+     "dn_base": null
+    },
+    "o25": {
+     "up_n": 166,
+     "up_hit": 0.7711,
+     "up_base": 0.5406,
+     "dn_n": 69,
+     "dn_hit": 0.5072,
+     "dn_base": 0.4593
+    },
+    "o35": {
+     "up_n": 0,
+     "up_hit": null,
+     "up_base": null,
+     "dn_n": 60,
+     "dn_hit": 0.7667,
+     "dn_base": 0.682
+    }
+   }
+  },
+  "corners_cards": {
+   "matches": 1312,
+   "corners_mae": 2.66,
+   "corners_mae_avg": 2.67,
+   "cards_mae": 2.04,
+   "cards_mae_avg": 2.05
+  }
+ },
+ "clv": []
+}
