@@ -20,7 +20,7 @@
     "ev": -0.083
    },
    "bets": [],
-   "over25": 0.5123,
+   "over25": 0.5071,
    "goal_opinions": [],
    "result": null,
    "hit": null
@@ -33,17 +33,17 @@
    "away": "Rizespor",
    "label": "Amedspor – Rizespor",
    "pick": "1",
-   "p": 0.561,
+   "p": 0.5613,
    "odds": 1.69,
-   "ev": -0.0519,
+   "ev": -0.0514,
    "best": {
     "market": "MS",
     "selection": "1",
     "odds": 1.69,
-    "ev": -0.0519
+    "ev": -0.0514
    },
    "bets": [],
-   "over25": 0.5628,
+   "over25": 0.5591,
    "goal_opinions": [],
    "result": null,
    "hit": null
@@ -66,24 +66,24 @@
     "ev": -0.0672
    },
    "bets": [],
-   "over25": 0.7415,
+   "over25": 0.736,
    "goal_opinions": [
     {
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.7067,
+     "p": 0.7136,
      "base": 0.5341,
-     "gap": 0.1726,
+     "gap": 0.1795,
      "hit": null
     },
     {
      "key": "o15",
      "market": "1,5",
      "side": "Üst",
-     "p": 0.8794,
+     "p": 0.8832,
      "base": 0.7716,
-     "gap": 0.1078,
+     "gap": 0.1116,
      "hit": null
     }
    ],
@@ -98,17 +98,17 @@
    "away": "Fenerbahce",
    "label": "Kocaelispor – Fenerbahce",
    "pick": "2",
-   "p": 0.6339,
+   "p": 0.6336,
    "odds": 1.51,
-   "ev": -0.0428,
+   "ev": -0.0433,
    "best": {
     "market": "MS",
     "selection": "2",
     "odds": 1.51,
-    "ev": -0.0428
+    "ev": -0.0433
    },
    "bets": [],
-   "over25": 0.6094,
+   "over25": 0.6051,
    "goal_opinions": [],
    "result": null,
    "hit": null
@@ -121,17 +121,17 @@
    "away": "Goztep",
    "label": "Erzurumspor – Goztep",
    "pick": "2",
-   "p": 0.3875,
+   "p": 0.3873,
    "odds": 2.4,
-   "ev": -0.07,
+   "ev": -0.0705,
    "best": {
     "market": "MS",
     "selection": "2",
     "odds": 2.4,
-    "ev": -0.07
+    "ev": -0.0705
    },
    "bets": [],
-   "over25": 0.5775,
+   "over25": 0.5687,
    "goal_opinions": [],
    "result": null,
    "hit": null
@@ -144,17 +144,17 @@
    "away": "Alanyaspor",
    "label": "Kasimpasa – Alanyaspor",
    "pick": "1",
-   "p": 0.4867,
+   "p": 0.4866,
    "odds": 1.91,
-   "ev": -0.0704,
+   "ev": -0.0706,
    "best": {
     "market": "MS",
     "selection": "1",
     "odds": 1.91,
-    "ev": -0.0704
+    "ev": -0.0706
    },
    "bets": [],
-   "over25": 0.5336,
+   "over25": 0.5288,
    "goal_opinions": [],
    "result": null,
    "hit": null
@@ -167,17 +167,17 @@
    "away": "Besiktas",
    "label": "Konyaspor – Besiktas",
    "pick": "2",
-   "p": 0.6155,
+   "p": 0.6153,
    "odds": 1.53,
-   "ev": -0.0583,
+   "ev": -0.0586,
    "best": {
     "market": "MS",
     "selection": "2",
     "odds": 1.53,
-    "ev": -0.0583
+    "ev": -0.0586
    },
    "bets": [],
-   "over25": 0.5492,
+   "over25": 0.5483,
    "goal_opinions": [],
    "result": null,
    "hit": null
@@ -190,34 +190,34 @@
    "away": "Eyupspor",
    "label": "Trabzonspor – Eyupspor",
    "pick": "1",
-   "p": 0.8381,
+   "p": 0.8382,
    "odds": 1.12,
-   "ev": -0.0613,
+   "ev": -0.0612,
    "best": {
     "market": "MS",
     "selection": "1",
     "odds": 1.12,
-    "ev": -0.0613
+    "ev": -0.0612
    },
    "bets": [],
-   "over25": 0.7167,
+   "over25": 0.7261,
    "goal_opinions": [
     {
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.6874,
+     "p": 0.6842,
      "base": 0.5341,
-     "gap": 0.1533,
+     "gap": 0.1501,
      "hit": null
     },
     {
      "key": "o15",
      "market": "1,5",
      "side": "Üst",
-     "p": 0.8687,
+     "p": 0.8669,
      "base": 0.7716,
-     "gap": 0.0971,
+     "gap": 0.0953,
      "hit": null
     }
    ],
@@ -232,25 +232,25 @@
    "away": "Corum",
    "label": "Buyuksehyr – Corum",
    "pick": "1",
-   "p": 0.4959,
+   "p": 0.496,
    "odds": 1.86,
-   "ev": -0.0776,
+   "ev": -0.0774,
    "best": {
     "market": "MS",
     "selection": "X",
     "odds": 3.7,
-    "ev": -0.0524
+    "ev": -0.0513
    },
    "bets": [],
-   "over25": 0.6704,
+   "over25": 0.6539,
    "goal_opinions": [
     {
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.6728,
+     "p": 0.673,
      "base": 0.5341,
-     "gap": 0.1387,
+     "gap": 0.1389,
      "hit": null
     },
     {
@@ -383,5 +383,108 @@
    "cards_mae_avg": 2.05
   }
  },
- "clv": []
+ "clv": [],
+ "live_eval": {
+  "T1": {
+   "n": 0
+  },
+  "T2": {
+   "n": 0
+  },
+  "cards": {
+   "n": 0
+  }
+ },
+ "calibration": {
+  "matches": 2158,
+  "model": [
+   [
+    0.076,
+    0.0647,
+    139
+   ],
+   [
+    0.1589,
+    0.1271,
+    787
+   ],
+   [
+    0.258,
+    0.2447,
+    2644
+   ],
+   [
+    0.3438,
+    0.3603,
+    1138
+   ],
+   [
+    0.4459,
+    0.4442,
+    833
+   ],
+   [
+    0.5447,
+    0.5992,
+    484
+   ],
+   [
+    0.6493,
+    0.6973,
+    261
+   ],
+   [
+    0.7435,
+    0.7737,
+    137
+   ],
+   [
+    0.83,
+    0.875,
+    48
+   ]
+  ],
+  "market": [
+   [
+    0.0794,
+    0.0787,
+    89
+   ],
+   [
+    0.1592,
+    0.119,
+    689
+   ],
+   [
+    0.2583,
+    0.2425,
+    2850
+   ],
+   [
+    0.3465,
+    0.355,
+    1079
+   ],
+   [
+    0.4459,
+    0.4546,
+    882
+   ],
+   [
+    0.5432,
+    0.6112,
+    481
+   ],
+   [
+    0.6453,
+    0.7137,
+    262
+   ],
+   [
+    0.744,
+    0.7797,
+    118
+   ]
+  ]
+ }
 }
