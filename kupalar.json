@@ -1,0 +1,4729 @@
+{
+ "generated": "2026-11-23 11:42 UTC",
+ "season": "2026-27",
+ "source": "UEFA (sonuç, puan durumu) · iddaa (oranlar)",
+ "comps": [
+  {
+   "key": "sl",
+   "name": "Şampiyonlar Ligi",
+   "direct": 8,
+   "playoff": 24,
+   "table": [
+    {
+     "rank": 1,
+     "name": "Paris",
+     "country": "FRA",
+     "tr": false,
+     "played": 4,
+     "won": 4,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 20,
+     "ga": 5,
+     "gd": 15,
+     "points": 12
+    },
+    {
+     "rank": 2,
+     "name": "Real Madrid",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 4,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 13,
+     "ga": 7,
+     "gd": 6,
+     "points": 12
+    },
+    {
+     "rank": 3,
+     "name": "Arsenal",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 8,
+     "ga": 3,
+     "gd": 5,
+     "points": 10
+    },
+    {
+     "rank": 4,
+     "name": "Como",
+     "country": "ITA",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 19,
+     "ga": 6,
+     "gd": 13,
+     "points": 9
+    },
+    {
+     "rank": 5,
+     "name": "Barcelona",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 14,
+     "ga": 6,
+     "gd": 8,
+     "points": 9
+    },
+    {
+     "rank": 6,
+     "name": "Aston Villa",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 12,
+     "ga": 6,
+     "gd": 6,
+     "points": 9
+    },
+    {
+     "rank": 7,
+     "name": "Man City",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 12,
+     "ga": 7,
+     "gd": 5,
+     "points": 9
+    },
+    {
+     "rank": 8,
+     "name": "Liverpool",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 14,
+     "ga": 10,
+     "gd": 4,
+     "points": 9
+    },
+    {
+     "rank": 9,
+     "name": "Club Brugge",
+     "country": "BEL",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 11,
+     "ga": 7,
+     "gd": 4,
+     "points": 9
+    },
+    {
+     "rank": 10,
+     "name": "Sporting CP",
+     "country": "POR",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 8,
+     "ga": 4,
+     "gd": 4,
+     "points": 9
+    },
+    {
+     "rank": 11,
+     "name": "Real Betis",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 8,
+     "ga": 6,
+     "gd": 2,
+     "points": 9
+    },
+    {
+     "rank": 12,
+     "name": "B. Dortmund",
+     "country": "GER",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 7,
+     "ga": 5,
+     "gd": 2,
+     "points": 9
+    },
+    {
+     "rank": 13,
+     "name": "Bayern München",
+     "country": "GER",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 2,
+     "lost": 0,
+     "gf": 12,
+     "ga": 5,
+     "gd": 7,
+     "points": 8
+    },
+    {
+     "rank": 14,
+     "name": "Stuttgart",
+     "country": "GER",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 7,
+     "ga": 4,
+     "gd": 3,
+     "points": 7
+    },
+    {
+     "rank": 15,
+     "name": "Inter",
+     "country": "ITA",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 8,
+     "ga": 6,
+     "gd": 2,
+     "points": 6
+    },
+    {
+     "rank": 16,
+     "name": "LASK",
+     "country": "AUT",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 10,
+     "ga": 9,
+     "gd": 1,
+     "points": 6
+    },
+    {
+     "rank": 17,
+     "name": "Man Utd",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 8,
+     "ga": 8,
+     "gd": 0,
+     "points": 6
+    },
+    {
+     "rank": 18,
+     "name": "Galatasaray",
+     "country": "TUR",
+     "tr": true,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 8,
+     "ga": 9,
+     "gd": -1,
+     "points": 6
+    },
+    {
+     "rank": 19,
+     "name": "Fenerbahçe",
+     "country": "TUR",
+     "tr": true,
+     "played": 4,
+     "won": 1,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 6,
+     "ga": 11,
+     "gd": -5,
+     "points": 5
+    },
+    {
+     "rank": 20,
+     "name": "Roma",
+     "country": "ITA",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 10,
+     "ga": 8,
+     "gd": 2,
+     "points": 4
+    },
+    {
+     "rank": 21,
+     "name": "Shakhtar",
+     "country": "UKR",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 4,
+     "ga": 4,
+     "gd": 0,
+     "points": 4
+    },
+    {
+     "rank": 22,
+     "name": "Viking",
+     "country": "NOR",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 9,
+     "ga": 10,
+     "gd": -1,
+     "points": 4
+    },
+    {
+     "rank": 23,
+     "name": "Atleti",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 4,
+     "ga": 5,
+     "gd": -1,
+     "points": 4
+    },
+    {
+     "rank": 24,
+     "name": "PSV",
+     "country": "NED",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 3,
+     "ga": 4,
+     "gd": -1,
+     "points": 4
+    },
+    {
+     "rank": 25,
+     "name": "Bodø/Glimt",
+     "country": "NOR",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 4,
+     "ga": 9,
+     "gd": -5,
+     "points": 4
+    },
+    {
+     "rank": 26,
+     "name": "Porto",
+     "country": "POR",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 6,
+     "ga": 7,
+     "gd": -1,
+     "points": 3
+    },
+    {
+     "rank": 27,
+     "name": "Napoli",
+     "country": "ITA",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 6,
+     "ga": 11,
+     "gd": -5,
+     "points": 3
+    },
+    {
+     "rank": 28,
+     "name": "Villarreal",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 8,
+     "ga": 14,
+     "gd": -6,
+     "points": 3
+    },
+    {
+     "rank": 29,
+     "name": "AEK Athens",
+     "country": "GRE",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 5,
+     "ga": 11,
+     "gd": -6,
+     "points": 3
+    },
+    {
+     "rank": 29,
+     "name": "Leipzig",
+     "country": "GER",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 5,
+     "ga": 11,
+     "gd": -6,
+     "points": 3
+    },
+    {
+     "rank": 31,
+     "name": "Sabah",
+     "country": "AZE",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 4,
+     "ga": 10,
+     "gd": -6,
+     "points": 3
+    },
+    {
+     "rank": 32,
+     "name": "Feyenoord",
+     "country": "NED",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 4,
+     "ga": 11,
+     "gd": -7,
+     "points": 3
+    },
+    {
+     "rank": 33,
+     "name": "Lens",
+     "country": "FRA",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 4,
+     "ga": 16,
+     "gd": -12,
+     "points": 3
+    },
+    {
+     "rank": 34,
+     "name": "Slavia Praha",
+     "country": "CZE",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 1,
+     "lost": 3,
+     "gf": 5,
+     "ga": 9,
+     "gd": -4,
+     "points": 1
+    },
+    {
+     "rank": 35,
+     "name": "Lille",
+     "country": "FRA",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 1,
+     "lost": 3,
+     "gf": 4,
+     "ga": 10,
+     "gd": -6,
+     "points": 1
+    },
+    {
+     "rank": 36,
+     "name": "S. Bratislava",
+     "country": "SVK",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 0,
+     "lost": 4,
+     "gf": 1,
+     "ga": 17,
+     "gd": -16,
+     "points": 0
+    }
+   ],
+   "last_md": 4,
+   "next_md": 5,
+   "upcoming": [
+    {
+     "date": "2026-11-24",
+     "time": "20:45",
+     "md": 5,
+     "home": "Bodø/Glimt",
+     "away": "LASK",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Bodo Glimt – LASK",
+     "odds": [
+      1.39,
+      4.52,
+      4.63
+     ],
+     "probs": [
+      0.622,
+      0.1913,
+      0.1867
+     ],
+     "ou": [
+      1.17,
+      3.36
+     ],
+     "p_over": 0.7417
+    },
+    {
+     "date": "2026-11-24",
+     "time": "20:45",
+     "md": 5,
+     "home": "Galatasaray",
+     "away": "Aston Villa",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "Galatasaray – Aston Villa",
+     "odds": [
+      2.58,
+      3.6,
+      2.03
+     ],
+     "probs": [
+      0.3347,
+      0.2399,
+      0.4254
+     ],
+     "ou": [
+      1.22,
+      2.98
+     ],
+     "p_over": 0.7095
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Real Madrid",
+     "away": "PSV",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Real Madrid – PSV",
+     "odds": [
+      1.06,
+      8.08,
+      11.15
+     ],
+     "probs": [
+      0.8155,
+      0.107,
+      0.0775
+     ],
+     "ou": [
+      1.06,
+      4.64
+     ],
+     "p_over": 0.814
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Man City",
+     "away": "Napoli",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Manchester City – Napoli",
+     "odds": [
+      1.15,
+      6.02,
+      8.55
+     ],
+     "probs": [
+      0.7544,
+      0.1441,
+      0.1015
+     ],
+     "ou": [
+      1.24,
+      2.88
+     ],
+     "p_over": 0.699
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Arsenal",
+     "away": "B. Dortmund",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Arsenal – B. Dortmund",
+     "odds": [
+      1.26,
+      4.61,
+      6.83
+     ],
+     "probs": [
+      0.686,
+      0.1875,
+      0.1265
+     ],
+     "ou": [
+      1.5,
+      2.04
+     ],
+     "p_over": 0.5763
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Feyenoord",
+     "away": "Porto",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Feyenoord – Porto",
+     "odds": [
+      2.51,
+      3.36,
+      2.17
+     ],
+     "probs": [
+      0.3444,
+      0.2573,
+      0.3983
+     ],
+     "ou": [
+      1.45,
+      2.14
+     ],
+     "p_over": 0.5961
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Leipzig",
+     "away": "Lens",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Leipzig – RC Lens",
+     "odds": [
+      1.24,
+      5.23,
+      6.23
+     ],
+     "probs": [
+      0.6963,
+      0.1651,
+      0.1386
+     ],
+     "ou": [
+      1.18,
+      3.17
+     ],
+     "p_over": 0.7287
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "S. Bratislava",
+     "away": "Real Betis",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Slovan Bratislava – Real Betis",
+     "odds": [
+      9.61,
+      6.2,
+      1.12
+     ],
+     "probs": [
+      0.0898,
+      0.1393,
+      0.7709
+     ],
+     "ou": [
+      1.24,
+      2.88
+     ],
+     "p_over": 0.699
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Como",
+     "away": "AEK Athens",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Como 1907 – AEK Athens",
+     "odds": [
+      1.15,
+      5.77,
+      8.71
+     ],
+     "probs": [
+      0.7511,
+      0.1497,
+      0.0992
+     ],
+     "ou": [
+      1.22,
+      2.95
+     ],
+     "p_over": 0.7074
+    },
+    {
+     "date": "2026-11-25",
+     "time": "20:45",
+     "md": 5,
+     "home": "Slavia Praha",
+     "away": "Villarreal",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Slavia Prag – Villarreal",
+     "odds": [
+      2.8,
+      3.4,
+      1.98
+     ],
+     "probs": [
+      0.3089,
+      0.2544,
+      0.4368
+     ],
+     "ou": [
+      1.4,
+      2.27
+     ],
+     "p_over": 0.6185
+    },
+    {
+     "date": "2026-11-25",
+     "time": "20:45",
+     "md": 5,
+     "home": "Sabah",
+     "away": "Barcelona",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Sabah – Barcelona",
+     "odds": [
+      16.9,
+      10.8,
+      null
+     ],
+     "probs": [
+      0.0511,
+      0.08,
+      0.8688
+     ],
+     "closed": 2
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Paris",
+     "away": "Roma",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Paris Saint Germain – AS Roma",
+     "odds": [
+      1.25,
+      5.02,
+      6.19
+     ],
+     "probs": [
+      0.6892,
+      0.1716,
+      0.1392
+     ],
+     "ou": [
+      1.22,
+      2.99
+     ],
+     "p_over": 0.7102
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Inter",
+     "away": "Stuttgart",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Inter – Stuttgart",
+     "odds": [
+      1.28,
+      5.17,
+      5.48
+     ],
+     "probs": [
+      0.6751,
+      0.1672,
+      0.1577
+     ],
+     "ou": [
+      1.13,
+      3.68
+     ],
+     "p_over": 0.7651
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Atleti",
+     "away": "Viking",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Atletico Madrid – Viking",
+     "odds": [
+      null,
+      9.79,
+      17.8
+     ],
+     "probs": [
+      0.8632,
+      0.0883,
+      0.0486
+     ],
+     "closed": 0,
+     "ou": [
+      1.15,
+      3.48
+     ],
+     "p_over": 0.7516
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Sporting CP",
+     "away": "Man Utd",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Sporting Lizbon – Manchester United",
+     "odds": [
+      2.24,
+      3.36,
+      2.42
+     ],
+     "probs": [
+      0.3858,
+      0.2572,
+      0.3571
+     ],
+     "ou": [
+      1.42,
+      2.23
+     ],
+     "p_over": 0.611
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Club Brugge",
+     "away": "Liverpool",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Club Brugge – Liverpool",
+     "odds": [
+      3.87,
+      4.17,
+      1.51
+     ],
+     "probs": [
+      0.2227,
+      0.2066,
+      0.5707
+     ],
+     "ou": [
+      1.19,
+      3.14
+     ],
+     "p_over": 0.7252
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Lille",
+     "away": "Bayern München",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Lille – Bayern Münih",
+     "odds": [
+      4.53,
+      4.0,
+      1.46
+     ],
+     "probs": [
+      0.191,
+      0.2163,
+      0.5927
+     ],
+     "ou": [
+      1.42,
+      2.2
+     ],
+     "p_over": 0.6077
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Shakhtar",
+     "away": "Fenerbahçe",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "Shakhtar Donetsk – Fenerbahçe",
+     "odds": [
+      2.4,
+      3.19,
+      2.33
+     ],
+     "probs": [
+      0.3594,
+      0.2704,
+      0.3702
+     ],
+     "ou": [
+      1.57,
+      1.93
+     ],
+     "p_over": 0.5514
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-10-20",
+     "time": "19:45",
+     "md": 3,
+     "home": "Fenerbahçe",
+     "away": "Slavia Praha",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "19:45",
+     "md": 3,
+     "home": "Sabah",
+     "away": "B. Dortmund",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Paris",
+     "away": "Barcelona",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Liverpool",
+     "away": "Villarreal",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      3
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Man City",
+     "away": "AEK Athens",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      5,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Roma",
+     "away": "S. Bratislava",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Porto",
+     "away": "PSV",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Napoli",
+     "away": "Bodø/Glimt",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      3
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "22:00",
+     "md": 3,
+     "home": "Stuttgart",
+     "away": "Atleti",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "19:45",
+     "md": 3,
+     "home": "Lille",
+     "away": "Galatasaray",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "19:45",
+     "md": 3,
+     "home": "Como",
+     "away": "Man Utd",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Bayern München",
+     "away": "Arsenal",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Real Madrid",
+     "away": "Leipzig",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Inter",
+     "away": "Shakhtar",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Sporting CP",
+     "away": "LASK",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      3
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Aston Villa",
+     "away": "Viking",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Club Brugge",
+     "away": "Lens",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "22:00",
+     "md": 3,
+     "home": "Real Betis",
+     "away": "Feyenoord",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "20:45",
+     "md": 4,
+     "home": "Shakhtar",
+     "away": "Sporting CP",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "20:45",
+     "md": 4,
+     "home": "Galatasaray",
+     "away": "Stuttgart",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "Barcelona",
+     "away": "Aston Villa",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "Atleti",
+     "away": "Bayern München",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "Man Utd",
+     "away": "Roma",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "Feyenoord",
+     "away": "Inter",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      3
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "Bodø/Glimt",
+     "away": "Lille",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "Villarreal",
+     "away": "Paris",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      6
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "23:00",
+     "md": 4,
+     "home": "LASK",
+     "away": "S. Bratislava",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "20:45",
+     "md": 4,
+     "home": "Fenerbahçe",
+     "away": "Liverpool",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      3,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "20:45",
+     "md": 4,
+     "home": "AEK Athens",
+     "away": "Real Madrid",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      3
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "B. Dortmund",
+     "away": "Real Betis",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "Porto",
+     "away": "Napoli",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "PSV",
+     "away": "Club Brugge",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "Leipzig",
+     "away": "Man City",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      3
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "Slavia Praha",
+     "away": "Arsenal",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "Lens",
+     "away": "Como",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      9
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "23:00",
+     "md": 4,
+     "home": "Viking",
+     "away": "Sabah",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      1
+     ]
+    }
+   ],
+   "turkish": [
+    {
+     "date": "2026-09-09",
+     "time": "22:00",
+     "md": 1,
+     "home": "Sporting CP",
+     "away": "Galatasaray",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ]
+    },
+    {
+     "date": "2026-09-10",
+     "time": "19:45",
+     "md": 1,
+     "home": "Fenerbahçe",
+     "away": "Roma",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-13",
+     "time": "22:00",
+     "md": 2,
+     "home": "Galatasaray",
+     "away": "Barcelona",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      1,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-14",
+     "time": "22:00",
+     "md": 2,
+     "home": "Aston Villa",
+     "away": "Fenerbahçe",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      6,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-20",
+     "time": "19:45",
+     "md": 3,
+     "home": "Fenerbahçe",
+     "away": "Slavia Praha",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-21",
+     "time": "19:45",
+     "md": 3,
+     "home": "Lille",
+     "away": "Galatasaray",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      4
+     ]
+    },
+    {
+     "date": "2026-11-03",
+     "time": "20:45",
+     "md": 4,
+     "home": "Galatasaray",
+     "away": "Stuttgart",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "20:45",
+     "md": 4,
+     "home": "Fenerbahçe",
+     "away": "Liverpool",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      3,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-24",
+     "time": "20:45",
+     "md": 5,
+     "home": "Galatasaray",
+     "away": "Aston Villa",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "Galatasaray – Aston Villa",
+     "odds": [
+      2.58,
+      3.6,
+      2.03
+     ],
+     "probs": [
+      0.3347,
+      0.2399,
+      0.4254
+     ],
+     "ou": [
+      1.22,
+      2.98
+     ],
+     "p_over": 0.7095
+    },
+    {
+     "date": "2026-11-25",
+     "time": "23:00",
+     "md": 5,
+     "home": "Shakhtar",
+     "away": "Fenerbahçe",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "Shakhtar Donetsk – Fenerbahçe",
+     "odds": [
+      2.4,
+      3.19,
+      2.33
+     ],
+     "probs": [
+      0.3594,
+      0.2704,
+      0.3702
+     ],
+     "ou": [
+      1.57,
+      1.93
+     ],
+     "p_over": 0.5514
+    },
+    {
+     "date": "2026-12-08",
+     "time": "23:00",
+     "md": 6,
+     "home": "AEK Athens",
+     "away": "Galatasaray",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2026-12-09",
+     "time": "23:00",
+     "md": 6,
+     "home": "LASK",
+     "away": "Fenerbahçe",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2027-01-19",
+     "time": "20:45",
+     "md": 7,
+     "home": "Galatasaray",
+     "away": "Feyenoord",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2027-01-20",
+     "time": "20:45",
+     "md": 7,
+     "home": "Fenerbahçe",
+     "away": "Villarreal",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2027-01-27",
+     "time": "23:00",
+     "md": 8,
+     "home": "Paris",
+     "away": "Galatasaray",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2027-01-27",
+     "time": "23:00",
+     "md": 8,
+     "home": "Atleti",
+     "away": "Fenerbahçe",
+     "tr": true,
+     "status": "UPCOMING"
+    }
+   ],
+   "flat": {
+    "n": 0,
+    "profit": 0
+   },
+   "unmatched": 0
+  },
+  {
+   "key": "al",
+   "name": "Avrupa Ligi",
+   "direct": 8,
+   "playoff": 24,
+   "table": [
+    {
+     "rank": 1,
+     "name": "Benfica",
+     "country": "POR",
+     "tr": false,
+     "played": 4,
+     "won": 4,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 13,
+     "ga": 3,
+     "gd": 10,
+     "points": 12
+    },
+    {
+     "rank": 2,
+     "name": "Bournemouth",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 4,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 11,
+     "ga": 2,
+     "gd": 9,
+     "points": 12
+    },
+    {
+     "rank": 3,
+     "name": "Ferencváros",
+     "country": "HUN",
+     "tr": false,
+     "played": 4,
+     "won": 4,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 11,
+     "ga": 3,
+     "gd": 8,
+     "points": 12
+    },
+    {
+     "rank": 4,
+     "name": "Union SG",
+     "country": "BEL",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 10,
+     "ga": 2,
+     "gd": 8,
+     "points": 10
+    },
+    {
+     "rank": 5,
+     "name": "Juventus",
+     "country": "ITA",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 11,
+     "ga": 4,
+     "gd": 7,
+     "points": 10
+    },
+    {
+     "rank": 6,
+     "name": "Olympiacos",
+     "country": "GRE",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 4,
+     "ga": 1,
+     "gd": 3,
+     "points": 10
+    },
+    {
+     "rank": 7,
+     "name": "Leverkusen",
+     "country": "GER",
+     "tr": false,
+     "played": 4,
+     "won": 3,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 8,
+     "ga": 1,
+     "gd": 7,
+     "points": 9
+    },
+    {
+     "rank": 8,
+     "name": "Beşiktaş",
+     "country": "TUR",
+     "tr": true,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 11,
+     "ga": 8,
+     "gd": 3,
+     "points": 7
+    },
+    {
+     "rank": 9,
+     "name": "GNK Dinamo",
+     "country": "CRO",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 5,
+     "ga": 4,
+     "gd": 1,
+     "points": 7
+    },
+    {
+     "rank": 10,
+     "name": "Levski Sofia",
+     "country": "BUL",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 4,
+     "ga": 3,
+     "gd": 1,
+     "points": 7
+    },
+    {
+     "rank": 11,
+     "name": "Sunderland",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 4,
+     "ga": 4,
+     "gd": 0,
+     "points": 7
+    },
+    {
+     "rank": 12,
+     "name": "N.E.C.",
+     "country": "NED",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 8,
+     "ga": 9,
+     "gd": -1,
+     "points": 7
+    },
+    {
+     "rank": 13,
+     "name": "Lyon",
+     "country": "FRA",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 6,
+     "ga": 7,
+     "gd": -1,
+     "points": 7
+    },
+    {
+     "rank": 14,
+     "name": "AZ Alkmaar",
+     "country": "NED",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 7,
+     "ga": 4,
+     "gd": 3,
+     "points": 6
+    },
+    {
+     "rank": 15,
+     "name": "Anderlecht",
+     "country": "BEL",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 6,
+     "ga": 3,
+     "gd": 3,
+     "points": 6
+    },
+    {
+     "rank": 16,
+     "name": "OFI Crete",
+     "country": "GRE",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 5,
+     "ga": 4,
+     "gd": 1,
+     "points": 6
+    },
+    {
+     "rank": 17,
+     "name": "Rennes",
+     "country": "FRA",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 3,
+     "lost": 0,
+     "gf": 4,
+     "ga": 3,
+     "gd": 1,
+     "points": 6
+    },
+    {
+     "rank": 18,
+     "name": "Omonia",
+     "country": "CYP",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 6,
+     "ga": 7,
+     "gd": -1,
+     "points": 6
+    },
+    {
+     "rank": 19,
+     "name": "Torreense",
+     "country": "POR",
+     "tr": false,
+     "played": 4,
+     "won": 2,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 7,
+     "ga": 9,
+     "gd": -2,
+     "points": 6
+    },
+    {
+     "rank": 20,
+     "name": "Real Sociedad",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 9,
+     "ga": 4,
+     "gd": 5,
+     "points": 5
+    },
+    {
+     "rank": 21,
+     "name": "Crystal Palace",
+     "country": "ENG",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 9,
+     "ga": 6,
+     "gd": 3,
+     "points": 5
+    },
+    {
+     "rank": 22,
+     "name": "Sparta Praha",
+     "country": "CZE",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 6,
+     "ga": 6,
+     "gd": 0,
+     "points": 4
+    },
+    {
+     "rank": 23,
+     "name": "Hoffenheim",
+     "country": "GER",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 6,
+     "ga": 6,
+     "gd": 0,
+     "points": 4
+    },
+    {
+     "rank": 24,
+     "name": "Sturm Graz",
+     "country": "AUT",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 3,
+     "ga": 6,
+     "gd": -3,
+     "points": 4
+    },
+    {
+     "rank": 25,
+     "name": "Celje",
+     "country": "SVN",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 5,
+     "ga": 9,
+     "gd": -4,
+     "points": 4
+    },
+    {
+     "rank": 26,
+     "name": "Salzburg",
+     "country": "AUT",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 3,
+     "ga": 8,
+     "gd": -5,
+     "points": 4
+    },
+    {
+     "rank": 27,
+     "name": "Celta",
+     "country": "ESP",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 4,
+     "ga": 6,
+     "gd": -2,
+     "points": 3
+    },
+    {
+     "rank": 28,
+     "name": "Milan",
+     "country": "ITA",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 4,
+     "ga": 7,
+     "gd": -3,
+     "points": 3
+    },
+    {
+     "rank": 29,
+     "name": "Jagiellonia",
+     "country": "POL",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 4,
+     "ga": 7,
+     "gd": -3,
+     "points": 3
+    },
+    {
+     "rank": 30,
+     "name": "Viktoria Plzeň",
+     "country": "CZE",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 3,
+     "ga": 7,
+     "gd": -4,
+     "points": 3
+    },
+    {
+     "rank": 31,
+     "name": "Marseille",
+     "country": "FRA",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 2,
+     "ga": 6,
+     "gd": -4,
+     "points": 3
+    },
+    {
+     "rank": 32,
+     "name": "Celtic",
+     "country": "SCO",
+     "tr": false,
+     "played": 4,
+     "won": 1,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 6,
+     "ga": 11,
+     "gd": -5,
+     "points": 3
+    },
+    {
+     "rank": 33,
+     "name": "H. Beer-Sheva",
+     "country": "ISR",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 1,
+     "lost": 3,
+     "gf": 1,
+     "ga": 8,
+     "gd": -7,
+     "points": 1
+    },
+    {
+     "rank": 34,
+     "name": "Lillestrøm",
+     "country": "NOR",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 1,
+     "lost": 3,
+     "gf": 2,
+     "ga": 10,
+     "gd": -8,
+     "points": 1
+    },
+    {
+     "rank": 35,
+     "name": "Lech Poznań",
+     "country": "POL",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 1,
+     "lost": 3,
+     "gf": 2,
+     "ga": 12,
+     "gd": -10,
+     "points": 1
+    },
+    {
+     "rank": 36,
+     "name": "Ararat-Armenia",
+     "country": "ARM",
+     "tr": false,
+     "played": 4,
+     "won": 0,
+     "drawn": 0,
+     "lost": 4,
+     "gf": 4,
+     "ga": 14,
+     "gd": -10,
+     "points": 0
+    }
+   ],
+   "last_md": 4,
+   "next_md": 5,
+   "upcoming": [
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Olympiacos",
+     "away": "Milan",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Olympiacos – AC Milan",
+     "odds": [
+      2.4,
+      3.15,
+      2.36
+     ],
+     "probs": [
+      0.3599,
+      0.2742,
+      0.366
+     ],
+     "ou": [
+      1.66,
+      1.81
+     ],
+     "p_over": 0.5216
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Marseille",
+     "away": "Levski Sofia",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Marsilya – Levski Sofya",
+     "odds": [
+      1.28,
+      4.46,
+      6.58
+     ],
+     "probs": [
+      0.675,
+      0.1937,
+      0.1313
+     ],
+     "ou": [
+      1.52,
+      1.99
+     ],
+     "p_over": 0.567
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Viktoria Plzeň",
+     "away": "Benfica",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Viktoria Plzen – Benfica",
+     "odds": [
+      5.09,
+      4.45,
+      1.36
+     ],
+     "probs": [
+      0.1699,
+      0.1943,
+      0.6358
+     ],
+     "ou": [
+      1.31,
+      2.55
+     ],
+     "p_over": 0.6606
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Union SG",
+     "away": "Lech Poznań",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Union Saint Gilloise – Lech Poznan",
+     "odds": [
+      1.23,
+      5.0,
+      6.86
+     ],
+     "probs": [
+      0.7016,
+      0.1726,
+      0.1258
+     ],
+     "ou": [
+      1.32,
+      2.5
+     ],
+     "p_over": 0.6545
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "GNK Dinamo",
+     "away": "Leverkusen",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Dinamo Zagreb – B. Leverkusen",
+     "odds": [
+      3.92,
+      3.88,
+      1.55
+     ],
+     "probs": [
+      0.2203,
+      0.2226,
+      0.5571
+     ],
+     "ou": [
+      1.33,
+      2.49
+     ],
+     "p_over": 0.6518
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Salzburg",
+     "away": "Ararat-Armenia",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Salzburg – Ararat",
+     "odds": [
+      1.05,
+      7.62,
+      13.35
+     ],
+     "probs": [
+      0.8221,
+      0.1133,
+      0.0647
+     ],
+     "ou": [
+      1.17,
+      3.24
+     ],
+     "p_over": 0.7347
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Celta",
+     "away": "Bournemouth",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Celta Vigo – Bournemouth",
+     "odds": [
+      3.44,
+      3.22,
+      1.8
+     ],
+     "probs": [
+      0.2513,
+      0.2685,
+      0.4802
+     ],
+     "ou": [
+      1.68,
+      1.77
+     ],
+     "p_over": 0.513
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Beşiktaş",
+     "away": "H. Beer-Sheva",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "Beşiktaş – Hapoel Beer Sheva",
+     "odds": [
+      1.09,
+      6.8,
+      10.95
+     ],
+     "probs": [
+      0.7938,
+      0.1272,
+      0.079
+     ],
+     "ou": [
+      1.23,
+      2.92
+     ],
+     "p_over": 0.7036
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Juventus",
+     "away": "Omonia",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Juventus – Omonia",
+     "odds": [
+      1.08,
+      6.97,
+      12.15
+     ],
+     "probs": [
+      0.804,
+      0.1246,
+      0.0715
+     ],
+     "ou": [
+      1.27,
+      2.7
+     ],
+     "p_over": 0.6801
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Lyon",
+     "away": "Lillestrøm",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Lyon – Lillestrom",
+     "odds": [
+      1.08,
+      6.93,
+      11.75
+     ],
+     "probs": [
+      0.8014,
+      0.1249,
+      0.0737
+     ],
+     "ou": [
+      1.25,
+      2.83
+     ],
+     "p_over": 0.6936
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Ferencváros",
+     "away": "Celje",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Ferencvaros – NK Celje",
+     "odds": [
+      1.24,
+      4.94,
+      6.87
+     ],
+     "probs": [
+      0.6986,
+      0.1753,
+      0.1261
+     ],
+     "ou": [
+      1.39,
+      2.28
+     ],
+     "p_over": 0.6213
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Sparta Praha",
+     "away": "AZ Alkmaar",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Sparta Prag – AZ Alkmaar",
+     "odds": [
+      2.52,
+      3.28,
+      2.2
+     ],
+     "probs": [
+      0.3432,
+      0.2637,
+      0.3931
+     ],
+     "ou": [
+      1.5,
+      2.03
+     ],
+     "p_over": 0.5751
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Crystal Palace",
+     "away": "Real Sociedad",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Crystal Palace – Real Sociedad",
+     "odds": [
+      1.9,
+      3.43,
+      2.95
+     ],
+     "probs": [
+      0.455,
+      0.252,
+      0.293
+     ],
+     "ou": [
+      1.42,
+      2.19
+     ],
+     "p_over": 0.6066
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Sunderland",
+     "away": "Jagiellonia",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Sunderland – Jagiellonia Bialystok",
+     "odds": [
+      1.13,
+      5.67,
+      10.1
+     ],
+     "probs": [
+      0.7627,
+      0.152,
+      0.0853
+     ],
+     "ou": [
+      1.46,
+      2.13
+     ],
+     "p_over": 0.5933
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Hoffenheim",
+     "away": "Sturm Graz",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Hoffenheim – Sturm Graz",
+     "odds": [
+      1.22,
+      5.14,
+      6.99
+     ],
+     "probs": [
+      0.7083,
+      0.1681,
+      0.1236
+     ],
+     "ou": [
+      1.27,
+      2.69
+     ],
+     "p_over": 0.6793
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "Torreense",
+     "away": "Celtic",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Torreense – Celtic",
+     "odds": [
+      4.06,
+      3.71,
+      1.56
+     ],
+     "probs": [
+      0.2129,
+      0.233,
+      0.5541
+     ],
+     "ou": [
+      1.42,
+      2.21
+     ],
+     "p_over": 0.6088
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "N.E.C.",
+     "away": "Rennes",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "NEC Nijmegen – Rennes",
+     "odds": [
+      2.73,
+      3.41,
+      2.01
+     ],
+     "probs": [
+      0.3166,
+      0.2534,
+      0.43
+     ],
+     "ou": [
+      1.41,
+      2.23
+     ],
+     "p_over": 0.6126
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 5,
+     "home": "OFI Crete",
+     "away": "Anderlecht",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Ofi Crete – Anderlecht",
+     "odds": [
+      3.84,
+      3.46,
+      1.65
+     ],
+     "probs": [
+      0.2254,
+      0.2501,
+      0.5245
+     ],
+     "ou": [
+      1.53,
+      1.98
+     ],
+     "p_over": 0.5641
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "Juventus",
+     "away": "Rennes",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "Ferencváros",
+     "away": "Torreense",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "Union SG",
+     "away": "H. Beer-Sheva",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      4,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "GNK Dinamo",
+     "away": "N.E.C.",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "Sturm Graz",
+     "away": "Marseille",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "Lech Poznań",
+     "away": "Sunderland",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "OFI Crete",
+     "away": "Leverkusen",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 3,
+     "home": "Ararat-Armenia",
+     "away": "AZ Alkmaar",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Olympiacos",
+     "away": "Sparta Praha",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Viktoria Plzeň",
+     "away": "Levski Sofia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Celtic",
+     "away": "Celta",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Bournemouth",
+     "away": "Milan",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Celje",
+     "away": "Salzburg",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Jagiellonia",
+     "away": "Anderlecht",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      3
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Omonia",
+     "away": "Benfica",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Hoffenheim",
+     "away": "Lyon",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Beşiktaş",
+     "away": "Crystal Palace",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Lillestrøm",
+     "away": "Real Sociedad",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      6
+     ]
+    },
+    {
+     "date": "2026-11-04",
+     "time": "18:30",
+     "md": 4,
+     "home": "Rennes",
+     "away": "Olympiacos",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Milan",
+     "away": "Ferencváros",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Real Sociedad",
+     "away": "Lyon",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Sparta Praha",
+     "away": "Bournemouth",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      3
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Anderlecht",
+     "away": "Salzburg",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Crystal Palace",
+     "away": "Hoffenheim",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "N.E.C.",
+     "away": "Omonia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Lillestrøm",
+     "away": "Viktoria Plzeň",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 4,
+     "home": "Levski Sofia",
+     "away": "Jagiellonia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Leverkusen",
+     "away": "Marseille",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Benfica",
+     "away": "Lech Poznań",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "AZ Alkmaar",
+     "away": "Juventus",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Celtic",
+     "away": "Beşiktaş",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      3,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Sturm Graz",
+     "away": "Celje",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      3
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Sunderland",
+     "away": "GNK Dinamo",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Celta",
+     "away": "Union SG",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Torreense",
+     "away": "Ararat-Armenia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "H. Beer-Sheva",
+     "away": "OFI Crete",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ]
+    }
+   ],
+   "turkish": [
+    {
+     "date": "2026-09-17",
+     "time": "22:00",
+     "md": 1,
+     "home": "Beşiktaş",
+     "away": "Marseille",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      4,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-15",
+     "time": "22:00",
+     "md": 2,
+     "home": "Hoffenheim",
+     "away": "Beşiktaş",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      3
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 3,
+     "home": "Beşiktaş",
+     "away": "Crystal Palace",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 4,
+     "home": "Celtic",
+     "away": "Beşiktaş",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      3,
+      2
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 5,
+     "home": "Beşiktaş",
+     "away": "H. Beer-Sheva",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "Beşiktaş – Hapoel Beer Sheva",
+     "odds": [
+      1.09,
+      6.8,
+      10.95
+     ],
+     "probs": [
+      0.7938,
+      0.1272,
+      0.079
+     ],
+     "ou": [
+      1.23,
+      2.92
+     ],
+     "p_over": 0.7036
+    },
+    {
+     "date": "2026-12-10",
+     "time": "23:00",
+     "md": 6,
+     "home": "Leverkusen",
+     "away": "Beşiktaş",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2027-01-21",
+     "time": "20:45",
+     "md": 7,
+     "home": "Beşiktaş",
+     "away": "Union SG",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2027-01-28",
+     "time": "23:00",
+     "md": 8,
+     "home": "Omonia",
+     "away": "Beşiktaş",
+     "tr": true,
+     "status": "UPCOMING"
+    }
+   ],
+   "flat": {
+    "n": 0,
+    "profit": 0
+   },
+   "unmatched": 0
+  },
+  {
+   "key": "kl",
+   "name": "Konferans Ligi",
+   "direct": 8,
+   "playoff": 24,
+   "table": [
+    {
+     "rank": 1,
+     "name": "Lugano",
+     "country": "SUI",
+     "tr": false,
+     "played": 3,
+     "won": 3,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 11,
+     "ga": 4,
+     "gd": 7,
+     "points": 9
+    },
+    {
+     "rank": 2,
+     "name": "Panathinaikos",
+     "country": "GRE",
+     "tr": false,
+     "played": 3,
+     "won": 3,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 9,
+     "ga": 3,
+     "gd": 6,
+     "points": 9
+    },
+    {
+     "rank": 3,
+     "name": "Twente",
+     "country": "NED",
+     "tr": false,
+     "played": 3,
+     "won": 3,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 8,
+     "ga": 2,
+     "gd": 6,
+     "points": 9
+    },
+    {
+     "rank": 4,
+     "name": "Monaco",
+     "country": "FRA",
+     "tr": false,
+     "played": 3,
+     "won": 3,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 7,
+     "ga": 1,
+     "gd": 6,
+     "points": 9
+    },
+    {
+     "rank": 5,
+     "name": "Brighton",
+     "country": "ENG",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 5,
+     "ga": 0,
+     "gd": 5,
+     "points": 7
+    },
+    {
+     "rank": 6,
+     "name": "Brann",
+     "country": "NOR",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 7,
+     "ga": 3,
+     "gd": 4,
+     "points": 7
+    },
+    {
+     "rank": 7,
+     "name": "Copenhagen",
+     "country": "DEN",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 7,
+     "ga": 3,
+     "gd": 4,
+     "points": 7
+    },
+    {
+     "rank": 8,
+     "name": "Univ. Craiova",
+     "country": "ROU",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 6,
+     "ga": 2,
+     "gd": 4,
+     "points": 7
+    },
+    {
+     "rank": 9,
+     "name": "Mjällby",
+     "country": "SWE",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 5,
+     "ga": 1,
+     "gd": 4,
+     "points": 7
+    },
+    {
+     "rank": 10,
+     "name": "Sint-Truidense",
+     "country": "BEL",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 1,
+     "lost": 0,
+     "gf": 4,
+     "ga": 1,
+     "gd": 3,
+     "points": 7
+    },
+    {
+     "rank": 11,
+     "name": "Ajax",
+     "country": "NED",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 9,
+     "ga": 3,
+     "gd": 6,
+     "points": 6
+    },
+    {
+     "rank": 12,
+     "name": "Trabzonspor",
+     "country": "TUR",
+     "tr": true,
+     "played": 3,
+     "won": 2,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 6,
+     "ga": 3,
+     "gd": 3,
+     "points": 6
+    },
+    {
+     "rank": 13,
+     "name": "Hajduk Split",
+     "country": "CRO",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 3,
+     "ga": 2,
+     "gd": 1,
+     "points": 6
+    },
+    {
+     "rank": 14,
+     "name": "Freiburg",
+     "country": "GER",
+     "tr": false,
+     "played": 3,
+     "won": 2,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 4,
+     "ga": 5,
+     "gd": -1,
+     "points": 6
+    },
+    {
+     "rank": 15,
+     "name": "Crvena Zvezda",
+     "country": "SRB",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 6,
+     "ga": 6,
+     "gd": 0,
+     "points": 4
+    },
+    {
+     "rank": 16,
+     "name": "Atalanta",
+     "country": "ITA",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 4,
+     "ga": 4,
+     "gd": 0,
+     "points": 4
+    },
+    {
+     "rank": 17,
+     "name": "Braga",
+     "country": "POR",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 2,
+     "ga": 3,
+     "gd": -1,
+     "points": 4
+    },
+    {
+     "rank": 18,
+     "name": "Gent",
+     "country": "BEL",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 1,
+     "lost": 1,
+     "gf": 1,
+     "ga": 2,
+     "gd": -1,
+     "points": 4
+    },
+    {
+     "rank": 19,
+     "name": "Riga",
+     "country": "LVA",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 3,
+     "lost": 0,
+     "gf": 3,
+     "ga": 3,
+     "gd": 0,
+     "points": 3
+    },
+    {
+     "rank": 20,
+     "name": "Thun",
+     "country": "SUI",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 3,
+     "ga": 3,
+     "gd": 0,
+     "points": 3
+    },
+    {
+     "rank": 21,
+     "name": "Borac",
+     "country": "BIH",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 3,
+     "ga": 4,
+     "gd": -1,
+     "points": 3
+    },
+    {
+     "rank": 22,
+     "name": "L. Red Imps",
+     "country": "GIB",
+     "tr": false,
+     "played": 3,
+     "won": 1,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 3,
+     "ga": 6,
+     "gd": -3,
+     "points": 3
+    },
+    {
+     "rank": 23,
+     "name": "Jablonec",
+     "country": "CZE",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 3,
+     "ga": 4,
+     "gd": -1,
+     "points": 2
+    },
+    {
+     "rank": 24,
+     "name": "Aarhus",
+     "country": "DEN",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 1,
+     "ga": 2,
+     "gd": -1,
+     "points": 2
+    },
+    {
+     "rank": 25,
+     "name": "Nordsjælland",
+     "country": "DEN",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 3,
+     "ga": 5,
+     "gd": -2,
+     "points": 2
+    },
+    {
+     "rank": 26,
+     "name": "Egnatia",
+     "country": "ALB",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 2,
+     "ga": 4,
+     "gd": -2,
+     "points": 2
+    },
+    {
+     "rank": 27,
+     "name": "Kairat Almaty",
+     "country": "KAZ",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 2,
+     "lost": 1,
+     "gf": 3,
+     "ga": 7,
+     "gd": -4,
+     "points": 2
+    },
+    {
+     "rank": 28,
+     "name": "CSKA Sofia",
+     "country": "BUL",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 4,
+     "ga": 6,
+     "gd": -2,
+     "points": 1
+    },
+    {
+     "rank": 29,
+     "name": "Iberia Tbilisi",
+     "country": "GEO",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 2,
+     "ga": 5,
+     "gd": -3,
+     "points": 1
+    },
+    {
+     "rank": 30,
+     "name": "Pafos",
+     "country": "CYP",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 3,
+     "ga": 7,
+     "gd": -4,
+     "points": 1
+    },
+    {
+     "rank": 31,
+     "name": "Getafe",
+     "country": "ESP",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 3,
+     "ga": 7,
+     "gd": -4,
+     "points": 1
+    },
+    {
+     "rank": 32,
+     "name": "Hearts",
+     "country": "SCO",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 2,
+     "ga": 6,
+     "gd": -4,
+     "points": 1
+    },
+    {
+     "rank": 33,
+     "name": "KuPS Kuopio",
+     "country": "FIN",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 2,
+     "ga": 6,
+     "gd": -4,
+     "points": 1
+    },
+    {
+     "rank": 34,
+     "name": "Midtjylland",
+     "country": "DEN",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 2,
+     "ga": 8,
+     "gd": -6,
+     "points": 1
+    },
+    {
+     "rank": 35,
+     "name": "Inter Escaldes",
+     "country": "AND",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 2,
+     "ga": 7,
+     "gd": -5,
+     "points": 0
+    },
+    {
+     "rank": 36,
+     "name": "Kauno Žalgiris",
+     "country": "LTU",
+     "tr": false,
+     "played": 3,
+     "won": 0,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 1,
+     "ga": 11,
+     "gd": -10,
+     "points": 0
+    }
+   ],
+   "last_md": 3,
+   "next_md": 4,
+   "upcoming": [
+    {
+     "date": "2026-11-26",
+     "time": "18:30",
+     "md": 4,
+     "home": "Kairat Almaty",
+     "away": "Mjällby",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "K Almaty – Mjallby",
+     "odds": [
+      2.0,
+      3.19,
+      2.91
+     ],
+     "probs": [
+      0.4321,
+      0.2709,
+      0.297
+     ],
+     "ou": [
+      1.73,
+      1.73
+     ],
+     "p_over": 0.5
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Ajax",
+     "away": "Thun",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Ajax – Thun",
+     "odds": [
+      1.08,
+      7.24,
+      11.1
+     ],
+     "probs": [
+      0.8023,
+      0.1197,
+      0.0781
+     ],
+     "ou": [
+      1.16,
+      3.44
+     ],
+     "p_over": 0.7478
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Pafos",
+     "away": "Midtjylland",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Pafos FC – Midtjylland",
+     "odds": [
+      2.79,
+      3.36,
+      1.99
+     ],
+     "probs": [
+      0.3094,
+      0.2569,
+      0.4337
+     ],
+     "ou": [
+      1.42,
+      2.2
+     ],
+     "p_over": 0.6077
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Brighton",
+     "away": "Univ. Craiova",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Brighton – Un. Craiova",
+     "odds": [
+      null,
+      7.76,
+      14.75
+     ],
+     "probs": [
+      0.83,
+      0.1114,
+      0.0586
+     ],
+     "closed": 0,
+     "ou": [
+      1.25,
+      2.78
+     ],
+     "p_over": 0.6898
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Brann",
+     "away": "Aarhus",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Brann – AGF Aarhus",
+     "odds": [
+      1.95,
+      3.42,
+      2.85
+     ],
+     "probs": [
+      0.4436,
+      0.2529,
+      0.3035
+     ],
+     "ou": [
+      1.42,
+      2.23
+     ],
+     "p_over": 0.611
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Hearts",
+     "away": "Monaco",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Hearts – Monaco",
+     "odds": [
+      4.17,
+      3.77,
+      1.53
+     ],
+     "probs": [
+      0.207,
+      0.2289,
+      0.5641
+     ],
+     "ou": [
+      1.42,
+      2.2
+     ],
+     "p_over": 0.6077
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Jablonec",
+     "away": "Lugano",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Jablonec – Lugano",
+     "odds": [
+      3.06,
+      3.34,
+      1.89
+     ],
+     "probs": [
+      0.2829,
+      0.2592,
+      0.458
+     ],
+     "ou": [
+      1.58,
+      1.92
+     ],
+     "p_over": 0.5486
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Kauno Žalgiris",
+     "away": "Riga",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Zalgiris Kaunas – Riga FC",
+     "odds": [
+      3.13,
+      3.2,
+      1.9
+     ],
+     "probs": [
+      0.2758,
+      0.2698,
+      0.4544
+     ],
+     "ou": [
+      1.74,
+      1.72
+     ],
+     "p_over": 0.4971
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Iberia Tbilisi",
+     "away": "Getafe",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "FC Iberia 1999 – Getafe",
+     "odds": [
+      5.79,
+      3.76,
+      1.39
+     ],
+     "probs": [
+      0.1491,
+      0.2297,
+      0.6212
+     ],
+     "ou": [
+      1.89,
+      1.59
+     ],
+     "p_over": 0.4569
+    },
+    {
+     "date": "2026-11-26",
+     "time": "20:45",
+     "md": 4,
+     "home": "Egnatia",
+     "away": "L. Red Imps",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "KF Egnatia Rrogozhine – Lincoln Red",
+     "odds": [
+      1.43,
+      3.99,
+      4.81
+     ],
+     "probs": [
+      0.604,
+      0.2165,
+      0.1796
+     ],
+     "ou": [
+      1.49,
+      2.06
+     ],
+     "p_over": 0.5803
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Braga",
+     "away": "KuPS Kuopio",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Braga – Kuopion",
+     "odds": [
+      null,
+      8.07,
+      15.7
+     ],
+     "probs": [
+      0.8378,
+      0.1071,
+      0.0551
+     ],
+     "closed": 0,
+     "ou": [
+      1.25,
+      2.77
+     ],
+     "p_over": 0.6891
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Freiburg",
+     "away": "Twente",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Freiburg – Twente",
+     "odds": [
+      1.84,
+      3.6,
+      2.96
+     ],
+     "probs": [
+      0.4689,
+      0.2397,
+      0.2915
+     ],
+     "ou": [
+      1.37,
+      2.34
+     ],
+     "p_over": 0.6307
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Gent",
+     "away": "Crvena Zvezda",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "KAA Gent – Kızıl Yıldız",
+     "odds": [
+      1.94,
+      3.18,
+      3.04
+     ],
+     "probs": [
+      0.4448,
+      0.2714,
+      0.2839
+     ],
+     "ou": [
+      1.64,
+      1.82
+     ],
+     "p_over": 0.526
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Borac",
+     "away": "Atalanta",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Banja Luka – Atalanta",
+     "odds": [
+      4.45,
+      3.94,
+      1.48
+     ],
+     "probs": [
+      0.1947,
+      0.2199,
+      0.5854
+     ],
+     "ou": [
+      1.43,
+      2.17
+     ],
+     "p_over": 0.6028
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Hajduk Split",
+     "away": "Sint-Truidense",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Hajduk Split – St. Truidense",
+     "odds": [
+      1.89,
+      3.28,
+      3.09
+     ],
+     "probs": [
+      0.4571,
+      0.2634,
+      0.2796
+     ],
+     "ou": [
+      1.62,
+      1.85
+     ],
+     "p_over": 0.5331
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Nordsjælland",
+     "away": "Panathinaikos",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Nordsjælland – Panathinaikos",
+     "odds": [
+      2.47,
+      3.24,
+      2.25
+     ],
+     "probs": [
+      0.3496,
+      0.2665,
+      0.3838
+     ],
+     "ou": [
+      1.54,
+      1.97
+     ],
+     "p_over": 0.5613
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "Inter Escaldes",
+     "away": "Copenhagen",
+     "tr": false,
+     "status": "UPCOMING",
+     "iddaa": "Inter Club De Escaldes – Kopenhag",
+     "odds": [
+      8.9,
+      5.43,
+      1.17
+     ],
+     "probs": [
+      0.0976,
+      0.16,
+      0.7424
+     ],
+     "ou": [
+      1.37,
+      2.34
+     ],
+     "p_over": 0.6307
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "CSKA Sofia",
+     "away": "Trabzonspor",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "CSKA Sofya – Trabzonspor",
+     "odds": [
+      3.36,
+      3.45,
+      1.75
+     ],
+     "probs": [
+      0.2568,
+      0.2501,
+      0.4931
+     ],
+     "ou": [
+      1.45,
+      2.14
+     ],
+     "p_over": 0.5961
+    }
+   ],
+   "results": [
+    {
+     "date": "2026-10-22",
+     "time": "17:30",
+     "md": 2,
+     "home": "Kairat Almaty",
+     "away": "Panathinaikos",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      5
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Crvena Zvezda",
+     "away": "Copenhagen",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Pafos",
+     "away": "Riga",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Getafe",
+     "away": "Lugano",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      5
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Trabzonspor",
+     "away": "Hearts",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Jablonec",
+     "away": "Brighton",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Nordsjælland",
+     "away": "CSKA Sofia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Inter Escaldes",
+     "away": "Univ. Craiova",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      3
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Kauno Žalgiris",
+     "away": "Brann",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Iberia Tbilisi",
+     "away": "Mjällby",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Braga",
+     "away": "Gent",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Ajax",
+     "away": "Atalanta",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Monaco",
+     "away": "Freiburg",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Midtjylland",
+     "away": "Sint-Truidense",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "L. Red Imps",
+     "away": "Twente",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Borac",
+     "away": "KuPS Kuopio",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Aarhus",
+     "away": "Egnatia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "22:00",
+     "md": 2,
+     "home": "Thun",
+     "away": "Hajduk Split",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Atalanta",
+     "away": "Kairat Almaty",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Midtjylland",
+     "away": "Ajax",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      6
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Crvena Zvezda",
+     "away": "Inter Escaldes",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "KuPS Kuopio",
+     "away": "Gent",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "L. Red Imps",
+     "away": "Hajduk Split",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Trabzonspor",
+     "away": "Freiburg",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Aarhus",
+     "away": "Braga",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Thun",
+     "away": "Hearts",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Mjällby",
+     "away": "Borac",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Monaco",
+     "away": "Nordsjælland",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Copenhagen",
+     "away": "Iberia Tbilisi",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Panathinaikos",
+     "away": "CSKA Sofia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Lugano",
+     "away": "Kauno Žalgiris",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Getafe",
+     "away": "Brighton",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Twente",
+     "away": "Pafos",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Sint-Truidense",
+     "away": "Brann",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Univ. Craiova",
+     "away": "Egnatia",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "23:00",
+     "md": 3,
+     "home": "Riga",
+     "away": "Jablonec",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ]
+    }
+   ],
+   "turkish": [
+    {
+     "date": "2026-10-15",
+     "time": "19:45",
+     "md": 1,
+     "home": "KuPS Kuopio",
+     "away": "Trabzonspor",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      4
+     ]
+    },
+    {
+     "date": "2026-10-22",
+     "time": "19:45",
+     "md": 2,
+     "home": "Trabzonspor",
+     "away": "Hearts",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      2,
+      0
+     ]
+    },
+    {
+     "date": "2026-11-05",
+     "time": "20:45",
+     "md": 3,
+     "home": "Trabzonspor",
+     "away": "Freiburg",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ]
+    },
+    {
+     "date": "2026-11-26",
+     "time": "23:00",
+     "md": 4,
+     "home": "CSKA Sofia",
+     "away": "Trabzonspor",
+     "tr": true,
+     "status": "UPCOMING",
+     "iddaa": "CSKA Sofya – Trabzonspor",
+     "odds": [
+      3.36,
+      3.45,
+      1.75
+     ],
+     "probs": [
+      0.2568,
+      0.2501,
+      0.4931
+     ],
+     "ou": [
+      1.45,
+      2.14
+     ],
+     "p_over": 0.5961
+    },
+    {
+     "date": "2026-12-10",
+     "time": "20:45",
+     "md": 5,
+     "home": "Trabzonspor",
+     "away": "Jablonec",
+     "tr": true,
+     "status": "UPCOMING"
+    },
+    {
+     "date": "2026-12-17",
+     "time": "23:00",
+     "md": 6,
+     "home": "Crvena Zvezda",
+     "away": "Trabzonspor",
+     "tr": true,
+     "status": "UPCOMING"
+    }
+   ],
+   "flat": {
+    "n": 0,
+    "profit": 0
+   },
+   "unmatched": 0
+  }
+ ]
+}

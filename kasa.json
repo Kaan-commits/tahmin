@@ -1,5 +1,5 @@
 {
- "rule": "Her maç için modelin en olası gördüğü sonuç kaydedilir. Bahis ise yalnızca oran 2,50 veya altındayken ve modelin olasılığı orana göre en az %2 fazla getiri vaat ediyorsa oynanır: 100 TL tekli, kombine yok. iddaa yaklaşık %11 kâr payı aldığı için çoğu hafta bu şart sağlanmaz ve bahis oynanmaz.",
+ "rule": "Gerçek para yok, kayıt üzerinde. Her maç için modelin en olası gördüğü sonuç maçtan önce kaydedilir ve kasa, her tahmine o anki iddaa oranıyla 100 TL oynanmış gibi tutulur: maç sonucu ve 2,5 gol (modelin tarafı). Ayrıca her hafta sistemin en emin olduğu seçimlerden bir öneri kuponu yazılır. iddaa'nın kâr payı yüksek olduğu için uzun vadede kâr beklenmez; amaç modelin ne kadar tuttuğunu dürüstçe göstermek.",
  "coupons": [],
  "predictions": [
   {
@@ -23,7 +23,14 @@
    "over25": 0.5568,
    "goal_opinions": [],
    "result": "1-0",
-   "hit": true
+   "hit": true,
+   "flat_ms": 109.0,
+   "flat_goal": {
+    "selection": "Üst",
+    "odds": 1.58,
+    "p": 0.5568,
+    "profit": -100.0
+   }
   },
   {
    "round": "12. hafta",
@@ -46,7 +53,14 @@
    "over25": 0.6045,
    "goal_opinions": [],
    "result": "0-2",
-   "hit": false
+   "hit": false,
+   "flat_ms": -100.0,
+   "flat_goal": {
+    "selection": "Üst",
+    "odds": 1.46,
+    "p": 0.6045,
+    "profit": -100.0
+   }
   },
   {
    "round": "12. hafta",
@@ -88,7 +102,14 @@
     }
    ],
    "result": "2-1",
-   "hit": true
+   "hit": true,
+   "flat_ms": 12.0,
+   "flat_goal": {
+    "selection": "Üst",
+    "odds": 1.22,
+    "p": 0.7173,
+    "profit": 22.0
+   }
   },
   {
    "round": "12. hafta",
@@ -111,7 +132,14 @@
    "over25": 0.5605,
    "goal_opinions": [],
    "result": "2-2",
-   "hit": false
+   "hit": false,
+   "flat_ms": -100.0,
+   "flat_goal": {
+    "selection": "Üst",
+    "odds": 1.54,
+    "p": 0.5605,
+    "profit": 54.0
+   }
   },
   {
    "round": "12. hafta",
@@ -134,7 +162,14 @@
    "over25": 0.4649,
    "goal_opinions": [],
    "result": "0-1",
-   "hit": true
+   "hit": true,
+   "flat_ms": 119.0,
+   "flat_goal": {
+    "selection": "Alt",
+    "odds": 1.66,
+    "p": 0.5351,
+    "profit": 66.0
+   }
   },
   {
    "round": "12. hafta",
@@ -157,7 +192,14 @@
    "over25": 0.4966,
    "goal_opinions": [],
    "result": "2-1",
-   "hit": true
+   "hit": true,
+   "flat_ms": 84.0,
+   "flat_goal": {
+    "selection": "Alt",
+    "odds": 1.73,
+    "p": 0.5034,
+    "profit": -100.0
+   }
   },
   {
    "round": "12. hafta",
@@ -180,7 +222,14 @@
    "over25": 0.5634,
    "goal_opinions": [],
    "result": "2-4",
-   "hit": true
+   "hit": true,
+   "flat_ms": 48.0,
+   "flat_goal": {
+    "selection": "Üst",
+    "odds": 1.55,
+    "p": 0.5634,
+    "profit": 55.0
+   }
   },
   {
    "round": "12. hafta",
@@ -234,32 +283,39 @@
     "market": "MS",
     "selection": "X",
     "odds": 3.46,
-    "ev": -0.1032
+    "ev": -0.1028
    },
    "bets": [],
-   "over25": 0.602,
+   "over25": 0.6293,
    "goal_opinions": [
     {
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.6708,
+     "p": 0.67,
      "base": 0.5339,
-     "gap": 0.1369,
+     "gap": 0.1361,
      "hit": null
     },
     {
      "key": "o15",
      "market": "1,5",
      "side": "Üst",
-     "p": 0.8593,
+     "p": 0.8588,
      "base": 0.7706,
-     "gap": 0.0887,
+     "gap": 0.0882,
      "hit": null
     }
    ],
    "result": null,
-   "hit": null
+   "hit": null,
+   "flat_ms": null,
+   "flat_goal": {
+    "selection": "Üst",
+    "odds": 1.38,
+    "p": 0.6293,
+    "profit": null
+   }
   }
  ],
  "backtest": {
@@ -336,7 +392,47 @@
   ],
   "matches": 2158,
   "hit_all": 0.5348,
-  "note": "Gerçek Bet365 oranlarıyla (ortalama kâr payı ~%6,5). Aynı maçlarda iddaa'nın ~%11 kâr payıyla kurala uyan bahis sayısı 1 olurdu. Bu kadar az bahisle kâr/zarar rakamı bir şey kanıtlamaz; 38 ligin tamamında aynı kural 6 sezonda 140 bahiste yaklaşık %+2 getirdi, o da sezondan sezona değişti. Kuralın asıl işi, piyasadan daha iyi bilmediğimiz maçlarda oynamamak."
+  "note": "Gerçek Bet365 oranlarıyla (ortalama kâr payı ~%6,5). Aynı maçlarda iddaa'nın ~%16 kâr payıyla kurala uyan bahis sayısı 0 olurdu. Bu kadar az bahisle kâr/zarar rakamı bir şey kanıtlamaz; 38 ligin tamamında aynı kural 6 sezonda 140 bahiste yaklaşık %+2 getirdi, o da sezondan sezona değişti. Kuralın asıl işi, piyasadan daha iyi bilmediğimiz maçlarda oynamamak."
+ },
+ "suggestions": [
+  {
+   "round": "12. hafta",
+   "kind": "Öneri kuponu",
+   "written": "2026-11-23 11:28 UTC",
+   "stake": 100.0,
+   "odds": 1.38,
+   "p": 0.6293,
+   "ev": -0.1316,
+   "status": "Bekliyor",
+   "payout": 0.0,
+   "profit": 0.0,
+   "legs": [
+    {
+     "match_id": "2026-11-23|Buyuksehyr|Corum",
+     "date": "2026-11-23",
+     "label": "Buyuksehyr – Corum",
+     "market": "2,5 Alt/Üst",
+     "selection": "Üst",
+     "odds": 1.38,
+     "p": 0.6293,
+     "won": null
+    }
+   ]
+  }
+ ],
+ "suggestion_backtest": {
+  "coupons": 195,
+  "legs": 2.1,
+  "odds": 2.38,
+  "hit": 0.4154,
+  "roi": -0.138,
+  "with_combo": 119,
+  "combo_margin": 0.2024,
+  "min_p": 0.6,
+  "min_odds": 1.2,
+  "max_legs": 3,
+  "stake": 100.0,
+  "combo_min_p": 0.45
  },
  "markets": {
   "goals": {
@@ -502,5 +598,795 @@
     118
    ]
   ]
- }
+ },
+ "flat": {
+  "stake": 100.0,
+  "markets": [
+   {
+    "market": "Maç sonucu",
+    "groups": [
+     {
+      "name": "Tüm tahminler",
+      "n": 7,
+      "hit": 5,
+      "staked": 700.0,
+      "returned": 872.0,
+      "profit": 172.0,
+      "roi": 0.2457
+     },
+     {
+      "name": "Olasılık %50 ve üstü",
+      "n": 4,
+      "hit": 2,
+      "staked": 400.0,
+      "returned": 260.0,
+      "profit": -140.0,
+      "roi": -0.35
+     },
+     {
+      "name": "Olasılık %65 ve üstü",
+      "n": 1,
+      "hit": 1,
+      "staked": 100.0,
+      "returned": 112.0,
+      "profit": 12.0,
+      "roi": 0.12
+     }
+    ],
+    "no_odds": 1,
+    "rounds": [
+     {
+      "round": "12. hafta",
+      "n": 7,
+      "hit": 5,
+      "profit": 172.0
+     }
+    ]
+   },
+   {
+    "market": "Toplam gol (2,5 alt/üst)",
+    "groups": [
+     {
+      "name": "Her maçta modelin tarafı",
+      "n": 7,
+      "hit": 4,
+      "staked": 700.0,
+      "returned": 597.0,
+      "profit": -103.0,
+      "roi": -0.1471
+     },
+     {
+      "name": "Model %60 ve üstü dediğinde",
+      "n": 2,
+      "hit": 1,
+      "staked": 200.0,
+      "returned": 122.0,
+      "profit": -78.0,
+      "roi": -0.39
+     }
+    ],
+    "rounds": [
+     {
+      "round": "12. hafta",
+      "n": 7,
+      "hit": 4,
+      "profit": -103.0
+     }
+    ]
+   },
+   {
+    "market": "Toplam kart",
+    "unavailable": "iddaa Süper Lig ve 1. Lig maçlarında kart bahsi (toplam kart, oyuncu kart görür) açmıyor; kart tahminleri bu yüzden yalnızca bilgi amaçlı."
+   }
+  ],
+  "backtest": {
+   "matches": 2158,
+   "margin_ms": 0.1574,
+   "margin_ou": 0.1578,
+   "margin_n": 9,
+   "markets": {
+    "Maç sonucu": [
+     {
+      "name": "Tüm tahminler",
+      "n": 2158,
+      "hit": 0.5348,
+      "roi_bet365": -0.0008,
+      "roi_iddaa": -0.0802
+     },
+     {
+      "name": "Olasılık %50 ve üstü",
+      "n": 933,
+      "hit": 0.6667,
+      "roi_bet365": 0.0409,
+      "roi_iddaa": -0.0409
+     },
+     {
+      "name": "Olasılık %65 ve üstü",
+      "n": 313,
+      "hit": 0.7668,
+      "roi_bet365": 0.0229,
+      "roi_iddaa": -0.0568
+     }
+    ],
+    "Toplam gol (2,5 alt/üst)": [
+     {
+      "name": "Her maçta modelin tarafı",
+      "n": 2158,
+      "hit": 0.5278,
+      "roi_bet365": -0.0812,
+      "roi_iddaa": -0.1606
+     },
+     {
+      "name": "Model %60 ve üstü dediğinde",
+      "n": 242,
+      "hit": 0.7066,
+      "roi_bet365": 0.0497,
+      "roi_iddaa": -0.0369
+     }
+    ]
+   }
+  }
+ },
+ "weeks": [
+  {
+   "week": 12,
+   "matches": [
+    {
+     "date": "2026-11-21",
+     "time": "13:30",
+     "home": "Genclerbirligi",
+     "away": "Gaziantep",
+     "model": {
+      "home": 0.4151,
+      "draw": 0.2709,
+      "away": 0.314,
+      "over25": 0.5568,
+      "xg_home": 1.55,
+      "xg_away": 1.11,
+      "top_scores": [
+       [
+        "1-1",
+        0.1204
+       ],
+       [
+        "1-0",
+        0.1085
+       ],
+       [
+        "2-1",
+        0.0932
+       ]
+      ],
+      "goals": {
+       "o15": 0.7435,
+       "o25": 0.4959,
+       "o35": 0.2766,
+       "btts": 0.5277
+      },
+      "raw": {
+       "home": 0.4463,
+       "draw": 0.2757,
+       "away": 0.2779,
+       "over25": 0.5058
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 2.09,
+      "draw": 3.25,
+      "away": 2.7,
+      "implied": [
+       0.4137,
+       0.266,
+       0.3202
+      ],
+      "over25": 1.58,
+      "under25": 1.91,
+      "implied_over25": 0.5473
+     },
+     "result": "1-0",
+     "goal_opinions": [],
+     "cards": {
+      "mu": 4.69,
+      "referee": "HALİL UMUT MELER",
+      "lines": {
+       "3.5": 0.6799,
+       "4.5": 0.4988,
+       "5.5": 0.3306
+      },
+      "ref_matches": 213,
+      "ref_avg": 4.98,
+      "opinion": null
+     },
+     "home_tr": "Genclerbirligi",
+     "away_tr": "Gaziantep"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "16:00",
+     "home": "Amedspor",
+     "away": "Rizespor",
+     "model": {
+      "home": 0.5709,
+      "draw": 0.23,
+      "away": 0.1991,
+      "over25": 0.6045,
+      "xg_home": 1.44,
+      "xg_away": 1.4,
+      "top_scores": [
+       [
+        "1-1",
+        0.1179
+       ],
+       [
+        "2-1",
+        0.0846
+       ],
+       [
+        "1-0",
+        0.0841
+       ]
+      ],
+      "goals": {
+       "o15": 0.7753,
+       "o25": 0.5395,
+       "o35": 0.3165,
+       "btts": 0.5745
+      },
+      "raw": {
+       "home": 0.3576,
+       "draw": 0.2626,
+       "away": 0.3798,
+       "over25": 0.551
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 1.58,
+      "draw": 3.64,
+      "away": 4.05,
+      "implied": [
+       0.5482,
+       0.238,
+       0.2139
+      ],
+      "over25": 1.46,
+      "under25": 2.12,
+      "implied_over25": 0.5922
+     },
+     "result": "0-2",
+     "goal_opinions": [],
+     "cards": {
+      "mu": 4.86,
+      "referee": "ÜMİT ÖZTÜRK",
+      "lines": {
+       "3.5": 0.706,
+       "4.5": 0.5296,
+       "5.5": 0.3601
+      },
+      "ref_matches": 161,
+      "ref_avg": 5.17,
+      "opinion": null
+     },
+     "home_tr": "Amedspor",
+     "away_tr": "Rizespor"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "16:00",
+     "home": "Galatasaray",
+     "away": "Samsunspor",
+     "model": {
+      "home": 0.8031,
+      "draw": 0.1228,
+      "away": 0.0741,
+      "over25": 0.7173,
+      "xg_home": 2.81,
+      "xg_away": 0.92,
+      "top_scores": [
+       [
+        "2-0",
+        0.0947
+       ],
+       [
+        "3-0",
+        0.0886
+       ],
+       [
+        "2-1",
+        0.0872
+       ]
+      ],
+      "goals": {
+       "o15": 0.8861,
+       "o25": 0.719,
+       "o35": 0.5114,
+       "btts": 0.5653
+      },
+      "raw": {
+       "home": 0.8063,
+       "draw": 0.1171,
+       "away": 0.0766,
+       "over25": 0.7341
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 1.12,
+      "draw": 6.34,
+      "away": 9.39,
+      "implied": [
+       0.7716,
+       0.1363,
+       0.092
+      ],
+      "over25": 1.22,
+      "under25": 2.95,
+      "implied_over25": 0.7074
+     },
+     "result": "2-1",
+     "goal_opinions": [
+      {
+       "key": "o25",
+       "market": "2,5",
+       "side": "Üst",
+       "p": 0.719,
+       "base": 0.5341,
+       "gap": 0.1849
+      },
+      {
+       "key": "o15",
+       "market": "1,5",
+       "side": "Üst",
+       "p": 0.8861,
+       "base": 0.7716,
+       "gap": 0.1145
+      }
+     ],
+     "cards": {
+      "mu": 4.54,
+      "referee": "ALİ ŞANSALAN",
+      "lines": {
+       "3.5": 0.6575,
+       "4.5": 0.4732,
+       "5.5": 0.3068
+      },
+      "ref_matches": 141,
+      "ref_avg": 4.79,
+      "opinion": null
+     },
+     "home_tr": "Galatasaray",
+     "away_tr": "Samsunspor"
+    },
+    {
+     "date": "2026-11-21",
+     "time": "19:00",
+     "home": "Kocaelispor",
+     "away": "Fenerbahce",
+     "model": {
+      "home": 0.1488,
+      "draw": 0.2072,
+      "away": 0.644,
+      "over25": 0.5605,
+      "xg_home": 0.97,
+      "xg_away": 2.1,
+      "top_scores": [
+       [
+        "0-2",
+        0.1028
+       ],
+       [
+        "1-2",
+        0.0993
+       ],
+       [
+        "0-1",
+        0.0978
+       ]
+      ],
+      "goals": {
+       "o15": 0.8108,
+       "o25": 0.5919,
+       "o35": 0.368,
+       "btts": 0.5435
+      },
+      "raw": {
+       "home": 0.1412,
+       "draw": 0.1985,
+       "away": 0.6603,
+       "over25": 0.6065
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 5.17,
+      "draw": 3.99,
+      "away": 1.41,
+      "implied": [
+       0.1677,
+       0.2173,
+       0.615
+      ],
+      "over25": 1.54,
+      "under25": 1.97,
+      "implied_over25": 0.5613
+     },
+     "result": "2-2",
+     "goal_opinions": [],
+     "cards": {
+      "mu": 4.93,
+      "referee": "KADİR SAĞLAM",
+      "lines": {
+       "3.5": 0.7162,
+       "4.5": 0.542,
+       "5.5": 0.3722
+      },
+      "ref_matches": 76,
+      "ref_avg": 5.18,
+      "opinion": null
+     },
+     "home_tr": "Kocaelispor",
+     "away_tr": "Fenerbahce"
+    },
+    {
+     "date": "2026-11-22",
+     "time": "13:30",
+     "home": "Erzurumspor",
+     "away": "Goztep",
+     "model": {
+      "home": 0.3214,
+      "draw": 0.2756,
+      "away": 0.4029,
+      "over25": 0.4649,
+      "xg_home": 1.01,
+      "xg_away": 2.0,
+      "top_scores": [
+       [
+        "1-1",
+        0.0996
+       ],
+       [
+        "1-2",
+        0.0996
+       ],
+       [
+        "0-1",
+        0.0989
+       ]
+      ],
+      "goals": {
+       "o15": 0.8018,
+       "o25": 0.5782,
+       "o35": 0.3542,
+       "btts": 0.5488
+      },
+      "raw": {
+       "home": 0.1707,
+       "draw": 0.203,
+       "away": 0.6262,
+       "over25": 0.5645
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 2.65,
+      "draw": 3.09,
+      "away": 2.19,
+      "implied": [
+       0.326,
+       0.2796,
+       0.3945
+      ],
+      "over25": 1.82,
+      "under25": 1.66,
+      "implied_over25": 0.477
+     },
+     "result": "0-1",
+     "goal_opinions": [],
+     "cards": {
+      "mu": 4.22,
+      "referee": null,
+      "lines": {
+       "3.5": 0.5985,
+       "4.5": 0.4117,
+       "5.5": 0.2548
+      }
+     },
+     "home_tr": "Erzurumspor",
+     "away_tr": "Goztep"
+    },
+    {
+     "date": "2026-11-22",
+     "time": "16:00",
+     "home": "Kasimpasa",
+     "away": "Alanyaspor",
+     "model": {
+      "home": 0.4766,
+      "draw": 0.2717,
+      "away": 0.2517,
+      "over25": 0.4966,
+      "xg_home": 1.73,
+      "xg_away": 0.98,
+      "top_scores": [
+       [
+        "1-0",
+        0.1154
+       ],
+       [
+        "1-1",
+        0.1127
+       ],
+       [
+        "2-0",
+        0.0999
+       ]
+      ],
+      "goals": {
+       "o15": 0.7528,
+       "o25": 0.5084,
+       "o35": 0.2877,
+       "btts": 0.5132
+      },
+      "raw": {
+       "home": 0.4916,
+       "draw": 0.2704,
+       "away": 0.238,
+       "over25": 0.5333
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 1.84,
+      "draw": 3.23,
+      "away": 3.28,
+      "implied": [
+       0.4693,
+       0.2674,
+       0.2633
+      ],
+      "over25": 1.73,
+      "under25": 1.73,
+      "implied_over25": 0.5
+     },
+     "result": "2-1",
+     "goal_opinions": [],
+     "cards": {
+      "mu": 4.59,
+      "referee": "DAVUT DAKUL ÇELİK",
+      "lines": {
+       "3.5": 0.665,
+       "4.5": 0.4816,
+       "5.5": 0.3146
+      },
+      "ref_matches": 4,
+      "ref_avg": 5.5,
+      "opinion": null
+     },
+     "home_tr": "Kasimpasa",
+     "away_tr": "Alanyaspor"
+    },
+    {
+     "date": "2026-11-22",
+     "time": "16:00",
+     "home": "Konyaspor",
+     "away": "Besiktas",
+     "model": {
+      "home": 0.1661,
+      "draw": 0.2251,
+      "away": 0.6088,
+      "over25": 0.5634,
+      "xg_home": 1.03,
+      "xg_away": 1.8,
+      "top_scores": [
+       [
+        "1-1",
+        0.1092
+       ],
+       [
+        "0-1",
+        0.1059
+       ],
+       [
+        "1-2",
+        0.0985
+       ]
+      ],
+      "goals": {
+       "o15": 0.7748,
+       "o25": 0.5388,
+       "o35": 0.3158,
+       "btts": 0.5375
+      },
+      "raw": {
+       "home": 0.1962,
+       "draw": 0.2323,
+       "away": 0.5715,
+       "over25": 0.5456
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 4.67,
+      "draw": 3.74,
+      "away": 1.48,
+      "implied": [
+       0.185,
+       0.2311,
+       0.5839
+      ],
+      "over25": 1.55,
+      "under25": 1.95,
+      "implied_over25": 0.5571
+     },
+     "result": "2-4",
+     "goal_opinions": [],
+     "cards": {
+      "mu": 4.08,
+      "referee": "ÇAĞDAŞ ALTAY",
+      "lines": {
+       "3.5": 0.5765,
+       "4.5": 0.3863,
+       "5.5": 0.2312
+      },
+      "ref_matches": 57,
+      "ref_avg": 4.07,
+      "opinion": null
+     },
+     "home_tr": "Konyaspor",
+     "away_tr": "Besiktas"
+    },
+    {
+     "date": "2026-11-22",
+     "time": "19:00",
+     "home": "Trabzonspor",
+     "away": "Eyupspor",
+     "model": {
+      "home": 0.8579,
+      "draw": 0.0971,
+      "away": 0.045,
+      "over25": 0.7248,
+      "xg_home": 2.87,
+      "xg_away": 0.7,
+      "top_scores": [
+       [
+        "2-0",
+        0.1155
+       ],
+       [
+        "3-0",
+        0.1105
+       ],
+       [
+        "2-1",
+        0.0813
+       ]
+      ],
+      "goals": {
+       "o15": 0.8716,
+       "o25": 0.6925,
+       "o35": 0.4792,
+       "btts": 0.4768
+      },
+      "raw": {
+       "home": 0.8579,
+       "draw": 0.0971,
+       "away": 0.045,
+       "over25": 0.7248
+      },
+      "blended": false
+     },
+     "odds": null,
+     "result": "1-0",
+     "goal_opinions": [
+      {
+       "key": "o25",
+       "market": "2,5",
+       "side": "Üst",
+       "p": 0.6925,
+       "base": 0.5341,
+       "gap": 0.1584
+      },
+      {
+       "key": "o15",
+       "market": "1,5",
+       "side": "Üst",
+       "p": 0.8716,
+       "base": 0.7716,
+       "gap": 0.1
+      }
+     ],
+     "cards": {
+      "mu": 4.62,
+      "referee": "GÜRCAN HASOVA",
+      "lines": {
+       "3.5": 0.67,
+       "4.5": 0.4874,
+       "5.5": 0.3199
+      },
+      "ref_matches": 12,
+      "ref_avg": 5.25,
+      "opinion": null
+     },
+     "home_tr": "Trabzonspor",
+     "away_tr": "Eyupspor"
+    },
+    {
+     "date": "2026-11-23",
+     "time": "20:00",
+     "home": "Buyuksehyr",
+     "away": "Corum",
+     "model": {
+      "home": 0.4855,
+      "draw": 0.2593,
+      "away": 0.2553,
+      "over25": 0.6293,
+      "xg_home": 2.44,
+      "xg_away": 1.01,
+      "top_scores": [
+       [
+        "2-1",
+        0.0954
+       ],
+       [
+        "2-0",
+        0.0946
+       ],
+       [
+        "1-1",
+        0.0781
+       ]
+      ],
+      "goals": {
+       "o15": 0.8588,
+       "o25": 0.67,
+       "o35": 0.4528,
+       "btts": 0.5799
+      },
+      "raw": {
+       "home": 0.732,
+       "draw": 0.173,
+       "away": 0.095,
+       "over25": 0.6704
+      },
+      "blended": true
+     },
+     "odds": {
+      "home": 1.79,
+      "draw": 3.46,
+      "away": 3.22,
+      "implied": [
+       0.4823,
+       0.2495,
+       0.2681
+      ],
+      "over25": 1.38,
+      "under25": 2.31,
+      "implied_over25": 0.626
+     },
+     "goal_opinions": [
+      {
+       "key": "o25",
+       "market": "2,5",
+       "side": "Üst",
+       "p": 0.67,
+       "base": 0.5339,
+       "gap": 0.1361
+      },
+      {
+       "key": "o15",
+       "market": "1,5",
+       "side": "Üst",
+       "p": 0.8588,
+       "base": 0.7706,
+       "gap": 0.0882
+      }
+     ],
+     "home_tr": "Buyuksehyr",
+     "away_tr": "Corum",
+     "result": null
+    }
+   ]
+  }
+ ],
+ "current_week": 12
 }
