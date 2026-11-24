@@ -615,6 +615,304 @@
   "stake": 100.0,
   "combo_min_p": 0.45
  },
+ "plans_backtest": [
+  {
+   "plan": "ihtimal",
+   "name": "En yüksek ihtimal",
+   "coupons": 218,
+   "legs": 3.0,
+   "odds": 2.05,
+   "hit": 0.3349,
+   "roi": -0.3142
+  },
+  {
+   "plan": "kazanc",
+   "name": "En yüksek kazanç",
+   "coupons": 218,
+   "legs": 3.0,
+   "odds": 8.1,
+   "hit": 0.0826,
+   "roi": -0.3504
+  },
+  {
+   "plan": "surpriz",
+   "name": "Sürpriz",
+   "coupons": 218,
+   "legs": 2.0,
+   "odds": 10.67,
+   "hit": 0.0872,
+   "roi": -0.1899
+  }
+ ],
+ "kuponlar": [
+  {
+   "id": "ihtimal-202611240748",
+   "plan": "ihtimal",
+   "name": "En yüksek ihtimal",
+   "note": "3–4 maç, toplam oran en az 2,00; bu şartla tutma olasılığı en yüksek kupon",
+   "created": "2026-11-24 07:48 UTC",
+   "days": [
+    "2026-11-26"
+   ],
+   "stake": 100.0,
+   "odds": 2.02,
+   "p": 0.3222,
+   "ev": -0.3481,
+   "status": "Bekliyor",
+   "payout": 0.0,
+   "profit": 0.0,
+   "legs": [
+    {
+     "comp": "Avrupa Ligi",
+     "home": "Celta",
+     "away": "Bournemouth",
+     "names": "düz",
+     "lk": "Celta Vigo|Bournemouth",
+     "settle": {
+      "kind": "cup",
+      "comp": "al",
+      "home": "Celta",
+      "away": "Bournemouth"
+     },
+     "ko": "2026-11-26T17:45Z",
+     "date": "2026-11-26",
+     "time": "20:45",
+     "code": "2_101",
+     "line": "3.5",
+     "outcome": "Alt",
+     "market": "Alt/Üst",
+     "tpl": "3,5 Alt",
+     "odds": 1.25,
+     "p": 0.6936,
+     "p_model": null,
+     "p_market": 0.6936,
+     "won": null
+    },
+    {
+     "comp": "Avrupa Ligi",
+     "home": "Crystal Palace",
+     "away": "Real Sociedad",
+     "names": "düz",
+     "lk": "Crystal Palace|Real Sociedad",
+     "settle": {
+      "kind": "cup",
+      "comp": "al",
+      "home": "Crystal Palace",
+      "away": "Real Sociedad"
+     },
+     "ko": "2026-11-26T20:00Z",
+     "date": "2026-11-26",
+     "time": "23:00",
+     "code": "2_101",
+     "line": "2.5",
+     "outcome": "Üst",
+     "market": "Alt/Üst",
+     "tpl": "2,5 Üst",
+     "odds": 1.42,
+     "p": 0.611,
+     "p_model": null,
+     "p_market": 0.611,
+     "won": null
+    },
+    {
+     "comp": "Avrupa Ligi",
+     "home": "Sunderland",
+     "away": "Jagiellonia",
+     "names": "düz",
+     "lk": "Sunderland|Jagiellonia Bialystok",
+     "settle": {
+      "kind": "cup",
+      "comp": "al",
+      "home": "Sunderland",
+      "away": "Jagiellonia"
+     },
+     "ko": "2026-11-26T20:00Z",
+     "date": "2026-11-26",
+     "time": "23:00",
+     "code": "1_1",
+     "line": "",
+     "outcome": "1",
+     "market": "Maç sonucu",
+     "tpl": "§1 kazanır",
+     "odds": 1.14,
+     "p": 0.7602,
+     "p_model": null,
+     "p_market": 0.7602,
+     "won": null
+    }
+   ]
+  },
+  {
+   "id": "kazanc-202611240748",
+   "plan": "kazanc",
+   "name": "En yüksek kazanç",
+   "note": "3–5 maç, toplam oran en az 8,00; bu şartla tutma olasılığı en yüksek kupon",
+   "created": "2026-11-24 07:48 UTC",
+   "days": [
+    "2026-11-24",
+    "2026-11-26"
+   ],
+   "stake": 100.0,
+   "odds": 8.03,
+   "p": 0.0811,
+   "ev": -0.3485,
+   "status": "Bekliyor",
+   "payout": 0.0,
+   "profit": 0.0,
+   "legs": [
+    {
+     "comp": "Şampiyonlar Ligi",
+     "home": "Galatasaray",
+     "away": "Aston Villa",
+     "names": "düz",
+     "lk": "Galatasaray|Aston Villa",
+     "settle": {
+      "kind": "cup",
+      "comp": "sl",
+      "home": "Galatasaray",
+      "away": "Aston Villa"
+     },
+     "ko": "2026-11-24T17:45Z",
+     "date": "2026-11-24",
+     "time": "20:45",
+     "code": "2_89",
+     "line": "",
+     "outcome": "Yok",
+     "market": "Karşılıklı gol",
+     "tpl": "KG Yok",
+     "odds": 2.49,
+     "p": 0.3482,
+     "p_model": null,
+     "p_market": 0.3482,
+     "won": null
+    },
+    {
+     "comp": "Avrupa Ligi",
+     "home": "Celta",
+     "away": "Bournemouth",
+     "names": "düz",
+     "lk": "Celta Vigo|Bournemouth",
+     "settle": {
+      "kind": "cup",
+      "comp": "al",
+      "home": "Celta",
+      "away": "Bournemouth"
+     },
+     "ko": "2026-11-26T17:45Z",
+     "date": "2026-11-26",
+     "time": "20:45",
+     "code": "2_101",
+     "line": "3.5",
+     "outcome": "Üst",
+     "market": "Alt/Üst",
+     "tpl": "3,5 Üst",
+     "odds": 2.83,
+     "p": 0.3064,
+     "p_model": null,
+     "p_market": 0.3064,
+     "won": null
+    },
+    {
+     "comp": "Avrupa Ligi",
+     "home": "Sunderland",
+     "away": "Jagiellonia",
+     "names": "düz",
+     "lk": "Sunderland|Jagiellonia Bialystok",
+     "settle": {
+      "kind": "cup",
+      "comp": "al",
+      "home": "Sunderland",
+      "away": "Jagiellonia"
+     },
+     "ko": "2026-11-26T20:00Z",
+     "date": "2026-11-26",
+     "time": "23:00",
+     "code": "1_1",
+     "line": "",
+     "outcome": "1",
+     "market": "Maç sonucu",
+     "tpl": "§1 kazanır",
+     "odds": 1.14,
+     "p": 0.7602,
+     "p_model": null,
+     "p_market": 0.7602,
+     "won": null
+    }
+   ]
+  },
+  {
+   "id": "surpriz-202611240748",
+   "plan": "surpriz",
+   "name": "Sürpriz",
+   "note": "2–3 maç, yalnız favori olmayan seçimler, toplam oran en az 8,00; beklenen getirisi en iyi kupon",
+   "created": "2026-11-24 07:48 UTC",
+   "days": [
+    "2026-11-24",
+    "2026-11-25"
+   ],
+   "stake": 100.0,
+   "odds": 8.7,
+   "p": 0.0865,
+   "ev": -0.2474,
+   "status": "Bekliyor",
+   "payout": 0.0,
+   "profit": 0.0,
+   "legs": [
+    {
+     "comp": "Şampiyonlar Ligi",
+     "home": "Bodø/Glimt",
+     "away": "LASK",
+     "names": "düz",
+     "lk": "Bodo Glimt|LASK",
+     "settle": {
+      "kind": "cup",
+      "comp": "sl",
+      "home": "Bodø/Glimt",
+      "away": "LASK"
+     },
+     "ko": "2026-11-24T17:45Z",
+     "date": "2026-11-24",
+     "time": "20:45",
+     "code": "2_101",
+     "line": "2.5",
+     "outcome": "Alt",
+     "market": "Alt/Üst",
+     "tpl": "2,5 Alt",
+     "odds": 3.44,
+     "p": 0.2522,
+     "p_model": null,
+     "p_market": 0.2522,
+     "won": null
+    },
+    {
+     "comp": "Şampiyonlar Ligi",
+     "home": "Shakhtar",
+     "away": "Fenerbahçe",
+     "names": "düz",
+     "lk": "Shakhtar Donetsk|Fenerbahçe",
+     "settle": {
+      "kind": "cup",
+      "comp": "sl",
+      "home": "Shakhtar",
+      "away": "Fenerbahçe"
+     },
+     "ko": "2026-11-25T20:00Z",
+     "date": "2026-11-25",
+     "time": "23:00",
+     "code": "2_101",
+     "line": "3.5",
+     "outcome": "Üst",
+     "market": "Alt/Üst",
+     "tpl": "3,5 Üst",
+     "odds": 2.53,
+     "p": 0.3429,
+     "p_model": null,
+     "p_market": 0.3429,
+     "won": null
+    }
+   ]
+  }
+ ],
  "markets": {
   "goals": {
    "matches": 2187,
