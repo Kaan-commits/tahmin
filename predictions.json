@@ -1,646 +1,89 @@
 {
- "generated": "2026-11-23 11:27 UTC",
+ "generated": "2026-11-24 07:15 UTC",
  "league": "T1",
- "data_until": "2026-11-22",
+ "data_until": "2026-11-23",
  "demo": false,
- "odds_source": "iddaa bülteni (arşiv, son kayıt 2026-11-23 10:05 UTC)",
+ "odds_source": "oran yok",
  "notes": [],
  "results_source": "TFF maç raporları",
  "league_base": {
-  "o15": 0.7706,
-  "o25": 0.5339,
-  "o35": 0.3062,
-  "btts": 0.5429,
+  "o15": 0.7708,
+  "o25": 0.5343,
+  "o35": 0.3069,
+  "btts": 0.5433,
   "goals": 2.81,
   "corners": 9.5,
   "cards": 4.7,
-  "matches": 1107,
+  "matches": 1108,
   "seasons": "2023/24–2026/27"
  },
  "opinion_gap": 0.08,
  "matches": [
   {
-   "date": "2026-11-21",
-   "time": "13:30",
-   "home": "Genclerbirligi",
-   "away": "Gaziantep",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "home": "Alanyaspor",
+   "away": "Konyaspor",
    "model": {
-    "home": 0.4151,
-    "draw": 0.2709,
-    "away": 0.314,
-    "over25": 0.5568,
-    "xg_home": 1.55,
-    "xg_away": 1.11,
-    "top_scores": [
-     [
-      "1-1",
-      0.1204
-     ],
-     [
-      "1-0",
-      0.1085
-     ],
-     [
-      "2-1",
-      0.0932
-     ]
-    ],
-    "goals": {
-     "o15": 0.7435,
-     "o25": 0.4959,
-     "o35": 0.2766,
-     "btts": 0.5277
-    },
-    "raw": {
-     "home": 0.4463,
-     "draw": 0.2757,
-     "away": 0.2779,
-     "over25": 0.5058
-    },
-    "blended": true
-   },
-   "odds": {
-    "home": 2.09,
-    "draw": 3.25,
-    "away": 2.7,
-    "implied": [
-     0.4137,
-     0.266,
-     0.3202
-    ],
-    "over25": 1.58,
-    "under25": 1.91,
-    "implied_over25": 0.5473
-   },
-   "goal_opinions": [],
-   "live": {
-    "lh": 1.334,
-    "la": 1.123
-   },
-   "home_tr": "Genclerbirligi",
-   "away_tr": "Gaziantep",
-   "extra_markets": [],
-   "cards": {
-    "mu": 4.69,
-    "referee": "HALİL UMUT MELER",
-    "referee_id": 21156,
-    "lines": {
-     "3.5": 0.6799,
-     "4.5": 0.4988,
-     "5.5": 0.3306
-    },
-    "ref_matches": 213,
-    "ref_avg": 4.98,
-    "opinion": null,
-    "iddaa": {
-     "mu": 4.98,
-     "lines": {
-      "3.5": 0.7053,
-      "4.5": 0.5392,
-      "5.5": 0.3795,
-      "6.5": 0.247
-     },
-     "odds": {},
-     "value": []
-    }
-   },
-   "player_cards": {
-    "players": [
-     {
-      "id": 2820748,
-      "name": "Juninho Gracielo Bacuna",
-      "team": "Gaziantep",
-      "p": 0.2694,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2824816,
-      "name": "Drissa Camara",
-      "team": "Gaziantep",
-      "p": 0.2449,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2685549,
-      "name": "Kacper Szymon Kozlowski",
-      "team": "Gaziantep",
-      "p": 0.237,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2820644,
-      "name": "Leo Myenty Janna Abena",
-      "team": "Gaziantep",
-      "p": 0.2271,
-      "odds": null,
-      "ev": null
-     }
-    ],
-    "lineup_from": {
-     "home": "2026-11-08",
-     "away": "2026-11-06"
-    },
-    "with_odds": 0,
-    "unmatched": []
-   },
-   "result": "1-0"
-  },
-  {
-   "date": "2026-11-21",
-   "time": "16:00",
-   "home": "Amedspor",
-   "away": "Rizespor",
-   "model": {
-    "home": 0.5709,
-    "draw": 0.23,
-    "away": 0.1991,
-    "over25": 0.6045,
+    "home": 0.4204,
+    "draw": 0.2986,
+    "away": 0.281,
+    "over25": 0.523,
     "xg_home": 1.44,
-    "xg_away": 1.4,
+    "xg_away": 1.12,
     "top_scores": [
      [
       "1-1",
-      0.1179
-     ],
-     [
-      "2-1",
-      0.0846
+      0.1248
      ],
      [
       "1-0",
-      0.0841
-     ]
-    ],
-    "goals": {
-     "o15": 0.7753,
-     "o25": 0.5395,
-     "o35": 0.3165,
-     "btts": 0.5745
-    },
-    "raw": {
-     "home": 0.3576,
-     "draw": 0.2626,
-     "away": 0.3798,
-     "over25": 0.551
-    },
-    "blended": true
-   },
-   "odds": {
-    "home": 1.58,
-    "draw": 3.64,
-    "away": 4.05,
-    "implied": [
-     0.5482,
-     0.238,
-     0.2139
-    ],
-    "over25": 1.46,
-    "under25": 2.12,
-    "implied_over25": 0.5922
-   },
-   "goal_opinions": [],
-   "live": {
-    "lh": 1.801,
-    "la": 0.962
-   },
-   "home_tr": "Amedspor",
-   "away_tr": "Rizespor",
-   "absences": [
-    "Amedspor: Lumbardh Dellova (şüpheli), Dilhan Demir (sakat)",
-    "Rizespor: Husniddin Aliqulov (sakat)"
-   ],
-   "extra_markets": [],
-   "cards": {
-    "mu": 4.86,
-    "referee": "ÜMİT ÖZTÜRK",
-    "referee_id": 1091989,
-    "lines": {
-     "3.5": 0.706,
-     "4.5": 0.5296,
-     "5.5": 0.3601
-    },
-    "ref_matches": 161,
-    "ref_avg": 5.17,
-    "opinion": null,
-    "iddaa": {
-     "mu": 5.16,
-     "lines": {
-      "3.5": 0.7296,
-      "4.5": 0.5689,
-      "5.5": 0.4096,
-      "6.5": 0.2732
-     },
-     "odds": {},
-     "value": []
-    }
-   },
-   "player_cards": {
-    "players": [
-     {
-      "id": 2935108,
-      "name": "Lumbardh Dellova",
-      "team": "Amedspor",
-      "p": 0.2662,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2420938,
-      "name": "Diaa Sabi'a",
-      "team": "Amedspor",
-      "p": 0.2564,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2934812,
-      "name": "Zakaria Ariss",
-      "team": "Rizespor",
-      "p": 0.2539,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2935079,
-      "name": "Rayan Ny Alna Arnaldo Raveloson",
-      "team": "Amedspor",
-      "p": 0.2395,
-      "odds": null,
-      "ev": null
-     }
-    ],
-    "lineup_from": {
-     "home": "2026-11-07",
-     "away": "2026-11-08"
-    },
-    "with_odds": 0,
-    "unmatched": []
-   },
-   "result": "0-2"
-  },
-  {
-   "date": "2026-11-21",
-   "time": "16:00",
-   "home": "Galatasaray",
-   "away": "Samsunspor",
-   "model": {
-    "home": 0.8031,
-    "draw": 0.1228,
-    "away": 0.0741,
-    "over25": 0.7173,
-    "xg_home": 2.81,
-    "xg_away": 0.92,
-    "top_scores": [
-     [
-      "2-0",
-      0.0947
-     ],
-     [
-      "3-0",
-      0.0886
+      0.1117
      ],
      [
       "2-1",
-      0.0872
+      0.0897
      ]
     ],
     "goals": {
-     "o15": 0.8861,
-     "o25": 0.719,
-     "o35": 0.5114,
-     "btts": 0.5653
+     "o15": 0.7238,
+     "o25": 0.4703,
+     "o35": 0.2543,
+     "btts": 0.513
     },
     "raw": {
-     "home": 0.8063,
-     "draw": 0.1171,
-     "away": 0.0766,
-     "over25": 0.7341
+     "home": 0.4204,
+     "draw": 0.2986,
+     "away": 0.281,
+     "over25": 0.523
     },
-    "blended": true
+    "blended": false
    },
-   "odds": {
-    "home": 1.12,
-    "draw": 6.34,
-    "away": 9.39,
-    "implied": [
-     0.7716,
-     0.1363,
-     0.092
-    ],
-    "over25": 1.22,
-    "under25": 2.95,
-    "implied_over25": 0.7074
-   },
-   "goal_opinions": [
-    {
-     "key": "o25",
-     "market": "2,5",
-     "side": "Üst",
-     "p": 0.719,
-     "base": 0.5341,
-     "gap": 0.1849
-    },
-    {
-     "key": "o15",
-     "market": "1,5",
-     "side": "Üst",
-     "p": 0.8861,
-     "base": 0.7716,
-     "gap": 0.1145
-    }
-   ],
-   "live": {
-    "lh": 2.957,
-    "la": 0.824
-   },
-   "home_tr": "Galatasaray",
-   "away_tr": "Samsunspor",
-   "absences": [
-    "Galatasaray: Rafael Leão (sakat), Victor Osimhen (sakat)",
-    "Samsunspor: Celil Yüksel (sakat), Antoine Sekongo (şüpheli)"
-   ],
-   "extra_markets": [],
-   "cards": {
-    "mu": 4.54,
-    "referee": "ALİ ŞANSALAN",
-    "referee_id": 1141865,
-    "lines": {
-     "3.5": 0.6575,
-     "4.5": 0.4732,
-     "5.5": 0.3068
-    },
-    "ref_matches": 141,
-    "ref_avg": 4.79,
-    "opinion": null,
-    "iddaa": {
-     "mu": 4.83,
-     "lines": {
-      "3.5": 0.6847,
-      "4.5": 0.5148,
-      "5.5": 0.3555,
-      "6.5": 0.2267
-     },
-     "odds": {},
-     "value": []
-    }
-   },
-   "player_cards": {
-    "players": [
-     {
-      "id": 2174557,
-      "name": "Samed Onur",
-      "team": "Samsunspor",
-      "p": 0.2473,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2821032,
-      "name": "Afonso Gamelas De Pinho Sousa",
-      "team": "Samsunspor",
-      "p": 0.24,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2936673,
-      "name": "Rafael Alexandre Da Conceição Leão",
-      "team": "Galatasaray",
-      "p": 0.2307,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2820741,
-      "name": "Josafat Wooding Mendes",
-      "team": "Samsunspor",
-      "p": 0.229,
-      "odds": null,
-      "ev": null
-     }
-    ],
-    "lineup_from": {
-     "home": "2026-11-07",
-     "away": "2026-11-07"
-    },
-    "with_odds": 0,
-    "unmatched": []
-   },
-   "result": "2-1"
-  },
-  {
-   "date": "2026-11-21",
-   "time": "19:00",
-   "home": "Kocaelispor",
-   "away": "Fenerbahce",
-   "model": {
-    "home": 0.1488,
-    "draw": 0.2072,
-    "away": 0.644,
-    "over25": 0.5605,
-    "xg_home": 0.97,
-    "xg_away": 2.1,
-    "top_scores": [
-     [
-      "0-2",
-      0.1028
-     ],
-     [
-      "1-2",
-      0.0993
-     ],
-     [
-      "0-1",
-      0.0978
-     ]
-    ],
-    "goals": {
-     "o15": 0.8108,
-     "o25": 0.5919,
-     "o35": 0.368,
-     "btts": 0.5435
-    },
-    "raw": {
-     "home": 0.1412,
-     "draw": 0.1985,
-     "away": 0.6603,
-     "over25": 0.6065
-    },
-    "blended": true
-   },
-   "odds": {
-    "home": 5.17,
-    "draw": 3.99,
-    "away": 1.41,
-    "implied": [
-     0.1677,
-     0.2173,
-     0.615
-    ],
-    "over25": 1.54,
-    "under25": 1.97,
-    "implied_over25": 0.5613
-   },
+   "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 0.833,
-    "la": 1.989
+    "lh": 1.169,
+    "la": 0.898
    },
-   "home_tr": "Kocaelispor",
-   "away_tr": "Fenerbahce",
-   "absences": [
-    "Kocaelispor: Bruno Petković (sakat)",
-    "Fenerbahçe: Marco Asensio, Nathan Aké (sakat), Archie Brown (cezalı), Romelu Lukaku (şüpheli)"
-   ],
+   "home_tr": "Alanyaspor",
+   "away_tr": "Konyaspor",
    "extra_markets": [],
    "cards": {
-    "mu": 4.93,
-    "referee": "KADİR SAĞLAM",
-    "referee_id": 20668,
-    "lines": {
-     "3.5": 0.7162,
-     "4.5": 0.542,
-     "5.5": 0.3722
-    },
-    "ref_matches": 76,
-    "ref_avg": 5.18,
-    "opinion": null,
-    "iddaa": {
-     "mu": 5.17,
-     "lines": {
-      "3.5": 0.731,
-      "4.5": 0.5707,
-      "5.5": 0.4113,
-      "6.5": 0.2747
-     },
-     "odds": {},
-     "value": []
-    }
-   },
-   "player_cards": {
-    "players": [
-     {
-      "id": 1799966,
-      "name": "Emir Ortakaya",
-      "team": "Kocaelispor",
-      "p": 0.2694,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2820853,
-      "name": "Nelson Cabral Semedo",
-      "team": "Fenerbahce",
-      "p": 0.2589,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 942622,
-      "name": "İrfan Can Kahveci",
-      "team": "Fenerbahce",
-      "p": 0.2338,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2820478,
-      "name": "Manuel Luis Da Silva Cafumana",
-      "team": "Kocaelispor",
-      "p": 0.2309,
-      "odds": null,
-      "ev": null
-     }
-    ],
-    "lineup_from": {
-     "home": "2026-11-07",
-     "away": "2026-11-08"
-    },
-    "with_odds": 0,
-    "unmatched": []
-   },
-   "result": "2-2"
-  },
-  {
-   "date": "2026-11-22",
-   "time": "13:30",
-   "home": "Erzurumspor",
-   "away": "Goztep",
-   "model": {
-    "home": 0.3214,
-    "draw": 0.2756,
-    "away": 0.4029,
-    "over25": 0.4649,
-    "xg_home": 1.01,
-    "xg_away": 2.0,
-    "top_scores": [
-     [
-      "1-1",
-      0.0996
-     ],
-     [
-      "1-2",
-      0.0996
-     ],
-     [
-      "0-1",
-      0.0989
-     ]
-    ],
-    "goals": {
-     "o15": 0.8018,
-     "o25": 0.5782,
-     "o35": 0.3542,
-     "btts": 0.5488
-    },
-    "raw": {
-     "home": 0.1707,
-     "draw": 0.203,
-     "away": 0.6262,
-     "over25": 0.5645
-    },
-    "blended": true
-   },
-   "odds": {
-    "home": 2.65,
-    "draw": 3.09,
-    "away": 2.19,
-    "implied": [
-     0.326,
-     0.2796,
-     0.3945
-    ],
-    "over25": 1.82,
-    "under25": 1.66,
-    "implied_over25": 0.477
-   },
-   "goal_opinions": [],
-   "live": {
-    "lh": 1.114,
-    "la": 1.282
-   },
-   "home_tr": "Erzurumspor",
-   "away_tr": "Goztep",
-   "extra_markets": [],
-   "cards": {
-    "mu": 4.22,
+    "mu": 4.36,
     "referee": null,
     "referee_id": null,
     "lines": {
-     "3.5": 0.5985,
-     "4.5": 0.4117,
-     "5.5": 0.2548
+     "3.5": 0.6225,
+     "4.5": 0.4374,
+     "5.5": 0.2772
     },
     "iddaa": {
-     "mu": 4.41,
+     "mu": 4.53,
      "lines": {
-      "3.5": 0.6192,
-      "4.5": 0.4436,
-      "5.5": 0.2911,
-      "6.5": 0.1764
+      "3.5": 0.6367,
+      "4.5": 0.4629,
+      "5.5": 0.3089,
+      "6.5": 0.1904
      },
      "odds": {},
      "value": []
@@ -649,282 +92,10 @@
    "player_cards": {
     "players": [
      {
-      "id": 2685592,
-      "name": "Novatus Dismas Miroshi",
-      "team": "Goztep",
-      "p": 0.2087,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2878029,
-      "name": "Alexis Antunes Gomez",
-      "team": "Goztep",
-      "p": 0.1999,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 1670365,
-      "name": "Arda Okan Kurtulan",
-      "team": "Goztep",
-      "p": 0.1923,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2685818,
-      "name": "Malcom Narcisse Bokele Mputu",
-      "team": "Goztep",
-      "p": 0.1923,
-      "odds": null,
-      "ev": null
-     }
-    ],
-    "lineup_from": {
-     "home": "2026-11-08",
-     "away": "2026-11-07"
-    },
-    "with_odds": 0,
-    "unmatched": []
-   },
-   "result": "0-1"
-  },
-  {
-   "date": "2026-11-22",
-   "time": "16:00",
-   "home": "Kasimpasa",
-   "away": "Alanyaspor",
-   "model": {
-    "home": 0.4766,
-    "draw": 0.2717,
-    "away": 0.2517,
-    "over25": 0.4966,
-    "xg_home": 1.73,
-    "xg_away": 0.98,
-    "top_scores": [
-     [
-      "1-0",
-      0.1154
-     ],
-     [
-      "1-1",
-      0.1127
-     ],
-     [
-      "2-0",
-      0.0999
-     ]
-    ],
-    "goals": {
-     "o15": 0.7528,
-     "o25": 0.5084,
-     "o35": 0.2877,
-     "btts": 0.5132
-    },
-    "raw": {
-     "home": 0.4916,
-     "draw": 0.2704,
-     "away": 0.238,
-     "over25": 0.5333
-    },
-    "blended": true
-   },
-   "odds": {
-    "home": 1.84,
-    "draw": 3.23,
-    "away": 3.28,
-    "implied": [
-     0.4693,
-     0.2674,
-     0.2633
-    ],
-    "over25": 1.73,
-    "under25": 1.73,
-    "implied_over25": 0.5
-   },
-   "goal_opinions": [],
-   "live": {
-    "lh": 1.398,
-    "la": 0.936
-   },
-   "home_tr": "Kasimpasa",
-   "away_tr": "Alanyaspor",
-   "absences": [
-    "Alanyaspor: Kamil Ahmet Çörekçi (sakat)"
-   ],
-   "extra_markets": [],
-   "cards": {
-    "mu": 4.59,
-    "referee": "DAVUT DAKUL ÇELİK",
-    "referee_id": 1280632,
-    "lines": {
-     "3.5": 0.665,
-     "4.5": 0.4816,
-     "5.5": 0.3146
-    },
-    "ref_matches": 4,
-    "ref_avg": 5.5,
-    "opinion": null,
-    "iddaa": {
-     "mu": 4.73,
-     "lines": {
-      "3.5": 0.6716,
-      "4.5": 0.4995,
-      "5.5": 0.3408,
-      "6.5": 0.2144
-     },
-     "odds": {},
-     "value": []
-    }
-   },
-   "player_cards": {
-    "players": [
-     {
-      "id": 2552290,
-      "name": "Fidan Aliti",
-      "team": "Alanyaspor",
-      "p": 0.2526,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2931316,
-      "name": "Elson Mendes Da Silva",
-      "team": "Kasimpasa",
-      "p": 0.2466,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 1689339,
-      "name": "Ayberk Karapo",
-      "team": "Kasimpasa",
-      "p": 0.2419,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 2561880,
-      "name": "Nuno Miguel Reis Lima",
-      "team": "Alanyaspor",
-      "p": 0.2284,
-      "odds": null,
-      "ev": null
-     }
-    ],
-    "lineup_from": {
-     "home": "2026-11-06",
-     "away": "2026-11-08"
-    },
-    "with_odds": 0,
-    "unmatched": []
-   },
-   "result": "2-1"
-  },
-  {
-   "date": "2026-11-22",
-   "time": "16:00",
-   "home": "Konyaspor",
-   "away": "Besiktas",
-   "model": {
-    "home": 0.1661,
-    "draw": 0.2251,
-    "away": 0.6088,
-    "over25": 0.5634,
-    "xg_home": 1.03,
-    "xg_away": 1.8,
-    "top_scores": [
-     [
-      "1-1",
-      0.1092
-     ],
-     [
-      "0-1",
-      0.1059
-     ],
-     [
-      "1-2",
-      0.0985
-     ]
-    ],
-    "goals": {
-     "o15": 0.7748,
-     "o25": 0.5388,
-     "o35": 0.3158,
-     "btts": 0.5375
-    },
-    "raw": {
-     "home": 0.1962,
-     "draw": 0.2323,
-     "away": 0.5715,
-     "over25": 0.5456
-    },
-    "blended": true
-   },
-   "odds": {
-    "home": 4.67,
-    "draw": 3.74,
-    "away": 1.48,
-    "implied": [
-     0.185,
-     0.2311,
-     0.5839
-    ],
-    "over25": 1.55,
-    "under25": 1.95,
-    "implied_over25": 0.5571
-   },
-   "goal_opinions": [],
-   "live": {
-    "lh": 0.827,
-    "la": 1.82
-   },
-   "home_tr": "Konyaspor",
-   "away_tr": "Besiktas",
-   "absences": [
-    "Beşiktaş: Fabio Miretti, Adil Demirbağ, Ümit Akdağ (sakat)"
-   ],
-   "extra_markets": [],
-   "cards": {
-    "mu": 4.08,
-    "referee": "ÇAĞDAŞ ALTAY",
-    "referee_id": 21019,
-    "lines": {
-     "3.5": 0.5765,
-     "4.5": 0.3863,
-     "5.5": 0.2312
-    },
-    "ref_matches": 57,
-    "ref_avg": 4.07,
-    "opinion": null,
-    "iddaa": {
-     "mu": 4.28,
-     "lines": {
-      "3.5": 0.5999,
-      "4.5": 0.4204,
-      "5.5": 0.2683,
-      "6.5": 0.1572
-     },
-     "odds": {},
-     "value": []
-    }
-   },
-   "player_cards": {
-    "players": [
-     {
-      "id": 2166587,
-      "name": "Chidozie Collins Awaziem",
+      "id": 1822311,
+      "name": "Deniz Türüç",
       "team": "Konyaspor",
-      "p": 0.2479,
-      "odds": null,
-      "ev": null
-     },
-     {
-      "id": 1529926,
-      "name": "Emirhan Topçu",
-      "team": "Besiktas",
-      "p": 0.2469,
+      "p": 0.3011,
       "odds": null,
       "ev": null
      },
@@ -932,65 +103,637 @@
       "id": 2419666,
       "name": "Fuka Arthur Masuaku Kawela",
       "team": "Konyaspor",
-      "p": 0.218,
+      "p": 0.2339,
       "odds": null,
       "ev": null
      },
      {
-      "id": 2217597,
-      "name": "Orkun Kökçü",
-      "team": "Besiktas",
-      "p": 0.217,
+      "id": 2552290,
+      "name": "Fidan Aliti",
+      "team": "Alanyaspor",
+      "p": 0.2234,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 654985,
+      "name": "Ahmet Oğuz",
+      "team": "Konyaspor",
+      "p": 0.2145,
       "odds": null,
       "ev": null
      }
     ],
     "lineup_from": {
-     "home": "2026-11-07",
-     "away": "2026-11-08"
+     "home": "2026-11-22",
+     "away": "2026-11-22"
     },
     "with_odds": 0,
     "unmatched": []
-   },
-   "result": "2-4"
+   }
   },
   {
-   "date": "2026-11-22",
-   "time": "19:00",
-   "home": "Trabzonspor",
-   "away": "Eyupspor",
+   "date": "2026-11-27",
+   "time": "20:00",
+   "home": "Rizespor",
+   "away": "Kasimpasa",
    "model": {
-    "home": 0.8579,
-    "draw": 0.0971,
-    "away": 0.045,
-    "over25": 0.7248,
-    "xg_home": 2.87,
-    "xg_away": 0.7,
+    "home": 0.4016,
+    "draw": 0.286,
+    "away": 0.3124,
+    "over25": 0.5149,
+    "xg_home": 1.41,
+    "xg_away": 1.3,
     "top_scores": [
      [
-      "2-0",
-      0.1155
+      "1-1",
+      0.1218
      ],
      [
-      "3-0",
-      0.1105
+      "1-0",
+      0.0936
      ],
      [
-      "2-1",
-      0.0813
+      "0-1",
+      0.0863
      ]
     ],
     "goals": {
-     "o15": 0.8716,
-     "o25": 0.6925,
-     "o35": 0.4792,
-     "btts": 0.4768
+     "o15": 0.7538,
+     "o25": 0.5098,
+     "o35": 0.289,
+     "btts": 0.5506
     },
     "raw": {
-     "home": 0.8579,
-     "draw": 0.0971,
-     "away": 0.045,
-     "over25": 0.7248
+     "home": 0.4016,
+     "draw": 0.286,
+     "away": 0.3124,
+     "over25": 0.5149
+    },
+    "blended": false
+   },
+   "odds": null,
+   "goal_opinions": [],
+   "live": {
+    "lh": 1.214,
+    "la": 1.035
+   },
+   "home_tr": "Rizespor",
+   "away_tr": "Kasimpasa",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.36,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.6231,
+     "4.5": 0.438,
+     "5.5": 0.2778
+    },
+    "iddaa": {
+     "mu": 4.56,
+     "lines": {
+      "3.5": 0.6411,
+      "4.5": 0.4677,
+      "5.5": 0.3133,
+      "6.5": 0.194
+     },
+     "odds": {},
+     "value": []
+    }
+   },
+   "player_cards": {
+    "players": [
+     {
+      "id": 1689339,
+      "name": "Ayberk Karapo",
+      "team": "Kasimpasa",
+      "p": 0.2598,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2820839,
+      "name": "Andri Fannar Baldursson",
+      "team": "Kasimpasa",
+      "p": 0.2259,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2552001,
+      "name": "Claudio Winck Neto",
+      "team": "Kasimpasa",
+      "p": 0.2224,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 1435043,
+      "name": "Kerem Demirbay",
+      "team": "Kasimpasa",
+      "p": 0.219,
+      "odds": null,
+      "ev": null
+     }
+    ],
+    "lineup_from": {
+     "home": "2026-11-21",
+     "away": "2026-11-22"
+    },
+    "with_odds": 0,
+    "unmatched": []
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "time": "16:00",
+   "home": "Samsunspor",
+   "away": "Genclerbirligi",
+   "model": {
+    "home": 0.485,
+    "draw": 0.2726,
+    "away": 0.2424,
+    "over25": 0.5312,
+    "xg_home": 1.62,
+    "xg_away": 1.13,
+    "top_scores": [
+     [
+      "1-1",
+      0.117
+     ],
+     [
+      "1-0",
+      0.1036
+     ],
+     [
+      "2-1",
+      0.0948
+     ]
+    ],
+    "goals": {
+     "o15": 0.7603,
+     "o25": 0.5186,
+     "o35": 0.297,
+     "btts": 0.5429
+    },
+    "raw": {
+     "home": 0.485,
+     "draw": 0.2726,
+     "away": 0.2424,
+     "over25": 0.5312
+    },
+    "blended": false
+   },
+   "odds": null,
+   "goal_opinions": [],
+   "live": {
+    "lh": 1.398,
+    "la": 0.901
+   },
+   "home_tr": "Samsunspor",
+   "away_tr": "Genclerbirligi",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.38,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.6258,
+     "4.5": 0.441,
+     "5.5": 0.2804
+    },
+    "iddaa": {
+     "mu": 4.57,
+     "lines": {
+      "3.5": 0.6427,
+      "4.5": 0.4695,
+      "5.5": 0.315,
+      "6.5": 0.1953
+     },
+     "odds": {},
+     "value": []
+    }
+   },
+   "player_cards": {
+    "players": [
+     {
+      "id": 2867372,
+      "name": "Ousmane Diabate",
+      "team": "Genclerbirligi",
+      "p": 0.2388,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2010642,
+      "name": "Arda Çağan Çelik",
+      "team": "Genclerbirligi",
+      "p": 0.2133,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 1087701,
+      "name": "Oğulcan Ülgün",
+      "team": "Genclerbirligi",
+      "p": 0.2091,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2820741,
+      "name": "Josafat Wooding Mendes",
+      "team": "Samsunspor",
+      "p": 0.2086,
+      "odds": null,
+      "ev": null
+     }
+    ],
+    "lineup_from": {
+     "home": "2026-11-21",
+     "away": "2026-11-21"
+    },
+    "with_odds": 0,
+    "unmatched": []
+   }
+  },
+  {
+   "date": "2026-11-28",
+   "time": "19:00",
+   "home": "Gaziantep",
+   "away": "Amedspor",
+   "model": {
+    "home": 0.4557,
+    "draw": 0.2914,
+    "away": 0.2529,
+    "over25": 0.5353,
+    "xg_home": 1.43,
+    "xg_away": 1.29,
+    "top_scores": [
+     [
+      "1-1",
+      0.1215
+     ],
+     [
+      "1-0",
+      0.0944
+     ],
+     [
+      "2-1",
+      0.087
+     ]
+    ],
+    "goals": {
+     "o15": 0.7548,
+     "o25": 0.5111,
+     "o35": 0.2902,
+     "btts": 0.5511
+    },
+    "raw": {
+     "home": 0.4557,
+     "draw": 0.2914,
+     "away": 0.2529,
+     "over25": 0.5353
+    },
+    "blended": false
+   },
+   "odds": null,
+   "goal_opinions": [],
+   "live": {
+    "lh": 1.25,
+    "la": 0.852
+   },
+   "home_tr": "Gaziantep",
+   "away_tr": "Amedspor",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.36,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.6229,
+     "4.5": 0.4378,
+     "5.5": 0.2776
+    },
+    "iddaa": {
+     "mu": 4.55,
+     "lines": {
+      "3.5": 0.6406,
+      "4.5": 0.4673,
+      "5.5": 0.3129,
+      "6.5": 0.1937
+     },
+     "odds": {},
+     "value": []
+    }
+   },
+   "player_cards": {
+    "players": [
+     {
+      "id": 2420938,
+      "name": "Diaa Sabi'a",
+      "team": "Amedspor",
+      "p": 0.228,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2824816,
+      "name": "Drissa Camara",
+      "team": "Gaziantep",
+      "p": 0.2187,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 1320726,
+      "name": "Mehmet Yeşil",
+      "team": "Amedspor",
+      "p": 0.2125,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 1145552,
+      "name": "Arda Kızıldağ",
+      "team": "Gaziantep",
+      "p": 0.2103,
+      "odds": null,
+      "ev": null
+     }
+    ],
+    "lineup_from": {
+     "home": "2026-11-21",
+     "away": "2026-11-21"
+    },
+    "with_odds": 0,
+    "unmatched": []
+   }
+  },
+  {
+   "date": "2026-11-29",
+   "time": "13:30",
+   "home": "Corum",
+   "away": "Kocaelispor",
+   "model": {
+    "home": 0.2758,
+    "draw": 0.2313,
+    "away": 0.4929,
+    "over25": 0.5232,
+    "xg_home": 1.19,
+    "xg_away": 1.6,
+    "top_scores": [
+     [
+      "1-1",
+      0.1168
+     ],
+     [
+      "0-1",
+      0.0983
+     ],
+     [
+      "1-2",
+      0.0936
+     ]
+    ],
+    "goals": {
+     "o15": 0.7676,
+     "o25": 0.5287,
+     "o35": 0.3063,
+     "btts": 0.5555
+    },
+    "raw": {
+     "home": 0.2758,
+     "draw": 0.2313,
+     "away": 0.4929,
+     "over25": 0.5232
+    },
+    "blended": false
+   },
+   "odds": null,
+   "goal_opinions": [],
+   "live": {
+    "lh": 1.289,
+    "la": 1.794
+   },
+   "home_tr": "Corum",
+   "away_tr": "Kocaelispor",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.36,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.6236,
+     "4.5": 0.4386,
+     "5.5": 0.2783
+    },
+    "iddaa": {
+     "mu": 4.59,
+     "lines": {
+      "3.5": 0.6467,
+      "4.5": 0.474,
+      "5.5": 0.3192,
+      "6.5": 0.1987
+     },
+     "odds": {},
+     "value": []
+    }
+   },
+   "player_cards": {
+    "players": [
+     {
+      "id": 2935238,
+      "name": "Mohamed Diomande",
+      "team": "Corum",
+      "p": 0.2038,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2935083,
+      "name": "Ylber Ramadani",
+      "team": "Corum",
+      "p": 0.1834,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 649160,
+      "name": "Tayfur Bingöl",
+      "team": "Kocaelispor",
+      "p": 0.1798,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2935667,
+      "name": "Matej Maglica",
+      "team": "Kocaelispor",
+      "p": 0.1765,
+      "odds": null,
+      "ev": null
+     }
+    ],
+    "lineup_from": {
+     "home": "2026-11-23",
+     "away": "2026-11-21"
+    },
+    "with_odds": 0,
+    "unmatched": []
+   }
+  },
+  {
+   "date": "2026-11-29",
+   "time": "16:00",
+   "home": "Eyupspor",
+   "away": "Buyuksehyr",
+   "model": {
+    "home": 0.1654,
+    "draw": 0.182,
+    "away": 0.6526,
+    "over25": 0.6225,
+    "xg_home": 0.97,
+    "xg_away": 2.16,
+    "top_scores": [
+     [
+      "0-2",
+      0.1018
+     ],
+     [
+      "1-2",
+      0.0989
+     ],
+     [
+      "0-1",
+      0.0942
+     ]
+    ],
+    "goals": {
+     "o15": 0.8198,
+     "o25": 0.6058,
+     "o35": 0.3824,
+     "btts": 0.5499
+    },
+    "raw": {
+     "home": 0.1654,
+     "draw": 0.182,
+     "away": 0.6526,
+     "over25": 0.6225
+    },
+    "blended": false
+   },
+   "odds": null,
+   "goal_opinions": [],
+   "live": {
+    "lh": 1.143,
+    "la": 2.406
+   },
+   "home_tr": "Eyupspor",
+   "away_tr": "Buyuksehyr",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.27,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.6083,
+     "4.5": 0.4221,
+     "5.5": 0.2639
+    },
+    "iddaa": {
+     "mu": 4.49,
+     "lines": {
+      "3.5": 0.6314,
+      "4.5": 0.457,
+      "5.5": 0.3034,
+      "6.5": 0.1861
+     },
+     "odds": {},
+     "value": []
+    }
+   },
+   "player_cards": {
+    "players": [
+     {
+      "id": 2562580,
+      "name": "Jerome Opoku",
+      "team": "Buyuksehyr",
+      "p": 0.2247,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 1616083,
+      "name": "Seyfettin Anıl Yaşar",
+      "team": "Eyupspor",
+      "p": 0.2216,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 1928722,
+      "name": "Taşkın İlter",
+      "team": "Eyupspor",
+      "p": 0.2025,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2934997,
+      "name": "Saba Kharebashvili",
+      "team": "Buyuksehyr",
+      "p": 0.1974,
+      "odds": null,
+      "ev": null
+     }
+    ],
+    "lineup_from": {
+     "home": "2026-11-22",
+     "away": "2026-11-23"
+    },
+    "with_odds": 0,
+    "unmatched": []
+   }
+  },
+  {
+   "date": "2026-11-29",
+   "time": "19:00",
+   "home": "Fenerbahce",
+   "away": "Erzurumspor",
+   "model": {
+    "home": 0.8662,
+    "draw": 0.0944,
+    "away": 0.0394,
+    "over25": 0.7544,
+    "xg_home": 3.08,
+    "xg_away": 0.81,
+    "top_scores": [
+     [
+      "3-0",
+      0.0996
+     ],
+     [
+      "2-0",
+      0.0969
+     ],
+     [
+      "3-1",
+      0.0806
+     ]
+    ],
+    "goals": {
+     "o15": 0.9,
+     "o25": 0.7456,
+     "o35": 0.5452,
+     "btts": 0.5293
+    },
+    "raw": {
+     "home": 0.8662,
+     "draw": 0.0944,
+     "away": 0.0394,
+     "over25": 0.7544
     },
     "blended": false
    },
@@ -1000,48 +743,42 @@
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.6925,
-     "base": 0.5341,
-     "gap": 0.1584
+     "p": 0.7456,
+     "base": 0.5343,
+     "gap": 0.2113
     },
     {
      "key": "o15",
      "market": "1,5",
      "side": "Üst",
-     "p": 0.8716,
-     "base": 0.7716,
-     "gap": 0.1
+     "p": 0.9,
+     "base": 0.7708,
+     "gap": 0.1292
     }
    ],
    "live": {
-    "lh": 3.131,
-    "la": 0.629
+    "lh": 3.083,
+    "la": 0.554
    },
-   "home_tr": "Trabzonspor",
-   "away_tr": "Eyupspor",
-   "absences": [
-    "Eyüpspor: Malinovskyi, Okay Yokuşlu ve 4 oyuncu sakat, 3 oyuncu şüpheli"
-   ],
+   "home_tr": "Fenerbahce",
+   "away_tr": "Erzurumspor",
    "extra_markets": [],
    "cards": {
-    "mu": 4.62,
-    "referee": "GÜRCAN HASOVA",
-    "referee_id": 1622951,
+    "mu": 4.32,
+    "referee": null,
+    "referee_id": null,
     "lines": {
-     "3.5": 0.67,
-     "4.5": 0.4874,
-     "5.5": 0.3199
+     "3.5": 0.6164,
+     "4.5": 0.4308,
+     "5.5": 0.2714
     },
-    "ref_matches": 12,
-    "ref_avg": 5.25,
-    "opinion": null,
     "iddaa": {
-     "mu": 4.8,
+     "mu": 4.5,
      "lines": {
-      "3.5": 0.6811,
-      "4.5": 0.5106,
-      "5.5": 0.3514,
-      "6.5": 0.2232
+      "3.5": 0.6319,
+      "4.5": 0.4576,
+      "5.5": 0.304,
+      "6.5": 0.1865
      },
      "odds": {},
      "value": []
@@ -1050,26 +787,123 @@
    "player_cards": {
     "players": [
      {
-      "id": 1616083,
-      "name": "Seyfettin Anıl Yaşar",
-      "team": "Eyupspor",
-      "p": 0.2691,
+      "id": 328900,
+      "name": "Orhan Ovacikli",
+      "team": "Erzurumspor",
+      "p": 0.205,
       "odds": null,
       "ev": null
      },
      {
-      "id": 2935153,
-      "name": "Zak Kennedy Jules",
-      "team": "Eyupspor",
-      "p": 0.2224,
+      "id": 2820853,
+      "name": "Nelson Cabral Semedo",
+      "team": "Fenerbahce",
+      "p": 0.1984,
       "odds": null,
       "ev": null
      },
      {
-      "id": 2879749,
-      "name": "Charles Andre Raux Yao",
-      "team": "Eyupspor",
-      "p": 0.2144,
+      "id": 226925,
+      "name": "Mustafa Yumlu",
+      "team": "Erzurumspor",
+      "p": 0.1882,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2935424,
+      "name": "Elisha Owusu",
+      "team": "Erzurumspor",
+      "p": 0.1867,
+      "odds": null,
+      "ev": null
+     }
+    ],
+    "lineup_from": {
+     "home": "2026-11-21",
+     "away": "2026-11-22"
+    },
+    "with_odds": 0,
+    "unmatched": []
+   }
+  },
+  {
+   "date": "2026-11-30",
+   "time": "19:00",
+   "home": "Goztep",
+   "away": "Trabzonspor",
+   "model": {
+    "home": 0.2579,
+    "draw": 0.278,
+    "away": 0.4641,
+    "over25": 0.5728,
+    "xg_home": 1.26,
+    "xg_away": 1.67,
+    "top_scores": [
+     [
+      "1-1",
+      0.1125
+     ],
+     [
+      "1-2",
+      0.0937
+     ],
+     [
+      "0-1",
+      0.0892
+     ]
+    ],
+    "goals": {
+     "o15": 0.7897,
+     "o25": 0.5603,
+     "o35": 0.3365,
+     "btts": 0.5813
+    },
+    "raw": {
+     "home": 0.2579,
+     "draw": 0.278,
+     "away": 0.4641,
+     "over25": 0.5728
+    },
+    "blended": false
+   },
+   "odds": null,
+   "goal_opinions": [],
+   "live": {
+    "lh": 0.925,
+    "la": 1.343
+   },
+   "home_tr": "Goztep",
+   "away_tr": "Trabzonspor",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.42,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.633,
+     "4.5": 0.4488,
+     "5.5": 0.2874
+    },
+    "iddaa": {
+     "mu": 4.63,
+     "lines": {
+      "3.5": 0.6519,
+      "4.5": 0.4799,
+      "5.5": 0.3247,
+      "6.5": 0.2032
+     },
+     "odds": {},
+     "value": []
+    }
+   },
+   "player_cards": {
+    "players": [
+     {
+      "id": 1670365,
+      "name": "Arda Okan Kurtulan",
+      "team": "Goztep",
+      "p": 0.2086,
       "odds": null,
       "ev": null
      },
@@ -1077,138 +911,143 @@
       "id": 2935737,
       "name": "Fabio Henrique Tavares",
       "team": "Trabzonspor",
-      "p": 0.207,
+      "p": 0.2031,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2685592,
+      "name": "Novatus Dismas Miroshi",
+      "team": "Goztep",
+      "p": 0.2008,
+      "odds": null,
+      "ev": null
+     },
+     {
+      "id": 2685595,
+      "name": "Stefan Savic",
+      "team": "Trabzonspor",
+      "p": 0.1992,
       "odds": null,
       "ev": null
      }
     ],
     "lineup_from": {
-     "home": "2026-11-08",
-     "away": "2026-11-07"
+     "home": "2026-11-22",
+     "away": "2026-11-22"
     },
     "with_odds": 0,
     "unmatched": []
-   },
-   "result": "1-0"
+   }
   },
   {
-   "date": "2026-11-23",
-   "time": "20:00",
-   "home": "Buyuksehyr",
-   "away": "Corum",
+   "date": "2026-11-30",
+   "time": "21:00",
+   "home": "Besiktas",
+   "away": "Galatasaray",
    "model": {
-    "home": 0.4855,
-    "draw": 0.2593,
-    "away": 0.2553,
-    "over25": 0.6293,
-    "xg_home": 2.44,
-    "xg_away": 1.01,
+    "home": 0.3242,
+    "draw": 0.2512,
+    "away": 0.4247,
+    "over25": 0.6138,
+    "xg_home": 1.4,
+    "xg_away": 1.55,
     "top_scores": [
      [
-      "2-1",
-      0.0954
-     ],
-     [
-      "2-0",
-      0.0946
-     ],
-     [
       "1-1",
-      0.0781
+      0.1133
+     ],
+     [
+      "1-2",
+      0.088
+     ],
+     [
+      "0-1",
+      0.0807
      ]
     ],
     "goals": {
-     "o15": 0.8588,
-     "o25": 0.67,
-     "o35": 0.4528,
-     "btts": 0.5799
+     "o15": 0.7944,
+     "o25": 0.5672,
+     "o35": 0.3432,
+     "btts": 0.5948
     },
     "raw": {
-     "home": 0.732,
-     "draw": 0.173,
-     "away": 0.095,
-     "over25": 0.6704
+     "home": 0.3242,
+     "draw": 0.2512,
+     "away": 0.4247,
+     "over25": 0.6138
     },
-    "blended": true
+    "blended": false
    },
-   "odds": {
-    "home": 1.79,
-    "draw": 3.46,
-    "away": 3.22,
-    "implied": [
-     0.4823,
-     0.2495,
-     0.2681
-    ],
-    "over25": 1.38,
-    "under25": 2.31,
-    "implied_over25": 0.626
-   },
-   "goal_opinions": [
-    {
-     "key": "o25",
-     "market": "2,5",
-     "side": "Üst",
-     "p": 0.67,
-     "base": 0.5339,
-     "gap": 0.1361
-    },
-    {
-     "key": "o15",
-     "market": "1,5",
-     "side": "Üst",
-     "p": 0.8588,
-     "base": 0.7706,
-     "gap": 0.0882
-    }
-   ],
+   "odds": null,
+   "goal_opinions": [],
    "live": {
-    "lh": 1.503,
-    "la": 1.014
+    "lh": 1.288,
+    "la": 1.51
    },
-   "home_tr": "Buyuksehyr",
-   "away_tr": "Corum",
-   "absences": [
-    "Çorum: Yusuf Sarı, Berat Özdemir (sakat)"
-   ],
+   "home_tr": "Besiktas",
+   "away_tr": "Galatasaray",
+   "extra_markets": [],
+   "cards": {
+    "mu": 4.46,
+    "referee": null,
+    "referee_id": null,
+    "lines": {
+     "3.5": 0.6393,
+     "4.5": 0.4557,
+     "5.5": 0.2935
+    },
+    "iddaa": {
+     "mu": 4.67,
+     "lines": {
+      "3.5": 0.6586,
+      "4.5": 0.4875,
+      "5.5": 0.3318,
+      "6.5": 0.209
+     },
+     "odds": {},
+     "value": []
+    }
+   },
    "player_cards": {
     "players": [
      {
-      "id": 2554457,
-      "name": "Ousseynou Ba",
-      "team": "Buyuksehyr",
-      "p": 0.2414,
+      "id": 2886165,
+      "name": "Michael Amir Murillo Bermudez",
+      "team": "Besiktas",
+      "p": 0.2294,
       "odds": null,
       "ev": null
      },
      {
-      "id": 2935083,
-      "name": "Ylber Ramadani",
-      "team": "Corum",
-      "p": 0.1873,
+      "id": 2822260,
+      "name": "Tiago Emanuel Embalo Djalo",
+      "team": "Besiktas",
+      "p": 0.206,
       "odds": null,
       "ev": null
      },
      {
-      "id": 1087749,
-      "name": "Cengiz Ünder",
-      "team": "Corum",
-      "p": 0.1818,
+      "id": 1462850,
+      "name": "Barış Alper Yılmaz",
+      "team": "Galatasaray",
+      "p": 0.2057,
       "odds": null,
       "ev": null
      },
      {
-      "id": 2935118,
-      "name": "Sebastian Andrei Borza",
-      "team": "Corum",
-      "p": 0.1774,
+      "id": 2935080,
+      "name": "Leandro Trossard",
+      "team": "Besiktas",
+      "p": 0.2032,
       "odds": null,
       "ev": null
      }
     ],
     "lineup_from": {
-     "home": "2026-11-07",
-     "away": "2026-11-08"
+     "home": "2026-11-22",
+     "away": "2026-11-21"
     },
     "with_odds": 0,
     "unmatched": []
@@ -1220,17 +1059,17 @@
   "week": 16,
   "matches": [
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "Umraniyespor",
     "away": "T2:2861",
     "model": {
-     "home": 0.5098,
-     "draw": 0.2642,
-     "away": 0.226,
-     "over25": 0.5187,
-     "xg_home": 1.6,
-     "xg_away": 1.05,
+     "home": 0.505,
+     "draw": 0.2675,
+     "away": 0.2275,
+     "over25": 0.5192,
+     "xg_home": 1.59,
+     "xg_away": 1.06,
      "top_scores": [
       [
        "1-1",
@@ -1238,18 +1077,18 @@
       ],
       [
        "1-0",
-       0.1132
+       0.112
       ],
       [
        "2-1",
-       0.0949
+       0.0947
       ]
      ],
      "goals": {
-      "o15": 0.7413,
-      "o25": 0.493,
-      "o35": 0.274,
-      "btts": 0.5182
+      "o15": 0.7432,
+      "o25": 0.4954,
+      "o35": 0.2761,
+      "btts": 0.5213
      }
     },
     "home_tr": "Eminevim Ümraniyespor",
@@ -1257,36 +1096,36 @@
     "mac_id": 318245
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "T2:3602",
     "away": "Istanbulspor",
     "model": {
-     "home": 0.475,
-     "draw": 0.2461,
-     "away": 0.2789,
-     "over25": 0.5192,
-     "xg_home": 1.47,
+     "home": 0.4607,
+     "draw": 0.254,
+     "away": 0.2853,
+     "over25": 0.5201,
+     "xg_home": 1.48,
      "xg_away": 1.17,
      "top_scores": [
       [
        "1-1",
-       0.1225
+       0.1222
       ],
       [
        "1-0",
-       0.1047
+       0.1042
       ],
       [
        "2-1",
-       0.0904
+       0.0905
       ]
      ],
      "goals": {
-      "o15": 0.7413,
-      "o25": 0.493,
-      "o35": 0.274,
-      "btts": 0.532
+      "o15": 0.7429,
+      "o25": 0.4951,
+      "o35": 0.2758,
+      "btts": 0.5335
      }
     },
     "home_tr": "Sms Grup Sariyer",
@@ -1294,52 +1133,15 @@
     "mac_id": 318244
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "Sivasspor",
     "away": "Bodrumspor",
     "model": {
-     "home": 0.3157,
-     "draw": 0.2612,
-     "away": 0.4231,
-     "over25": 0.518,
-     "xg_home": 1.19,
-     "xg_away": 1.48,
-     "top_scores": [
-      [
-       "1-1",
-       0.122
-      ],
-      [
-       "0-1",
-       0.1025
-      ],
-      [
-       "1-2",
-       0.0902
-      ]
-     ],
-     "goals": {
-      "o15": 0.7458,
-      "o25": 0.499,
-      "o35": 0.2793,
-      "btts": 0.5374
-     }
-    },
-    "home_tr": "Ekenler Beton Sivasspor",
-    "away_tr": "Bodrum Fk",
-    "mac_id": 318248
-   },
-   {
-    "date": "2026-11-23",
-    "time": null,
-    "home": "T2:82",
-    "away": "T2:8758",
-    "model": {
-     "home": 0.2428,
-     "draw": 0.2588,
-     "away": 0.4985,
-     "over25": 0.5044,
+     "home": 0.3118,
+     "draw": 0.2591,
+     "away": 0.429,
+     "over25": 0.5231,
      "xg_home": 1.18,
      "xg_away": 1.49,
      "top_scores": [
@@ -1349,18 +1151,55 @@
       ],
       [
        "0-1",
-       0.1029
+       0.1033
       ],
       [
        "1-2",
-       0.0906
+       0.0908
       ]
      ],
      "goals": {
-      "o15": 0.7463,
-      "o25": 0.4996,
-      "o35": 0.2799,
-      "btts": 0.5373
+      "o15": 0.7461,
+      "o25": 0.4993,
+      "o35": 0.2796,
+      "btts": 0.5366
+     }
+    },
+    "home_tr": "Ekenler Beton Sivasspor",
+    "away_tr": "Bodrum Fk",
+    "mac_id": 318248
+   },
+   {
+    "date": "2026-11-27",
+    "time": null,
+    "home": "T2:82",
+    "away": "T2:8758",
+    "model": {
+     "home": 0.248,
+     "draw": 0.2609,
+     "away": 0.4912,
+     "over25": 0.5079,
+     "xg_home": 1.17,
+     "xg_away": 1.49,
+     "top_scores": [
+      [
+       "1-1",
+       0.1222
+      ],
+      [
+       "0-1",
+       0.1047
+      ],
+      [
+       "1-2",
+       0.0908
+      ]
+     ],
+     "goals": {
+      "o15": 0.7426,
+      "o25": 0.4946,
+      "o35": 0.2754,
+      "btts": 0.5327
      }
     },
     "home_tr": "Muğlaspor Kulübü",
@@ -1368,36 +1207,36 @@
     "mac_id": 318249
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "T2:2020",
     "away": "Bursaspor",
     "model": {
-     "home": 0.2911,
-     "draw": 0.2733,
-     "away": 0.4356,
-     "over25": 0.5178,
-     "xg_home": 1.18,
-     "xg_away": 1.51,
+     "home": 0.2921,
+     "draw": 0.2713,
+     "away": 0.4366,
+     "over25": 0.5136,
+     "xg_home": 1.19,
+     "xg_away": 1.54,
      "top_scores": [
       [
        "1-1",
-       0.1209
+       0.1195
       ],
       [
        "0-1",
-       0.1021
+       0.1004
       ],
       [
        "1-2",
-       0.0912
+       0.0921
       ]
      ],
      "goals": {
-      "o15": 0.7501,
-      "o25": 0.5048,
-      "o35": 0.2845,
-      "btts": 0.5406
+      "o15": 0.7569,
+      "o25": 0.5139,
+      "o35": 0.2927,
+      "btts": 0.5467
      }
     },
     "home_tr": "Artı Değer Van Spor Futbol Kulübü",
@@ -1405,36 +1244,36 @@
     "mac_id": 318247
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "T2:130",
     "away": "T2:34",
     "model": {
-     "home": 0.4835,
-     "draw": 0.2587,
-     "away": 0.2578,
-     "over25": 0.5275,
-     "xg_home": 1.58,
-     "xg_away": 1.16,
+     "home": 0.482,
+     "draw": 0.2581,
+     "away": 0.2599,
+     "over25": 0.5388,
+     "xg_home": 1.56,
+     "xg_away": 1.17,
      "top_scores": [
       [
        "1-1",
-       0.1185
+       0.1189
       ],
       [
        "1-0",
-       0.1021
+       0.1014
       ],
       [
        "2-1",
-       0.0934
+       0.0929
       ]
      ],
      "goals": {
-      "o15": 0.7579,
-      "o25": 0.5154,
-      "o35": 0.294,
-      "btts": 0.5448
+      "o15": 0.7576,
+      "o25": 0.5148,
+      "o35": 0.2936,
+      "btts": 0.5456
      }
     },
     "home_tr": "Bandirma Spor",
@@ -1442,36 +1281,36 @@
     "mac_id": 318243
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "T2:6",
     "away": "Kayserispor",
     "model": {
-     "home": 0.3712,
-     "draw": 0.2996,
-     "away": 0.3293,
-     "over25": 0.5247,
-     "xg_home": 1.43,
+     "home": 0.3793,
+     "draw": 0.2926,
+     "away": 0.3282,
+     "over25": 0.5173,
+     "xg_home": 1.44,
      "xg_away": 1.32,
      "top_scores": [
       [
        "1-1",
-       0.1208
+       0.1202
       ],
       [
        "1-0",
-       0.0918
+       0.0907
       ],
       [
        "2-1",
-       0.0864
+       0.0865
       ]
      ],
      "goals": {
-      "o15": 0.7595,
-      "o25": 0.5175,
-      "o35": 0.296,
-      "btts": 0.5566
+      "o15": 0.7628,
+      "o25": 0.5221,
+      "o35": 0.3002,
+      "btts": 0.5602
      }
     },
     "home_tr": "Keçtaş Ankara Keçiörengücü",
@@ -1479,36 +1318,36 @@
     "mac_id": 318240
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "Antalyaspor",
     "away": "Karagumruk",
     "model": {
-     "home": 0.4036,
-     "draw": 0.2836,
-     "away": 0.3128,
-     "over25": 0.4717,
+     "home": 0.4046,
+     "draw": 0.2845,
+     "away": 0.3108,
+     "over25": 0.4826,
      "xg_home": 1.3,
-     "xg_away": 1.15,
+     "xg_away": 1.16,
      "top_scores": [
       [
        "1-1",
-       0.1291
+       0.129
       ],
       [
        "1-0",
-       0.1124
+       0.1115
       ],
       [
        "0-1",
-       0.0995
+       0.0994
       ]
      ],
      "goals": {
-      "o15": 0.7015,
-      "o25": 0.4423,
-      "o35": 0.231,
-      "btts": 0.4963
+      "o15": 0.7031,
+      "o25": 0.4443,
+      "o35": 0.2326,
+      "btts": 0.4981
      }
     },
     "home_tr": "Antalyaspor",
@@ -1516,25 +1355,25 @@
     "mac_id": 318242
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "T2:3593",
     "away": "T2:964",
     "model": {
-     "home": 0.2204,
-     "draw": 0.2241,
-     "away": 0.5555,
-     "over25": 0.5423,
-     "xg_home": 1.01,
+     "home": 0.2186,
+     "draw": 0.2295,
+     "away": 0.552,
+     "over25": 0.5478,
+     "xg_home": 1.02,
      "xg_away": 1.79,
      "top_scores": [
       [
        "1-1",
-       0.1101
+       0.1097
       ],
       [
        "0-1",
-       0.1088
+       0.1079
       ],
       [
        "1-2",
@@ -1542,10 +1381,10 @@
       ]
      ],
      "goals": {
-      "o15": 0.7687,
-      "o25": 0.5302,
-      "o35": 0.3078,
-      "btts": 0.5298
+      "o15": 0.7707,
+      "o25": 0.533,
+      "o35": 0.3104,
+      "btts": 0.5321
      }
     },
     "home_tr": "Boluspor",
@@ -1553,36 +1392,36 @@
     "mac_id": 318246
    },
    {
-    "date": "2026-11-23",
+    "date": "2026-11-27",
     "time": null,
     "home": "Pendikspor",
     "away": "T2:9387",
     "model": {
-     "home": 0.3705,
-     "draw": 0.2621,
-     "away": 0.3674,
-     "over25": 0.4886,
-     "xg_home": 1.26,
-     "xg_away": 1.32,
+     "home": 0.3725,
+     "draw": 0.2682,
+     "away": 0.3593,
+     "over25": 0.4963,
+     "xg_home": 1.25,
+     "xg_away": 1.33,
      "top_scores": [
       [
        "1-1",
-       0.126
+       0.1259
       ],
       [
        "0-1",
-       0.1003
+       0.1005
       ],
       [
        "1-0",
-       0.0953
+       0.0946
       ]
      ],
      "goals": {
-      "o15": 0.7286,
-      "o25": 0.4764,
-      "o35": 0.2595,
-      "btts": 0.5248
+      "o15": 0.7293,
+      "o25": 0.4773,
+      "o35": 0.2603,
+      "btts": 0.5254
      }
     },
     "home_tr": "Orfa Yapı Pendikspor",
@@ -1593,10 +1432,10 @@
   "with_odds": 0
  },
  "cards_backtest": {
-  "matches": 2860,
+  "matches": 2861,
   "seasons": "2018/19–2026/27",
   "line": 4.5,
-  "base_over": 0.4675,
+  "base_over": 0.4673,
   "mae_model": 1.798,
   "mae_avg": 1.85,
   "up_n": 368,
@@ -1604,5 +1443,5 @@
   "dn_n": 419,
   "dn_hit": 0.6492
  },
- "cards_league_avg": 4.27
+ "cards_league_avg": 4.26
 }
