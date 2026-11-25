@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24 07:15 UTC",
+ "generated": "2026-11-25 01:28 UTC",
  "season": "2026-27",
  "source": "UEFA (sonuç, puan durumu) · iddaa (oranlar)",
  "comps": [
@@ -11,6 +11,20 @@
    "table": [
     {
      "rank": 1,
+     "name": "Real Madrid",
+     "country": "ESP",
+     "tr": false,
+     "played": 5,
+     "won": 5,
+     "drawn": 0,
+     "lost": 0,
+     "gf": 18,
+     "ga": 8,
+     "gd": 10,
+     "points": 15
+    },
+    {
+     "rank": 2,
      "name": "Paris",
      "country": "FRA",
      "tr": false,
@@ -24,49 +38,77 @@
      "points": 12
     },
     {
-     "rank": 2,
-     "name": "Real Madrid",
-     "country": "ESP",
+     "rank": 3,
+     "name": "Como",
+     "country": "ITA",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 4,
      "drawn": 0,
-     "lost": 0,
-     "gf": 13,
-     "ga": 7,
-     "gd": 6,
+     "lost": 1,
+     "gf": 20,
+     "ga": 6,
+     "gd": 14,
      "points": 12
     },
     {
-     "rank": 3,
+     "rank": 4,
+     "name": "Real Betis",
+     "country": "ESP",
+     "tr": false,
+     "played": 5,
+     "won": 4,
+     "drawn": 0,
+     "lost": 1,
+     "gf": 10,
+     "ga": 6,
+     "gd": 4,
+     "points": 12
+    },
+    {
+     "rank": 5,
      "name": "Arsenal",
      "country": "ENG",
      "tr": false,
-     "played": 4,
+     "played": 5,
+     "won": 3,
+     "drawn": 2,
+     "lost": 0,
+     "gf": 9,
+     "ga": 4,
+     "gd": 5,
+     "points": 11
+    },
+    {
+     "rank": 6,
+     "name": "Man City",
+     "country": "ENG",
+     "tr": false,
+     "played": 5,
      "won": 3,
      "drawn": 1,
-     "lost": 0,
-     "gf": 8,
-     "ga": 3,
+     "lost": 1,
+     "gf": 14,
+     "ga": 9,
      "gd": 5,
      "points": 10
     },
     {
-     "rank": 4,
-     "name": "Como",
-     "country": "ITA",
+     "rank": 7,
+     "name": "B. Dortmund",
+     "country": "GER",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 3,
-     "drawn": 0,
+     "drawn": 1,
      "lost": 1,
-     "gf": 19,
+     "gf": 8,
      "ga": 6,
-     "gd": 13,
-     "points": 9
+     "gd": 2,
+     "points": 10
     },
     {
-     "rank": 5,
+     "rank": 8,
      "name": "Barcelona",
      "country": "ESP",
      "tr": false,
@@ -80,35 +122,21 @@
      "points": 9
     },
     {
-     "rank": 6,
+     "rank": 9,
      "name": "Aston Villa",
      "country": "ENG",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 3,
      "drawn": 0,
-     "lost": 1,
-     "gf": 12,
-     "ga": 6,
-     "gd": 6,
-     "points": 9
-    },
-    {
-     "rank": 7,
-     "name": "Man City",
-     "country": "ENG",
-     "tr": false,
-     "played": 4,
-     "won": 3,
-     "drawn": 0,
-     "lost": 1,
+     "lost": 2,
      "gf": 12,
      "ga": 7,
      "gd": 5,
      "points": 9
     },
     {
-     "rank": 8,
+     "rank": 10,
      "name": "Liverpool",
      "country": "ENG",
      "tr": false,
@@ -122,7 +150,7 @@
      "points": 9
     },
     {
-     "rank": 9,
+     "rank": 11,
      "name": "Club Brugge",
      "country": "BEL",
      "tr": false,
@@ -136,7 +164,7 @@
      "points": 9
     },
     {
-     "rank": 10,
+     "rank": 12,
      "name": "Sporting CP",
      "country": "POR",
      "tr": false,
@@ -150,35 +178,21 @@
      "points": 9
     },
     {
-     "rank": 11,
-     "name": "Real Betis",
-     "country": "ESP",
-     "tr": false,
-     "played": 4,
-     "won": 3,
-     "drawn": 0,
-     "lost": 1,
-     "gf": 8,
-     "ga": 6,
-     "gd": 2,
-     "points": 9
-    },
-    {
-     "rank": 12,
-     "name": "B. Dortmund",
-     "country": "GER",
-     "tr": false,
-     "played": 4,
-     "won": 3,
-     "drawn": 0,
-     "lost": 1,
-     "gf": 7,
-     "ga": 5,
-     "gd": 2,
-     "points": 9
-    },
-    {
      "rank": 13,
+     "name": "Galatasaray",
+     "country": "TUR",
+     "tr": true,
+     "played": 5,
+     "won": 3,
+     "drawn": 0,
+     "lost": 2,
+     "gf": 9,
+     "ga": 9,
+     "gd": 0,
+     "points": 9
+    },
+    {
+     "rank": 14,
      "name": "Bayern München",
      "country": "GER",
      "tr": false,
@@ -192,7 +206,7 @@
      "points": 8
     },
     {
-     "rank": 14,
+     "rank": 15,
      "name": "Stuttgart",
      "country": "GER",
      "tr": false,
@@ -206,7 +220,21 @@
      "points": 7
     },
     {
-     "rank": 15,
+     "rank": 16,
+     "name": "Bodø/Glimt",
+     "country": "NOR",
+     "tr": false,
+     "played": 5,
+     "won": 2,
+     "drawn": 1,
+     "lost": 2,
+     "gf": 5,
+     "ga": 9,
+     "gd": -4,
+     "points": 7
+    },
+    {
+     "rank": 17,
      "name": "Inter",
      "country": "ITA",
      "tr": false,
@@ -220,21 +248,21 @@
      "points": 6
     },
     {
-     "rank": 16,
+     "rank": 18,
      "name": "LASK",
      "country": "AUT",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 2,
      "drawn": 0,
-     "lost": 2,
+     "lost": 3,
      "gf": 10,
-     "ga": 9,
-     "gd": 1,
+     "ga": 10,
+     "gd": 0,
      "points": 6
     },
     {
-     "rank": 17,
+     "rank": 19,
      "name": "Man Utd",
      "country": "ENG",
      "tr": false,
@@ -248,21 +276,35 @@
      "points": 6
     },
     {
-     "rank": 18,
-     "name": "Galatasaray",
-     "country": "TUR",
-     "tr": true,
-     "played": 4,
+     "rank": 20,
+     "name": "Porto",
+     "country": "POR",
+     "tr": false,
+     "played": 5,
      "won": 2,
      "drawn": 0,
-     "lost": 2,
-     "gf": 8,
-     "ga": 9,
-     "gd": -1,
+     "lost": 3,
+     "gf": 7,
+     "ga": 7,
+     "gd": 0,
      "points": 6
     },
     {
-     "rank": 19,
+     "rank": 21,
+     "name": "Leipzig",
+     "country": "GER",
+     "tr": false,
+     "played": 5,
+     "won": 2,
+     "drawn": 0,
+     "lost": 3,
+     "gf": 8,
+     "ga": 12,
+     "gd": -4,
+     "points": 6
+    },
+    {
+     "rank": 22,
      "name": "Fenerbahçe",
      "country": "TUR",
      "tr": true,
@@ -276,7 +318,7 @@
      "points": 5
     },
     {
-     "rank": 20,
+     "rank": 23,
      "name": "Roma",
      "country": "ITA",
      "tr": false,
@@ -290,7 +332,7 @@
      "points": 4
     },
     {
-     "rank": 21,
+     "rank": 24,
      "name": "Shakhtar",
      "country": "UKR",
      "tr": false,
@@ -304,7 +346,7 @@
      "points": 4
     },
     {
-     "rank": 22,
+     "rank": 25,
      "name": "Viking",
      "country": "NOR",
      "tr": false,
@@ -318,7 +360,7 @@
      "points": 4
     },
     {
-     "rank": 23,
+     "rank": 26,
      "name": "Atleti",
      "country": "ESP",
      "tr": false,
@@ -332,63 +374,35 @@
      "points": 4
     },
     {
-     "rank": 24,
-     "name": "PSV",
-     "country": "NED",
+     "rank": 27,
+     "name": "Napoli",
+     "country": "ITA",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 1,
      "drawn": 1,
-     "lost": 2,
-     "gf": 3,
-     "ga": 4,
-     "gd": -1,
+     "lost": 3,
+     "gf": 8,
+     "ga": 13,
+     "gd": -5,
      "points": 4
     },
     {
-     "rank": 25,
-     "name": "Bodø/Glimt",
-     "country": "NOR",
+     "rank": 28,
+     "name": "PSV",
+     "country": "NED",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 1,
      "drawn": 1,
-     "lost": 2,
+     "lost": 3,
      "gf": 4,
      "ga": 9,
      "gd": -5,
      "points": 4
     },
     {
-     "rank": 26,
-     "name": "Porto",
-     "country": "POR",
-     "tr": false,
-     "played": 4,
-     "won": 1,
-     "drawn": 0,
-     "lost": 3,
-     "gf": 6,
-     "ga": 7,
-     "gd": -1,
-     "points": 3
-    },
-    {
-     "rank": 27,
-     "name": "Napoli",
-     "country": "ITA",
-     "tr": false,
-     "played": 4,
-     "won": 1,
-     "drawn": 0,
-     "lost": 3,
-     "gf": 6,
-     "ga": 11,
-     "gd": -5,
-     "points": 3
-    },
-    {
-     "rank": 28,
+     "rank": 29,
      "name": "Villarreal",
      "country": "ESP",
      "tr": false,
@@ -402,35 +416,7 @@
      "points": 3
     },
     {
-     "rank": 29,
-     "name": "AEK Athens",
-     "country": "GRE",
-     "tr": false,
-     "played": 4,
-     "won": 1,
-     "drawn": 0,
-     "lost": 3,
-     "gf": 5,
-     "ga": 11,
-     "gd": -6,
-     "points": 3
-    },
-    {
-     "rank": 29,
-     "name": "Leipzig",
-     "country": "GER",
-     "tr": false,
-     "played": 4,
-     "won": 1,
-     "drawn": 0,
-     "lost": 3,
-     "gf": 5,
-     "ga": 11,
-     "gd": -6,
-     "points": 3
-    },
-    {
-     "rank": 31,
+     "rank": 30,
      "name": "Sabah",
      "country": "AZE",
      "tr": false,
@@ -444,17 +430,31 @@
      "points": 3
     },
     {
+     "rank": 31,
+     "name": "AEK Athens",
+     "country": "GRE",
+     "tr": false,
+     "played": 5,
+     "won": 1,
+     "drawn": 0,
+     "lost": 4,
+     "gf": 5,
+     "ga": 12,
+     "gd": -7,
+     "points": 3
+    },
+    {
      "rank": 32,
      "name": "Feyenoord",
      "country": "NED",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 1,
      "drawn": 0,
-     "lost": 3,
+     "lost": 4,
      "gf": 4,
-     "ga": 11,
-     "gd": -7,
+     "ga": 12,
+     "gd": -8,
      "points": 3
     },
     {
@@ -462,13 +462,13 @@
      "name": "Lens",
      "country": "FRA",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 1,
      "drawn": 0,
-     "lost": 3,
-     "gf": 4,
-     "ga": 16,
-     "gd": -12,
+     "lost": 4,
+     "gf": 5,
+     "ga": 19,
+     "gd": -14,
      "points": 3
     },
     {
@@ -504,17 +504,17 @@
      "name": "S. Bratislava",
      "country": "SVK",
      "tr": false,
-     "played": 4,
+     "played": 5,
      "won": 0,
      "drawn": 0,
-     "lost": 4,
+     "lost": 5,
      "gf": 1,
-     "ga": 17,
-     "gd": -16,
+     "ga": 19,
+     "gd": -18,
      "points": 0
     }
    ],
-   "last_md": 4,
+   "last_md": 5,
    "next_md": 5,
    "upcoming": [
     {
@@ -524,23 +524,29 @@
      "home": "Bodø/Glimt",
      "away": "LASK",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
      "iddaa": "Bodo Glimt – LASK",
      "odds": [
-      1.34,
-      4.81,
-      5.0
+      1.23,
+      5.49,
+      6.26
      ],
      "probs": [
-      0.6466,
-      0.1801,
-      0.1733
+      0.704,
+      0.1577,
+      0.1383
      ],
      "ou": [
-      1.16,
-      3.44
+      1.13,
+      3.7
      ],
-     "p_over": 0.7478
+     "p_over": 0.766,
+     "flat_ms": 23.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-24",
@@ -549,23 +555,29 @@
      "home": "Galatasaray",
      "away": "Aston Villa",
      "tr": true,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
      "iddaa": "Galatasaray – Aston Villa",
      "odds": [
-      2.7,
-      3.41,
-      2.03
+      2.66,
+      3.43,
+      2.05
      ],
      "probs": [
-      0.3203,
-      0.2536,
-      0.426
+      0.3254,
+      0.2524,
+      0.4222
      ],
      "ou": [
-      1.37,
-      2.35
+      1.39,
+      2.3
      ],
-     "p_over": 0.6317
+     "p_over": 0.6233,
+     "flat_ms": -100.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-24",
@@ -574,17 +586,21 @@
      "home": "Real Madrid",
      "away": "PSV",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      5,
+      1
+     ],
      "iddaa": "Real Madrid – PSV",
      "odds": [
       null,
-      9.66,
-      14.8
+      9.35,
+      13.95
      ],
      "probs": [
-      0.8521,
-      0.0895,
-      0.0584
+      0.8456,
+      0.0924,
+      0.062
      ],
      "closed": 0
     },
@@ -595,23 +611,29 @@
      "home": "Man City",
      "away": "Napoli",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ],
      "iddaa": "Manchester City – Napoli",
      "odds": [
       1.17,
-      5.79,
-      7.63
+      5.86,
+      7.71
      ],
      "probs": [
-      0.7378,
-      0.1491,
-      0.1131
+      0.74,
+      0.1477,
+      0.1123
      ],
      "ou": [
-      1.18,
-      3.23
+      1.16,
+      3.39
      ],
-     "p_over": 0.7324
+     "p_over": 0.7451,
+     "flat_ms": -100.0,
+     "flat_ou": 16.0
     },
     {
      "date": "2026-11-24",
@@ -620,23 +642,29 @@
      "home": "Arsenal",
      "away": "B. Dortmund",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ],
      "iddaa": "Arsenal – B. Dortmund",
      "odds": [
-      1.33,
-      4.19,
-      6.0
+      1.31,
+      4.27,
+      6.21
      ],
      "probs": [
-      0.6497,
-      0.2062,
-      0.144
+      0.6589,
+      0.2021,
+      0.139
      ],
      "ou": [
       1.57,
       1.92
      ],
-     "p_over": 0.5501
+     "p_over": 0.5501,
+     "flat_ms": -100.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-24",
@@ -645,23 +673,29 @@
      "home": "Feyenoord",
      "away": "Porto",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ],
      "iddaa": "Feyenoord – Porto",
      "odds": [
-      2.79,
+      2.96,
       3.32,
-      2.0
+      1.93
      ],
      "probs": [
-      0.3091,
-      0.2597,
-      0.4312
+      0.2919,
+      0.2603,
+      0.4478
      ],
      "ou": [
-      1.47,
-      2.1
+      1.52,
+      2.0
      ],
-     "p_over": 0.5882
+     "p_over": 0.5682,
+     "flat_ms": 93.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-24",
@@ -670,23 +704,29 @@
      "home": "Leipzig",
      "away": "Lens",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ],
      "iddaa": "Leipzig – RC Lens",
      "odds": [
-      1.24,
-      5.24,
-      6.23
+      1.21,
+      5.46,
+      6.65
      ],
      "probs": [
-      0.6965,
-      0.1648,
-      0.1386
+      0.7125,
+      0.1579,
+      0.1296
      ],
      "ou": [
-      1.18,
-      3.17
+      1.17,
+      3.32
      ],
-     "p_over": 0.7287
+     "p_over": 0.7394,
+     "flat_ms": 21.0,
+     "flat_ou": 17.0
     },
     {
      "date": "2026-11-24",
@@ -695,23 +735,29 @@
      "home": "S. Bratislava",
      "away": "Real Betis",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ],
      "iddaa": "Slovan Bratislava – Real Betis",
      "odds": [
       8.94,
-      6.01,
+      6.03,
       1.14
      ],
      "probs": [
-      0.0968,
-      0.144,
-      0.7592
+      0.0969,
+      0.1436,
+      0.7595
      ],
      "ou": [
       1.25,
-      2.82
+      2.83
      ],
-     "p_over": 0.6929
+     "p_over": 0.6936,
+     "flat_ms": 14.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-24",
@@ -720,23 +766,29 @@
      "home": "Como",
      "away": "AEK Athens",
      "tr": false,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
      "iddaa": "Como 1907 – AEK Athens",
      "odds": [
-      1.13,
-      6.22,
-      9.08
+      1.17,
+      5.83,
+      8.0
      ],
      "probs": [
-      0.7656,
-      0.1391,
-      0.0953
+      0.7424,
+      0.149,
+      0.1086
      ],
      "ou": [
       1.22,
-      2.98
+      2.97
      ],
-     "p_over": 0.7095
+     "p_over": 0.7088,
+     "flat_ms": 17.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-25",
@@ -758,10 +810,10 @@
       0.4455
      ],
      "ou": [
-      1.39,
-      2.28
+      1.36,
+      2.36
      ],
-     "p_over": 0.6213
+     "p_over": 0.6344
     },
     {
      "date": "2026-11-25",
@@ -774,13 +826,13 @@
      "iddaa": "Sabah – Barcelona",
      "odds": [
       17.8,
-      11.8,
+      12.4,
       null
      ],
      "probs": [
       0.0486,
-      0.0732,
-      0.8782
+      0.0697,
+      0.8817
      ],
      "closed": 2
     },
@@ -794,20 +846,20 @@
      "status": "UPCOMING",
      "iddaa": "Paris Saint Germain – AS Roma",
      "odds": [
-      1.29,
-      4.81,
-      5.79
+      1.31,
+      4.65,
+      5.7
      ],
      "probs": [
-      0.6707,
-      0.1799,
-      0.1494
+      0.6616,
+      0.1864,
+      0.152
      ],
      "ou": [
-      1.22,
-      2.98
+      1.2,
+      3.11
      ],
-     "p_over": 0.7095
+     "p_over": 0.7216
     },
     {
      "date": "2026-11-25",
@@ -845,12 +897,12 @@
      "iddaa": "Atletico Madrid – Viking",
      "odds": [
       null,
-      9.7,
+      9.75,
       17.8
      ],
      "probs": [
-      0.8623,
-      0.0891,
+      0.8628,
+      0.0886,
       0.0486
      ],
      "closed": 0,
@@ -870,20 +922,20 @@
      "status": "UPCOMING",
      "iddaa": "Sporting Lizbon – Manchester United",
      "odds": [
-      2.24,
+      2.3,
       3.36,
-      2.42
+      2.35
      ],
      "probs": [
-      0.3858,
-      0.2572,
-      0.3571
+      0.3755,
+      0.257,
+      0.3675
      ],
      "ou": [
-      1.41,
-      2.23
+      1.4,
+      2.27
      ],
-     "p_over": 0.6126
+     "p_over": 0.6185
     },
     {
      "date": "2026-11-25",
@@ -895,20 +947,20 @@
      "status": "UPCOMING",
      "iddaa": "Club Brugge – Liverpool",
      "odds": [
-      4.02,
-      4.2,
+      3.98,
+      4.32,
       1.49
      ],
      "probs": [
-      0.2148,
-      0.2056,
-      0.5796
+      0.2177,
+      0.2006,
+      0.5816
      ],
      "ou": [
       1.17,
-      3.27
+      3.28
      ],
-     "p_over": 0.7365
+     "p_over": 0.7371
     },
     {
      "date": "2026-11-25",
@@ -920,20 +972,20 @@
      "status": "UPCOMING",
      "iddaa": "Lille – Bayern Münih",
      "odds": [
-      4.53,
-      4.0,
-      1.46
+      4.43,
+      3.75,
+      1.5
      ],
      "probs": [
-      0.191,
-      0.2163,
-      0.5927
+      0.1948,
+      0.2301,
+      0.5752
      ],
      "ou": [
-      1.42,
-      2.2
+      1.46,
+      2.11
      ],
-     "p_over": 0.6077
+     "p_over": 0.591
     },
     {
      "date": "2026-11-25",
@@ -945,257 +997,23 @@
      "status": "UPCOMING",
      "iddaa": "Shakhtar Donetsk – Fenerbahçe",
      "odds": [
-      2.4,
-      3.19,
-      2.33
+      2.62,
+      3.18,
+      2.17
      ],
      "probs": [
-      0.3594,
-      0.2704,
-      0.3702
+      0.3299,
+      0.2718,
+      0.3983
      ],
      "ou": [
-      1.57,
-      1.93
+      1.59,
+      1.89
      ],
-     "p_over": 0.5514
+     "p_over": 0.5431
     }
    ],
    "results": [
-    {
-     "date": "2026-10-20",
-     "time": "19:45",
-     "md": 3,
-     "home": "Fenerbahçe",
-     "away": "Slavia Praha",
-     "tr": true,
-     "status": "FINISHED",
-     "score": [
-      2,
-      2
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "19:45",
-     "md": 3,
-     "home": "Sabah",
-     "away": "B. Dortmund",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      1,
-      2
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Paris",
-     "away": "Barcelona",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      4,
-      2
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Liverpool",
-     "away": "Villarreal",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      4,
-      3
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Man City",
-     "away": "AEK Athens",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      5,
-      1
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Roma",
-     "away": "S. Bratislava",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      4,
-      0
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Porto",
-     "away": "PSV",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      0,
-      1
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Napoli",
-     "away": "Bodø/Glimt",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      4,
-      3
-     ]
-    },
-    {
-     "date": "2026-10-20",
-     "time": "22:00",
-     "md": 3,
-     "home": "Stuttgart",
-     "away": "Atleti",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      1,
-      1
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "19:45",
-     "md": 3,
-     "home": "Lille",
-     "away": "Galatasaray",
-     "tr": true,
-     "status": "FINISHED",
-     "score": [
-      2,
-      4
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "19:45",
-     "md": 3,
-     "home": "Como",
-     "away": "Man Utd",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      4,
-      1
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Bayern München",
-     "away": "Arsenal",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      2,
-      2
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Real Madrid",
-     "away": "Leipzig",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      4,
-      1
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Inter",
-     "away": "Shakhtar",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      1,
-      0
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Sporting CP",
-     "away": "LASK",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      2,
-      3
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Aston Villa",
-     "away": "Viking",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      3,
-      1
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Club Brugge",
-     "away": "Lens",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      3,
-      0
-     ]
-    },
-    {
-     "date": "2026-10-21",
-     "time": "22:00",
-     "md": 3,
-     "home": "Real Betis",
-     "away": "Feyenoord",
-     "tr": false,
-     "status": "FINISHED",
-     "score": [
-      1,
-      0
-     ]
-    },
     {
      "date": "2026-11-03",
      "time": "20:45",
@@ -1429,6 +1247,279 @@
       4,
       1
      ]
+    },
+    {
+     "date": "2026-11-24",
+     "time": "20:45",
+     "md": 5,
+     "home": "Bodø/Glimt",
+     "away": "LASK",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
+     "iddaa": "Bodo Glimt – LASK",
+     "odds": [
+      1.23,
+      5.49,
+      6.26
+     ],
+     "probs": [
+      0.704,
+      0.1577,
+      0.1383
+     ],
+     "ou": [
+      1.13,
+      3.7
+     ],
+     "p_over": 0.766,
+     "flat_ms": 23.0,
+     "flat_ou": -100.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "20:45",
+     "md": 5,
+     "home": "Galatasaray",
+     "away": "Aston Villa",
+     "tr": true,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
+     "iddaa": "Galatasaray – Aston Villa",
+     "odds": [
+      2.66,
+      3.43,
+      2.05
+     ],
+     "probs": [
+      0.3254,
+      0.2524,
+      0.4222
+     ],
+     "ou": [
+      1.39,
+      2.3
+     ],
+     "p_over": 0.6233,
+     "flat_ms": -100.0,
+     "flat_ou": -100.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Real Madrid",
+     "away": "PSV",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      5,
+      1
+     ],
+     "iddaa": "Real Madrid – PSV",
+     "odds": [
+      null,
+      9.35,
+      13.95
+     ],
+     "probs": [
+      0.8456,
+      0.0924,
+      0.062
+     ],
+     "closed": 0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Man City",
+     "away": "Napoli",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      2,
+      2
+     ],
+     "iddaa": "Manchester City – Napoli",
+     "odds": [
+      1.17,
+      5.86,
+      7.71
+     ],
+     "probs": [
+      0.74,
+      0.1477,
+      0.1123
+     ],
+     "ou": [
+      1.16,
+      3.39
+     ],
+     "p_over": 0.7451,
+     "flat_ms": -100.0,
+     "flat_ou": 16.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Arsenal",
+     "away": "B. Dortmund",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      1
+     ],
+     "iddaa": "Arsenal – B. Dortmund",
+     "odds": [
+      1.31,
+      4.27,
+      6.21
+     ],
+     "probs": [
+      0.6589,
+      0.2021,
+      0.139
+     ],
+     "ou": [
+      1.57,
+      1.92
+     ],
+     "p_over": 0.5501,
+     "flat_ms": -100.0,
+     "flat_ou": -100.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Feyenoord",
+     "away": "Porto",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      1
+     ],
+     "iddaa": "Feyenoord – Porto",
+     "odds": [
+      2.96,
+      3.32,
+      1.93
+     ],
+     "probs": [
+      0.2919,
+      0.2603,
+      0.4478
+     ],
+     "ou": [
+      1.52,
+      2.0
+     ],
+     "p_over": 0.5682,
+     "flat_ms": 93.0,
+     "flat_ou": -100.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Leipzig",
+     "away": "Lens",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      3,
+      1
+     ],
+     "iddaa": "Leipzig – RC Lens",
+     "odds": [
+      1.21,
+      5.46,
+      6.65
+     ],
+     "probs": [
+      0.7125,
+      0.1579,
+      0.1296
+     ],
+     "ou": [
+      1.17,
+      3.32
+     ],
+     "p_over": 0.7394,
+     "flat_ms": 21.0,
+     "flat_ou": 17.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "S. Bratislava",
+     "away": "Real Betis",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      0,
+      2
+     ],
+     "iddaa": "Slovan Bratislava – Real Betis",
+     "odds": [
+      8.94,
+      6.03,
+      1.14
+     ],
+     "probs": [
+      0.0969,
+      0.1436,
+      0.7595
+     ],
+     "ou": [
+      1.25,
+      2.83
+     ],
+     "p_over": 0.6936,
+     "flat_ms": 14.0,
+     "flat_ou": -100.0
+    },
+    {
+     "date": "2026-11-24",
+     "time": "23:00",
+     "md": 5,
+     "home": "Como",
+     "away": "AEK Athens",
+     "tr": false,
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
+     "iddaa": "Como 1907 – AEK Athens",
+     "odds": [
+      1.17,
+      5.83,
+      8.0
+     ],
+     "probs": [
+      0.7424,
+      0.149,
+      0.1086
+     ],
+     "ou": [
+      1.22,
+      2.97
+     ],
+     "p_over": 0.7088,
+     "flat_ms": 17.0,
+     "flat_ou": -100.0
     }
    ],
    "turkish": [
@@ -1543,23 +1634,29 @@
      "home": "Galatasaray",
      "away": "Aston Villa",
      "tr": true,
-     "status": "UPCOMING",
+     "status": "FINISHED",
+     "score": [
+      1,
+      0
+     ],
      "iddaa": "Galatasaray – Aston Villa",
      "odds": [
-      2.7,
-      3.41,
-      2.03
+      2.66,
+      3.43,
+      2.05
      ],
      "probs": [
-      0.3203,
-      0.2536,
-      0.426
+      0.3254,
+      0.2524,
+      0.4222
      ],
      "ou": [
-      1.37,
-      2.35
+      1.39,
+      2.3
      ],
-     "p_over": 0.6317
+     "p_over": 0.6233,
+     "flat_ms": -100.0,
+     "flat_ou": -100.0
     },
     {
      "date": "2026-11-25",
@@ -1571,20 +1668,20 @@
      "status": "UPCOMING",
      "iddaa": "Shakhtar Donetsk – Fenerbahçe",
      "odds": [
-      2.4,
-      3.19,
-      2.33
+      2.62,
+      3.18,
+      2.17
      ],
      "probs": [
-      0.3594,
-      0.2704,
-      0.3702
+      0.3299,
+      0.2718,
+      0.3983
      ],
      "ou": [
-      1.57,
-      1.93
+      1.59,
+      1.89
      ],
-     "p_over": 0.5514
+     "p_over": 0.5431
     },
     {
      "date": "2026-12-08",
@@ -1642,8 +1739,8 @@
     }
    ],
    "flat": {
-    "n": 0,
-    "profit": 0
+    "n": 16,
+    "profit": -699.0
    },
    "unmatched": 0
   },
@@ -2171,14 +2268,14 @@
      "status": "UPCOMING",
      "iddaa": "Olympiacos – AC Milan",
      "odds": [
-      2.46,
-      3.16,
-      2.31
+      2.59,
+      3.13,
+      2.21
      ],
      "probs": [
-      0.3517,
-      0.2738,
-      0.3745
+      0.3334,
+      0.2759,
+      0.3907
      ],
      "ou": [
       1.66,
@@ -2196,20 +2293,20 @@
      "status": "UPCOMING",
      "iddaa": "Marsilya – Levski Sofya",
      "odds": [
-      1.28,
-      4.46,
-      6.58
+      1.26,
+      4.56,
+      6.79
      ],
      "probs": [
-      0.675,
-      0.1937,
-      0.1313
+      0.684,
+      0.189,
+      0.1269
      ],
      "ou": [
-      1.52,
-      1.99
+      1.5,
+      2.03
      ],
-     "p_over": 0.567
+     "p_over": 0.5751
     },
     {
      "date": "2026-11-26",
@@ -2221,14 +2318,14 @@
      "status": "UPCOMING",
      "iddaa": "Viktoria Plzen – Benfica",
      "odds": [
-      5.26,
-      4.55,
-      1.34
+      5.44,
+      4.6,
+      1.33
      ],
      "probs": [
-      0.1644,
-      0.1901,
-      0.6455
+      0.1594,
+      0.1885,
+      0.6521
      ],
      "ou": [
       1.31,
@@ -2246,20 +2343,20 @@
      "status": "UPCOMING",
      "iddaa": "Union Saint Gilloise – Lech Poznan",
      "odds": [
-      1.23,
-      5.0,
-      6.86
+      1.21,
+      5.23,
+      7.28
      ],
      "probs": [
-      0.7016,
-      0.1726,
-      0.1258
+      0.7155,
+      0.1655,
+      0.1189
      ],
      "ou": [
       1.32,
-      2.5
+      2.51
      ],
-     "p_over": 0.6545
+     "p_over": 0.6554
     },
     {
      "date": "2026-11-26",
@@ -2297,19 +2394,19 @@
      "iddaa": "Salzburg – Ararat",
      "odds": [
       1.06,
-      7.61,
-      12.8
+      7.48,
+      12.35
      ],
      "probs": [
-      0.8183,
-      0.114,
-      0.0678
+      0.8146,
+      0.1154,
+      0.0699
      ],
      "ou": [
-      1.17,
-      3.24
+      1.18,
+      3.18
      ],
-     "p_over": 0.7347
+     "p_over": 0.7294
     },
     {
      "date": "2026-11-26",
@@ -2321,20 +2418,20 @@
      "status": "UPCOMING",
      "iddaa": "Celta Vigo – Bournemouth",
      "odds": [
-      3.44,
-      3.22,
-      1.8
+      3.33,
+      3.2,
+      1.83
      ],
      "probs": [
-      0.2513,
-      0.2685,
-      0.4802
+      0.259,
+      0.2696,
+      0.4714
      ],
      "ou": [
-      1.68,
-      1.77
+      1.71,
+      1.74
      ],
-     "p_over": 0.513
+     "p_over": 0.5043
     },
     {
      "date": "2026-11-26",
@@ -2347,13 +2444,13 @@
      "iddaa": "Beşiktaş – Hapoel Beer Sheva",
      "odds": [
       1.09,
-      6.76,
-      10.5
+      6.89,
+      10.95
      ],
      "probs": [
-      0.7905,
-      0.1275,
-      0.0821
+      0.7951,
+      0.1258,
+      0.0791
      ],
      "ou": [
       1.23,
@@ -2371,20 +2468,20 @@
      "status": "UPCOMING",
      "iddaa": "Juventus – Omonia",
      "odds": [
-      1.08,
-      6.97,
-      12.15
+      1.07,
+      7.08,
+      12.6
      ],
      "probs": [
-      0.804,
-      0.1246,
-      0.0715
+      0.809,
+      0.1223,
+      0.0687
      ],
      "ou": [
       1.27,
-      2.7
+      2.69
      ],
-     "p_over": 0.6801
+     "p_over": 0.6793
     },
     {
      "date": "2026-11-26",
@@ -2446,14 +2543,14 @@
      "status": "UPCOMING",
      "iddaa": "Sparta Prag – AZ Alkmaar",
      "odds": [
-      2.52,
-      3.28,
-      2.2
+      2.67,
+      3.3,
+      2.09
      ],
      "probs": [
-      0.3432,
-      0.2637,
-      0.3931
+      0.324,
+      0.2621,
+      0.4139
      ],
      "ou": [
       1.5,
@@ -2496,20 +2593,20 @@
      "status": "UPCOMING",
      "iddaa": "Sunderland – Jagiellonia Bialystok",
      "odds": [
-      1.14,
-      5.63,
-      10.1
+      1.12,
+      5.83,
+      10.65
      ],
      "probs": [
-      0.7602,
-      0.1539,
-      0.0858
+      0.7708,
+      0.1481,
+      0.0811
      ],
      "ou": [
       1.42,
-      2.2
+      2.23
      ],
-     "p_over": 0.6077
+     "p_over": 0.611
     },
     {
      "date": "2026-11-26",
@@ -2521,20 +2618,20 @@
      "status": "UPCOMING",
      "iddaa": "Hoffenheim – Sturm Graz",
      "odds": [
-      1.22,
-      5.14,
-      6.99
+      1.21,
+      5.32,
+      7.08
      ],
      "probs": [
-      0.7083,
-      0.1681,
-      0.1236
+      0.7151,
+      0.1627,
+      0.1222
      ],
      "ou": [
       1.27,
-      2.69
+      2.7
      ],
-     "p_over": 0.6793
+     "p_over": 0.6801
     },
     {
      "date": "2026-11-26",
@@ -2546,20 +2643,20 @@
      "status": "UPCOMING",
      "iddaa": "Torreense – Celtic",
      "odds": [
-      4.18,
-      3.74,
-      1.54
+      4.26,
+      3.84,
+      1.51
      ],
      "probs": [
-      0.207,
-      0.2313,
-      0.5617
+      0.2028,
+      0.225,
+      0.5722
      ],
      "ou": [
       1.42,
-      2.19
+      2.2
      ],
-     "p_over": 0.6066
+     "p_over": 0.6077
     },
     {
      "date": "2026-11-26",
@@ -3146,13 +3243,13 @@
      "iddaa": "Beşiktaş – Hapoel Beer Sheva",
      "odds": [
       1.09,
-      6.76,
-      10.5
+      6.89,
+      10.95
      ],
      "probs": [
-      0.7905,
-      0.1275,
-      0.0821
+      0.7951,
+      0.1258,
+      0.0791
      ],
      "ou": [
       1.23,
@@ -3718,14 +3815,14 @@
      "status": "UPCOMING",
      "iddaa": "K Almaty – Mjallby",
      "odds": [
-      2.09,
-      3.17,
-      2.76
+      2.06,
+      3.16,
+      2.83
      ],
      "probs": [
-      0.4138,
-      0.2728,
-      0.3134
+      0.4202,
+      0.2739,
+      0.3059
      ],
      "ou": [
       1.73,
@@ -3744,19 +3841,19 @@
      "iddaa": "Ajax – Thun",
      "odds": [
       1.06,
-      7.56,
-      11.9
+      7.81,
+      12.3
      ],
      "probs": [
-      0.8135,
-      0.1141,
-      0.0725
+      0.8184,
+      0.1111,
+      0.0705
      ],
      "ou": [
-      1.15,
-      3.53
+      1.13,
+      3.63
      ],
-     "p_over": 0.7543
+     "p_over": 0.7626
     },
     {
      "date": "2026-11-26",
@@ -3794,20 +3891,20 @@
      "iddaa": "Brighton – Un. Craiova",
      "odds": [
       null,
-      7.84,
-      14.9
+      8.04,
+      15.0
      ],
      "probs": [
-      0.8318,
-      0.1102,
-      0.058
+      0.8349,
+      0.1075,
+      0.0576
      ],
      "closed": 0,
      "ou": [
       1.25,
-      2.78
+      2.79
      ],
-     "p_over": 0.6898
+     "p_over": 0.6906
     },
     {
      "date": "2026-11-26",
@@ -3819,20 +3916,20 @@
      "status": "UPCOMING",
      "iddaa": "Brann – AGF Aarhus",
      "odds": [
-      1.95,
-      3.42,
-      2.85
+      1.98,
+      3.44,
+      2.77
      ],
      "probs": [
-      0.4436,
-      0.2529,
-      0.3035
+      0.4366,
+      0.2513,
+      0.3121
      ],
      "ou": [
-      1.37,
-      2.35
+      1.35,
+      2.39
      ],
-     "p_over": 0.6317
+     "p_over": 0.639
     },
     {
      "date": "2026-11-26",
@@ -3844,20 +3941,20 @@
      "status": "UPCOMING",
      "iddaa": "Hearts – Monaco",
      "odds": [
-      4.39,
-      3.9,
-      1.49
+      4.59,
+      3.96,
+      1.46
      ],
      "probs": [
-      0.1972,
-      0.2219,
-      0.5809
+      0.1886,
+      0.2186,
+      0.5928
      ],
      "ou": [
       1.42,
-      2.2
+      2.21
      ],
-     "p_over": 0.6077
+     "p_over": 0.6088
     },
     {
      "date": "2026-11-26",
@@ -3919,14 +4016,14 @@
      "status": "UPCOMING",
      "iddaa": "FC Iberia 1999 – Getafe",
      "odds": [
-      6.2,
-      3.9,
-      1.35
+      6.44,
+      3.95,
+      1.34
      ],
      "probs": [
-      0.1392,
-      0.2213,
-      0.6394
+      0.1345,
+      0.2192,
+      0.6463
      ],
      "ou": [
       1.89,
@@ -3944,14 +4041,14 @@
      "status": "UPCOMING",
      "iddaa": "KF Egnatia Rrogozhine – Lincoln Red",
      "odds": [
-      1.42,
-      4.03,
+      1.41,
+      4.07,
       4.98
      ],
      "probs": [
-      0.6107,
-      0.2152,
-      0.1741
+      0.6137,
+      0.2126,
+      0.1737
      ],
      "ou": [
       1.47,
@@ -3970,20 +4067,20 @@
      "iddaa": "Braga – Kuopion",
      "odds": [
       null,
-      8.24,
+      8.5,
       17.8
      ],
      "probs": [
-      0.8466,
-      0.1049,
+      0.8498,
+      0.1017,
       0.0486
      ],
      "closed": 0,
      "ou": [
       1.28,
-      2.65
+      2.66
      ],
-     "p_over": 0.6743
+     "p_over": 0.6751
     },
     {
      "date": "2026-11-26",
@@ -4020,14 +4117,14 @@
      "status": "UPCOMING",
      "iddaa": "KAA Gent – Kızıl Yıldız",
      "odds": [
-      2.0,
-      3.19,
-      2.92
+      1.95,
+      3.18,
+      3.02
      ],
      "probs": [
-      0.4325,
-      0.2712,
-      0.2963
+      0.4427,
+      0.2715,
+      0.2858
      ],
      "ou": [
       1.64,
@@ -4045,20 +4142,20 @@
      "status": "UPCOMING",
      "iddaa": "Banja Luka – Atalanta",
      "odds": [
-      5.08,
-      4.17,
-      1.39
+      5.45,
+      4.31,
+      1.35
      ],
      "probs": [
-      0.1703,
-      0.2074,
-      0.6223
+      0.1587,
+      0.2007,
+      0.6406
      ],
      "ou": [
-      1.43,
-      2.18
+      1.42,
+      2.23
      ],
-     "p_over": 0.6039
+     "p_over": 0.611
     },
     {
      "date": "2026-11-26",
@@ -4070,20 +4167,20 @@
      "status": "UPCOMING",
      "iddaa": "Hajduk Split – St. Truidense",
      "odds": [
-      1.93,
-      3.26,
-      3.01
+      1.98,
+      3.22,
+      2.95
      ],
      "probs": [
-      0.4478,
-      0.2651,
-      0.2871
+      0.4374,
+      0.269,
+      0.2936
      ],
      "ou": [
-      1.62,
-      1.85
+      1.59,
+      1.89
      ],
-     "p_over": 0.5331
+     "p_over": 0.5431
     },
     {
      "date": "2026-11-26",
@@ -4120,20 +4217,20 @@
      "status": "UPCOMING",
      "iddaa": "Inter Club De Escaldes – Kopenhag",
      "odds": [
-      9.52,
-      5.62,
-      1.15
+      11.55,
+      6.08,
+      1.1
      ],
      "probs": [
-      0.0911,
-      0.1544,
-      0.7545
+      0.0746,
+      0.1418,
+      0.7836
      ],
      "ou": [
-      1.39,
-      2.29
+      1.4,
+      2.27
      ],
-     "p_over": 0.6223
+     "p_over": 0.6185
     },
     {
      "date": "2026-11-26",
@@ -4145,14 +4242,14 @@
      "status": "UPCOMING",
      "iddaa": "CSKA Sofya – Trabzonspor",
      "odds": [
-      3.36,
-      3.45,
-      1.75
+      3.6,
+      3.52,
+      1.68
      ],
      "probs": [
-      0.2568,
-      0.2501,
-      0.4931
+      0.2401,
+      0.2455,
+      0.5144
      ],
      "ou": [
       1.45,
@@ -4681,14 +4778,14 @@
      "status": "UPCOMING",
      "iddaa": "CSKA Sofya – Trabzonspor",
      "odds": [
-      3.36,
-      3.45,
-      1.75
+      3.6,
+      3.52,
+      1.68
      ],
      "probs": [
-      0.2568,
-      0.2501,
-      0.4931
+      0.2401,
+      0.2455,
+      0.5144
      ],
      "ou": [
       1.45,

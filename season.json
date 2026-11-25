@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-24 07:15 UTC",
+ "generated": "2026-11-25 01:11 UTC",
  "source": "TFF (tff.org)",
- "fetched": "2026-11-24 07:14 UTC",
+ "fetched": "2026-11-25 00:34 UTC",
  "played_weeks": 12,
  "total_weeks": 34,
  "sims": 10000,
@@ -27,21 +27,21 @@
     "G",
     "G"
    ],
-   "exp_points": 78.2,
-   "p_title": 0.6534,
-   "p_top": 0.993,
+   "exp_points": 78.1,
+   "p_title": 0.6509,
+   "p_top": 0.9938,
    "p_releg": 0.0,
    "likely_rank": 1,
    "pos": [
-    0.6534,
-    0.2348,
-    0.0768,
-    0.028,
-    0.0061,
-    0.0007,
-    0.0002,
+    0.6509,
+    0.234,
+    0.0816,
+    0.0273,
+    0.005,
+    0.001,
     0.0,
-    0.0,
+    0.0001,
+    0.0001,
     0.0,
     0.0,
     0.0,
@@ -71,21 +71,21 @@
     "G",
     "G"
    ],
-   "exp_points": 73.0,
-   "p_title": 0.2394,
-   "p_top": 0.9645,
+   "exp_points": 73.1,
+   "p_title": 0.2455,
+   "p_top": 0.9657,
    "p_releg": 0.0,
    "likely_rank": 2,
    "pos": [
-    0.2394,
-    0.4012,
-    0.2134,
-    0.1105,
-    0.0283,
+    0.2455,
+    0.4054,
+    0.216,
+    0.0988,
+    0.028,
     0.0052,
-    0.0016,
-    0.0003,
+    0.001,
     0.0001,
+    0.0,
     0.0,
     0.0,
     0.0,
@@ -116,23 +116,23 @@
     "G"
    ],
    "exp_points": 66.9,
-   "p_title": 0.0498,
-   "p_top": 0.7952,
+   "p_title": 0.0469,
+   "p_top": 0.798,
    "p_releg": 0.0,
    "likely_rank": 4,
    "pos": [
-    0.0498,
-    0.1471,
-    0.2876,
-    0.3107,
-    0.131,
-    0.0497,
-    0.0174,
+    0.0469,
+    0.1505,
+    0.2821,
+    0.3185,
+    0.1314,
+    0.0486,
+    0.0152,
     0.0044,
-    0.0018,
-    0.0004,
+    0.0014,
+    0.0008,
+    0.0002,
     0.0,
-    0.0001,
     0.0,
     0.0,
     0.0,
@@ -159,30 +159,30 @@
     "M",
     "M"
    ],
-   "exp_points": 45.6,
+   "exp_points": 45.5,
    "p_title": 0.0,
    "p_top": 0.0029,
-   "p_releg": 0.0045,
+   "p_releg": 0.0073,
    "likely_rank": 10,
    "pos": [
     0.0,
     0.0,
-    0.0001,
-    0.0028,
-    0.0136,
-    0.0483,
-    0.0924,
-    0.1481,
-    0.1859,
-    0.1939,
-    0.1334,
-    0.0909,
-    0.0492,
-    0.0254,
-    0.0115,
-    0.0039,
-    0.0006,
-    0.0
+    0.0004,
+    0.0025,
+    0.0172,
+    0.0491,
+    0.0895,
+    0.1411,
+    0.1827,
+    0.1924,
+    0.1438,
+    0.0829,
+    0.0494,
+    0.0279,
+    0.0138,
+    0.006,
+    0.0011,
+    0.0002
    ]
   },
   {
@@ -203,27 +203,27 @@
     "G",
     "G"
    ],
-   "exp_points": 55.1,
-   "p_title": 0.0004,
-   "p_top": 0.0889,
+   "exp_points": 55.0,
+   "p_title": 0.0006,
+   "p_top": 0.0852,
    "p_releg": 0.0,
    "likely_rank": 6,
    "pos": [
-    0.0004,
-    0.0044,
-    0.021,
-    0.0631,
-    0.1788,
-    0.2701,
-    0.2051,
-    0.1295,
-    0.0695,
-    0.0359,
-    0.0147,
-    0.0049,
-    0.0019,
+    0.0006,
+    0.0033,
+    0.0201,
+    0.0612,
+    0.1781,
+    0.2716,
+    0.2019,
+    0.1284,
+    0.0722,
+    0.0376,
+    0.0164,
+    0.0053,
+    0.0021,
+    0.001,
     0.0002,
-    0.0005,
     0.0,
     0.0,
     0.0
@@ -248,22 +248,22 @@
     "B"
    ],
    "exp_points": 67.7,
-   "p_title": 0.0531,
-   "p_top": 0.8317,
+   "p_title": 0.0534,
+   "p_top": 0.8286,
    "p_releg": 0.0,
    "likely_rank": 3,
    "pos": [
-    0.0531,
-    0.1885,
-    0.3149,
-    0.2752,
-    0.1149,
-    0.0384,
-    0.0111,
-    0.0031,
-    0.0004,
-    0.0004,
-    0.0,
+    0.0534,
+    0.1836,
+    0.3159,
+    0.2757,
+    0.1184,
+    0.0381,
+    0.0114,
+    0.0022,
+    0.0007,
+    0.0005,
+    0.0001,
     0.0,
     0.0,
     0.0,
@@ -292,25 +292,25 @@
     "G"
    ],
    "exp_points": 59.7,
-   "p_title": 0.0037,
-   "p_top": 0.2624,
+   "p_title": 0.0026,
+   "p_top": 0.2697,
    "p_releg": 0.0,
    "likely_rank": 5,
    "pos": [
-    0.0037,
-    0.0219,
-    0.0743,
-    0.1625,
-    0.3588,
-    0.2013,
-    0.1035,
-    0.0428,
-    0.0193,
-    0.0082,
-    0.0029,
-    0.0004,
-    0.0004,
-    0.0,
+    0.0026,
+    0.0209,
+    0.0708,
+    0.1754,
+    0.3532,
+    0.203,
+    0.098,
+    0.0441,
+    0.0187,
+    0.0083,
+    0.0035,
+    0.001,
+    0.0003,
+    0.0002,
     0.0,
     0.0,
     0.0,
@@ -337,28 +337,28 @@
    ],
    "exp_points": 49.1,
    "p_title": 0.0,
-   "p_top": 0.0104,
-   "p_releg": 0.0008,
+   "p_top": 0.0126,
+   "p_releg": 0.0013,
    "likely_rank": 8,
    "pos": [
     0.0,
     0.0002,
-    0.0015,
-    0.0087,
-    0.0422,
-    0.116,
-    0.1797,
-    0.2182,
-    0.174,
-    0.1244,
-    0.0694,
-    0.036,
-    0.0181,
-    0.0077,
     0.0031,
-    0.0007,
+    0.0093,
+    0.0453,
+    0.1109,
+    0.1808,
+    0.2131,
+    0.1799,
+    0.1188,
+    0.0725,
+    0.0381,
+    0.0167,
+    0.0073,
+    0.0027,
+    0.0011,
     0.0001,
-    0.0
+    0.0001
    ]
   },
   {
@@ -379,30 +379,30 @@
     "M",
     "G"
    ],
-   "exp_points": 52.4,
-   "p_title": 0.0002,
-   "p_top": 0.0479,
-   "p_releg": 0.0002,
+   "exp_points": 52.2,
+   "p_title": 0.0001,
+   "p_top": 0.0389,
+   "p_releg": 0.0008,
    "likely_rank": 7,
    "pos": [
-    0.0002,
-    0.0019,
-    0.01,
-    0.0358,
-    0.1042,
-    0.2004,
-    0.2417,
-    0.1734,
-    0.1088,
-    0.0665,
-    0.0315,
-    0.016,
-    0.0071,
-    0.0012,
-    0.0011,
     0.0001,
-    0.0,
-    0.0001
+    0.0021,
+    0.0093,
+    0.0274,
+    0.1035,
+    0.2056,
+    0.244,
+    0.1755,
+    0.1109,
+    0.0615,
+    0.0335,
+    0.016,
+    0.0061,
+    0.0029,
+    0.0008,
+    0.0007,
+    0.0001,
+    0.0
    ]
   },
   {
@@ -423,30 +423,30 @@
     "G",
     "G"
    ],
-   "exp_points": 45.5,
+   "exp_points": 45.7,
    "p_title": 0.0,
-   "p_top": 0.0029,
-   "p_releg": 0.006,
+   "p_top": 0.0044,
+   "p_releg": 0.0069,
    "likely_rank": 9,
    "pos": [
     0.0,
     0.0,
-    0.0004,
-    0.0025,
-    0.018,
-    0.0517,
-    0.0921,
-    0.1552,
-    0.1955,
-    0.1771,
-    0.1349,
-    0.0813,
-    0.0457,
-    0.025,
-    0.0146,
-    0.0047,
-    0.0011,
-    0.0002
+    0.0007,
+    0.0037,
+    0.0169,
+    0.0503,
+    0.1035,
+    0.1576,
+    0.194,
+    0.1708,
+    0.1285,
+    0.0827,
+    0.0477,
+    0.0251,
+    0.0116,
+    0.0053,
+    0.0013,
+    0.0003
    ]
   },
   {
@@ -467,30 +467,30 @@
     "M",
     "M"
    ],
-   "exp_points": 34.9,
+   "exp_points": 34.8,
    "p_title": 0.0,
    "p_top": 0.0,
-   "p_releg": 0.2121,
-   "likely_rank": 14,
+   "p_releg": 0.2042,
+   "likely_rank": 15,
    "pos": [
     0.0,
     0.0,
     0.0,
     0.0,
     0.0001,
-    0.0008,
-    0.0044,
-    0.0096,
-    0.0262,
-    0.0457,
-    0.0814,
-    0.1197,
-    0.1612,
-    0.1743,
-    0.1645,
-    0.1226,
-    0.0767,
-    0.0128
+    0.001,
+    0.0037,
+    0.0109,
+    0.0231,
+    0.045,
+    0.0791,
+    0.1208,
+    0.1619,
+    0.1748,
+    0.1754,
+    0.1261,
+    0.0664,
+    0.0117
    ]
   },
   {
@@ -513,28 +513,28 @@
    ],
    "exp_points": 40.3,
    "p_title": 0.0,
-   "p_top": 0.0002,
-   "p_releg": 0.0537,
+   "p_top": 0.0001,
+   "p_releg": 0.0556,
    "likely_rank": 11,
    "pos": [
     0.0,
     0.0,
     0.0,
-    0.0002,
-    0.0026,
-    0.0104,
+    0.0001,
+    0.0016,
+    0.0098,
     0.028,
-    0.0574,
-    0.0984,
-    0.1328,
-    0.1726,
-    0.1586,
-    0.1294,
-    0.0925,
-    0.0634,
-    0.0373,
-    0.0136,
-    0.0028
+    0.0598,
+    0.0906,
+    0.1374,
+    0.1755,
+    0.1613,
+    0.1237,
+    0.0938,
+    0.0628,
+    0.0369,
+    0.016,
+    0.0027
    ]
   },
   {
@@ -555,10 +555,10 @@
     "M",
     "M"
    ],
-   "exp_points": 28.3,
+   "exp_points": 27.9,
    "p_title": 0.0,
    "p_top": 0.0,
-   "p_releg": 0.6942,
+   "p_releg": 0.7153,
    "likely_rank": 17,
    "pos": [
     0.0,
@@ -568,17 +568,17 @@
     0.0,
     0.0,
     0.0001,
-    0.0003,
+    0.0005,
     0.0011,
-    0.0038,
-    0.0099,
-    0.025,
-    0.0466,
-    0.0817,
-    0.1373,
-    0.2355,
-    0.3311,
-    0.1276
+    0.0037,
+    0.0091,
+    0.0229,
+    0.0392,
+    0.0734,
+    0.1347,
+    0.2274,
+    0.3551,
+    0.1328
    ]
   },
   {
@@ -599,30 +599,30 @@
     "M",
     "M"
    ],
-   "exp_points": 38.2,
+   "exp_points": 38.3,
    "p_title": 0.0,
-   "p_top": 0.0,
-   "p_releg": 0.0979,
+   "p_top": 0.0001,
+   "p_releg": 0.0929,
    "likely_rank": 12,
    "pos": [
     0.0,
     0.0,
     0.0,
-    0.0,
+    0.0001,
     0.001,
-    0.0051,
-    0.0141,
-    0.0336,
-    0.0632,
-    0.0981,
-    0.1444,
-    0.1675,
-    0.1501,
-    0.1292,
-    0.0958,
-    0.0618,
-    0.029,
-    0.0071
+    0.0038,
+    0.0143,
+    0.0348,
+    0.0634,
+    0.1008,
+    0.1418,
+    0.1629,
+    0.1561,
+    0.1282,
+    0.0999,
+    0.0611,
+    0.0262,
+    0.0056
    ]
   },
   {
@@ -643,30 +643,30 @@
     "M",
     "M"
    ],
-   "exp_points": 35.0,
+   "exp_points": 35.2,
    "p_title": 0.0,
    "p_top": 0.0,
-   "p_releg": 0.2185,
+   "p_releg": 0.2129,
    "likely_rank": 14,
    "pos": [
     0.0,
     0.0,
     0.0,
     0.0,
-    0.0003,
-    0.0012,
-    0.0042,
-    0.0128,
-    0.0266,
-    0.0535,
-    0.0968,
-    0.1288,
-    0.149,
-    0.1614,
-    0.1469,
+    0.0002,
+    0.0013,
+    0.0045,
+    0.0148,
+    0.0293,
+    0.057,
+    0.0903,
+    0.1291,
+    0.153,
+    0.1653,
+    0.1423,
     0.115,
-    0.0803,
-    0.0232
+    0.0737,
+    0.0242
    ]
   },
   {
@@ -687,10 +687,10 @@
     "M",
     "M"
    ],
-   "exp_points": 31.0,
+   "exp_points": 30.9,
    "p_title": 0.0,
    "p_top": 0.0,
-   "p_releg": 0.4829,
+   "p_releg": 0.4901,
    "likely_rank": 16,
    "pos": [
     0.0,
@@ -698,19 +698,19 @@
     0.0,
     0.0,
     0.0,
-    0.0002,
-    0.0008,
-    0.0017,
-    0.0083,
-    0.0168,
-    0.0349,
-    0.06,
-    0.0952,
+    0.0001,
+    0.0003,
+    0.0034,
+    0.0093,
+    0.0165,
+    0.0318,
+    0.0602,
+    0.0942,
     0.129,
-    0.1702,
-    0.2101,
-    0.2018,
-    0.071
+    0.1651,
+    0.2157,
+    0.1981,
+    0.0763
    ]
   },
   {
@@ -731,10 +731,10 @@
     "G",
     "M"
    ],
-   "exp_points": 33.8,
+   "exp_points": 34.2,
    "p_title": 0.0,
    "p_top": 0.0,
-   "p_releg": 0.2912,
+   "p_releg": 0.2701,
    "likely_rank": 15,
    "pos": [
     0.0,
@@ -742,19 +742,19 @@
     0.0,
     0.0,
     0.0001,
-    0.0005,
-    0.0036,
-    0.0096,
-    0.0207,
-    0.0421,
-    0.0717,
-    0.1076,
-    0.1376,
-    0.1546,
-    0.1607,
-    0.1479,
-    0.1049,
-    0.0384
+    0.0006,
+    0.0038,
+    0.0092,
+    0.0224,
+    0.0484,
+    0.0731,
+    0.1141,
+    0.1445,
+    0.1537,
+    0.16,
+    0.139,
+    0.0967,
+    0.0344
    ]
   },
   {
@@ -775,10 +775,10 @@
     "M",
     "M"
    ],
-   "exp_points": 21.4,
+   "exp_points": 21.3,
    "p_title": 0.0,
    "p_top": 0.0,
-   "p_releg": 0.938,
+   "p_releg": 0.9426,
    "likely_rank": 18,
    "pos": [
     0.0,
@@ -790,15 +790,15 @@
     0.0,
     0.0,
     0.0002,
-    0.0004,
-    0.0015,
-    0.0032,
-    0.0085,
-    0.0178,
-    0.0304,
-    0.0604,
-    0.1608,
-    0.7168
+    0.0005,
+    0.0008,
+    0.0027,
+    0.0051,
+    0.0174,
+    0.0307,
+    0.0657,
+    0.1652,
+    0.7117
    ]
   }
  ],
@@ -1443,10 +1443,10 @@
      "home": "Rizespor",
      "away": "Kasimpasa",
      "model": {
-      "home": 0.4016,
-      "draw": 0.286,
-      "away": 0.3124,
-      "xg_home": 1.41,
+      "home": 0.4014,
+      "draw": 0.29,
+      "away": 0.3086,
+      "xg_home": 1.42,
       "xg_away": 1.3
      }
     },
@@ -1454,10 +1454,10 @@
      "home": "Alanyaspor",
      "away": "Konyaspor",
      "model": {
-      "home": 0.4204,
-      "draw": 0.2986,
-      "away": 0.281,
-      "xg_home": 1.44,
+      "home": 0.4216,
+      "draw": 0.2954,
+      "away": 0.283,
+      "xg_home": 1.43,
       "xg_away": 1.12
      }
     },
@@ -1465,10 +1465,10 @@
      "home": "Samsunspor",
      "away": "Genclerbirligi",
      "model": {
-      "home": 0.485,
-      "draw": 0.2726,
-      "away": 0.2424,
-      "xg_home": 1.62,
+      "home": 0.491,
+      "draw": 0.2708,
+      "away": 0.2382,
+      "xg_home": 1.64,
       "xg_away": 1.13
      }
     },
@@ -1476,10 +1476,10 @@
      "home": "Gaziantep",
      "away": "Amedspor",
      "model": {
-      "home": 0.4557,
-      "draw": 0.2914,
-      "away": 0.2529,
-      "xg_home": 1.43,
+      "home": 0.45,
+      "draw": 0.2978,
+      "away": 0.2522,
+      "xg_home": 1.44,
       "xg_away": 1.29
      }
     },
@@ -1487,10 +1487,10 @@
      "home": "Eyupspor",
      "away": "Buyuksehyr",
      "model": {
-      "home": 0.1654,
-      "draw": 0.182,
-      "away": 0.6526,
-      "xg_home": 0.97,
+      "home": 0.1673,
+      "draw": 0.1743,
+      "away": 0.6583,
+      "xg_home": 0.98,
       "xg_away": 2.16
      }
     },
@@ -1498,44 +1498,44 @@
      "home": "Corum",
      "away": "Kocaelispor",
      "model": {
-      "home": 0.2758,
-      "draw": 0.2313,
-      "away": 0.4929,
+      "home": 0.2803,
+      "draw": 0.2403,
+      "away": 0.4794,
       "xg_home": 1.19,
-      "xg_away": 1.6
+      "xg_away": 1.62
      }
     },
     {
      "home": "Fenerbahce",
      "away": "Erzurumspor",
      "model": {
-      "home": 0.8662,
-      "draw": 0.0944,
-      "away": 0.0394,
-      "xg_home": 3.08,
-      "xg_away": 0.81
-     }
-    },
-    {
-     "home": "Goztep",
-     "away": "Trabzonspor",
-     "model": {
-      "home": 0.2579,
-      "draw": 0.278,
-      "away": 0.4641,
-      "xg_home": 1.26,
-      "xg_away": 1.67
+      "home": 0.8593,
+      "draw": 0.1001,
+      "away": 0.0407,
+      "xg_home": 3.05,
+      "xg_away": 0.83
      }
     },
     {
      "home": "Besiktas",
      "away": "Galatasaray",
      "model": {
-      "home": 0.3242,
-      "draw": 0.2512,
-      "away": 0.4247,
-      "xg_home": 1.4,
-      "xg_away": 1.55
+      "home": 0.3253,
+      "draw": 0.2545,
+      "away": 0.4202,
+      "xg_home": 1.38,
+      "xg_away": 1.57
+     }
+    },
+    {
+     "home": "Goztep",
+     "away": "Trabzonspor",
+     "model": {
+      "home": 0.2506,
+      "draw": 0.2816,
+      "away": 0.4678,
+      "xg_home": 1.24,
+      "xg_away": 1.67
      }
     }
    ]
@@ -1547,10 +1547,10 @@
      "home": "Galatasaray",
      "away": "Rizespor",
      "model": {
-      "home": 0.7519,
-      "draw": 0.1544,
-      "away": 0.0937,
-      "xg_home": 2.43,
+      "home": 0.7555,
+      "draw": 0.1523,
+      "away": 0.0923,
+      "xg_home": 2.41,
       "xg_away": 0.97
      }
     },
@@ -1558,87 +1558,87 @@
      "home": "Konyaspor",
      "away": "Gaziantep",
      "model": {
-      "home": 0.4585,
-      "draw": 0.2737,
-      "away": 0.2678,
-      "xg_home": 1.52,
+      "home": 0.4627,
+      "draw": 0.271,
+      "away": 0.2663,
+      "xg_home": 1.51,
       "xg_away": 1.07
-     }
-    },
-    {
-     "home": "Buyuksehyr",
-     "away": "Fenerbahce",
-     "model": {
-      "home": 0.2565,
-      "draw": 0.2481,
-      "away": 0.4954,
-      "xg_home": 1.31,
-      "xg_away": 1.83
      }
     },
     {
      "home": "Amedspor",
      "away": "Alanyaspor",
      "model": {
-      "home": 0.4033,
-      "draw": 0.2419,
+      "home": 0.3977,
+      "draw": 0.2475,
       "away": 0.3548,
-      "xg_home": 1.47,
+      "xg_home": 1.43,
       "xg_away": 1.29
      }
     },
     {
-     "home": "Erzurumspor",
-     "away": "Kocaelispor",
+     "home": "Buyuksehyr",
+     "away": "Fenerbahce",
      "model": {
-      "home": 0.2193,
-      "draw": 0.2402,
-      "away": 0.5405,
-      "xg_home": 1.02,
-      "xg_away": 1.71
-     }
-    },
-    {
-     "home": "Trabzonspor",
-     "away": "Corum",
-     "model": {
-      "home": 0.8282,
-      "draw": 0.1149,
-      "away": 0.0569,
-      "xg_home": 2.76,
-      "xg_away": 0.84
-     }
-    },
-    {
-     "home": "Besiktas",
-     "away": "Samsunspor",
-     "model": {
-      "home": 0.7593,
-      "draw": 0.1482,
-      "away": 0.0926,
-      "xg_home": 2.43,
-      "xg_away": 0.9
+      "home": 0.2529,
+      "draw": 0.2521,
+      "away": 0.495,
+      "xg_home": 1.3,
+      "xg_away": 1.83
      }
     },
     {
      "home": "Genclerbirligi",
      "away": "Eyupspor",
      "model": {
-      "home": 0.6363,
-      "draw": 0.1795,
-      "away": 0.1842,
+      "home": 0.6318,
+      "draw": 0.1834,
+      "away": 0.1849,
       "xg_home": 1.81,
-      "xg_away": 0.98
+      "xg_away": 0.99
+     }
+    },
+    {
+     "home": "Erzurumspor",
+     "away": "Kocaelispor",
+     "model": {
+      "home": 0.2123,
+      "draw": 0.2407,
+      "away": 0.547,
+      "xg_home": 1.02,
+      "xg_away": 1.71
+     }
+    },
+    {
+     "home": "Besiktas",
+     "away": "Samsunspor",
+     "model": {
+      "home": 0.751,
+      "draw": 0.1581,
+      "away": 0.0909,
+      "xg_home": 2.42,
+      "xg_away": 0.9
+     }
+    },
+    {
+     "home": "Trabzonspor",
+     "away": "Corum",
+     "model": {
+      "home": 0.8275,
+      "draw": 0.1201,
+      "away": 0.0524,
+      "xg_home": 2.79,
+      "xg_away": 0.85
      }
     },
     {
      "home": "Kasimpasa",
      "away": "Goztep",
      "model": {
-      "home": 0.3658,
-      "draw": 0.2929,
-      "away": 0.3413,
-      "xg_home": 1.43,
+      "home": 0.3596,
+      "draw": 0.2906,
+      "away": 0.3498,
+      "xg_home": 1.41,
       "xg_away": 1.34
      }
     }
@@ -1651,98 +1651,98 @@
      "home": "Corum",
      "away": "Amedspor",
      "model": {
-      "home": 0.3274,
-      "draw": 0.2621,
-      "away": 0.4105,
+      "home": 0.3327,
+      "draw": 0.2625,
+      "away": 0.4048,
       "xg_home": 1.37,
-      "xg_away": 1.49
-     }
-    },
-    {
-     "home": "Eyupspor",
-     "away": "Galatasaray",
-     "model": {
-      "home": 0.1049,
-      "draw": 0.1151,
-      "away": 0.78,
-      "xg_home": 0.84,
-      "xg_away": 2.58
+      "xg_away": 1.51
      }
     },
     {
      "home": "Alanyaspor",
      "away": "Samsunspor",
      "model": {
-      "home": 0.4359,
-      "draw": 0.2741,
-      "away": 0.2899,
-      "xg_home": 1.58,
-      "xg_away": 1.15
+      "home": 0.4184,
+      "draw": 0.286,
+      "away": 0.2956,
+      "xg_home": 1.59,
+      "xg_away": 1.17
      }
     },
     {
      "home": "Erzurumspor",
      "away": "Kasimpasa",
      "model": {
-      "home": 0.15,
+      "home": 0.1408,
       "draw": 0.2047,
-      "away": 0.6453,
+      "away": 0.6545,
       "xg_home": 0.93,
-      "xg_away": 1.97
+      "xg_away": 1.98
      }
     },
     {
-     "home": "Fenerbahce",
-     "away": "Trabzonspor",
+     "home": "Eyupspor",
+     "away": "Galatasaray",
      "model": {
-      "home": 0.4503,
-      "draw": 0.2755,
-      "away": 0.2742,
-      "xg_home": 1.68,
-      "xg_away": 1.25
-     }
-    },
-    {
-     "home": "Goztep",
-     "away": "Konyaspor",
-     "model": {
-      "home": 0.5589,
-      "draw": 0.2647,
-      "away": 0.1764,
-      "xg_home": 1.91,
-      "xg_away": 0.99
-     }
-    },
-    {
-     "home": "Kocaelispor",
-     "away": "Genclerbirligi",
-     "model": {
-      "home": 0.5047,
-      "draw": 0.2856,
-      "away": 0.2096,
-      "xg_home": 1.71,
-      "xg_away": 1.03
+      "home": 0.1039,
+      "draw": 0.1121,
+      "away": 0.784,
+      "xg_home": 0.86,
+      "xg_away": 2.61
      }
     },
     {
      "home": "Rizespor",
      "away": "Buyuksehyr",
      "model": {
-      "home": 0.2847,
-      "draw": 0.2669,
-      "away": 0.4484,
-      "xg_home": 1.29,
-      "xg_away": 1.54
+      "home": 0.2808,
+      "draw": 0.266,
+      "away": 0.4532,
+      "xg_home": 1.28,
+      "xg_away": 1.55
+     }
+    },
+    {
+     "home": "Goztep",
+     "away": "Konyaspor",
+     "model": {
+      "home": 0.5705,
+      "draw": 0.2503,
+      "away": 0.1792,
+      "xg_home": 1.92,
+      "xg_away": 1.0
+     }
+    },
+    {
+     "home": "Kocaelispor",
+     "away": "Genclerbirligi",
+     "model": {
+      "home": 0.5106,
+      "draw": 0.277,
+      "away": 0.2124,
+      "xg_home": 1.71,
+      "xg_away": 1.02
+     }
+    },
+    {
+     "home": "Fenerbahce",
+     "away": "Trabzonspor",
+     "model": {
+      "home": 0.4517,
+      "draw": 0.2745,
+      "away": 0.2739,
+      "xg_home": 1.67,
+      "xg_away": 1.24
      }
     },
     {
      "home": "Gaziantep",
      "away": "Besiktas",
      "model": {
-      "home": 0.1523,
-      "draw": 0.1958,
-      "away": 0.6519,
-      "xg_home": 0.98,
+      "home": 0.152,
+      "draw": 0.1995,
+      "away": 0.6485,
+      "xg_home": 0.99,
       "xg_away": 2.0
      }
     }
@@ -1752,35 +1752,35 @@
    "week": 16,
    "matches": [
     {
-     "home": "Kasimpasa",
-     "away": "Fenerbahce",
-     "model": {
-      "home": 0.1676,
-      "draw": 0.2057,
-      "away": 0.6268,
-      "xg_home": 1.13,
-      "xg_away": 2.08
-     }
-    },
-    {
      "home": "Amedspor",
      "away": "Goztep",
      "model": {
-      "home": 0.2331,
-      "draw": 0.2246,
-      "away": 0.5423,
-      "xg_home": 1.15,
-      "xg_away": 1.74
+      "home": 0.2266,
+      "draw": 0.2387,
+      "away": 0.5347,
+      "xg_home": 1.14,
+      "xg_away": 1.73
+     }
+    },
+    {
+     "home": "Kasimpasa",
+     "away": "Fenerbahce",
+     "model": {
+      "home": 0.1618,
+      "draw": 0.2111,
+      "away": 0.6271,
+      "xg_home": 1.13,
+      "xg_away": 2.09
      }
     },
     {
      "home": "Konyaspor",
      "away": "Eyupspor",
      "model": {
-      "home": 0.5998,
-      "draw": 0.1831,
-      "away": 0.2171,
-      "xg_home": 1.68,
+      "home": 0.5863,
+      "draw": 0.1925,
+      "away": 0.2212,
+      "xg_home": 1.71,
       "xg_away": 0.99
      }
     },
@@ -1788,10 +1788,10 @@
      "home": "Galatasaray",
      "away": "Alanyaspor",
      "model": {
-      "home": 0.7873,
-      "draw": 0.1301,
-      "away": 0.0826,
-      "xg_home": 2.49,
+      "home": 0.7834,
+      "draw": 0.1306,
+      "away": 0.0859,
+      "xg_home": 2.46,
       "xg_away": 0.88
      }
     },
@@ -1799,32 +1799,32 @@
      "home": "Buyuksehyr",
      "away": "Erzurumspor",
      "model": {
-      "home": 0.829,
-      "draw": 0.1163,
-      "away": 0.0547,
-      "xg_home": 2.74,
-      "xg_away": 0.85
+      "home": 0.8247,
+      "draw": 0.1183,
+      "away": 0.0571,
+      "xg_home": 2.72,
+      "xg_away": 0.87
      }
     },
     {
      "home": "Genclerbirligi",
      "away": "Corum",
      "model": {
-      "home": 0.5521,
-      "draw": 0.2566,
-      "away": 0.1913,
-      "xg_home": 1.79,
-      "xg_away": 1.15
+      "home": 0.5511,
+      "draw": 0.2644,
+      "away": 0.1845,
+      "xg_home": 1.8,
+      "xg_away": 1.16
      }
     },
     {
      "home": "Besiktas",
      "away": "Rizespor",
      "model": {
-      "home": 0.6998,
-      "draw": 0.1751,
-      "away": 0.125,
-      "xg_home": 2.15,
+      "home": 0.7006,
+      "draw": 0.1772,
+      "away": 0.1222,
+      "xg_home": 2.13,
       "xg_away": 0.97
      }
     },
@@ -1832,9 +1832,9 @@
      "home": "Samsunspor",
      "away": "Gaziantep",
      "model": {
-      "home": 0.4661,
-      "draw": 0.2715,
-      "away": 0.2624,
+      "home": 0.4702,
+      "draw": 0.2694,
+      "away": 0.2604,
       "xg_home": 1.59,
       "xg_away": 1.08
      }
@@ -1843,10 +1843,10 @@
      "home": "Trabzonspor",
      "away": "Kocaelispor",
      "model": {
-      "home": 0.7486,
-      "draw": 0.1675,
-      "away": 0.0839,
-      "xg_home": 2.22,
+      "home": 0.7467,
+      "draw": 0.17,
+      "away": 0.0833,
+      "xg_home": 2.23,
       "xg_away": 0.87
      }
     }
@@ -1856,102 +1856,102 @@
    "week": 17,
    "matches": [
     {
-     "home": "Kocaelispor",
-     "away": "Kasimpasa",
+     "home": "Fenerbahce",
+     "away": "Amedspor",
      "model": {
-      "home": 0.3591,
-      "draw": 0.2988,
-      "away": 0.3421,
-      "xg_home": 1.28,
-      "xg_away": 1.28
-     }
-    },
-    {
-     "home": "Goztep",
-     "away": "Besiktas",
-     "model": {
-      "home": 0.3037,
-      "draw": 0.2687,
-      "away": 0.4276,
-      "xg_home": 1.3,
-      "xg_away": 1.54
-     }
-    },
-    {
-     "home": "Erzurumspor",
-     "away": "Trabzonspor",
-     "model": {
-      "home": 0.1066,
-      "draw": 0.1518,
-      "away": 0.7417,
-      "xg_home": 0.83,
-      "xg_away": 2.29
-     }
-    },
-    {
-     "home": "Eyupspor",
-     "away": "Samsunspor",
-     "model": {
-      "home": 0.3158,
-      "draw": 0.2235,
-      "away": 0.4607,
-      "xg_home": 1.23,
-      "xg_away": 1.35
+      "home": 0.7667,
+      "draw": 0.1523,
+      "away": 0.0809,
+      "xg_home": 2.55,
+      "xg_away": 0.99
      }
     },
     {
      "home": "Alanyaspor",
      "away": "Buyuksehyr",
      "model": {
-      "home": 0.2274,
-      "draw": 0.2486,
-      "away": 0.524,
+      "home": 0.2191,
+      "draw": 0.2583,
+      "away": 0.5227,
       "xg_home": 1.1,
-      "xg_away": 1.72
+      "xg_away": 1.73
      }
     },
     {
-     "home": "Fenerbahce",
-     "away": "Amedspor",
+     "home": "Kocaelispor",
+     "away": "Kasimpasa",
      "model": {
-      "home": 0.7764,
-      "draw": 0.1441,
-      "away": 0.0795,
-      "xg_home": 2.6,
-      "xg_away": 0.99
-     }
-    },
-    {
-     "home": "Rizespor",
-     "away": "Genclerbirligi",
-     "model": {
-      "home": 0.5149,
-      "draw": 0.2818,
-      "away": 0.2033,
-      "xg_home": 1.77,
-      "xg_away": 1.05
-     }
-    },
-    {
-     "home": "Gaziantep",
-     "away": "Galatasaray",
-     "model": {
-      "home": 0.1264,
-      "draw": 0.1458,
-      "away": 0.7278,
-      "xg_home": 0.9,
-      "xg_away": 2.28
+      "home": 0.3494,
+      "draw": 0.3034,
+      "away": 0.3472,
+      "xg_home": 1.29,
+      "xg_away": 1.28
      }
     },
     {
      "home": "Corum",
      "away": "Konyaspor",
      "model": {
-      "home": 0.281,
-      "draw": 0.2331,
-      "away": 0.4859,
-      "xg_home": 1.29,
-      "xg_away": 1.49
+      "home": 0.2829,
+      "draw": 0.2387,
+      "away": 0.4785,
+      "xg_home": 1.28,
+      "xg_away": 1.51
+     }
+    },
+    {
+     "home": "Eyupspor",
+     "away": "Samsunspor",
+     "model": {
+      "home": 0.2871,
+      "draw": 0.243,
+      "away": 0.47,
+      "xg_home": 1.26,
+      "xg_away": 1.37
+     }
+    },
+    {
+     "home": "Rizespor",
+     "away": "Genclerbirligi",
+     "model": {
+      "home": 0.5264,
+      "draw": 0.2719,
+      "away": 0.2016,
+      "xg_home": 1.79,
+      "xg_away": 1.04
+     }
+    },
+    {
+     "home": "Gaziantep",
+     "away": "Galatasaray",
+     "model": {
+      "home": 0.1282,
+      "draw": 0.1511,
+      "away": 0.7207,
+      "xg_home": 0.92,
+      "xg_away": 2.29
+     }
+    },
+    {
+     "home": "Goztep",
+     "away": "Besiktas",
+     "model": {
+      "home": 0.288,
+      "draw": 0.2775,
+      "away": 0.4345,
+      "xg_home": 1.3,
+      "xg_away": 1.55
+     }
+    },
+    {
+     "home": "Erzurumspor",
+     "away": "Trabzonspor",
+     "model": {
+      "home": 0.0977,
+      "draw": 0.1453,
+      "away": 0.757,
+      "xg_home": 0.83,
+      "xg_away": 2.29
      }
     }
    ]
@@ -1960,101 +1960,101 @@
    "week": 18,
    "matches": [
     {
-     "home": "Rizespor",
-     "away": "Konyaspor",
-     "model": {
-      "home": 0.4707,
-      "draw": 0.2934,
-      "away": 0.2358,
-      "xg_home": 1.61,
-      "xg_away": 1.05
-     }
-    },
-    {
-     "home": "Fenerbahce",
-     "away": "Genclerbirligi",
-     "model": {
-      "home": 0.7935,
-      "draw": 0.1323,
-      "away": 0.0742,
-      "xg_home": 2.59,
-      "xg_away": 0.89
-     }
-    },
-    {
-     "home": "Corum",
-     "away": "Galatasaray",
-     "model": {
-      "home": 0.1263,
-      "draw": 0.1396,
-      "away": 0.734,
-      "xg_home": 1.01,
-      "xg_away": 2.55
-     }
-    },
-    {
      "home": "Erzurumspor",
      "away": "Amedspor",
      "model": {
-      "home": 0.2974,
-      "draw": 0.291,
-      "away": 0.4116,
-      "xg_home": 1.16,
-      "xg_away": 1.65
-     }
-    },
-    {
-     "home": "Alanyaspor",
-     "away": "Gaziantep",
-     "model": {
-      "home": 0.4491,
-      "draw": 0.2933,
-      "away": 0.2576,
-      "xg_home": 1.51,
-      "xg_away": 1.06
-     }
-    },
-    {
-     "home": "Kocaelispor",
-     "away": "Buyuksehyr",
-     "model": {
-      "home": 0.2775,
-      "draw": 0.2701,
-      "away": 0.4524,
-      "xg_home": 1.21,
-      "xg_away": 1.54
+      "home": 0.2919,
+      "draw": 0.283,
+      "away": 0.4251,
+      "xg_home": 1.18,
+      "xg_away": 1.64
      }
     },
     {
      "home": "Goztep",
      "away": "Samsunspor",
      "model": {
-      "home": 0.5728,
-      "draw": 0.2568,
-      "away": 0.1703,
-      "xg_home": 2.0,
-      "xg_away": 1.02
+      "home": 0.5699,
+      "draw": 0.2549,
+      "away": 0.1752,
+      "xg_home": 2.01,
+      "xg_away": 1.03
+     }
+    },
+    {
+     "home": "Rizespor",
+     "away": "Konyaspor",
+     "model": {
+      "home": 0.485,
+      "draw": 0.2747,
+      "away": 0.2402,
+      "xg_home": 1.63,
+      "xg_away": 1.04
      }
     },
     {
      "home": "Eyupspor",
      "away": "Besiktas",
      "model": {
-      "home": 0.1348,
-      "draw": 0.1751,
-      "away": 0.6901,
-      "xg_home": 0.91,
-      "xg_away": 2.35
+      "home": 0.1311,
+      "draw": 0.1721,
+      "away": 0.6968,
+      "xg_home": 0.93,
+      "xg_away": 2.37
+     }
+    },
+    {
+     "home": "Corum",
+     "away": "Galatasaray",
+     "model": {
+      "home": 0.1284,
+      "draw": 0.1348,
+      "away": 0.7368,
+      "xg_home": 1.01,
+      "xg_away": 2.57
+     }
+    },
+    {
+     "home": "Kocaelispor",
+     "away": "Buyuksehyr",
+     "model": {
+      "home": 0.2662,
+      "draw": 0.2705,
+      "away": 0.4633,
+      "xg_home": 1.21,
+      "xg_away": 1.54
+     }
+    },
+    {
+     "home": "Alanyaspor",
+     "away": "Gaziantep",
+     "model": {
+      "home": 0.4469,
+      "draw": 0.283,
+      "away": 0.2701,
+      "xg_home": 1.51,
+      "xg_away": 1.07
+     }
+    },
+    {
+     "home": "Fenerbahce",
+     "away": "Genclerbirligi",
+     "model": {
+      "home": 0.7959,
+      "draw": 0.1302,
+      "away": 0.0739,
+      "xg_home": 2.57,
+      "xg_away": 0.89
      }
     },
     {
      "home": "Trabzonspor",
      "away": "Kasimpasa",
      "model": {
-      "home": 0.6415,
-      "draw": 0.2212,
-      "away": 0.1372,
-      "xg_home": 2.04,
+      "home": 0.646,
+      "draw": 0.2195,
+      "away": 0.1345,
+      "xg_home": 2.01,
       "xg_away": 0.99
      }
     }
