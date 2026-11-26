@@ -1,9 +1,9 @@
 {
- "generated": "2026-11-25 01:11 UTC",
+ "generated": "2026-11-26 02:38 UTC",
  "league": "T1",
  "data_until": "2026-11-23",
  "demo": false,
- "odds_source": "oran yok",
+ "odds_source": "iddaa bülteni (arşiv, son kayıt 2026-11-26 02:20 UTC)",
  "notes": [],
  "results_source": "TFF maç raporları",
  "league_base": {
@@ -25,20 +25,20 @@
    "home": "Alanyaspor",
    "away": "Konyaspor",
    "model": {
-    "home": 0.4216,
-    "draw": 0.2954,
-    "away": 0.283,
-    "over25": 0.5136,
-    "xg_home": 1.43,
-    "xg_away": 1.12,
+    "home": 0.3659,
+    "draw": 0.2952,
+    "away": 0.3388,
+    "over25": 0.472,
+    "xg_home": 1.44,
+    "xg_away": 1.13,
     "top_scores": [
      [
       "1-1",
-      0.1248
+      0.1246
      ],
      [
       "1-0",
-      0.1111
+      0.1102
      ],
      [
       "2-1",
@@ -46,24 +46,36 @@
      ]
     ],
     "goals": {
-     "o15": 0.7245,
-     "o25": 0.4711,
-     "o35": 0.255,
-     "btts": 0.5142
+     "o15": 0.7264,
+     "o25": 0.4736,
+     "o35": 0.2571,
+     "btts": 0.5163
     },
     "raw": {
-     "home": 0.4216,
-     "draw": 0.2954,
-     "away": 0.283,
-     "over25": 0.5136
+     "home": 0.4267,
+     "draw": 0.2982,
+     "away": 0.2751,
+     "over25": 0.523
     },
-    "blended": false
+    "blended": true
    },
-   "odds": null,
+   "odds": {
+    "home": 2.33,
+    "draw": 3.02,
+    "away": 2.52,
+    "implied": [
+     0.3709,
+     0.2862,
+     0.3429
+    ],
+    "over25": 1.81,
+    "under25": 1.66,
+    "implied_over25": 0.4784
+   },
    "goal_opinions": [],
    "live": {
-    "lh": 1.188,
-    "la": 0.917
+    "lh": 1.102,
+    "la": 1.048
    },
    "home_tr": "Alanyaspor",
    "away_tr": "Konyaspor",
@@ -138,20 +150,20 @@
    "home": "Rizespor",
    "away": "Kasimpasa",
    "model": {
-    "home": 0.4014,
-    "draw": 0.29,
-    "away": 0.3086,
-    "over25": 0.5161,
+    "home": 0.5115,
+    "draw": 0.2499,
+    "away": 0.2386,
+    "over25": 0.5809,
     "xg_home": 1.42,
-    "xg_away": 1.3,
+    "xg_away": 1.31,
     "top_scores": [
      [
       "1-1",
-      0.1217
+      0.1212
      ],
      [
       "1-0",
-      0.0936
+      0.0925
      ],
      [
       "2-1",
@@ -159,24 +171,36 @@
      ]
     ],
     "goals": {
-     "o15": 0.7543,
-     "o25": 0.5104,
-     "o35": 0.2895,
-     "btts": 0.551
+     "o15": 0.7574,
+     "o25": 0.5146,
+     "o35": 0.2934,
+     "btts": 0.5544
     },
     "raw": {
-     "home": 0.4014,
-     "draw": 0.29,
-     "away": 0.3086,
-     "over25": 0.5161
+     "home": 0.4016,
+     "draw": 0.2913,
+     "away": 0.3071,
+     "over25": 0.5124
     },
-    "blended": false
+    "blended": true
    },
-   "odds": null,
+   "odds": {
+    "home": 1.74,
+    "draw": 3.44,
+    "away": 3.44,
+    "implied": [
+     0.4971,
+     0.2514,
+     0.2514
+    ],
+    "over25": 1.52,
+    "under25": 2.0,
+    "implied_over25": 0.5682
+   },
    "goal_opinions": [],
    "live": {
-    "lh": 1.19,
-    "la": 1.006
+    "lh": 1.6,
+    "la": 1.008
    },
    "home_tr": "Rizespor",
    "away_tr": "Kasimpasa",
@@ -251,45 +275,45 @@
    "home": "Samsunspor",
    "away": "Genclerbirligi",
    "model": {
-    "home": 0.491,
-    "draw": 0.2708,
-    "away": 0.2382,
-    "over25": 0.5295,
+    "home": 0.4918,
+    "draw": 0.2735,
+    "away": 0.2346,
+    "over25": 0.5293,
     "xg_home": 1.64,
-    "xg_away": 1.13,
+    "xg_away": 1.14,
     "top_scores": [
      [
       "1-1",
-      0.1163
+      0.1161
      ],
      [
       "1-0",
-      0.1031
+      0.1014
      ],
      [
       "2-1",
-      0.0952
+      0.095
      ]
     ],
     "goals": {
-     "o15": 0.7628,
-     "o25": 0.5221,
-     "o35": 0.3002,
-     "btts": 0.5447
+     "o15": 0.7658,
+     "o25": 0.5262,
+     "o35": 0.304,
+     "btts": 0.5491
     },
     "raw": {
-     "home": 0.491,
-     "draw": 0.2708,
-     "away": 0.2382,
-     "over25": 0.5295
+     "home": 0.4918,
+     "draw": 0.2735,
+     "away": 0.2346,
+     "over25": 0.5293
     },
     "blended": false
    },
    "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 1.415,
-    "la": 0.896
+    "lh": 1.396,
+    "la": 0.872
    },
    "home_tr": "Samsunspor",
    "away_tr": "Genclerbirligi",
@@ -364,45 +388,45 @@
    "home": "Gaziantep",
    "away": "Amedspor",
    "model": {
-    "home": 0.45,
-    "draw": 0.2978,
-    "away": 0.2522,
-    "over25": 0.5181,
-    "xg_home": 1.44,
-    "xg_away": 1.29,
+    "home": 0.4576,
+    "draw": 0.2879,
+    "away": 0.2545,
+    "over25": 0.5261,
+    "xg_home": 1.45,
+    "xg_away": 1.28,
     "top_scores": [
      [
       "1-1",
-      0.1213
+      0.1209
      ],
      [
       "1-0",
-      0.094
+      0.0941
      ],
      [
       "2-1",
-      0.0871
+      0.0877
      ]
     ],
     "goals": {
-     "o15": 0.7561,
-     "o25": 0.5129,
-     "o35": 0.2918,
-     "btts": 0.5525
+     "o15": 0.7577,
+     "o25": 0.515,
+     "o35": 0.2937,
+     "btts": 0.5537
     },
     "raw": {
-     "home": 0.45,
-     "draw": 0.2978,
-     "away": 0.2522,
-     "over25": 0.5181
+     "home": 0.4576,
+     "draw": 0.2879,
+     "away": 0.2545,
+     "over25": 0.5261
     },
     "blended": false
    },
    "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 1.208,
-    "la": 0.825
+    "lh": 1.273,
+    "la": 0.871
    },
    "home_tr": "Gaziantep",
    "away_tr": "Amedspor",
@@ -477,45 +501,45 @@
    "home": "Corum",
    "away": "Kocaelispor",
    "model": {
-    "home": 0.2803,
-    "draw": 0.2403,
-    "away": 0.4794,
-    "over25": 0.5308,
-    "xg_home": 1.19,
-    "xg_away": 1.62,
+    "home": 0.2814,
+    "draw": 0.2349,
+    "away": 0.4837,
+    "over25": 0.5316,
+    "xg_home": 1.18,
+    "xg_away": 1.61,
     "top_scores": [
      [
       "1-1",
-      0.1161
+      0.1168
      ],
      [
       "0-1",
-      0.0976
+      0.0988
      ],
      [
       "1-2",
-      0.094
+      0.0938
      ]
     ],
     "goals": {
-     "o15": 0.7704,
-     "o25": 0.5327,
-     "o35": 0.3101,
-     "btts": 0.5579
+     "o15": 0.7669,
+     "o25": 0.5277,
+     "o35": 0.3054,
+     "btts": 0.5543
     },
     "raw": {
-     "home": 0.2803,
-     "draw": 0.2403,
-     "away": 0.4794,
-     "over25": 0.5308
+     "home": 0.2814,
+     "draw": 0.2349,
+     "away": 0.4837,
+     "over25": 0.5316
     },
     "blended": false
    },
    "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 1.231,
-    "la": 1.681
+    "lh": 1.28,
+    "la": 1.745
    },
    "home_tr": "Corum",
    "away_tr": "Kocaelispor",
@@ -590,16 +614,16 @@
    "home": "Eyupspor",
    "away": "Buyuksehyr",
    "model": {
-    "home": 0.1673,
-    "draw": 0.1743,
-    "away": 0.6583,
-    "over25": 0.629,
+    "home": 0.168,
+    "draw": 0.1767,
+    "away": 0.6553,
+    "over25": 0.6206,
     "xg_home": 0.98,
-    "xg_away": 2.16,
+    "xg_away": 2.15,
     "top_scores": [
      [
       "0-2",
-      0.1009
+      0.1006
      ],
      [
       "1-2",
@@ -607,28 +631,28 @@
      ],
      [
       "0-1",
-      0.0934
+      0.0937
      ]
     ],
     "goals": {
-     "o15": 0.8209,
-     "o25": 0.6076,
-     "o35": 0.3843,
-     "btts": 0.553
+     "o15": 0.8196,
+     "o25": 0.6056,
+     "o35": 0.3822,
+     "btts": 0.5531
     },
     "raw": {
-     "home": 0.1673,
-     "draw": 0.1743,
-     "away": 0.6583,
-     "over25": 0.629
+     "home": 0.168,
+     "draw": 0.1767,
+     "away": 0.6553,
+     "over25": 0.6206
     },
     "blended": false
    },
    "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 1.242,
-    "la": 2.558
+    "lh": 1.22,
+    "la": 2.514
    },
    "home_tr": "Eyupspor",
    "away_tr": "Buyuksehyr",
@@ -703,37 +727,37 @@
    "home": "Fenerbahce",
    "away": "Erzurumspor",
    "model": {
-    "home": 0.8593,
-    "draw": 0.1001,
-    "away": 0.0407,
-    "over25": 0.7676,
-    "xg_home": 3.05,
-    "xg_away": 0.83,
+    "home": 0.8642,
+    "draw": 0.0949,
+    "away": 0.0408,
+    "over25": 0.766,
+    "xg_home": 3.04,
+    "xg_away": 0.82,
     "top_scores": [
      [
       "3-0",
-      0.0977
+      0.0989
      ],
      [
       "2-0",
-      0.0962
+      0.0975
      ],
      [
       "3-1",
-      0.081
+      0.0808
      ]
     ],
     "goals": {
-     "o15": 0.8986,
-     "o25": 0.7429,
-     "o35": 0.5417,
-     "btts": 0.5366
+     "o15": 0.8973,
+     "o25": 0.7404,
+     "o35": 0.5384,
+     "btts": 0.5314
     },
     "raw": {
-     "home": 0.8593,
-     "draw": 0.1001,
-     "away": 0.0407,
-     "over25": 0.7676
+     "home": 0.8642,
+     "draw": 0.0949,
+     "away": 0.0408,
+     "over25": 0.766
     },
     "blended": false
    },
@@ -743,22 +767,22 @@
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.7429,
+     "p": 0.7404,
      "base": 0.5343,
-     "gap": 0.2086
+     "gap": 0.2061
     },
     {
      "key": "o15",
      "market": "1,5",
      "side": "Üst",
-     "p": 0.8986,
+     "p": 0.8973,
      "base": 0.7708,
-     "gap": 0.1278
+     "gap": 0.1265
     }
    ],
    "live": {
-    "lh": 2.968,
-    "la": 0.53
+    "lh": 3.1,
+    "la": 0.575
    },
    "home_tr": "Fenerbahce",
    "away_tr": "Erzurumspor",
@@ -833,45 +857,45 @@
    "home": "Goztep",
    "away": "Trabzonspor",
    "model": {
-    "home": 0.2506,
-    "draw": 0.2816,
-    "away": 0.4678,
-    "over25": 0.5808,
-    "xg_home": 1.24,
-    "xg_away": 1.67,
+    "home": 0.2624,
+    "draw": 0.2763,
+    "away": 0.4613,
+    "over25": 0.5846,
+    "xg_home": 1.26,
+    "xg_away": 1.66,
     "top_scores": [
      [
       "1-1",
-      0.1129
+      0.1126
      ],
      [
       "1-2",
-      0.0941
+      0.0937
      ],
      [
       "0-1",
-      0.0908
+      0.0894
      ]
     ],
     "goals": {
-     "o15": 0.7869,
-     "o25": 0.5562,
-     "o35": 0.3324,
-     "btts": 0.5771
+     "o15": 0.7893,
+     "o25": 0.5596,
+     "o35": 0.3358,
+     "btts": 0.5807
     },
     "raw": {
-     "home": 0.2506,
-     "draw": 0.2816,
-     "away": 0.4678,
-     "over25": 0.5808
+     "home": 0.2624,
+     "draw": 0.2763,
+     "away": 0.4613,
+     "over25": 0.5846
     },
     "blended": false
    },
    "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 0.886,
-    "la": 1.322
+    "lh": 0.947,
+    "la": 1.352
    },
    "home_tr": "Goztep",
    "away_tr": "Trabzonspor",
@@ -946,12 +970,12 @@
    "home": "Besiktas",
    "away": "Galatasaray",
    "model": {
-    "home": 0.3253,
-    "draw": 0.2545,
-    "away": 0.4202,
-    "over25": 0.629,
-    "xg_home": 1.38,
-    "xg_away": 1.57,
+    "home": 0.3312,
+    "draw": 0.2607,
+    "away": 0.4082,
+    "over25": 0.6268,
+    "xg_home": 1.4,
+    "xg_away": 1.56,
     "top_scores": [
      [
       "1-1",
@@ -959,32 +983,32 @@
      ],
      [
       "1-2",
-      0.0889
+      0.0882
      ],
      [
       "0-1",
-      0.0818
+      0.081
      ]
     ],
     "goals": {
-     "o15": 0.794,
-     "o25": 0.5666,
-     "o35": 0.3426,
-     "btts": 0.5936
+     "o15": 0.7943,
+     "o25": 0.567,
+     "o35": 0.343,
+     "btts": 0.5945
     },
     "raw": {
-     "home": 0.3253,
-     "draw": 0.2545,
-     "away": 0.4202,
-     "over25": 0.629
+     "home": 0.3312,
+     "draw": 0.2607,
+     "away": 0.4082,
+     "over25": 0.6268
     },
     "blended": false
    },
    "odds": null,
    "goal_opinions": [],
    "live": {
-    "lh": 1.265,
-    "la": 1.473
+    "lh": 1.236,
+    "la": 1.401
    },
    "home_tr": "Besiktas",
    "away_tr": "Galatasaray",
@@ -1061,108 +1085,34 @@
    {
     "date": "2026-11-27",
     "time": null,
-    "home": "Umraniyespor",
-    "away": "T2:2861",
+    "home": "T2:2020",
+    "away": "Bursaspor",
     "model": {
-     "home": 0.5124,
-     "draw": 0.264,
-     "away": 0.2237,
-     "over25": 0.5241,
-     "xg_home": 1.59,
-     "xg_away": 1.06,
+     "home": 0.294,
+     "draw": 0.2692,
+     "away": 0.4368,
+     "over25": 0.5249,
+     "xg_home": 1.19,
+     "xg_away": 1.56,
      "top_scores": [
       [
        "1-1",
        0.1189
       ],
       [
-       "1-0",
-       0.1119
-      ],
-      [
-       "2-1",
-       0.0947
-      ]
-     ],
-     "goals": {
-      "o15": 0.7432,
-      "o25": 0.4954,
-      "o35": 0.2761,
-      "btts": 0.5214
-     }
-    },
-    "home_tr": "Eminevim Ümraniyespor",
-    "away_tr": "Manisa Futbol Kulübü",
-    "mac_id": 318245
-   },
-   {
-    "date": "2026-11-27",
-    "time": null,
-    "home": "T2:3602",
-    "away": "Istanbulspor",
-    "model": {
-     "home": 0.4628,
-     "draw": 0.2522,
-     "away": 0.285,
-     "over25": 0.5226,
-     "xg_home": 1.47,
-     "xg_away": 1.17,
-     "top_scores": [
-      [
-       "1-1",
-       0.1229
-      ],
-      [
-       "1-0",
-       0.1053
-      ],
-      [
-       "2-1",
-       0.0902
-      ]
-     ],
-     "goals": {
-      "o15": 0.7393,
-      "o25": 0.4903,
-      "o35": 0.2716,
-      "btts": 0.53
-     }
-    },
-    "home_tr": "Sms Grup Sariyer",
-    "away_tr": "İstanbulspor",
-    "mac_id": 318244
-   },
-   {
-    "date": "2026-11-27",
-    "time": null,
-    "home": "T2:2020",
-    "away": "Bursaspor",
-    "model": {
-     "home": 0.286,
-     "draw": 0.2704,
-     "away": 0.4435,
-     "over25": 0.524,
-     "xg_home": 1.19,
-     "xg_away": 1.55,
-     "top_scores": [
-      [
-       "1-1",
-       0.1192
-      ],
-      [
        "0-1",
-       0.1
+       0.1003
       ],
       [
        "1-2",
-       0.0922
+       0.0925
       ]
      ],
      "goals": {
-      "o15": 0.7581,
-      "o25": 0.5156,
-      "o35": 0.2942,
-      "btts": 0.5479
+      "o15": 0.7589,
+      "o25": 0.5167,
+      "o35": 0.2952,
+      "btts": 0.548
      }
     },
     "home_tr": "Artı Değer Van Spor Futbol Kulübü",
@@ -1172,71 +1122,34 @@
    {
     "date": "2026-11-27",
     "time": null,
-    "home": "T2:130",
-    "away": "T2:34",
-    "model": {
-     "home": 0.4903,
-     "draw": 0.2571,
-     "away": 0.2526,
-     "over25": 0.538,
-     "xg_home": 1.55,
-     "xg_away": 1.17,
-     "top_scores": [
-      [
-       "1-1",
-       0.1193
-      ],
-      [
-       "1-0",
-       0.1018
-      ],
-      [
-       "2-1",
-       0.0926
-      ]
-     ],
-     "goals": {
-      "o15": 0.7557,
-      "o25": 0.5123,
-      "o35": 0.2912,
-      "btts": 0.5441
-     }
-    },
-    "home_tr": "Bandirma Spor",
-    "away_tr": "Batman Petrol Spor",
-    "mac_id": 318243
-   },
-   {
-    "date": "2026-11-27",
-    "time": null,
     "home": "T2:82",
     "away": "T2:8758",
     "model": {
-     "home": 0.2469,
-     "draw": 0.2543,
-     "away": 0.4988,
-     "over25": 0.503,
-     "xg_home": 1.16,
-     "xg_away": 1.51,
+     "home": 0.2463,
+     "draw": 0.2593,
+     "away": 0.4943,
+     "over25": 0.5058,
+     "xg_home": 1.18,
+     "xg_away": 1.49,
      "top_scores": [
       [
        "1-1",
-       0.1215
+       0.1216
       ],
       [
        "0-1",
-       0.1048
+       0.1031
       ],
       [
        "1-2",
-       0.0915
+       0.0908
       ]
      ],
      "goals": {
-      "o15": 0.7449,
-      "o25": 0.4977,
-      "o35": 0.2782,
-      "btts": 0.5339
+      "o15": 0.7465,
+      "o25": 0.4999,
+      "o35": 0.2801,
+      "btts": 0.5372
      }
     },
     "home_tr": "Muğlaspor Kulübü",
@@ -1246,145 +1159,34 @@
    {
     "date": "2026-11-27",
     "time": null,
-    "home": "Sivasspor",
-    "away": "Bodrumspor",
-    "model": {
-     "home": 0.3111,
-     "draw": 0.2559,
-     "away": 0.433,
-     "over25": 0.5151,
-     "xg_home": 1.19,
-     "xg_away": 1.49,
-     "top_scores": [
-      [
-       "1-1",
-       0.1216
-      ],
-      [
-       "0-1",
-       0.1022
-      ],
-      [
-       "1-2",
-       0.0906
-      ]
-     ],
-     "goals": {
-      "o15": 0.7476,
-      "o25": 0.5013,
-      "o35": 0.2814,
-      "btts": 0.5388
-     }
-    },
-    "home_tr": "Ekenler Beton Sivasspor",
-    "away_tr": "Bodrum Fk",
-    "mac_id": 318248
-   },
-   {
-    "date": "2026-11-27",
-    "time": null,
-    "home": "Antalyaspor",
-    "away": "Karagumruk",
-    "model": {
-     "home": 0.4062,
-     "draw": 0.2847,
-     "away": 0.3091,
-     "over25": 0.4761,
-     "xg_home": 1.29,
-     "xg_away": 1.15,
-     "top_scores": [
-      [
-       "1-1",
-       0.1293
-      ],
-      [
-       "1-0",
-       0.1127
-      ],
-      [
-       "0-1",
-       0.1
-      ]
-     ],
-     "goals": {
-      "o15": 0.7,
-      "o25": 0.4405,
-      "o35": 0.2295,
-      "btts": 0.495
-     }
-    },
-    "home_tr": "Antalyaspor",
-    "away_tr": "Mısırlıcomtr Fatih Karagümrük",
-    "mac_id": 318242
-   },
-   {
-    "date": "2026-11-27",
-    "time": null,
-    "home": "T2:6",
-    "away": "Kayserispor",
-    "model": {
-     "home": 0.3859,
-     "draw": 0.2875,
-     "away": 0.3267,
-     "over25": 0.5144,
-     "xg_home": 1.43,
-     "xg_away": 1.32,
-     "top_scores": [
-      [
-       "1-1",
-       0.1208
-      ],
-      [
-       "1-0",
-       0.0918
-      ],
-      [
-       "2-1",
-       0.0864
-      ]
-     ],
-     "goals": {
-      "o15": 0.7596,
-      "o25": 0.5177,
-      "o35": 0.2962,
-      "btts": 0.5567
-     }
-    },
-    "home_tr": "Keçtaş Ankara Keçiörengücü",
-    "away_tr": "Metro Holding Kayserispor",
-    "mac_id": 318240
-   },
-   {
-    "date": "2026-11-27",
-    "time": null,
     "home": "T2:3593",
     "away": "T2:964",
     "model": {
-     "home": 0.2179,
-     "draw": 0.2298,
-     "away": 0.5523,
-     "over25": 0.541,
-     "xg_home": 1.01,
-     "xg_away": 1.8,
+     "home": 0.2235,
+     "draw": 0.2202,
+     "away": 0.5563,
+     "over25": 0.5482,
+     "xg_home": 1.0,
+     "xg_away": 1.79,
      "top_scores": [
       [
-       "1-1",
-       0.1097
-      ],
-      [
        "0-1",
-       0.108
+       0.1103
       ],
       [
-       "1-2",
+       "1-1",
+       0.1102
+      ],
+      [
+       "0-2",
        0.0985
       ]
      ],
      "goals": {
-      "o15": 0.7707,
-      "o25": 0.5331,
-      "o35": 0.3104,
-      "btts": 0.5317
+      "o15": 0.7662,
+      "o25": 0.5268,
+      "o35": 0.3046,
+      "btts": 0.5257
      }
     },
     "home_tr": "Boluspor",
@@ -1397,39 +1199,333 @@
     "home": "Pendikspor",
     "away": "T2:9387",
     "model": {
-     "home": 0.3703,
-     "draw": 0.2693,
-     "away": 0.3604,
-     "over25": 0.4993,
-     "xg_home": 1.25,
-     "xg_away": 1.33,
+     "home": 0.371,
+     "draw": 0.2675,
+     "away": 0.3615,
+     "over25": 0.4919,
+     "xg_home": 1.26,
+     "xg_away": 1.31,
      "top_scores": [
       [
        "1-1",
-       0.126
+       0.1263
       ],
       [
        "0-1",
-       0.1006
+       0.1003
       ],
       [
        "1-0",
-       0.095
+       0.0963
       ]
      ],
      "goals": {
-      "o15": 0.7286,
-      "o25": 0.4764,
-      "o35": 0.2595,
-      "btts": 0.5247
+      "o15": 0.727,
+      "o25": 0.4743,
+      "o35": 0.2577,
+      "btts": 0.5233
      }
     },
     "home_tr": "Orfa Yapı Pendikspor",
     "away_tr": "Alagöz Holding Iğdır Futbol Kulübü",
     "mac_id": 318241
+   },
+   {
+    "date": "2026-11-27",
+    "time": null,
+    "home": "T2:6",
+    "away": "Kayserispor",
+    "model": {
+     "home": 0.374,
+     "draw": 0.3002,
+     "away": 0.3258,
+     "over25": 0.5221,
+     "xg_home": 1.43,
+     "xg_away": 1.32,
+     "top_scores": [
+      [
+       "1-1",
+       0.1204
+      ],
+      [
+       "1-0",
+       0.0909
+      ],
+      [
+       "2-1",
+       0.0864
+      ]
+     ],
+     "goals": {
+      "o15": 0.7618,
+      "o25": 0.5207,
+      "o35": 0.2989,
+      "btts": 0.5591
+     }
+    },
+    "home_tr": "Keçtaş Ankara Keçiörengücü",
+    "away_tr": "Metro Holding Kayserispor",
+    "mac_id": 318240
+   },
+   {
+    "date": "2026-11-27",
+    "time": null,
+    "home": "Antalyaspor",
+    "away": "Karagumruk",
+    "model": {
+     "home": 0.4083,
+     "draw": 0.2824,
+     "away": 0.3093,
+     "over25": 0.4756,
+     "xg_home": 1.3,
+     "xg_away": 1.15,
+     "top_scores": [
+      [
+       "1-1",
+       0.129
+      ],
+      [
+       "1-0",
+       0.112
+      ],
+      [
+       "0-1",
+       0.0992
+      ]
+     ],
+     "goals": {
+      "o15": 0.7026,
+      "o25": 0.4437,
+      "o35": 0.2321,
+      "btts": 0.4975
+     }
+    },
+    "home_tr": "Antalyaspor",
+    "away_tr": "Mısırlıcomtr Fatih Karagümrük",
+    "mac_id": 318242
+   },
+   {
+    "date": "2026-11-27",
+    "time": "20:00",
+    "home": "Umraniyespor",
+    "away": "T2:2861",
+    "model": {
+     "home": 0.4354,
+     "draw": 0.2708,
+     "away": 0.2938,
+     "over25": 0.5283,
+     "xg_home": 1.58,
+     "xg_away": 1.06,
+     "top_scores": [
+      [
+       "1-1",
+       0.1193
+      ],
+      [
+       "1-0",
+       0.1125
+      ],
+      [
+       "2-1",
+       0.0945
+      ]
+     ],
+     "goals": {
+      "o15": 0.7411,
+      "o25": 0.4927,
+      "o35": 0.2738,
+      "btts": 0.5196
+     },
+     "raw": {
+      "home": 0.5095,
+      "draw": 0.2617,
+      "away": 0.2288,
+      "over25": 0.5283
+     },
+     "blended": true
+    },
+    "home_tr": "Eminevim Ümraniyespor",
+    "away_tr": "Manisa Futbol Kulübü",
+    "mac_id": 318245,
+    "iddaa": "Ümraniyespor|Manisa FK",
+    "odds": {
+     "home": 1.92,
+     "draw": 3.14,
+     "away": 2.75,
+     "implied": [
+      0.433,
+      0.2647,
+      0.3023
+     ]
+    }
+   },
+   {
+    "date": "2026-11-27",
+    "time": "20:00",
+    "home": "T2:3602",
+    "away": "Istanbulspor",
+    "model": {
+     "home": 0.5423,
+     "draw": 0.2519,
+     "away": 0.2058,
+     "over25": 0.5323,
+     "xg_home": 1.47,
+     "xg_away": 1.17,
+     "top_scores": [
+      [
+       "1-1",
+       0.1227
+      ],
+      [
+       "1-0",
+       0.1052
+      ],
+      [
+       "2-1",
+       0.0904
+      ]
+     ],
+     "goals": {
+      "o15": 0.7402,
+      "o25": 0.4915,
+      "o35": 0.2726,
+      "btts": 0.5307
+     },
+     "raw": {
+      "home": 0.4749,
+      "draw": 0.2511,
+      "away": 0.2739,
+      "over25": 0.5323
+     },
+     "blended": true
+    },
+    "home_tr": "Sms Grup Sariyer",
+    "away_tr": "İstanbulspor",
+    "mac_id": 318244,
+    "iddaa": "Sarıyer|İstanbulspor",
+    "odds": {
+     "home": 1.58,
+     "draw": 3.28,
+     "away": 3.78,
+     "implied": [
+      0.5264,
+      0.2536,
+      0.22
+     ]
+    }
+   },
+   {
+    "date": "2026-11-28",
+    "time": "13:30",
+    "home": "T2:130",
+    "away": "T2:34",
+    "model": {
+     "home": 0.3995,
+     "draw": 0.2803,
+     "away": 0.3202,
+     "over25": 0.5384,
+     "xg_home": 1.56,
+     "xg_away": 1.18,
+     "top_scores": [
+      [
+       "1-1",
+       0.1188
+      ],
+      [
+       "1-0",
+       0.1009
+      ],
+      [
+       "2-1",
+       0.0928
+      ]
+     ],
+     "goals": {
+      "o15": 0.7586,
+      "o25": 0.5163,
+      "o35": 0.2949,
+      "btts": 0.5469
+     },
+     "raw": {
+      "home": 0.4844,
+      "draw": 0.2611,
+      "away": 0.2545,
+      "over25": 0.5384
+     },
+     "blended": true
+    },
+    "home_tr": "Bandirma Spor",
+    "away_tr": "Batman Petrol Spor",
+    "mac_id": 318243,
+    "iddaa": "Bandırmaspor|Batman Petrolspor",
+    "odds": {
+     "home": 2.07,
+     "draw": 3.04,
+     "away": 2.55,
+     "implied": [
+      0.4012,
+      0.2732,
+      0.3257
+     ]
+    }
+   },
+   {
+    "date": "2026-11-28",
+    "time": "13:30",
+    "home": "Sivasspor",
+    "away": "Bodrumspor",
+    "model": {
+     "home": 0.3821,
+     "draw": 0.2835,
+     "away": 0.3344,
+     "over25": 0.5196,
+     "xg_home": 1.17,
+     "xg_away": 1.5,
+     "top_scores": [
+      [
+       "1-1",
+       0.1215
+      ],
+      [
+       "0-1",
+       0.1034
+      ],
+      [
+       "1-2",
+       0.0911
+      ]
+     ],
+     "goals": {
+      "o15": 0.7467,
+      "o25": 0.5001,
+      "o35": 0.2803,
+      "btts": 0.5369
+     },
+     "raw": {
+      "home": 0.3139,
+      "draw": 0.2598,
+      "away": 0.4263,
+      "over25": 0.5196
+     },
+     "blended": true
+    },
+    "home_tr": "Ekenler Beton Sivasspor",
+    "away_tr": "Bodrum Fk",
+    "mac_id": 318248,
+    "iddaa": "Sivasspor|Bodrum FK",
+    "odds": {
+     "home": 2.17,
+     "draw": 2.95,
+     "away": 2.47,
+     "implied": [
+      0.3825,
+      0.2814,
+      0.3361
+     ]
+    }
    }
   ],
-  "with_odds": 0
+  "with_odds": 4
  },
  "cards_backtest": {
   "matches": 2861,
