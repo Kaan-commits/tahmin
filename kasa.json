@@ -714,9 +714,9 @@
   "legs": 2.1,
   "odds": 2.37,
   "hit": 0.4184,
-  "roi": -0.1359,
+  "roi": -0.1357,
   "with_combo": 119,
-  "combo_margin": 0.2025,
+  "combo_margin": 0.2024,
   "min_p": 0.6,
   "min_odds": 1.2,
   "max_legs": 3,
@@ -1634,8 +1634,8 @@
   ],
   "backtest": {
    "matches": 2158,
-   "margin_ms": 0.1568,
-   "margin_ou": 0.1575,
+   "margin_ms": 0.1569,
+   "margin_ou": 0.1576,
    "margin_n": 18,
    "markets": {
     "Maç sonucu": [
@@ -1644,21 +1644,21 @@
       "n": 2158,
       "hit": 0.5348,
       "roi_bet365": -0.0008,
-      "roi_iddaa": -0.0798
+      "roi_iddaa": -0.0799
      },
      {
       "name": "Olasılık %50 ve üstü",
       "n": 933,
       "hit": 0.6667,
       "roi_bet365": 0.0409,
-      "roi_iddaa": -0.0404
+      "roi_iddaa": -0.0405
      },
      {
       "name": "Olasılık %65 ve üstü",
       "n": 313,
       "hit": 0.7668,
       "roi_bet365": 0.0229,
-      "roi_iddaa": -0.0565
+      "roi_iddaa": -0.0566
      }
     ],
     "Toplam gol (2,5 alt/üst)": [
@@ -1667,14 +1667,14 @@
       "n": 2158,
       "hit": 0.5278,
       "roi_bet365": -0.0812,
-      "roi_iddaa": -0.1604
+      "roi_iddaa": -0.1605
      },
      {
       "name": "Model %60 ve üstü dediğinde",
       "n": 242,
       "hit": 0.7066,
       "roi_bet365": 0.0497,
-      "roi_iddaa": -0.0368
+      "roi_iddaa": -0.0369
      }
     ]
    }
