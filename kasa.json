@@ -337,14 +337,14 @@
    "bets": [],
    "over25": 0.4572,
    "goal_opinions": [],
-   "result": null,
-   "hit": null,
-   "flat_ms": null,
+   "result": "1-2",
+   "hit": false,
+   "flat_ms": -100.0,
    "flat_goal": {
     "selection": "Alt",
     "odds": 1.61,
     "p": 0.5428,
-    "profit": null
+    "profit": -100.0
    }
   },
   {
@@ -367,14 +367,14 @@
    "bets": [],
    "over25": 0.5751,
    "goal_opinions": [],
-   "result": null,
-   "hit": null,
-   "flat_ms": null,
+   "result": "3-2",
+   "hit": true,
+   "flat_ms": 80.0,
    "flat_goal": {
     "selection": "Üst",
     "odds": 1.54,
     "p": 0.5751,
-    "profit": null
+    "profit": 54.0
    }
   },
   {
@@ -385,25 +385,25 @@
    "away": "Genclerbirligi",
    "label": "Samsunspor – Genclerbirligi",
    "pick": "1",
-   "p": 0.5113,
+   "p": 0.5115,
    "odds": 1.73,
-   "ev": -0.1155,
+   "ev": -0.1151,
    "best": {
     "market": "MS",
     "selection": "1",
     "odds": 1.73,
-    "ev": -0.1155
+    "ev": -0.1151
    },
    "bets": [],
-   "over25": 0.5125,
+   "over25": 0.5218,
    "goal_opinions": [],
    "result": null,
    "hit": null,
    "flat_ms": null,
    "flat_goal": {
     "selection": "Üst",
-    "odds": 1.68,
-    "p": 0.5125,
+    "odds": 1.66,
+    "p": 0.5218,
     "profit": null
    }
   },
@@ -415,25 +415,25 @@
    "away": "Amedspor",
    "label": "Gaziantep – Amedspor",
    "pick": "2",
-   "p": 0.4713,
-   "odds": 1.86,
-   "ev": -0.1234,
+   "p": 0.4334,
+   "odds": 2.01,
+   "ev": -0.1289,
    "best": {
     "market": "MS",
     "selection": "X",
-    "odds": 3.34,
-    "ev": -0.1082
+    "odds": 3.2,
+    "ev": -0.1075
    },
    "bets": [],
-   "over25": 0.5877,
+   "over25": 0.5257,
    "goal_opinions": [],
    "result": null,
    "hit": null,
    "flat_ms": null,
    "flat_goal": {
     "selection": "Üst",
-    "odds": 1.5,
-    "p": 0.5877,
+    "odds": 1.66,
+    "p": 0.5257,
     "profit": null
    }
   },
@@ -445,25 +445,25 @@
    "away": "Kocaelispor",
    "label": "Corum – Kocaelispor",
    "pick": "1",
-   "p": 0.5089,
+   "p": 0.5094,
    "odds": 1.75,
-   "ev": -0.1094,
+   "ev": -0.1086,
    "best": {
     "market": "MS",
     "selection": "1",
     "odds": 1.75,
-    "ev": -0.1094
+    "ev": -0.1086
    },
    "bets": [],
-   "over25": 0.4968,
+   "over25": 0.489,
    "goal_opinions": [],
    "result": null,
    "hit": null,
    "flat_ms": null,
    "flat_goal": {
     "selection": "Alt",
-    "odds": 1.73,
-    "p": 0.5032,
+    "odds": 1.7,
+    "p": 0.511,
     "profit": null
    }
   },
@@ -475,17 +475,17 @@
    "away": "Buyuksehyr",
    "label": "Eyupspor – Buyuksehyr",
    "pick": "2",
-   "p": 0.6871,
-   "odds": 1.32,
-   "ev": -0.093,
+   "p": 0.705,
+   "odds": 1.28,
+   "ev": -0.0976,
    "best": {
     "market": "MS",
     "selection": "2",
-    "odds": 1.32,
-    "ev": -0.093
+    "odds": 1.28,
+    "ev": -0.0976
    },
    "bets": [],
-   "over25": 0.594,
+   "over25": 0.5942,
    "goal_opinions": [],
    "result": null,
    "hit": null,
@@ -493,7 +493,7 @@
    "flat_goal": {
     "selection": "Üst",
     "odds": 1.46,
-    "p": 0.594,
+    "p": 0.5942,
     "profit": null
    }
   },
@@ -505,34 +505,34 @@
    "away": "Erzurumspor",
    "label": "Fenerbahce – Erzurumspor",
    "pick": "1",
-   "p": 0.7874,
-   "odds": 1.14,
-   "ev": -0.1024,
+   "p": 0.7985,
+   "odds": 1.12,
+   "ev": -0.1057,
    "best": {
     "market": "MS",
     "selection": "1",
-    "odds": 1.14,
-    "ev": -0.1024
+    "odds": 1.12,
+    "ev": -0.1057
    },
    "bets": [],
-   "over25": 0.5939,
+   "over25": 0.5946,
    "goal_opinions": [
     {
      "key": "o25",
      "market": "2,5",
      "side": "Üst",
-     "p": 0.7406,
-     "base": 0.5343,
-     "gap": 0.2063,
+     "p": 0.7418,
+     "base": 0.5351,
+     "gap": 0.2067,
      "hit": null
     },
     {
      "key": "o15",
      "market": "1,5",
      "side": "Üst",
-     "p": 0.8974,
-     "base": 0.7708,
-     "gap": 0.1266,
+     "p": 0.898,
+     "base": 0.7712,
+     "gap": 0.1268,
      "hit": null
     }
    ],
@@ -542,7 +542,7 @@
    "flat_goal": {
     "selection": "Üst",
     "odds": 1.42,
-    "p": 0.5939,
+    "p": 0.5946,
     "profit": null
    }
   },
@@ -554,17 +554,17 @@
    "away": "Trabzonspor",
    "label": "Goztep – Trabzonspor",
    "pick": "2",
-   "p": 0.4729,
+   "p": 0.473,
    "odds": 1.87,
-   "ev": -0.1157,
+   "ev": -0.1155,
    "best": {
     "market": "MS",
     "selection": "2",
     "odds": 1.87,
-    "ev": -0.1157
+    "ev": -0.1155
    },
    "bets": [],
-   "over25": 0.6006,
+   "over25": 0.6001,
    "goal_opinions": [],
    "result": null,
    "hit": null,
@@ -572,7 +572,7 @@
    "flat_goal": {
     "selection": "Üst",
     "odds": 1.46,
-    "p": 0.6006,
+    "p": 0.6001,
     "profit": null
    }
   },
@@ -584,17 +584,17 @@
    "away": "Galatasaray",
    "label": "Besiktas – Galatasaray",
    "pick": "1",
-   "p": 0.4724,
-   "odds": 1.88,
-   "ev": -0.1119,
+   "p": 0.462,
+   "odds": 1.91,
+   "ev": -0.1176,
    "best": {
     "market": "MS",
     "selection": "1",
-    "odds": 1.88,
-    "ev": -0.1119
+    "odds": 1.91,
+    "ev": -0.1176
    },
    "bets": [],
-   "over25": 0.6423,
+   "over25": 0.6418,
    "goal_opinions": [],
    "result": null,
    "hit": null,
@@ -602,7 +602,7 @@
    "flat_goal": {
     "selection": "Üst",
     "odds": 1.37,
-    "p": 0.6423,
+    "p": 0.6418,
     "profit": null
    }
   }
@@ -710,13 +710,13 @@
   }
  ],
  "suggestion_backtest": {
-  "coupons": 196,
+  "coupons": 195,
   "legs": 2.1,
-  "odds": 2.37,
-  "hit": 0.4184,
-  "roi": -0.1357,
+  "odds": 2.38,
+  "hit": 0.4154,
+  "roi": -0.1381,
   "with_combo": 119,
-  "combo_margin": 0.2024,
+  "combo_margin": 0.2023,
   "min_p": 0.6,
   "min_odds": 1.2,
   "max_legs": 3,
@@ -1238,9 +1238,9 @@
    "odds": 8.08,
    "p": 0.0872,
    "ev": -0.2954,
-   "status": "Bekliyor",
+   "status": "Kaybetti",
    "payout": 0.0,
-   "profit": 0.0,
+   "profit": -100.0,
    "legs": [
     {
      "comp": "Süper Lig",
@@ -1265,7 +1265,11 @@
      "p": 0.3649,
      "p_model": 0.3678,
      "p_market": 0.3619,
-     "won": null
+     "won": false,
+     "score": [
+      1,
+      2
+     ]
     },
     {
      "comp": "1. Lig",
@@ -1385,6 +1389,98 @@
      "won": null
     }
    ]
+  },
+  {
+   "id": "kazanc-202611280729",
+   "plan": "kazanc",
+   "name": "En yüksek kazanç",
+   "note": "3–5 maç, toplam oran en az 8,00; bu şartla tutma olasılığı en yüksek kupon",
+   "created": "2026-11-28 07:29 UTC",
+   "days": [
+    "2026-11-29"
+   ],
+   "stake": 100.0,
+   "odds": 8.04,
+   "p": 0.0879,
+   "ev": -0.2927,
+   "status": "Bekliyor",
+   "payout": 0.0,
+   "profit": 0.0,
+   "legs": [
+    {
+     "comp": "Süper Lig",
+     "home": "Eyupspor",
+     "away": "Buyuksehyr",
+     "names": "kod",
+     "lk": "Eyüpspor|Başakşehir",
+     "settle": {
+      "kind": "T1",
+      "home": "Eyupspor",
+      "away": "Buyuksehyr"
+     },
+     "ko": "2026-11-29T13:00Z",
+     "date": "2026-11-29",
+     "time": "16:00",
+     "code": "2_89",
+     "line": "",
+     "outcome": "Yok",
+     "market": "Karşılıklı gol",
+     "tpl": "KG Yok",
+     "odds": 1.79,
+     "p": 0.4936,
+     "p_model": 0.5046,
+     "p_market": 0.4827,
+     "won": null
+    },
+    {
+     "comp": "1. Lig",
+     "home": "Boluspor",
+     "away": "Esenler Erokspor",
+     "names": "düz",
+     "lk": "Boluspor|Esenler Erokspor",
+     "settle": {
+      "kind": "T2",
+      "mac_id": 318246
+     },
+     "ko": "2026-11-29T13:00Z",
+     "date": "2026-11-29",
+     "time": "16:00",
+     "code": "2_101",
+     "line": "2.5",
+     "outcome": "Alt",
+     "market": "Alt/Üst",
+     "tpl": "2,5 Alt",
+     "odds": 2.14,
+     "p": 0.4196,
+     "p_model": 0.4507,
+     "p_market": 0.3886,
+     "won": null
+    },
+    {
+     "comp": "1. Lig",
+     "home": "Ankara Keçiörengücü",
+     "away": "Kayserispor",
+     "names": "düz",
+     "lk": "Ankara Keçiörengücü|Kayserispor",
+     "settle": {
+      "kind": "T2",
+      "mac_id": 318240
+     },
+     "ko": "2026-11-29T16:00Z",
+     "date": "2026-11-29",
+     "time": "19:00",
+     "code": "2_89",
+     "line": "",
+     "outcome": "Yok",
+     "market": "Karşılıklı gol",
+     "tpl": "KG Yok",
+     "odds": 2.1,
+     "p": 0.4245,
+     "p_model": 0.4524,
+     "p_market": 0.3966,
+     "won": null
+    }
+   ]
   }
  ],
  "markets": {
@@ -1431,30 +1527,30 @@
   {
    "group": "tüm seçimler",
    "market": "2,5",
-   "n": 16,
-   "mean_clv": -0.0002,
-   "beat": 0.25
+   "n": 20,
+   "mean_clv": -0.0004,
+   "beat": 0.3
   },
   {
    "group": "tüm seçimler",
    "market": "MS",
-   "n": 24,
-   "mean_clv": 0.0069,
+   "n": 30,
+   "mean_clv": 0.0049,
    "beat": 0.5
   }
  ],
  "live_eval": {
   "T1": {
-   "n": 8,
-   "model_raw": 0.7071,
-   "model": 0.8944,
-   "market": 0.8687
+   "n": 10,
+   "model_raw": 0.7829,
+   "model": 0.8919,
+   "market": 0.8691
   },
   "T2": {
-   "n": 10,
-   "model_raw": 0.8381,
-   "model": 0.8968,
-   "market": 0.9093
+   "n": 12,
+   "model_raw": 0.8716,
+   "model": 0.9072,
+   "market": 0.9232
   },
   "cards": {
    "n": 0
@@ -1560,12 +1656,12 @@
     "groups": [
      {
       "name": "Tüm tahminler",
-      "n": 8,
-      "hit": 6,
-      "staked": 800.0,
-      "returned": 1051.0,
-      "profit": 251.0,
-      "roi": 0.3137
+      "n": 10,
+      "hit": 7,
+      "staked": 1000.0,
+      "returned": 1231.0,
+      "profit": 231.0,
+      "roi": 0.231
      },
      {
       "name": "Olasılık %50 ve üstü",
@@ -1593,6 +1689,12 @@
       "n": 8,
       "hit": 6,
       "profit": 251.0
+     },
+     {
+      "round": "13. hafta",
+      "n": 2,
+      "hit": 1,
+      "profit": -20.0
      }
     ]
    },
@@ -1601,12 +1703,12 @@
     "groups": [
      {
       "name": "Her maçta modelin tarafı",
-      "n": 8,
-      "hit": 5,
-      "staked": 800.0,
-      "returned": 735.0,
-      "profit": -65.0,
-      "roi": -0.0813
+      "n": 10,
+      "hit": 6,
+      "staked": 1000.0,
+      "returned": 889.0,
+      "profit": -111.0,
+      "roi": -0.111
      },
      {
       "name": "Model %60 ve üstü dediğinde",
@@ -1624,6 +1726,12 @@
       "n": 8,
       "hit": 5,
       "profit": -65.0
+     },
+     {
+      "round": "13. hafta",
+      "n": 2,
+      "hit": 1,
+      "profit": -46.0
      }
     ]
    },
@@ -1634,8 +1742,8 @@
   ],
   "backtest": {
    "matches": 2158,
-   "margin_ms": 0.1569,
-   "margin_ou": 0.1576,
+   "margin_ms": 0.1578,
+   "margin_ou": 0.1575,
    "margin_n": 18,
    "markets": {
     "Maç sonucu": [
@@ -1644,21 +1752,21 @@
       "n": 2158,
       "hit": 0.5348,
       "roi_bet365": -0.0008,
-      "roi_iddaa": -0.0799
+      "roi_iddaa": -0.0806
      },
      {
       "name": "Olasılık %50 ve üstü",
       "n": 933,
       "hit": 0.6667,
       "roi_bet365": 0.0409,
-      "roi_iddaa": -0.0405
+      "roi_iddaa": -0.0414
      },
      {
       "name": "Olasılık %65 ve üstü",
       "n": 313,
       "hit": 0.7668,
       "roi_bet365": 0.0229,
-      "roi_iddaa": -0.0566
+      "roi_iddaa": -0.0573
      }
     ],
     "Toplam gol (2,5 alt/üst)": [
@@ -1667,14 +1775,14 @@
       "n": 2158,
       "hit": 0.5278,
       "roi_bet365": -0.0812,
-      "roi_iddaa": -0.1605
+      "roi_iddaa": -0.1604
      },
      {
       "name": "Model %60 ve üstü dediğinde",
       "n": 242,
       "hit": 0.7066,
       "roi_bet365": 0.0497,
-      "roi_iddaa": -0.0369
+      "roi_iddaa": -0.0368
      }
     ]
    }
@@ -2396,6 +2504,7 @@
       "under25": 1.61,
       "implied_over25": 0.464
      },
+     "result": "1-2",
      "goal_opinions": [],
      "cards": {
       "mu": 4.28,
@@ -2410,8 +2519,7 @@
       "opinion": null
      },
      "home_tr": "Alanyaspor",
-     "away_tr": "Konyaspor",
-     "result": null
+     "away_tr": "Konyaspor"
     },
     {
      "date": "2026-11-27",
@@ -2466,6 +2574,7 @@
       "under25": 1.98,
       "implied_over25": 0.5625
      },
+     "result": "3-2",
      "goal_opinions": [],
      "cards": {
       "mu": 3.82,
@@ -2483,8 +2592,7 @@
       }
      },
      "home_tr": "Rizespor",
-     "away_tr": "Kasimpasa",
-     "result": null
+     "away_tr": "Kasimpasa"
     },
     {
      "date": "2026-11-28",
@@ -2492,37 +2600,37 @@
      "home": "Samsunspor",
      "away": "Genclerbirligi",
      "model": {
-      "home": 0.5113,
-      "draw": 0.2633,
+      "home": 0.5115,
+      "draw": 0.263,
       "away": 0.2255,
-      "over25": 0.5125,
-      "xg_home": 1.62,
+      "over25": 0.5218,
+      "xg_home": 1.64,
       "xg_away": 1.13,
       "top_scores": [
        [
         "1-1",
-        0.1169
+        0.1161
        ],
        [
         "1-0",
-        0.1035
+        0.1029
        ],
        [
         "2-1",
-        0.0949
+        0.0953
        ]
       ],
       "goals": {
-       "o15": 0.7608,
-       "o25": 0.5193,
-       "o35": 0.2976,
-       "btts": 0.5433
+       "o15": 0.7637,
+       "o25": 0.5233,
+       "o35": 0.3013,
+       "btts": 0.5454
       },
       "raw": {
-       "home": 0.497,
-       "draw": 0.2638,
-       "away": 0.2392,
-       "over25": 0.5305
+       "home": 0.4893,
+       "draw": 0.2661,
+       "away": 0.2446,
+       "over25": 0.5381
       },
       "blended": true
      },
@@ -2535,26 +2643,11 @@
        0.2613,
        0.2389
       ],
-      "over25": 1.68,
-      "under25": 1.77,
-      "implied_over25": 0.513
+      "over25": 1.66,
+      "under25": 1.81,
+      "implied_over25": 0.5216
      },
      "goal_opinions": [],
-     "cards": {
-      "mu": 3.44,
-      "referee": "OĞUZHAN AKSU",
-      "lines": {
-       "3.5": 0.4479,
-       "4.5": 0.2653,
-       "5.5": 0.1389
-      },
-      "ref_matches": 15,
-      "ref_avg": 2.73,
-      "opinion": {
-       "side": "Alt",
-       "p": 0.7347
-      }
-     },
      "home_tr": "Samsunspor",
      "away_tr": "Genclerbirligi",
      "result": null
@@ -2565,66 +2658,54 @@
      "home": "Gaziantep",
      "away": "Amedspor",
      "model": {
-      "home": 0.2617,
-      "draw": 0.267,
-      "away": 0.4713,
-      "over25": 0.5877,
+      "home": 0.2877,
+      "draw": 0.2789,
+      "away": 0.4334,
+      "over25": 0.5257,
       "xg_home": 1.44,
-      "xg_away": 1.26,
+      "xg_away": 1.28,
       "top_scores": [
        [
         "1-1",
-        0.1219
+        0.1212
        ],
        [
         "1-0",
-        0.0965
+        0.0944
        ],
        [
         "2-1",
-        0.0876
+        0.0874
        ]
       ],
       "goals": {
-       "o15": 0.7515,
-       "o25": 0.5066,
-       "o35": 0.2861,
-       "btts": 0.547
+       "o15": 0.7561,
+       "o25": 0.5128,
+       "o35": 0.2917,
+       "btts": 0.5521
       },
       "raw": {
-       "home": 0.443,
-       "draw": 0.3035,
-       "away": 0.2534,
-       "over25": 0.5233
+       "home": 0.4435,
+       "draw": 0.2962,
+       "away": 0.2603,
+       "over25": 0.5085
       },
       "blended": true
      },
      "odds": {
-      "home": 3.12,
-      "draw": 3.34,
-      "away": 1.86,
+      "home": 2.87,
+      "draw": 3.2,
+      "away": 2.01,
       "implied": [
-       0.2769,
-       0.2587,
-       0.4645
+       0.3008,
+       0.2698,
+       0.4295
       ],
-      "over25": 1.5,
-      "under25": 2.03,
-      "implied_over25": 0.5751
+      "over25": 1.66,
+      "under25": 1.81,
+      "implied_over25": 0.5216
      },
      "goal_opinions": [],
-     "cards": {
-      "mu": 4.5,
-      "referee": "FATİH TOKAİL",
-      "lines": {
-       "3.5": 0.6496,
-       "4.5": 0.4644,
-       "5.5": 0.2989
-      },
-      "ref_matches": 5,
-      "ref_avg": 5.2,
-      "opinion": null
-     },
      "home_tr": "Gaziantep",
      "away_tr": "Amedspor",
      "result": null
@@ -2635,37 +2716,37 @@
      "home": "Corum",
      "away": "Kocaelispor",
      "model": {
-      "home": 0.5089,
-      "draw": 0.262,
-      "away": 0.2291,
-      "over25": 0.4968,
-      "xg_home": 1.18,
-      "xg_away": 1.61,
+      "home": 0.5094,
+      "draw": 0.2617,
+      "away": 0.229,
+      "over25": 0.489,
+      "xg_home": 1.19,
+      "xg_away": 1.6,
       "top_scores": [
        [
         "1-1",
-        0.1167
+        0.117
        ],
        [
         "0-1",
-        0.0988
+        0.0985
        ],
        [
         "1-2",
-        0.0939
+        0.0936
        ]
       ],
       "goals": {
-       "o15": 0.7673,
-       "o25": 0.5283,
-       "o35": 0.306,
-       "btts": 0.5545
+       "o15": 0.7668,
+       "o25": 0.5276,
+       "o35": 0.3053,
+       "btts": 0.5548
       },
       "raw": {
-       "home": 0.2905,
-       "draw": 0.234,
-       "away": 0.4754,
-       "over25": 0.5312
+       "home": 0.277,
+       "draw": 0.239,
+       "away": 0.484,
+       "over25": 0.5252
       },
       "blended": true
      },
@@ -2678,23 +2759,11 @@
        0.2678,
        0.2395
       ],
-      "over25": 1.73,
-      "under25": 1.73,
-      "implied_over25": 0.5
+      "over25": 1.75,
+      "under25": 1.7,
+      "implied_over25": 0.4928
      },
      "goal_opinions": [],
-     "cards": {
-      "mu": 4.46,
-      "referee": "ERDEM MERTOĞLU",
-      "lines": {
-       "3.5": 0.6429,
-       "4.5": 0.457,
-       "5.5": 0.2922
-      },
-      "ref_matches": 4,
-      "ref_avg": 5.25,
-      "opinion": null
-     },
      "home_tr": "Corum",
      "away_tr": "Kocaelispor",
      "result": null
@@ -2705,16 +2774,16 @@
      "home": "Eyupspor",
      "away": "Buyuksehyr",
      "model": {
-      "home": 0.1264,
-      "draw": 0.1865,
-      "away": 0.6871,
-      "over25": 0.594,
-      "xg_home": 0.98,
-      "xg_away": 2.16,
+      "home": 0.1161,
+      "draw": 0.1789,
+      "away": 0.705,
+      "over25": 0.5942,
+      "xg_home": 0.97,
+      "xg_away": 2.15,
       "top_scores": [
        [
         "0-2",
-        0.1005
+        0.1016
        ],
        [
         "1-2",
@@ -2722,52 +2791,37 @@
        ],
        [
         "0-1",
-        0.0932
+        0.0944
        ]
       ],
       "goals": {
-       "o15": 0.8211,
-       "o25": 0.608,
-       "o35": 0.3847,
-       "btts": 0.554
+       "o15": 0.8191,
+       "o25": 0.6048,
+       "o35": 0.3813,
+       "btts": 0.5502
       },
       "raw": {
-       "home": 0.1662,
-       "draw": 0.1806,
-       "away": 0.6532,
-       "over25": 0.633
+       "home": 0.1655,
+       "draw": 0.1799,
+       "away": 0.6546,
+       "over25": 0.6314
       },
       "blended": true
      },
      "odds": {
-      "home": 5.91,
-      "draw": 4.37,
-      "away": 1.32,
+      "home": 6.33,
+      "draw": 4.51,
+      "away": 1.28,
       "implied": [
-       0.1464,
-       0.198,
-       0.6556
+       0.1361,
+       0.191,
+       0.6729
       ],
       "over25": 1.46,
       "under25": 2.12,
       "implied_over25": 0.5922
      },
      "goal_opinions": [],
-     "cards": {
-      "mu": 3.33,
-      "referee": "MEHMET TÜRKMEN",
-      "lines": {
-       "3.5": 0.4253,
-       "4.5": 0.2461,
-       "5.5": 0.1256
-      },
-      "ref_matches": 47,
-      "ref_avg": 3.23,
-      "opinion": {
-       "side": "Alt",
-       "p": 0.7539
-      }
-     },
      "home_tr": "Eyupspor",
      "away_tr": "Buyuksehyr",
      "result": null
@@ -2778,20 +2832,20 @@
      "home": "Fenerbahce",
      "away": "Erzurumspor",
      "model": {
-      "home": 0.7874,
-      "draw": 0.1427,
-      "away": 0.0699,
-      "over25": 0.5939,
-      "xg_home": 3.04,
+      "home": 0.7985,
+      "draw": 0.1366,
+      "away": 0.065,
+      "over25": 0.5946,
+      "xg_home": 3.05,
       "xg_away": 0.82,
       "top_scores": [
        [
         "3-0",
-        0.0986
+        0.0984
        ],
        [
         "2-0",
-        0.0972
+        0.0969
        ],
        [
         "3-1",
@@ -2799,27 +2853,27 @@
        ]
       ],
       "goals": {
-       "o15": 0.8974,
-       "o25": 0.7406,
-       "o35": 0.5387,
-       "btts": 0.533
+       "o15": 0.898,
+       "o25": 0.7418,
+       "o35": 0.5403,
+       "btts": 0.534
       },
       "raw": {
-       "home": 0.8632,
-       "draw": 0.0955,
-       "away": 0.0413,
-       "over25": 0.759
+       "home": 0.8668,
+       "draw": 0.091,
+       "away": 0.0422,
+       "over25": 0.7546
       },
       "blended": true
      },
      "odds": {
-      "home": 1.14,
-      "draw": 5.68,
-      "away": 9.97,
+      "home": 1.12,
+      "draw": 5.86,
+      "away": 10.6,
       "implied": [
-       0.7604,
-       0.1526,
-       0.0869
+       0.7711,
+       0.1474,
+       0.0815
       ],
       "over25": 1.42,
       "under25": 2.2,
@@ -2830,31 +2884,19 @@
        "key": "o25",
        "market": "2,5",
        "side": "Üst",
-       "p": 0.7406,
-       "base": 0.5343,
-       "gap": 0.2063
+       "p": 0.7418,
+       "base": 0.5351,
+       "gap": 0.2067
       },
       {
        "key": "o15",
        "market": "1,5",
        "side": "Üst",
-       "p": 0.8974,
-       "base": 0.7708,
-       "gap": 0.1266
+       "p": 0.898,
+       "base": 0.7712,
+       "gap": 0.1268
       }
      ],
-     "cards": {
-      "mu": 4.28,
-      "referee": "BATUHAN KOLAK",
-      "lines": {
-       "3.5": 0.6133,
-       "4.5": 0.4248,
-       "5.5": 0.2639
-      },
-      "ref_matches": 24,
-      "ref_avg": 4.46,
-      "opinion": null
-     },
      "home_tr": "Fenerbahce",
      "away_tr": "Erzurumspor",
      "result": null
@@ -2865,37 +2907,37 @@
      "home": "Goztep",
      "away": "Trabzonspor",
      "model": {
-      "home": 0.2777,
-      "draw": 0.2494,
-      "away": 0.4729,
-      "over25": 0.6006,
-      "xg_home": 1.25,
+      "home": 0.278,
+      "draw": 0.249,
+      "away": 0.473,
+      "over25": 0.6001,
+      "xg_home": 1.26,
       "xg_away": 1.67,
       "top_scores": [
        [
         "1-1",
-        0.1126
+        0.1123
        ],
        [
         "1-2",
-        0.0941
+        0.0939
        ],
        [
         "0-1",
-        0.0903
+        0.0893
        ]
       ],
       "goals": {
-       "o15": 0.7882,
-       "o25": 0.5581,
-       "o35": 0.3343,
-       "btts": 0.5786
+       "o15": 0.7901,
+       "o25": 0.5609,
+       "o35": 0.3371,
+       "btts": 0.5812
       },
       "raw": {
-       "home": 0.2569,
-       "draw": 0.2862,
-       "away": 0.4569,
-       "over25": 0.5712
+       "home": 0.2465,
+       "draw": 0.2845,
+       "away": 0.4689,
+       "over25": 0.5753
       },
       "blended": true
      },
@@ -2913,21 +2955,6 @@
       "implied_over25": 0.591
      },
      "goal_opinions": [],
-     "cards": {
-      "mu": 3.89,
-      "referee": "CİHAN AYDIN",
-      "lines": {
-       "3.5": 0.5408,
-       "4.5": 0.3508,
-       "5.5": 0.2027
-      },
-      "ref_matches": 76,
-      "ref_avg": 3.87,
-      "opinion": {
-       "side": "Alt",
-       "p": 0.6492
-      }
-     },
      "home_tr": "Goztep",
      "away_tr": "Trabzonspor",
      "result": null
@@ -2938,66 +2965,54 @@
      "home": "Besiktas",
      "away": "Galatasaray",
      "model": {
-      "home": 0.4724,
-      "draw": 0.2377,
-      "away": 0.2899,
-      "over25": 0.6423,
-      "xg_home": 1.39,
-      "xg_away": 1.56,
+      "home": 0.462,
+      "draw": 0.2415,
+      "away": 0.2965,
+      "over25": 0.6418,
+      "xg_home": 1.41,
+      "xg_away": 1.58,
       "top_scores": [
        [
         "1-1",
-        0.1135
+        0.112
        ],
        [
         "1-2",
-        0.0886
+        0.0887
        ],
        [
         "0-1",
-        0.0817
+        0.0796
        ]
       ],
       "goals": {
-       "o15": 0.7932,
-       "o25": 0.5654,
-       "o35": 0.3415,
-       "btts": 0.593
+       "o15": 0.7994,
+       "o25": 0.5746,
+       "o35": 0.3506,
+       "btts": 0.6001
       },
       "raw": {
-       "home": 0.3335,
-       "draw": 0.2567,
-       "away": 0.4099,
-       "over25": 0.6237
+       "home": 0.3291,
+       "draw": 0.2646,
+       "away": 0.4063,
+       "over25": 0.6178
       },
       "blended": true
      },
      "odds": {
-      "home": 1.88,
-      "draw": 3.58,
-      "away": 2.91,
+      "home": 1.91,
+      "draw": 3.52,
+      "away": 2.84,
       "implied": [
-       0.4606,
-       0.2419,
-       0.2976
+       0.4514,
+       0.245,
+       0.3036
       ],
       "over25": 1.37,
-      "under25": 2.35,
-      "implied_over25": 0.6317
+      "under25": 2.34,
+      "implied_over25": 0.6307
      },
      "goal_opinions": [],
-     "cards": {
-      "mu": 4.22,
-      "referee": "OĞUZHAN ÇAKIR",
-      "lines": {
-       "3.5": 0.6013,
-       "4.5": 0.4121,
-       "5.5": 0.253
-      },
-      "ref_matches": 53,
-      "ref_avg": 4.21,
-      "opinion": null
-     },
      "home_tr": "Besiktas",
      "away_tr": "Galatasaray",
      "result": null
