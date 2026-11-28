@@ -1,0 +1,455 @@
+<!doctype html><html lang="tr"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oyunlar · Süper Lig Tahmin Masası</title>
+<meta name="description" content="Her gün yeni Süper Lig oyunu: günün oyuncusunu bul, oyuncuları görmeden sırala. TFF maç raporlarından, 2015/16'dan bu yana.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tahmin.kaankara.com.tr/oyun/">
+<meta property="og:title" content="Günün oyuncusu ve kör sıralama · Tahmin Masası">
+<meta property="og:description" content="Her gün yeni oyuncu, yeni sıralama. 2015/16'dan bu yana Süper Lig.">
+<meta property="og:image" content="https://tahmin.kaankara.com.tr/og.png">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚽%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --bg:#f2f5f3; --surface:#ffffff; --ink:#15211b; --muted:#5d6b64; --line:#d9e1dc;
+  --model:#0f6b5c; --model-soft:#e1f0ec; --market:#a8641a; --market-soft:#f1dfc8;
+  --hit:#1f7a3f; --hit-soft:#dcefe2; --miss:#b4442f; --miss-soft:#f6e1dc; --cell:#eef2ef;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-num:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0f1613; --surface:#16201b; --ink:#e6eee9; --muted:#97a69e; --line:#26332c;
+  --model:#4fc1a9; --model-soft:#1a302a; --market:#e0a25a; --market-soft:#3b2c19;
+  --hit:#5cc483; --hit-soft:#1c3826; --miss:#e07a64; --miss-soft:#3a201a; --cell:#1c2822; color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:880px;margin:0 auto;padding-block:28px 96px;padding-inline:max(16px,env(safe-area-inset-left,0px));display:grid;gap:24px}
+header{display:grid;gap:10px}
+.eyebrow{font-family:var(--f-num);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px 14px}
+.eyebrow a{color:inherit}
+h1{font-family:var(--f-display);font-weight:700;font-size:clamp(34px,6vw,52px);line-height:1;margin:0;letter-spacing:.01em}
+h2{font-family:var(--f-display);font-size:28px;font-weight:700;margin:0;letter-spacing:.01em;line-height:1.1}
+.lede{margin:0;color:var(--muted);max-width:64ch}
+a{color:var(--model)}
+button{font:inherit;color:inherit}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;position:sticky;top:0;z-index:5;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line)}
+.tabs a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:7px 16px}
+.tabs a:hover{border-color:var(--model);color:var(--model)}
+.tabs a[aria-current="page"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.tabs a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(--model);outline-offset:2px}
+section[hidden]{display:none}
+.game{display:grid;gap:16px}
+.ghead{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:8px 16px}
+.ghead small{font-family:var(--f-num);font-size:12px;color:var(--muted);letter-spacing:.04em}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:16px}
+.btn{border:1px solid var(--line);background:var(--surface);border-radius:6px;padding:8px 14px;font-weight:600;font-size:14px;cursor:pointer}
+.btn:hover{border-color:var(--model);color:var(--model)}
+.btn.pri{background:var(--model);border-color:var(--model);color:#fff}
+.btn.pri:hover{filter:brightness(1.08);color:#fff}
+@media (prefers-color-scheme:dark){.btn.pri{color:#0f1613}.btn.pri:hover{color:#0f1613}}
+.row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.muted{color:var(--muted)}
+.num{font-family:var(--f-num);font-variant-numeric:tabular-nums}
+
+/* Günün oyuncusu */
+.search{position:relative}
+.search input{width:100%;font:500 16px var(--f-body);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:13px 14px}
+.search input:disabled{opacity:.6}
+.sug{position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:0 10px 30px rgb(0 0 0 / .14);list-style:none;margin:0;padding:4px;z-index:10;max-height:320px;overflow:auto}
+.sug li{padding:8px 10px;border-radius:6px;cursor:pointer;display:flex;justify-content:space-between;gap:12px}
+.sug li small{color:var(--muted);white-space:nowrap}
+.sug li[aria-selected="true"],.sug li:hover{background:var(--model-soft)}
+.left{font-family:var(--f-num);font-size:12px;color:var(--muted)}
+.guesses{display:grid;gap:10px}
+.guess{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:12px;display:grid;gap:10px}
+.guess.win{border-color:var(--hit);box-shadow:0 0 0 1px var(--hit)}
+.guess .gn{font-weight:600;display:flex;justify-content:space-between;gap:8px}
+.cells{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px}
+@media (max-width:560px){.cells{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.cell{background:var(--cell);border-radius:6px;padding:7px 8px;display:grid;gap:1px;min-width:0}
+.cell small{font-size:11px;color:var(--muted);line-height:1.2}
+.cell b{font-family:var(--f-num);font-weight:500;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cell.hit{background:var(--hit-soft)} .cell.hit b{color:var(--hit)}
+.cell.close{background:var(--market-soft)} .cell.close b{color:var(--market)}
+.chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.chip.hit{border-color:var(--hit);color:var(--hit);background:var(--hit-soft);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:12.5px;color:var(--muted)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px}
+.hint{font-size:14px}
+.reveal{display:grid;gap:12px}
+.reveal h3{font-family:var(--f-display);font-size:30px;margin:0;line-height:1}
+.career{width:100%;border-collapse:collapse;font-size:14px}
+.career th{font-size:12px;font-weight:500;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--line)}
+.career td{padding:5px 6px;border-bottom:1px solid var(--line)}
+.career td.n,.career th.n{text-align:right;font-family:var(--f-num);font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.stats div{background:var(--surface);padding:10px 12px;display:grid}
+.stats b{font-family:var(--f-num);font-weight:500;font-size:20px}
+.stats small{color:var(--muted);font-size:12px}
+.dist{display:grid;gap:3px;font-size:12px}
+.dist div{display:grid;grid-template-columns:16px 1fr;gap:6px;align-items:center}
+.dist span{background:var(--cell);border-radius:3px;padding:1px 6px;font-family:var(--f-num);min-width:22px}
+.dist span.me{background:var(--model);color:var(--bg)}
+
+/* Kör sıralama */
+.now{display:grid;gap:4px;text-align:center;padding:22px 16px;border:2px solid var(--model);background:var(--model-soft)}
+.now small{font-family:var(--f-num);font-size:12px;color:var(--muted)}
+.now b{font-family:var(--f-display);font-size:clamp(28px,5vw,38px);line-height:1.05}
+.now .ctx{font-size:13px;color:var(--muted)}
+.slots{display:grid;gap:6px;list-style:none;margin:0;padding:0}
+.slot{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:0 12px 0 0;min-height:48px;width:100%;text-align:left;cursor:pointer}
+.slot .rk{font-family:var(--f-display);font-size:22px;font-weight:700;text-align:center;background:var(--cell);align-self:stretch;display:grid;place-items:center;border-radius:7px 0 0 7px}
+.slot:disabled{cursor:default}
+.slot.empty{border-style:dashed}
+.slot.empty:not(:disabled):hover{border-color:var(--model);background:var(--model-soft)}
+.slot .pn{font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.slot .pn small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+.slot .pv{font-family:var(--f-num);font-size:13px;text-align:right;white-space:nowrap}
+.slot.hit{border-color:var(--hit)} .slot.hit .rk{background:var(--hit-soft);color:var(--hit)}
+.slot.close{border-color:var(--market)} .slot.close .rk{background:var(--market-soft);color:var(--market)}
+.slot.miss .rk{background:var(--miss-soft);color:var(--miss)}
+.score{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.score b{font-family:var(--f-display);font-size:44px;line-height:1}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.on{opacity:1}
+footer{font-size:13px;color:var(--muted);display:grid;gap:6px}
+footer p{margin:0}
+.load{color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow"><a href="../">← Tahmin Masası</a><span id="stamp"></span></div>
+    <h1>Süper Lig oyunları</h1>
+    <p class="lede" id="lede">Her gün yeni bir oyuncu ve yeni bir sıralama. Veri TFF maç raporlarından geliyor.</p>
+  </header>
+
+  <nav class="tabs" aria-label="Oyunlar">
+    <a href="#oyuncu" data-tab="oyuncu">Günün oyuncusu</a>
+    <a href="#siralama" data-tab="siralama">Kör sıralama</a>
+  </nav>
+
+  <p class="load" id="load">Veri yükleniyor…</p>
+
+  <!-- ===================== GÜNÜN OYUNCUSU ===================== -->
+  <section class="game" id="oyuncu" hidden aria-labelledby="o-h">
+    <div class="ghead"><h2 id="o-h">Günün oyuncusu</h2><small id="o-day"></small></div>
+    <p class="lede">Gizli oyuncuyu <b>8 tahminde</b> bul. Her tahminde, yazdığın oyuncunun Süper Lig kariyeri gizli oyuncununkiyle karşılaştırılır. Oklar gizli oyuncunun değerini gösterir: ↑ daha yüksek, ↓ daha düşük.</p>
+    <div class="legend"><span><i style="background:var(--hit-soft);outline:1px solid var(--hit)"></i>Aynı</span><span><i style="background:var(--market-soft);outline:1px solid var(--market)"></i>Yakın (son kulüpte: gizli oyuncu orada da oynadı)</span><span><i style="background:var(--hit-soft);border-radius:999px;outline:1px solid var(--hit)"></i>Ortak kulüp</span></div>
+    <div class="search" id="o-search">
+      <input id="o-input" type="text" autocomplete="off" spellcheck="false" placeholder="Oyuncu adı yaz…" role="combobox" aria-expanded="false" aria-controls="o-sug" aria-autocomplete="list" aria-label="Oyuncu tahmini">
+      <ul class="sug" id="o-sug" role="listbox" hidden></ul>
+    </div>
+    <div class="row" style="justify-content:space-between"><span class="left" id="o-left"></span><span class="hint" id="o-hint" aria-live="polite"></span></div>
+    <div class="guesses" id="o-guesses" aria-live="polite"></div>
+    <div id="o-end"></div>
+  </section>
+
+  <!-- ===================== KÖR SIRALAMA ===================== -->
+  <section class="game" id="siralama" hidden aria-labelledby="s-h">
+    <div class="ghead"><h2 id="s-h">Kör sıralama</h2><small id="s-day"></small></div>
+    <div class="card" style="display:grid;gap:4px"><b id="s-title" style="font-size:18px"></b><span class="muted" id="s-desc" style="font-size:13.5px"></span></div>
+    <p class="lede">Oyuncular teker teker gelir. Her birini, sıradakini görmeden <b>1–10 arasında boş bir sıraya</b> yerleştir. Yerleştirdiğin oyuncuyu bir daha oynatamazsın. 10 oyuncu bitince gerçek sıralama açılır.</p>
+    <div id="s-now"></div>
+    <ol class="slots" id="s-slots"></ol>
+    <div id="s-end"></div>
+  </section>
+
+  <footer>
+    <p id="f-data"></p>
+    <p>Mevki bilgisi TFF raporlarında yok; ilk 11'in başında yazılan oyuncu kaleci sayılır. Kendi kalesine goller sayılmaz. İkinci sarıdan kırmızı, kırmızı karta dahildir.</p>
+    <p><a href="../">Haftanın maç tahminleri</a> · <a href="https://kaankara.com.tr/">kaankara.com.tr</a></p>
+  </footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+"use strict";
+const MAX_GUESS = 8, LAUNCH = "2026-11-28", STORE = "tm-oyun-v1";
+let D, P, CL;                                     // veri, id → oyuncu, kulüp adları
+
+// ---- yardımcılar ------------------------------------------------------------------------------------------------
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt = n => n.toLocaleString("tr-TR");
+const sl = y => `${y}/${String(y + 1).slice(2)}`;
+const today = () => new Intl.DateTimeFormat("en-CA", {timeZone: "Europe/Istanbul"}).format(new Date());
+const dayNo = d => Math.round((Date.parse(d) - Date.parse(LAUNCH)) / 864e5) + 1;
+const fold = s => s.toLocaleLowerCase("tr").replace(/ı/g, "i").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9 ]/g, " ");
+function rng(seed){ let a = seed >>> 0; return () => { a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+function hash(s){ let h = 2166136261; for(const c of s){ h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function shuffle(a, r){ a = a.slice(); for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(r() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+const load = () => { try { return JSON.parse(localStorage.getItem(STORE)) || {}; } catch(e){ return {}; } };
+const save = s => { try { localStorage.setItem(STORE, JSON.stringify(s)); } catch(e){} };
+function toast(msg){ const t = $("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("on"), 1800); }
+async function share(text){
+  if(navigator.share && matchMedia("(pointer:coarse)").matches){ try { await navigator.share({text}); return; } catch(e){ if(e.name === "AbortError") return; } }
+  try { await navigator.clipboard.writeText(text); toast("Sonuç kopyalandı"); } catch(e){ prompt("Kopyala:", text); }
+}
+const span = p => p.f === p.l ? sl(p.f) : `${sl(p.f)}–${sl(p.l)}`;
+const clubsShort = p => p.t.map(t => CL[t[0]]).slice(-3).join(", ") + (p.t.length > 3 ? ` +${p.t.length - 3}` : "");
+const SEARCH = [];
+
+// ---- sekmeler ---------------------------------------------------------------------------------------------------
+const TABS = {oyuncu: "Günün oyuncusu", siralama: "Kör sıralama"};
+function route(){
+  const h = location.hash.slice(1); const v = TABS[h] ? h : "oyuncu";
+  for(const k in TABS) $(k).hidden = k !== v;
+  document.querySelectorAll(".tabs a").forEach(a => a.dataset.tab === v ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+}
+window.addEventListener("hashchange", route);
+
+// ======================================= GÜNÜN OYUNCUSU =======================================
+const O = {date: null, target: null, guesses: [], done: false, practice: false};
+
+function dailyTarget(d){
+  const e = D.takvim[d];
+  if(e && P[e.p]) return P[e.p];
+  const pool = D.players.filter(p => p.a >= 90 && p.l >= D.seasons[1] - 7);       // takvim dışı gün: yedek seçim
+  return pool[hash(d) % pool.length];
+}
+
+function compare(g, t){
+  const tClubs = new Set(t.t.map(x => x[0]));
+  const num = (gv, tv, near, label, show = fmt(gv)) => ({label, val: show + (gv === tv ? "" : gv < tv ? " ↑" : " ↓"),
+    cls: gv === tv ? "hit" : Math.abs(gv - tv) <= near ? "close" : ""});
+  return [
+    {label: "Son kulüp", val: CL[g.lc], cls: g.lc === t.lc ? "hit" : tClubs.has(g.lc) ? "close" : ""},
+    {label: "Mevki", val: g.k ? "Kaleci" : "Saha", cls: g.k === t.k ? "hit" : ""},
+    num(g.f, t.f, 1, "İlk sezon", sl(g.f)),
+    num(g.l, t.l, 1, "Son sezon", g.cur ? "Bu sezon" : sl(g.l)),
+    num(g.a, t.a, Math.max(15, Math.round(t.a * .15)), "Maç"),
+    num(g.g, t.g, Math.max(3, Math.round(t.g * .2)), "Gol"),
+  ];
+}
+
+function guessHTML(g, t){
+  const win = g.i === t.i, tClubs = new Set(t.t.map(x => x[0]));
+  const cells = compare(g, t).map(c => `<div class="cell ${win ? "hit" : c.cls}"><small>${c.label}</small><b title="${esc(c.val)}">${esc(c.val)}</b></div>`).join("");
+  const chips = g.t.map(x => `<span class="chip ${tClubs.has(x[0]) ? "hit" : ""}">${esc(CL[x[0]])}</span>`).join("");
+  return `<article class="guess ${win ? "win" : ""}"><div class="gn"><span>${esc(g.n)}</span>${win ? `<span style="color:var(--hit)">Bildin!</span>` : ""}</div>
+    <div class="cells">${cells}</div><div class="chips" aria-label="Kulüpleri">${chips}</div></article>`;
+}
+
+function renderO(){
+  const t = O.target;
+  $("o-day").textContent = O.practice ? "Pratik · rastgele oyuncu" : `#${dayNo(O.date)} · ${new Date(O.date + "T12:00").toLocaleDateString("tr-TR", {day: "numeric", month: "long"})}`;
+  $("o-guesses").innerHTML = O.guesses.map(id => guessHTML(P[id], t)).reverse().join("");
+  const left = MAX_GUESS - O.guesses.length;
+  $("o-left").textContent = O.done ? "" : `${left} hakkın kaldı`;
+  const inp = $("o-input"); inp.disabled = O.done; if(O.done) inp.value = "";
+  $("o-search").hidden = O.done;
+  const wrong = O.guesses.filter(id => id !== t.i).length;
+  const hints = [];
+  if(!O.done && wrong >= 3) hints.push(`İpucu: ${t.t.length} Süper Lig kulübü`);
+  if(!O.done && wrong >= 5) hints.push(`baş harfler <b>${esc(t.n.split(" ").map(w => w[0] + ".").join(" "))}</b>`);
+  $("o-hint").innerHTML = hints.join(" · ");
+  $("o-end").innerHTML = O.done ? endO() : "";
+  if(O.done){
+    const sb = $("o-share"); if(sb) sb.onclick = () => share(shareO());
+    $("o-again").onclick = () => startO(true);
+  }
+}
+
+function endO(){
+  const t = O.target, won = O.guesses.includes(t.i);
+  const rows = t.t.map(x => `<tr><td>${esc(CL[x[0]])}</td><td>${x[1] === x[2] ? sl(x[1]) : `${sl(x[1])} – ${sl(x[2])}`}</td><td class="n">${x[3]}</td><td class="n">${x[4]}</td></tr>`).join("");
+  let stats = "";
+  if(!O.practice){
+    const s = statsO();
+    const mx = Math.max(1, ...s.dist);
+    stats = `<div class="stats"><div><b>${s.played}</b><small>Oynandı</small></div><div><b>%${s.played ? Math.round(100 * s.won / s.played) : 0}</b><small>Bulundu</small></div>
+      <div><b>${s.streak}</b><small>Seri</small></div><div><b>${s.best}</b><small>En iyi seri</small></div></div>
+      <div class="dist" aria-label="Kaçıncı tahminde buldun">${s.dist.map((n, k) => `<div><small>${k + 1}</small><span class="${won && O.guesses.length === k + 1 ? "me" : ""}" style="width:${Math.max(6, 100 * n / mx)}%">${n}</span></div>`).join("")}</div>`;
+  }
+  return `<div class="card reveal">
+    <div><small class="muted">${won ? `${O.guesses.length}. tahminde buldun` : "Bu sefer olmadı. Gizli oyuncu:"}</small><h3>${esc(t.n)}</h3>
+    <span class="muted">${t.k ? "Kaleci" : "Saha oyuncusu"} · ${span(t)} · ${fmt(t.a)} maç · ${fmt(t.g)} gol · ${fmt(t.y)} sarı, ${fmt(t.r)} kırmızı</span></div>
+    <table class="career"><thead><tr><th>Kulüp</th><th>Sezonlar</th><th class="n">Maç</th><th class="n">Gol</th></tr></thead><tbody>${rows}</tbody></table>
+    ${stats}
+    <div class="row">${O.practice ? "" : `<button class="btn pri" id="o-share">Sonucu paylaş</button>`}<button class="btn" id="o-again">Rastgele bir oyuncuyla oyna</button></div>
+    ${O.practice ? "" : `<small class="muted">Yeni oyuncu yarın gece yarısı (TSİ).</small>`}</div>`;
+}
+
+function shareO(){
+  const t = O.target, won = O.guesses.includes(t.i);
+  const em = {hit: "🟩", close: "🟨", "": "⬜"};
+  const lines = O.guesses.map(id => id === t.i ? "🟩".repeat(6) : compare(P[id], t).map(c => em[c.cls]).join(""));
+  return `Günün oyuncusu #${dayNo(O.date)} ${won ? O.guesses.length : "X"}/${MAX_GUESS}\n${lines.join("\n")}\ntahmin.kaankara.com.tr/oyun/`;
+}
+
+function statsO(){
+  const st = load().oyuncu || {};
+  const days = Object.keys(st).filter(d => st[d].done).sort();
+  const s = {played: days.length, won: 0, streak: 0, best: 0, dist: Array(MAX_GUESS).fill(0)};
+  let run = 0, prev = null;
+  for(const d of days){
+    const w = st[d].won;
+    if(w){ s.won++; s.dist[st[d].g.length - 1]++; }
+    const consecutive = prev && (Date.parse(d) - Date.parse(prev)) === 864e5;
+    run = w ? (consecutive ? run + 1 : 1) : 0;
+    s.best = Math.max(s.best, run); prev = d;
+  }
+  const last = days[days.length - 1];
+  s.streak = last && (Date.parse(today()) - Date.parse(last)) <= 864e5 ? run : 0;
+  return s;
+}
+
+function guess(id){
+  if(O.done || O.guesses.includes(id)) return toast(O.guesses.includes(id) ? "Bu oyuncuyu zaten denedin" : "");
+  O.guesses.push(id);
+  const won = id === O.target.i;
+  O.done = won || O.guesses.length >= MAX_GUESS;
+  if(!O.practice){
+    const s = load(); s.oyuncu = s.oyuncu || {};
+    s.oyuncu[O.date] = {g: O.guesses, done: O.done, won}; save(s);
+  }
+  renderO();
+  if(!O.done) $("o-input").focus();
+}
+
+function startO(practice){
+  O.practice = practice; O.date = today();
+  if(practice){
+    const pool = D.players.filter(p => p.a >= 90 || p.g >= 25);
+    O.target = pool[Math.floor(Math.random() * pool.length)]; O.guesses = []; O.done = false;
+  } else {
+    O.target = dailyTarget(O.date);
+    const s = (load().oyuncu || {})[O.date];
+    O.guesses = s ? s.g.filter(id => P[id]) : []; O.done = !!(s && s.done);
+  }
+  renderO();
+  if(practice) window.scrollTo({top: $("oyuncu").offsetTop - 60, behavior: "smooth"});
+}
+
+// arama kutusu
+let sugIdx = -1, sugList = [];
+function suggest(){
+  const q = fold($("o-input").value).trim();
+  const ul = $("o-sug");
+  if(q.length < 2){ ul.hidden = true; $("o-input").setAttribute("aria-expanded", "false"); return; }
+  const words = q.split(/\s+/);
+  sugList = SEARCH.filter(s => words.every(w => s.key.includes(" " + w))).slice(0, 8).map(s => s.p);
+  sugIdx = sugList.length ? 0 : -1;
+  ul.innerHTML = sugList.length ? sugList.map((p, k) => `<li role="option" id="sug-${k}" data-i="${p.i}" aria-selected="${k === sugIdx}">${esc(p.n)}<small>${esc(CL[p.lc])} · ${span(p)}</small></li>`).join("")
+    : `<li aria-disabled="true"><span class="muted">Bulunamadı. 2015/16'dan beri Süper Lig'de en az 5 maçı olan oyuncular var.</span></li>`;
+  ul.hidden = false; $("o-input").setAttribute("aria-expanded", "true");
+  $("o-input").setAttribute("aria-activedescendant", sugIdx >= 0 ? "sug-0" : "");
+}
+function pick(i){ $("o-input").value = ""; $("o-sug").hidden = true; $("o-input").setAttribute("aria-expanded", "false"); guess(+i); }
+function initSearch(){
+  const inp = $("o-input"), ul = $("o-sug");
+  inp.addEventListener("input", suggest);
+  inp.addEventListener("keydown", e => {
+    if(ul.hidden || !sugList.length) return;
+    if(e.key === "ArrowDown" || e.key === "ArrowUp"){
+      e.preventDefault(); sugIdx = (sugIdx + (e.key === "ArrowDown" ? 1 : -1) + sugList.length) % sugList.length;
+      ul.querySelectorAll("li").forEach((li, k) => li.setAttribute("aria-selected", String(k === sugIdx)));
+      inp.setAttribute("aria-activedescendant", "sug-" + sugIdx);
+      ul.children[sugIdx].scrollIntoView({block: "nearest"});
+    } else if(e.key === "Enter" && sugIdx >= 0){ e.preventDefault(); pick(sugList[sugIdx].i); }
+    else if(e.key === "Escape"){ ul.hidden = true; }
+  });
+  ul.addEventListener("mousedown", e => { const li = e.target.closest("li[data-i]"); if(li){ e.preventDefault(); pick(li.dataset.i); } });
+  inp.addEventListener("blur", () => setTimeout(() => ul.hidden = true, 100));
+}
+
+// ======================================= KÖR SIRALAMA =======================================
+const S = {date: null, topic: null, order: [], slots: [], practice: false};
+
+function setupS(topic, seed){
+  const r = rng(seed);
+  const rows = shuffle(topic.rows, r), seen = new Set(), pickd = [];
+  for(const row of rows){ if(pickd.length < 10 && !seen.has(row[0]) && P[row[1]]){ seen.add(row[0]); pickd.push(row); } }
+  for(const row of rows){ if(pickd.length < 10 && !pickd.includes(row) && P[row[1]]) pickd.push(row); }
+  S.topic = topic; S.order = pickd; S.slots = Array(10).fill(null);
+}
+
+function trueRange(v){                            // eşit değerlerde birden çok sıra doğru sayılır
+  const vals = S.order.map(r => r[0]).sort((a, b) => S.topic.asc ? a - b : b - a);
+  return [vals.indexOf(v), vals.lastIndexOf(v)];
+}
+function slotScore(k){
+  const row = S.order[S.slots[k]], [lo, hi] = trueRange(row[0]);
+  const d = k < lo ? lo - k : k > hi ? k - hi : 0;
+  return {d, pts: [10, 5, 2][d] || 0, cls: d === 0 ? "hit" : d === 1 ? "close" : "miss", rank: lo + 1, rankHi: hi + 1};
+}
+
+function renderS(){
+  const t = S.topic, placed = S.slots.filter(x => x !== null).length, done = placed === 10;
+  $("s-day").textContent = S.practice ? "Pratik · rastgele konu" : `#${dayNo(S.date)} · ${new Date(S.date + "T12:00").toLocaleDateString("tr-TR", {day: "numeric", month: "long"})}`;
+  $("s-title").textContent = t.title + (t.asc ? " (az olan 1.)" : "");
+  $("s-desc").textContent = t.desc;
+  const cur = done ? null : P[S.order[placed][1]];
+  $("s-now").innerHTML = cur ? `<div class="card now" aria-live="polite"><small>${placed + 1} / 10 · nereye koyarsın?</small><b>${esc(cur.n)}</b>
+    <span class="ctx">${cur.k ? "Kaleci · " : ""}${esc(clubsShort(cur))} · ${span(cur)}</span></div>` : "";
+  $("s-slots").innerHTML = S.slots.map((idx, k) => {
+    if(idx === null) return `<li><button class="slot empty" data-k="${k}" ${done ? "disabled" : ""} aria-label="${k + 1}. sıraya koy"><span class="rk">${k + 1}</span><span class="pn muted">${done ? "" : "Buraya koy"}</span><span></span></button></li>`;
+    const p = P[S.order[idx][1]], v = S.order[idx][0];
+    if(!done) return `<li><button class="slot" disabled><span class="rk">${k + 1}</span><span class="pn">${esc(p.n)}<small>${esc(clubsShort(p))}</small></span><span class="pv muted">?</span></button></li>`;
+    const sc = slotScore(k);
+    const rk = sc.rank === sc.rankHi ? `${sc.rank}.` : `${sc.rank}–${sc.rankHi}.`;
+    return `<li><button class="slot ${sc.cls}" disabled><span class="rk">${k + 1}</span><span class="pn">${esc(p.n)}<small>Gerçek sıra: ${rk}</small></span><span class="pv">${fmt(v)} ${esc(t.unit)}</span></button></li>`;
+  }).join("");
+  document.querySelectorAll("#s-slots .slot.empty:not(:disabled)").forEach(b => b.onclick = () => place(+b.dataset.k));
+  $("s-end").innerHTML = done ? endS() : "";
+  if(done){ const sb = $("s-share"); if(sb) sb.onclick = () => share(shareS()); $("s-again").onclick = () => startS(true); }
+}
+
+function endS(){
+  const scs = S.slots.map((_, k) => slotScore(k)), pts = scs.reduce((a, s) => a + s.pts, 0), exact = scs.filter(s => s.d === 0).length;
+  const sorted = S.order.slice().sort((a, b) => S.topic.asc ? a[0] - b[0] : b[0] - a[0]);
+  const verdict = pts >= 80 ? "Ansiklopedi gibisin." : pts >= 60 ? "Çok iyi." : pts >= 40 ? "Fena değil." : "Zor bir gündü.";
+  return `<div class="card reveal">
+    <div class="score"><b>${pts}</b><span class="muted">/ 100 · ${exact} oyuncu tam yerinde · ${verdict}</span></div>
+    <small class="muted">Tam yerinde 10 puan, bir sıra farkla 5, iki sıra farkla 2.</small>
+    <details><summary>Doğru sıralama</summary><table class="career" style="margin-top:8px"><tbody>${sorted.map((r, k) => `<tr><td class="n" style="width:28px">${k + 1}</td><td>${esc(P[r[1]].n)}</td><td class="n">${fmt(r[0])} ${esc(S.topic.unit)}</td></tr>`).join("")}</tbody></table></details>
+    <div class="row">${S.practice ? "" : `<button class="btn pri" id="s-share">Sonucu paylaş</button>`}<button class="btn" id="s-again">Rastgele bir konuyla oyna</button></div>
+    ${S.practice ? "" : `<small class="muted">Yeni konu yarın gece yarısı (TSİ).</small>`}</div>`;
+}
+
+function shareS(){
+  const em = {hit: "🟩", close: "🟨", miss: "⬜"};
+  const scs = S.slots.map((_, k) => slotScore(k)), pts = scs.reduce((a, s) => a + s.pts, 0);
+  return `Kör sıralama #${dayNo(S.date)} · ${S.topic.title}\n${pts}/100 ${scs.map(s => em[s.cls]).join("")}\ntahmin.kaankara.com.tr/oyun/#siralama`;
+}
+
+function place(k){
+  const placed = S.slots.filter(x => x !== null).length;
+  if(S.slots[k] !== null || placed >= 10) return;
+  S.slots[k] = placed;
+  if(!S.practice){ const s = load(); s.siralama = s.siralama || {}; s.siralama[S.date] = {slots: S.slots, key: S.topic.key}; save(s); }
+  renderS();
+}
+
+function startS(practice){
+  S.practice = practice; S.date = today();
+  if(practice){
+    setupS(D.topics[Math.floor(Math.random() * D.topics.length)], Math.floor(Math.random() * 2 ** 30));
+  } else {
+    const e = D.takvim[S.date] || {k: null, s: hash(S.date)};
+    const topic = D.topics.find(t => t.key === e.k) || D.topics[e.s % D.topics.length];
+    setupS(topic, e.s);
+    const st = (load().siralama || {})[S.date];
+    if(st && st.key === topic.key && st.slots.length === 10) S.slots = st.slots;
+  }
+  renderS();
+  if(practice) window.scrollTo({top: $("siralama").offsetTop - 60, behavior: "smooth"});
+}
+
+// ======================================= başlat =======================================
+fetch("veri.json").then(r => r.json()).then(d => {
+  D = d; CL = d.clubs; P = {};
+  for(const p of d.players){ P[p.i] = p; SEARCH.push({key: " " + fold(p.n), p}); }
+  $("load").remove();
+  $("stamp").textContent = `Veri: ${d.generated.slice(0, 10)}`;
+  $("lede").textContent = `Her gün yeni bir oyuncu ve yeni bir sıralama. Veri TFF maç raporlarından: ${d.season_labels[0]}'dan bu yana Süper Lig, ${fmt(d.matches)} maç, ${fmt(d.players.length)} oyuncu.`;
+  $("f-data").textContent = `Kaynak: TFF maç raporları (${d.season_labels[0]} – ${d.season_labels[1]}). Sayılar yalnızca Süper Lig maçlarını kapsar; kupa, Avrupa ve milli maçlar dahil değil. Son güncelleme ${d.generated}.`;
+  initSearch(); route(); startO(false); startS(false);
+}).catch(e => { $("load").textContent = "Veri yüklenemedi. Sayfayı yenilemeyi dene."; console.error(e); });
+</script>
